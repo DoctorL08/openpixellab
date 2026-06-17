@@ -1,0 +1,11 @@
+{
+  "name": "openpixel-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wiki open-source du modding retrogaming + configurateur 3D",
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.mjs"
+  },
+  "license": "MIT"
+}
