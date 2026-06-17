@@ -71,17 +71,17 @@
 
                 <!-- Custom select UI -->
                 <div class="custom-select" id="custom-console-select">
-                    <div class="custom-select-trigger">
+                    <div class="custom-select-trigger" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Choisir une console">
                         <span id="select-label">Choisir une console</span>
                     </div>
-                    <div class="custom-options">
-                        <div class="custom-option placeholder" data-value="">Choisir une console</div>
-                        <div class="custom-option" data-value="gameboy_dmg">Gameboy DMG</div>
-                        <div class="custom-option" data-value="gameboy_pocket">Gameboy Pocket</div>
-                        <div class="custom-option" data-value="gameboy_color">Gameboy Color</div>
-                        <div class="custom-option" data-value="gameboy_advance">Gameboy Advance</div>
-                        <div class="custom-option" data-value="gameboy_advance_sp">Gameboy Advance SP</div>
-                        <div class="custom-option" data-value="gamecube">GameCube</div>
+                    <div class="custom-options" role="listbox" aria-label="Consoles disponibles">
+                        <div class="custom-option placeholder" role="option" tabindex="-1" data-value="">Choisir une console</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gameboy_dmg">Gameboy DMG</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gameboy_pocket">Gameboy Pocket</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gameboy_color">Gameboy Color</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gameboy_advance">Gameboy Advance</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gameboy_advance_sp">Gameboy Advance SP</div>
+                        <div class="custom-option" role="option" tabindex="-1" data-value="gamecube">GameCube</div>
                     </div>
                 </div>
             </div>
@@ -132,26 +132,65 @@
             const options    = wrapper.querySelectorAll('.custom-option');
             const nativeSelect = document.getElementById('consoleSelector');
 
+            function setOpen(open) {
+                wrapper.classList.toggle('open', open);
+                trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+
+            function selectOption(opt) {
+                options.forEach(o => o.classList.remove('selected'));
+                opt.classList.add('selected');
+                labelEl.textContent = opt.textContent;
+                nativeSelect.value  = opt.dataset.value;
+                setOpen(false);
+                trigger.focus();
+                // Déclencher le chargement après fermeture du dropdown
+                nativeSelect.dispatchEvent(new Event('change'));
+            }
+
             trigger.addEventListener('click', function () {
-                wrapper.classList.toggle('open');
+                setOpen(!wrapper.classList.contains('open'));
             });
 
-            options.forEach(opt => {
-                opt.addEventListener('click', function () {
-                    options.forEach(o => o.classList.remove('selected'));
-                    this.classList.add('selected');
-                    labelEl.textContent = this.textContent;
-                    nativeSelect.value  = this.dataset.value;
-                    wrapper.classList.remove('open');
-                    // Déclencher le chargement après fermeture du dropdown
-                    nativeSelect.dispatchEvent(new Event('change'));
+            // Clavier sur le déclencheur
+            trigger.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setOpen(!wrapper.classList.contains('open'));
+                    if (wrapper.classList.contains('open')) options[0].focus();
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    setOpen(true);
+                    options[0].focus();
+                } else if (e.key === 'Escape') {
+                    setOpen(false);
+                }
+            });
+
+            options.forEach((opt, i) => {
+                opt.addEventListener('click', function () { selectOption(this); });
+                opt.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectOption(this);
+                    } else if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        (options[i + 1] || options[0]).focus();
+                    } else if (e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        (options[i - 1] || options[options.length - 1]).focus();
+                    } else if (e.key === 'Escape') {
+                        e.preventDefault();
+                        setOpen(false);
+                        trigger.focus();
+                    }
                 });
             });
 
             // Fermer uniquement si clic en dehors du select
             document.addEventListener('click', (e) => {
                 if (!wrapper.contains(e.target)) {
-                    wrapper.classList.remove('open');
+                    setOpen(false);
                 }
             });
         });
