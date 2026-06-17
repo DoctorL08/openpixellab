@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenPixel Lab - Le wiki communautaire dédié au modding et à la réparation de consoles retrogaming.">
+    <title>OpenPixel Lab | Wiki du Modding Retrogaming</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link active" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="badge" data-i18n="badge_beta">BÊTA PUBLIQUE</div>
+                    <h1 class="hero-title" data-i18n="hero_title">L'Encyclopédie <br><span class="highlight">Open-Source</span> du Modding rétro</h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
+                        OpenPixel Lab vous donne accès à une bibliothèque intégrale du Modding Rétro-Gaming. Parcourez notre wiki participatif pour découvrir une autre façon de vivre le retrogaming, où prendre soin de ses consoles devient aussi passionnant que d'y jouer.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="wiki.html" class="btn btn-primary" data-i18n="hero_btn_wiki">Explorer le Wiki</a>
+                        <a href="contribution.html" class="btn btn-secondary" data-i18n="hero_btn_contribution">Contribuer</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="pixel-art-showcase">
+                        <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Concept" class="floating-img theme-logo">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="wiki">
+            <div class="container">
+                <h2 class="section-title" data-i18n="section_tools_title">Un outil complet</h2>
+                <div class="grid cards-grid">
+                    <!-- Wiki -->
+                    <div class="card">
+                        <div class="card-icon"><img src="Images/icon_wiki.svg" alt="Wiki" class="icon-pixel"></div>
+                        <h3 class="card-title" data-i18n="nav_wiki">Wiki</h3>
+                        <p class="card-desc" data-i18n="card_mods_desc">Parcourez un répertoire clair et détaillé regroupant tous les mods existants, minutieusement classés pour chaque console rétro.</p>
+                        <a href="wiki.html" class="card-link" data-i18n="btn_explore">Explorer le Wiki ➔</a>
+                    </div>
+                    <!-- Configurateur 3D -->
+                    <div class="card">
+                        <div class="card-icon"><img src="Images/icon_config.svg" alt="Config" class="icon-pixel"></div>
+                        <h3 class="card-title" data-i18n="card_3d_title">Configurateur 3D</h3>
+                        <p class="card-desc" data-i18n="card_3d_desc">Utilisez notre Configurateur 3D, une interface visuelle innovante qui donne instantanément vie à vos idées de personnalisation.</p>
+                        <a href="tools.html" class="card-link" data-i18n="card_3d_btn">Lancer l'outil ➔</a>
+                    </div>
+                    <!-- Partenaires -->
+                    <div class="card">
+                        <div class="card-icon"><img src="Images/icon_partners.svg" alt="Partners" class="icon-pixel"></div>
+                        <h3 class="card-title" data-i18n="card_partners_title">Partenaires</h3>
+                        <p class="card-desc" data-i18n="card_partners_desc">Une sélection de Partenaires Professionnels et Fiables pour confier vos projets de Modding, de Réparation, ou l'achat de jeux rétro certifiés.</p>
+                        <a href="partenaires.html" class="card-link" data-i18n="card_partners_btn">Voir la liste ➔</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="community-banner" id="communaute">
+            <div class="container banner-container">
+                <div class="banner-content">
+                    <h2 data-i18n="banner_title">Construit par la communauté. Pour la communauté.</h2>
+                    <p data-i18n="banner_desc">OpenPixel Lab appartient à sa communauté. L'intégralité des tutoriels, mods et outils sont en open-source : pensés et partagés par des passionnés, pour des passionnés.</p>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="banner_btn">Rejoindre le Discord</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

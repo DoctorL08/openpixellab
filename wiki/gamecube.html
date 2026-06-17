@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez tous les mods pour la Nintendo GameCube sur OpenPixel Lab. HDMI Interne, Retro GEM, FlippyDrive et PicoBoot.">
+    <title>GameCube Mods | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/console-page.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../index.html'">
+                <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <header class="console-hero">
+                <div class="badge">Console de Salon</div>
+                <h1 class="console-title">Nintendo <span class="highlight">GameCube</span></h1>
+                <p class="console-subtitle">Le cube magique de Nintendo. Découvrez comment le faire passer à la haute définition et vous affranchir des disques optiques.</p>
+            </header>
+
+            <!-- VIDÉO HDMI -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Vidéo & HDMI</h2>
+                </div>
+                <div class="mods-grid">
+                    <!-- RETRO GEM -->
+                    <article class="mod-card">
+                        <span class="mod-badge">Premium</span>
+                        <div class="mod-brand">PixelFX</div>
+                        <h3 class="mod-name">Retro GEM</h3>
+                        <p class="mod-desc">La solution HDMI interne ultime. Wi-Fi intégré pour les mises à jour et scaling jusqu'en 1440p (Shiny Edition).</p>
+                        <ul class="mod-features">
+                            <li>Qualité d'image parfaite</li>
+                            <li>Scanlines et filtres avancés</li>
+                            <li>Sortie HDMI native</li>
+                        </ul>
+                    </article>
+
+                    <!-- HISPEEDIDO HDMI -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">Internal HDMI Kit</h3>
+                        <p class="mod-desc">Un excellent mod interne digital-to-digital compatible avec tous les modèles (DOL-001 & 101).</p>
+                        <ul class="mod-features">
+                            <li>Compatible DOL-101 (sans port digital)</li>
+                            <li>Menu OSD complet</li>
+                            <li>Prix accessible</li>
+                        </ul>
+                    </article>
+
+                    <!-- PLUTO-IIX -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Citrus3000psi</div>
+                        <h3 class="mod-name">Pluto-IIx HDMI</h3>
+                        <p class="mod-desc">Le mod interne "historique" pour les modèles DOL-001, basé sur le firmware GCVideo.</p>
+                        <ul class="mod-features">
+                            <li>Sortie HDMI directe</li>
+                            <li>Open-source (GCVideo)</li>
+                            <li>Installation robuste</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ODE (ÉMULATEURS DE LECTEUR) -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">💿</span>
+                    <h2 class="section-name">ODE & Chargement</h2>
+                </div>
+                <div class="mods-grid">
+                    <!-- FLIPPYDRIVE -->
+                    <article class="mod-card">
+                        <span class="mod-badge">Nouveauté</span>
+                        <div class="mod-brand">Team Flippy</div>
+                        <h3 class="mod-name">FlippyDrive</h3>
+                        <p class="mod-desc">Le mod sans soudure qui permet de garder le lecteur disque original tout en chargeant des jeux via SD.</p>
+                        <ul class="mod-features">
+                            <li>Installation 100% sans soudure</li>
+                            <li>Préserve le lecteur optique</li>
+                            <li>Interface CubeBoot moderne</li>
+                        </ul>
+                    </article>
+
+                    <!-- GC LOADER -->
+                    <article class="mod-card">
+                        <div class="mod-brand">GC Loader Team</div>
+                        <h3 class="mod-name">GC Loader PNP</h3>
+                        <p class="mod-desc">Remplacez votre lecteur disque par un lecteur de carte SD haute vitesse ultra-stable.</p>
+                        <ul class="mod-features">
+                            <li>Vitesse de chargement maximale</li>
+                            <li>Plug & Play</li>
+                            <li>Fiabilité reconnue</li>
+                        </ul>
+                    </article>
+
+                    <!-- PICOBOOT -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Open Source</div>
+                        <h3 class="mod-name">PicoBoot (RPi Pico)</h3>
+                        <p class="mod-desc">La solution la plus abordable pour hacker sa console et lancer Swiss via une carte SD (SD2SP2).</p>
+                        <ul class="mod-features">
+                            <li>Basé sur Raspberry Pi Pico</li>
+                            <li>Coût dérisoire</li>
+                            <li>Nécessite de la soudure</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- STOCKAGE & MAINTENANCE -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">⚙️</span>
+                    <h2 class="section-name">Maintenance & Stockage</h2>
+                </div>
+                <div class="mods-grid">
+                    <!-- SD2SP2 -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Generic</div>
+                        <h3 class="mod-name">SD2SP2 Adapter</h3>
+                        <p class="mod-desc">Ajoutez un slot micro SD invisible sous la console (nécessite PicoBoot ou un disque de boot).</p>
+                        <ul class="mod-features">
+                            <li>Discret (sous la console)</li>
+                            <li>Libère les slots carte mémoire</li>
+                            <li>Compatible Swiss</li>
+                        </ul>
+                    </article>
+
+                    <!-- NOCTUA FAN -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Noctua / Custom</div>
+                        <h3 class="mod-name">40mm Fan Mod</h3>
+                        <p class="mod-desc">Remplacez le ventilateur d'origine bruyant par un Noctua ultra-silencieux.</p>
+                        <ul class="mod-features">
+                            <li>Silence total</li>
+                            <li>Meilleur flux d'air</li>
+                            <li>Adaptateur 3D requis</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

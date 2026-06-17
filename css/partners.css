@@ -1,0 +1,91 @@
+/* --- PARTNERS PAGE --- */
+.partners-page {
+    padding-top: 100px;
+}
+
+.partner-category {
+    margin-bottom: 80px;
+}
+
+.category-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--text-primary);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.partner-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    position: relative;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    border-color: var(--text-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.partner-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--accent-glow);
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.partner-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.partner-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.partner-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.partner-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.partner-links .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    flex: 1;
+    text-align: center;
+}

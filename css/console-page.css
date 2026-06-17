@@ -1,0 +1,132 @@
+/* Console Page Specific Styles */
+.console-page {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.console-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.console-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.console-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.mod-section {
+    margin-bottom: 60px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.section-icon {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+.section-name {
+    font-size: 2.2rem;
+    font-family: var(--font-heading);
+}
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.mod-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    border-color: var(--text-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.mod-brand {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.mod-name {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+}
+
+.mod-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.mod-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.mod-features li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mod-features li::before {
+    content: '▪';
+    color: var(--text-primary);
+}
+
+.mod-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    background: var(--accent-glow);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    .console-title {
+        font-size: 3rem;
+    }
+    .mods-grid {
+        grid-template-columns: 1fr;
+    }
+}

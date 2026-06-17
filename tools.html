@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos outils interactifs pour le modding retrogaming - Configurateur 3D et plus.">
+    <title>Outils | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link active" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="tools-page">
+        <section class="wiki-hero">
+            <div class="container">
+                <h1 class="hero-title" data-i18n="tools_title">Nos <span class="highlight">Outils</span></h1>
+                <p class="hero-subtitle" data-i18n="tools_subtitle">Des outils interactifs pour explorer et tester vos idées de personnalisation.</p>
+            </div>
+        </section>
+
+        <section class="tools-content">
+            <div class="container">
+                <div class="tools-grid">
+                    <!-- Configurateur 3D -->
+                    <div class="tool-card">
+                        <div class="tool-badge">Bêta</div>
+                        <div class="tool-icon">🧱</div>
+                        <h3 data-i18n="tool_config_title">Configurateur 3D</h3>
+                        <p data-i18n="tool_config_desc">Visualisez vos futurs mods en 3D. Testez les coloris sur Game Boy DMG, Pocket, Color, Advance, SP et même GameCube.</p>
+                        <div class="tool-links">
+                            <a href="configurator.html" class="btn btn-primary" data-i18n="tool_config_btn">Lancer le configurateur</a>
+                        </div>
+                    </div>
+
+                    <!-- Comparateur de Customs -->
+                    <div class="tool-card">
+                        <div class="tool-badge">Nouveau</div>
+                        <div class="tool-icon">⚡</div>
+                        <h3 data-i18n="tool_comparator_title">Comparateur de Customs</h3>
+                        <p data-i18n="tool_comparator_desc">Choisissez vos mods, comparez jusqu'à 4 configurations côte à côte et découvrez les points forts, les compromis et le meilleur setup pour vous.</p>
+                        <div class="tool-links">
+                            <a href="comparator.html" class="btn btn-primary" data-i18n="tool_comparator_btn">Lancer le comparateur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

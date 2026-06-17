@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez l'histoire de Doctor L et la genèse d'OpenPixel Lab, l'atelier communautaire du modding retrogaming.">
+    <title>À Propos | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor: pointer;">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="wiki-hero">
+            <div class="container">
+                <h1 class="hero-title" data-i18n="about_title">L'Héritage d'une <span class="highlight">Passion</span></h1>
+                <p class="hero-subtitle" data-i18n="about_subtitle">Découvrez l'histoire derrière OpenPixel Lab et la vision de son créateur.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="doctor-avatar">
+                            <img src="Images/Logo Doctor L.png" alt="Doctor L" class="avatar-img">
+                        </div>
+                        <h2 data-i18n="about_story_title">Du Professionnalisme au Partage Libre</h2>
+                    </div>
+                    <div class="story-body">
+                        <p data-i18n="about_story_p1">OpenPixel Lab est né d'un parcours passionné dédié à l'art du modding. Je suis <strong>Doctor L</strong>, ancien moddeur professionnel. Pendant 18 mois, mon quotidien a été de transformer des consoles oubliées en véritables pièces d’exception, alliant précision et créativité au service de mes clients.</p>
+                        <p data-i18n="about_story_p2">Au fil du temps, j'ai compris que le plus grand défi d'un projet de personnalisation n'était pas seulement la technique, mais la vision. C'est pour répondre à ce besoin que j'ai développé des outils exclusifs comme le <strong>Configurateur 3D</strong> — une interface pensée à l'origine pour offrir à mes clients une immersion totale et une prévisualisation parfaite avant la moindre commande.</p>
+                        <p data-i18n="about_story_p3">Aujourd’hui, une page se tourne avec la clôture de mon entreprise, mais ma flamme pour le modding et le rétro-gaming reste intacte. J'ai choisi de ne pas laisser ce savoir dormir dans des archives privées. Ma nouvelle mission ? <strong>Transmettre.</strong></p>
+                        <p data-i18n="about_story_p4">OpenPixel Lab est le fruit de cette volonté de partage. J'ai décidé d'ouvrir un atelier virtuel communautaire et de libérer mes outils au service de tous. C'est un espace dédié à l'échange : que vous soyez ici pour votre premier mod ou pour votre centième, j'espère que ces ressources vous seront utiles pour faire grandir vos projets.</p>
+                    </div>
+                    <div class="story-footer">
+                        <p class="signature" data-i18n="about_story_footer">Bienvenue dans mon ancien atelier, devenu aujourd'hui le vôtre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

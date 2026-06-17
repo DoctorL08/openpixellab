@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez tous les mods disponibles pour la Gameboy Color sur OpenPixel Lab. Écrans OLED, IPS, batteries USB-C et plus.">
+    <title>Gameboy Color Mods | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/console-page.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../index.html'">
+                <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <header class="console-hero">
+                <div class="badge">Console Portable</div>
+                <h1 class="console-title">Gameboy <span class="highlight">Color</span></h1>
+                <p class="console-subtitle">La console qui a apporté la couleur au creux de la main. Découvrez comment la moderniser avec les meilleures technologies actuelles.</p>
+            </header>
+
+            <!-- AFFICHAGE -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Affichage</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">RetroPixel IPS LCD Kit</h3>
+                        <p class="mod-desc">Le kit IPS de référence FunnyPlaying pour GBC, avec rendu pixel-perfect et contrôle de luminosité.</p>
+                        <ul class="mod-features">
+                            <li>Zone d'affichage agrandie</li>
+                            <li>Luminosité réglable</li>
+                            <li>Modes scanlines</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Laminé</span>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">IPS Laminated Q5 V2.0</h3>
+                        <p class="mod-desc">Le choix de référence pour une image nette et un écran 25% plus grand que l'original, version laminée.</p>
+                        <ul class="mod-features">
+                            <li>Logo rétroéclairé personnalisable</li>
+                            <li>Modes Pixel (Scanlines)</li>
+                            <li>Excellents angles de vision</li>
+                            <li>Vitre laminée sans poussière</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Nouveauté</span>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">NES/VES RetroPixel Laminated Kit</h3>
+                        <p class="mod-desc">Version spéciale avec modes d'affichage NES et VES pour simuler les palettes d'époque.</p>
+                        <ul class="mod-features">
+                            <li>Mode NES (palette rétro)</li>
+                            <li>Mode VES (rendu vintage)</li>
+                            <li>Vitre laminée</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">OLED</span>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">AMOLED Laminated Kit</h3>
+                        <p class="mod-desc">Le summum de l'affichage pour GBC. Des noirs profonds et des couleurs vibrantes que seul l'OLED peut offrir.</p>
+                        <ul class="mod-features">
+                            <li>Dalle AMOLED 2.45"</li>
+                            <li>Contraste infini</li>
+                            <li>Menu OSD complet</li>
+                            <li>Vitre laminée</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">IPS Drop-in 2.45" (OSD)</h3>
+                        <p class="mod-desc">Kit IPS drop-in avec 8 modes d'affichage et menu OSD, installation sans découpe de coque.</p>
+                        <ul class="mod-features">
+                            <li>8 modes d'affichage</li>
+                            <li>Installation sans découpe</li>
+                            <li>Menu OSD complet</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">TFT LCD Backlight Kit</h3>
+                        <p class="mod-desc">Solution drop-in sans aucune découpe, idéale pour conserver sa coque d'origine.</p>
+                        <ul class="mod-features">
+                            <li>Installation 100% sans découpe</li>
+                            <li>Taille d'origine préservée</li>
+                            <li>Faible consommation</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">BennVenn</div>
+                        <h3 class="mod-name">GBC IPS & LCD Kits</h3>
+                        <p class="mod-desc">Des solutions innovantes souvent pionnières, avec une excellente gestion de l'énergie.</p>
+                        <ul class="mod-features">
+                            <li>Basse consommation</li>
+                            <li>Scaling parfait</li>
+                            <li>Support technique réputé</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ÉNERGIE & PERFORMANCE -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="section-name">Énergie & Performance</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice Air</h3>
+                        <p class="mod-desc">Remplacez vos piles par une batterie Li-Po haute capacité rechargeable en USB-C ou sans fil.</p>
+                        <ul class="mod-features">
+                            <li>Recharge USB-C</li>
+                            <li>Compatible Sans Fil (Qi)</li>
+                            <li>1600mAh de capacité</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBC Battery Charging Mod</h3>
+                        <p class="mod-desc">Module de recharge Li-Po USB-C de FunnyPlaying, compact et facile à installer.</p>
+                        <ul class="mod-features">
+                            <li>Recharge USB-C</li>
+                            <li>Compact et discret</li>
+                            <li>Installation simple</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Indispensable</span>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanPower Regulator GBC</h3>
+                        <p class="mod-desc">Régulateur de tension pour stabiliser l'alimentation de la GBC avec les mods IPS modernes.</p>
+                        <ul class="mod-features">
+                            <li>Alimentation stable</li>
+                            <li>Évite les flickering d'écran</li>
+                            <li>Indispensable avec IPS</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FroggoCustoms</div>
+                        <h3 class="mod-name">Frogulator DC Regulator</h3>
+                        <p class="mod-desc">Alternative fiable au CleanPower pour stabiliser l'alimentation de la GBC et de la Pocket.</p>
+                        <ul class="mod-features">
+                            <li>Alimentation propre et stable</li>
+                            <li>Compatible GBC & Pocket</li>
+                            <li>Compact</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Vitesse</span>
+                        <div class="mod-brand">Division 6</div>
+                        <h3 class="mod-name">GBAccelerator (OC)</h3>
+                        <p class="mod-desc">Passez en vitesse x1.5 ou x2 d'une simple pression de bouton. Idéal pour RPG et Pokémon.</p>
+                        <ul class="mod-features">
+                            <li>4 modes de vitesse</li>
+                            <li>Installation propre</li>
+                            <li>Compatible avec la plupart des IPS</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ILLUMINATION & AUDIO -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">✨</span>
+                    <h2 class="section-name">Illumination & Audio</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <span class="mod-badge">RGB</span>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">RetroGlow GBC</h3>
+                        <p class="mod-desc">Le kit LED RGB de référence. Éclairez vos boutons avec des millions de couleurs.</p>
+                        <ul class="mod-features">
+                            <li>32 teintes & saturation</li>
+                            <li>Modes Gamer & Fairy Light</li>
+                            <li>Contrôle par Select + D-Pad</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">RGB</span>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">ARC GBC (RGB LEDs)</h3>
+                        <p class="mod-desc">Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes breathing & windmill.</p>
+                        <ul class="mod-features">
+                            <li>Contrôle couleur par zone</li>
+                            <li>Modes breathing & windmill</li>
+                            <li>17 réglages de couleur</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">RGB</span>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBC Button LED Kit</h3>
+                        <p class="mod-desc">Kit LED FunnyPlaying pour illuminer les boutons de votre GBC avec style.</p>
+                        <ul class="mod-features">
+                            <li>Installation simple</li>
+                            <li>Éclairage des boutons</li>
+                            <li>Compatible tous IPS FunnyPlaying</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanAmp Pro</h3>
+                        <p class="mod-desc">Un amplificateur de classe D pour un son puissant et cristallin.</p>
+                        <ul class="mod-features">
+                            <li>Son 400% plus fort</li>
+                            <li>Filtrage du bruit de fond</li>
+                            <li>Haut-parleur inclus</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">Bucket Amp GBC</h3>
+                        <p class="mod-desc">Remplace intégralement le circuit sonore d'origine pour un son radicalement amélioré.</p>
+                        <ul class="mod-features">
+                            <li>Remplacement complet du circuit son</li>
+                            <li>Qualité audio supérieure</li>
+                            <li>Résultat bien au-delà d'un simple boost</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">Wire Free Audio Amplifier GBC</h3>
+                        <p class="mod-desc">Amplificateur sans câble à installer directement sur la carte mère de la GBC.</p>
+                        <ul class="mod-features">
+                            <li>Installation sans câble</li>
+                            <li>Volume significativement amélioré</li>
+                            <li>Compact et discret</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- BOUTONS -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">🔘</span>
+                    <h2 class="section-name">Boutons</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <span class="mod-badge">Clicky</span>
+                        <div class="mod-brand">FroggoCustoms</div>
+                        <h3 class="mod-name">Wire-free Tactile Button Mod V2</h3>
+                        <p class="mod-desc">Passez aux boutons tactiles clicky sans aucun câble. D-pad, A/B, Start/Select en une seule pièce.</p>
+                        <ul class="mod-features">
+                            <li>100% sans soudure</li>
+                            <li>Boutons D-pad, A/B, Start/Select</li>
+                            <li>Anti-ghosting D-pad intégré</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBC Custom Buttons</h3>
+                        <p class="mod-desc">Boutons de remplacement colorés pour personnaliser l'aspect de votre GBC.</p>
+                        <ul class="mod-features">
+                            <li>Large choix de coloris</li>
+                            <li>Matière de qualité</li>
+                            <li>Installation simple</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

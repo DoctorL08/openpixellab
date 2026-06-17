@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez tous les mods pour la Nintendo 64 sur OpenPixel Lab. N64Digital, UltraHDMI, RGB mods et joysticks Hall Effect.">
+    <title>Nintendo 64 Mods | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/console-page.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../index.html'">
+                <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <header class="console-hero">
+                <div class="badge">Console de Salon</div>
+                <h1 class="console-title">Nintendo <span class="highlight">64</span></h1>
+                <p class="console-subtitle">La révolution de la 3D. Modernisez votre N64 pour obtenir une image nette sur vos écrans plats modernes.</p>
+            </header>
+
+            <!-- VIDÉO HDMI -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Vidéo & HDMI</h2>
+                </div>
+                <div class="mods-grid">
+                    <!-- N64DIGITAL -->
+                    <article class="mod-card">
+                        <span class="mod-badge">Premium</span>
+                        <div class="mod-brand">PixelFX</div>
+                        <h3 class="mod-name">N64Digital</h3>
+                        <p class="mod-desc">La meilleure sortie HDMI possible pour N64. Un signal 1080p cristallin avec Wi-Fi pour les mises à jour.</p>
+                        <ul class="mod-features">
+                            <li>Image parfaite pixel-to-pixel</li>
+                            <li>Désentrelacement avancé</li>
+                            <li>Scanlines et filtres rétro</li>
+                        </ul>
+                    </article>
+
+                    <!-- ULTRAHDMI -->
+                    <article class="mod-card">
+                        <div class="mod-brand">Retro-Active</div>
+                        <h3 class="mod-name">UltraHDMI</h3>
+                        <p class="mod-desc">Le mod HDMI "historique" réputé pour sa fidélité et son mode de dé-blur unique.</p>
+                        <ul class="mod-features">
+                            <li>Fonction De-Blur intégrée</li>
+                            <li>Scaling haute qualité</li>
+                            <li>Menu de configuration complet</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Borti / Tim Worthington</div>
+                        <h3 class="mod-name">RGB Mod Kit</h3>
+                        <p class="mod-desc">La solution idéale pour les possesseurs de CRT ou de scalers externes (OSSC, RetroTINK).</p>
+                        <ul class="mod-features">
+                            <li>Signal RGB analogique pur</li>
+                            <li>Indispensable pour les modèles FR/EU</li>
+                            <li>Qualité d'image pro</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Gamebox Systems</div>
+                        <h3 class="mod-name">64HD (HDMI Interne)</h3>
+                        <p class="mod-desc">Alternative accessible au N64Digital. Sortie HDMI interne avec un bon ensemble de fonctionnalités pour un prix réduit.</p>
+                        <ul class="mod-features">
+                            <li>Sortie HDMI interne</li>
+                            <li>Scaling et filtres intégrés</li>
+                            <li>Prix plus accessible</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">N64HDMI (720p)</h3>
+                        <p class="mod-desc">Solution d'entrée de gamme pour passer en HDMI 720p sur N64, idéale pour un budget limité.</p>
+                        <ul class="mod-features">
+                            <li>Sortie 720p</li>
+                            <li>Installation accessible</li>
+                            <li>Bon rapport qualité/prix</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CONTRÔLES & ACCESSOIRES -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">🕹️</span>
+                    <h2 class="section-name">Contrôles & Matériel</h2>
+                </div>
+                <div class="mods-grid">
+                    <!-- HALL EFFECT -->
+                    <article class="mod-card">
+                        <span class="mod-badge">Nouveauté</span>
+                        <div class="mod-brand">8BitDo / Custom</div>
+                        <h3 class="mod-name">Hall Effect Joystick</h3>
+                        <p class="mod-desc">Remplacez le joystick original fragile par une version magnétique inusable (zéro drift).</p>
+                        <ul class="mod-features">
+                            <li>Précision chirurgicale</li>
+                            <li>Aucune usure physique</li>
+                            <li>Sensation proche de l'original</li>
+                        </ul>
+                    </article>
+
+                    <!-- EXPANSION PAK -->
+                    <article class="mod-card">
+                        <span class="mod-badge">Essentiel</span>
+                        <div class="mod-brand">Nintendo / Generic</div>
+                        <h3 class="mod-name">Expansion Pak</h3>
+                        <p class="mod-desc">Doublez la RAM de votre console pour accéder à des résolutions supérieures et aux meilleurs jeux.</p>
+                        <ul class="mod-features">
+                            <li>4MB -> 8MB de RAM</li>
+                            <li>Requis pour Majora's Mask / DK64</li>
+                            <li>Meilleures textures sur certains jeux</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

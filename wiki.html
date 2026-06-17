@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenPixel Lab Wiki - Référence pour le modding et la réparation de consoles retrogaming.">
+    <title>Wiki | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="wiki-page">
+        <section class="wiki-hero">
+            <div class="container">
+                <h1 class="hero-title" data-i18n="wiki_title">Wiki <span class="highlight">Communautaire</span></h1>
+                <p class="hero-subtitle" data-i18n="wiki_subtitle">Parcourez notre encyclopédie collaborative pour découvrir l'ensemble des mods et améliorations disponibles pour vos consoles préférées.</p>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher une console, un mod..." data-i18n-placeholder="wiki_search_placeholder">
+                    <button class="btn btn-primary" data-i18n="wiki_search_btn">Rechercher</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="wiki-content">
+            <div class="container">
+                <div class="accordion-container">
+                    
+                    <!-- NINTENDO -->
+                    <div class="accordion-item brand-item">
+                        <button class="accordion-header brand-header">
+                            <div class="brand-info">
+                                <img src="Images/nintendo_logo.svg" alt="Nintendo" class="brand-logo">
+                                <span class="brand-name">Nintendo</span>
+                            </div>
+                            <span class="accordion-indicator">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="nested-accordion">
+                                <!-- Portables -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_portable">Consoles Portables</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="wiki/dmg.html">Gameboy DMG</a></li>
+                                            <li><a href="wiki/pocket.html">Gameboy Pocket / Light</a></li>
+                                            <li><a href="wiki/gbc.html">Gameboy Color</a></li>
+                                            <li><a href="wiki/gba.html">Gameboy Advance</a></li>
+                                            <li><a href="wiki/gbasp.html">Gameboy Advance SP</a></li>
+                                            <li><a href="#">Nintendo DS</a></li>
+                                            <li><a href="#">Nintendo DS Lite</a></li>
+                                            <li><a href="#">Nintendo DSi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Salon -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_home">Consoles de salon</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">NES / Famicom</a></li>
+                                            <li><a href="#">SNES / Super Famicom</a></li>
+                                            <li><a href="wiki/n64.html">Nintendo 64</a></li>
+                                            <li><a href="wiki/gamecube.html">GameCube</a></li>
+                                            <li><a href="#">Wii</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SONY -->
+                    <div class="accordion-item brand-item">
+                        <button class="accordion-header brand-header">
+                            <div class="brand-info">
+                                <img src="Images/sony_logo.svg" alt="Sony" class="brand-logo sony-logo">
+                                <span class="brand-name">Sony</span>
+                            </div>
+                            <span class="accordion-indicator">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="nested-accordion">
+                                <!-- Portables -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_portable">Consoles Portables</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">PSP 1000</a></li>
+                                            <li><a href="#">PSP 2000</a></li>
+                                            <li><a href="#">PSP 3000</a></li>
+                                            <li><a href="#">PS Vita 1000</a></li>
+                                            <li><a href="#">PS Vita 2000</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Salon -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_home">Consoles de salon</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">PlayStation 1</a></li>
+                                            <li><a href="#">PlayStation 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEGA -->
+                    <div class="accordion-item brand-item">
+                        <button class="accordion-header brand-header">
+                            <div class="brand-info">
+                                <img src="Images/sega_logo.svg" alt="Sega" class="brand-logo">
+                                <span class="brand-name">Sega</span>
+                            </div>
+                            <span class="accordion-indicator">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="nested-accordion">
+                                <!-- Portables -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_portable">Consoles Portables</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">GameGear</a></li>
+                                            <li><a href="#">Nomad</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Salon -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_home">Consoles de salon</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">Master System</a></li>
+                                            <li><a href="#">Mega Drive</a></li>
+                                            <li><a href="#">Dreamcast</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEO-GEO -->
+                    <div class="accordion-item brand-item">
+                        <button class="accordion-header brand-header">
+                            <div class="brand-info">
+                                <img src="Images/neogeo_logo.svg" alt="Neo-Geo" class="brand-logo neogeo-logo">
+                                <span class="brand-name">Neo-Geo</span>
+                            </div>
+                            <span class="accordion-indicator">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="nested-accordion">
+                                <!-- Portables -->
+                                <div class="accordion-item category-item">
+                                    <button class="accordion-header category-header">
+                                        <span class="category-name" data-i18n="cat_portable">Consoles Portables</span>
+                                        <span class="accordion-indicator">+</span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="models-list">
+                                            <li><a href="#">Neo Geo Pocket</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

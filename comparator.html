@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparez jusqu'à 4 configurations de mods pour consoles rétro. Analysez les points forts et faibles de chaque custom.">
+    <title>Comparateur de Customs | OpenPixel Lab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comparator.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link active" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" class="nav-link btn-primary" target="_blank" rel="noopener" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="comparator-page">
+        <section class="wiki-hero">
+            <div class="container">
+                <h1 class="hero-title">Comparateur de <span class="highlight">Customs</span></h1>
+                <p class="hero-subtitle">Choisissez vos mods, comparez jusqu'à 4 configurations et découvrez ce qui est vraiment le mieux pour vous.</p>
+            </div>
+        </section>
+
+        <section class="comparator-builder">
+            <div class="container">
+                <div id="slots-container" class="slots-grid"></div>
+
+                <div class="builder-actions">
+                    <button id="add-slot-btn" class="btn-add-slot">+ Ajouter une console</button>
+                    <span id="slots-counter" class="slots-counter">1 / 4</span>
+                </div>
+
+                <div class="compare-action">
+                    <button id="compare-btn" class="btn btn-primary btn-compare" disabled>
+                        ⚡ Lancer la comparaison
+                    </button>
+                    <p id="compare-hint" class="compare-hint">Configurez au moins 2 consoles pour comparer</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="results-section" class="results-section hidden">
+            <div class="container">
+                <h2 class="section-title">Analyse & <span class="highlight">Comparaison</span></h2>
+                <div id="results-content" class="results-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="js/comparator-data.js"></script>
+    <script src="js/comparator.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

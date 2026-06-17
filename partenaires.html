@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos partenaires certifiés - Moddeurs professionnels, boutiques de jeux rétro et outils indispensables.">
+    <title>Partenaires | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/partners.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+                <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="wiki.html" class="nav-link" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" class="nav-link active" data-i18n="nav_partners">Partenaires</a>
+                    <a href="index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="partners-page">
+        <section class="wiki-hero">
+            <div class="container">
+                <h1 class="hero-title" data-i18n="partners_title">Nos <span class="highlight">Partenaires</span></h1>
+                <p class="hero-subtitle" data-i18n="partners_subtitle">Une sélection rigoureuse d'experts et de services de confiance pour accompagner vos projets retrogaming.</p>
+            </div>
+        </section>
+
+        <section class="partners-content">
+            <div class="container">
+                <!-- Modders Professionnels -->
+                <div class="partner-category">
+                    <h2 class="category-title" data-i18n="partners_cat_modders">Moddeurs Professionnels</h2>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-badge">Certifié</div>
+                            <div class="partner-icon">🔧</div>
+                            <h3>ModdingMarius</h3>
+                            <p>Expert en modding et restauration de consoles rétro. Spécialisé dans les modifications hardware de haute précision.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-secondary">Contact</a>
+                                <a href="#" class="btn btn-primary">Site Web</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-badge">Certifié</div>
+                            <div class="partner-icon">🔌</div>
+                            <h3>RetroMetroid</h3>
+                            <p>Spécialiste de la restauration et du modding technique pour les consoles Nintendo et Sega.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-secondary">Contact</a>
+                                <a href="#" class="btn btn-primary">Site Web</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-badge">Certifié</div>
+                            <div class="partner-icon">🛠️</div>
+                            <h3>RaynowModding</h3>
+                            <p>Expert en solutions de modding modernes et intégrations complexes pour consoles classiques.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-secondary">Contact</a>
+                                <a href="#" class="btn btn-primary">Site Web</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mods Makers -->
+                <div class="partner-category">
+                    <h2 class="category-title" data-i18n="partners_cat_modsmakers">Mods Makers</h2>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-icon">🎨</div>
+                            <h3>NatalieTheNerd</h3>
+                            <p>Créatrice de mods innovants et de kits LED pour consoles portables. Reconnue pour ses designs uniques et colorés.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Voir ses créations</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-icon">🌟</div>
+                            <h3>XiiBoy Team</h3>
+                            <p>Équipe passionnée spécialisée dans la customisation et l'amélioration technique de la Game Boy.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Découvrir l'équipe</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-icon">🐸</div>
+                            <h3>FroggoCustoms</h3>
+                            <p>Expert en coques personnalisées et boutons sur mesure pour donner un look unique à vos consoles.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Boutique Etsy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutiques -->
+                <div class="partner-category">
+                    <h2 class="category-title" data-i18n="partners_cat_games">Boutiques</h2>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-badge">Premium</div>
+                            <div class="partner-icon">🎮</div>
+                            <h3>Masaru</h3>
+                            <p>Boutique de référence pour l'achat de jeux et consoles rétro sélectionnés avec soin.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Visiter la boutique</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-icon">📦</div>
+                            <h3>Zedlabz</h3>
+                            <p>Une large sélection de pièces détachées et accessoires pour la réparation et le modding de consoles.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Boutique Zedlabz</a>
+                            </div>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-icon">📱</div>
+                            <h3>Handheld Legend</h3>
+                            <p>Spécialiste des pièces de haute qualité pour consoles portables, incluant écrans IPS et coques premium.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Boutique HHL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications -->
+                <div class="partner-category">
+                    <h2 class="category-title" data-i18n="partners_cat_apps">Applications</h2>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-icon">📱</div>
+                            <h3>Qwarggs</h3>
+                            <p>Développeur d'applications et outils innovants pour la communauté retrogaming.</p>
+                            <div class="partner-links">
+                                <a href="#" class="btn btn-primary">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* --- TOOLS PAGE --- */
+.tools-page {
+    padding-top: 100px;
+}
+
+.tools-content {
+    margin-bottom: 80px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.tools-page .wiki-hero {
+    padding-bottom: 20px;
+}
+
+.tool-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    position: relative;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    border-color: var(--text-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.tool-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--accent-glow);
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tool-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.tool-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.tool-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.tool-links .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    flex: 1;
+    text-align: center;
+}

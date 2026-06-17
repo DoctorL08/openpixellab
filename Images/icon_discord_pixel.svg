@@ -1,0 +1,9 @@
+<svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Body -->
+  <path d="M8 2h3v2h4V2h3v2h2v2h2v2h2v8h-2v2h-2v2h-6v-2h-4v2H6v-2H4v-2H2V8h2V6h2V4h2V2z" fill="#000"/>
+  <path d="M9 4h2v2h4V4h2v2h2v2h2v8h-2v2h-2v2h-4v-2h-4v2H8v-2H6v-2H4V8h2V6h2V4z" fill="#fff"/>
+  <!-- Eyes -->
+  <path d="M8 10h4v4H8v-4zm6 0h4v4h-4v-4z" fill="#000"/>
+  <!-- Feet detail -->
+  <path d="M8 18h3v2H8v-2zm7 0h3v2h-18v-2z" fill="none"/> <!-- Just for spacing -->
+</svg>

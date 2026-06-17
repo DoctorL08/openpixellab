@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Configurateur 3D OpenPixel Lab — Personnalisez les coloris de vos consoles rétro.">
+    <title>Configurateur 3D | OpenPixel Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/configurator.css">
+
+    <!-- Three.js (globals) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+</head>
+<body class="configurator-page">
+    <!-- CRT scanlines -->
+    <div class="scanlines"></div>
+
+    <!-- Tooltip -->
+    <div id="custom-tooltip"></div>
+
+    <!-- =============================================
+         TOP BAR
+    ============================================= -->
+    <div id="top-bar">
+        <!-- Back to Tools -->
+        <a href="tools.html" class="topbar-back" title="Retour aux outils">
+            <img src="Images/Logo OpenPixel Lab.png"
+                 alt="OpenPixel Lab"
+                 class="topbar-logo">
+            <span class="topbar-back-arrow">&#8592;</span>
+            <span class="topbar-label">Tools</span>
+        </a>
+
+        <!-- Console selector -->
+        <div class="console-selector-wrapper">
+            <div class="custom-select-wrapper">
+                <!-- Native select (hidden, used for value) -->
+                <select id="consoleSelector" style="display:none;">
+                    <option value="">-- Choisir une console --</option>
+                    <option value="gameboy_dmg">Gameboy DMG</option>
+                    <option value="gameboy_pocket">Gameboy Pocket</option>
+                    <option value="gameboy_color">Gameboy Color</option>
+                    <option value="gameboy_advance">Gameboy Advance</option>
+                    <option value="gameboy_advance_sp">Gameboy Advance SP</option>
+                    <option value="gamecube">GameCube</option>
+                </select>
+
+                <!-- Custom select UI -->
+                <div class="custom-select" id="custom-console-select">
+                    <div class="custom-select-trigger">
+                        <span id="select-label">Choisir une console</span>
+                    </div>
+                    <div class="custom-options">
+                        <div class="custom-option placeholder" data-value="">Choisir une console</div>
+                        <div class="custom-option" data-value="gameboy_dmg">Gameboy DMG</div>
+                        <div class="custom-option" data-value="gameboy_pocket">Gameboy Pocket</div>
+                        <div class="custom-option" data-value="gameboy_color">Gameboy Color</div>
+                        <div class="custom-option" data-value="gameboy_advance">Gameboy Advance</div>
+                        <div class="custom-option" data-value="gameboy_advance_sp">Gameboy Advance SP</div>
+                        <div class="custom-option" data-value="gamecube">GameCube</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theme toggle -->
+        <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Thème sombre/clair">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- =============================================
+         WELCOME PROMPT
+    ============================================= -->
+    <div id="welcome-prompt">
+        <div class="welcome-content">
+            <div class="welcome-badge">CONFIGURATEUR 3D</div>
+            <h2 class="welcome-title">Choisissez votre<br>console</h2>
+            <p class="welcome-hint">&#8593; Sélectionnez un modèle en haut</p>
+        </div>
+    </div>
+
+    <!-- =============================================
+         3D CANVAS CONTAINER
+    ============================================= -->
+    <div id="canvas-container">
+        <div id="loading-indicator">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Chargement...</p>
+        </div>
+    </div>
+
+    <!-- =============================================
+         CUSTOMIZATION PANEL (généré par engine.js)
+    ============================================= -->
+    <div id="customization-menu" style="display:none;"></div>
+
+    <!-- =============================================
+         SCRIPTS
+    ============================================= -->
+
+    <!-- Custom select logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const wrapper    = document.getElementById('custom-console-select');
+            const trigger    = wrapper.querySelector('.custom-select-trigger');
+            const labelEl    = document.getElementById('select-label');
+            const options    = wrapper.querySelectorAll('.custom-option');
+            const nativeSelect = document.getElementById('consoleSelector');
+
+            trigger.addEventListener('click', function () {
+                wrapper.classList.toggle('open');
+            });
+
+            options.forEach(opt => {
+                opt.addEventListener('click', function () {
+                    options.forEach(o => o.classList.remove('selected'));
+                    this.classList.add('selected');
+                    labelEl.textContent = this.textContent;
+                    nativeSelect.value  = this.dataset.value;
+                    wrapper.classList.remove('open');
+                    // Déclencher le chargement après fermeture du dropdown
+                    nativeSelect.dispatchEvent(new Event('change'));
+                });
+            });
+
+            // Fermer uniquement si clic en dehors du select
+            document.addEventListener('click', (e) => {
+                if (!wrapper.contains(e.target)) {
+                    wrapper.classList.remove('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- Main configurator module -->
+    <script type="module" src="js/configurator.js"></script>
+</body>
+</html>

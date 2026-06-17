@@ -1,0 +1,89 @@
+/* --- CONTRIBUTION PAGE --- */
+.contribution-page {
+    padding-top: 100px;
+}
+
+.contribution-content {
+    margin-bottom: 80px;
+}
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contribution-page .wiki-hero {
+    padding-bottom: 20px;
+}
+
+.contrib-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contrib-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    border-color: var(--text-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.contrib-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--accent-glow);
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.icon-pixel {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+}
+
+.contrib-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contrib-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.contrib-links {
+    width: 100%;
+}
+
+.contrib-links .btn {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contribution-grid {
+        grid-template-columns: 1fr;
+    }
+}

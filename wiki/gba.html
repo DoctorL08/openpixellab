@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez tous les mods pour la Gameboy Advance (GBA) sur OpenPixel Lab. Écrans IPS, ITA, 720p, batteries USB-C et LED.">
+    <title>Gameboy Advance Mods | OpenPixel Lab</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/console-page.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../index.html'">
+                <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <header class="console-hero">
+                <div class="badge">Console Portable</div>
+                <h1 class="console-title">Gameboy <span class="highlight">Advance</span></h1>
+                <p class="console-subtitle">L'âge d'or du 32-bit portable. Découvrez comment transformer votre GBA en une console moderne ultra-puissante.</p>
+            </header>
+
+            <!-- AFFICHAGE & VIDÉO -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Affichage & Vidéo</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <span class="mod-badge">Laminé</span>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">AGB IPS MAX Laminated Kit</h3>
+                        <p class="mod-desc">Le standard incontesté pour la GBA. Une clarté bluffante et une installation sans poussière.</p>
+                        <ul class="mod-features">
+                            <li>Image parfaitement centrée</li>
+                            <li>Vitre laminée</li>
+                            <li>Contrôle de la luminosité</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">3.0" IPS Backlight Kit M2</h3>
+                        <p class="mod-desc">Kit IPS 3 pouces de deuxième génération, plus lumineux et avec un OSD amélioré.</p>
+                        <ul class="mod-features">
+                            <li>Dalle 3.0 pouces</li>
+                            <li>OSD amélioré</li>
+                            <li>Luminosité accrue</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">ITA TFT Kit (sans découpe)</h3>
+                        <p class="mod-desc">Le kit TFT "In The Air" qui s'installe sans découpe de coque, parfait pour préserver l'original.</p>
+                        <ul class="mod-features">
+                            <li>Aucune découpe de coque</li>
+                            <li>Installation plug & play</li>
+                            <li>Idéal pour débuter</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Laminé</span>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">ITA TFT Laminated Kit (OSD)</h3>
+                        <p class="mod-desc">Version laminée du kit ITA avec menu OSD pour un contrôle total sans découpe de coque.</p>
+                        <ul class="mod-features">
+                            <li>Laminé sans découpe</li>
+                            <li>Menu OSD complet</li>
+                            <li>Meilleure qualité image</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">IPS V2 Kit (Touch Sensor)</h3>
+                        <p class="mod-desc">Kit IPS V2 avec capteur tactile pour contrôle de la luminosité au toucher.</p>
+                        <ul class="mod-features">
+                            <li>Contrôle tactile de la luminosité</li>
+                            <li>Soudure optionnelle</li>
+                            <li>Installation propre</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V5 IPS Backlight Kit</h3>
+                        <p class="mod-desc">Le kit IPS V5 d'Hispeedido avec dalle haute qualité et multiples modes d'affichage.</p>
+                        <ul class="mod-features">
+                            <li>Haute luminosité</li>
+                            <li>Plusieurs modes d'affichage</li>
+                            <li>Excellente fidélité des couleurs</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Laminé</span>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V5 IPS Laminated (OSD)</h3>
+                        <p class="mod-desc">Version laminée du V5 avec menu OSD complet pour le meilleur rendu possible sur GBA.</p>
+                        <ul class="mod-features">
+                            <li>Vitre laminée</li>
+                            <li>OSD complet</li>
+                            <li>Résolution et couleurs optimisées</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">TV Link</span>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">TFT HDMI Kit (Sortie TV)</h3>
+                        <p class="mod-desc">Jouez sur votre téléviseur moderne avec une sortie HDMI intégrée directement dans votre console.</p>
+                        <ul class="mod-features">
+                            <li>Sortie 720p propre</li>
+                            <li>Câble micro-HDMI discret</li>
+                            <li>Idéal pour le streaming</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">IPS LCD Backlight Kit</h3>
+                        <p class="mod-desc">Kit IPS accessible et fiable pour une première entrée dans le modding GBA.</p>
+                        <ul class="mod-features">
+                            <li>Bon rapport qualité/prix</li>
+                            <li>Installation accessible</li>
+                            <li>Luminosité améliorée</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">BennVenn</div>
+                        <h3 class="mod-name">GBA LCD Kits</h3>
+                        <p class="mod-desc">Des écrans alternatifs de haute qualité avec un focus sur la fidélité des couleurs.</p>
+                        <ul class="mod-features">
+                            <li>Très faible ghosting</li>
+                            <li>Gestion d'énergie intelligente</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ÉNERGIE & PERFORMANCE -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="section-name">Énergie & Performance</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice V1.3 (Li-Ion, USB-C)</h3>
+                        <p class="mod-desc">La solution USB-C Li-Po la plus populaire pour GBA. Rechargez pendant que vous jouez.</p>
+                        <ul class="mod-features">
+                            <li>1700mAh de capacité</li>
+                            <li>Recharge USB-C rapide</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice AA USB-C Pack</h3>
+                        <p class="mod-desc">Gardez le format piles AA avec un port USB-C intégré pour recharger des NiMH directement dans la GBA.</p>
+                        <ul class="mod-features">
+                            <li>Préserve le format piles AA</li>
+                            <li>Recharge USB-C des NiMH</li>
+                            <li>Aucune modification de coque</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">AGB IPS MAX Battery USB-C</h3>
+                        <p class="mod-desc">Module batterie Li-Ion USB-C conçu spécifiquement pour les kits AGB IPS MAX de FunnyPlaying.</p>
+                        <ul class="mod-features">
+                            <li>Conçu pour kit AGB IPS MAX</li>
+                            <li>Recharge USB-C</li>
+                            <li>Installation intégrée</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBA Rechargeable Battery Mod</h3>
+                        <p class="mod-desc">Module batterie rechargeable universel FunnyPlaying pour remplacer les AA de la GBA.</p>
+                        <ul class="mod-features">
+                            <li>Recharge USB-C</li>
+                            <li>Compatible tous modèles GBA</li>
+                            <li>Installation simple</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">GBA USB-C Battery 1800mAh</h3>
+                        <p class="mod-desc">Batterie Li-Po 1800mAh avec recharge USB-C intégrée pour une bonne autonomie.</p>
+                        <ul class="mod-features">
+                            <li>1800mAh de capacité</li>
+                            <li>Recharge USB-C</li>
+                            <li>Plug & Play</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">Vitesse</span>
+                        <div class="mod-brand">Division 6</div>
+                        <h3 class="mod-name">GBAccelerator (OC)</h3>
+                        <p class="mod-desc">Accélérez vos sessions de grind dans Pokémon ou RPG à 1.5x ou 2x la vitesse normale.</p>
+                        <ul class="mod-features">
+                            <li>Modes interchangeables à chaud</li>
+                            <li>Indicateur de statut</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ILLUMINATION & AUDIO -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">✨</span>
+                    <h2 class="section-name">Illumination & Audio</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <span class="mod-badge">RGB</span>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">RetroGlow GBA</h3>
+                        <p class="mod-desc">Le kit LED RGB complet pour vos boutons. Personnalisation infinie via Select + D-Pad.</p>
+                        <ul class="mod-features">
+                            <li>32 teintes disponibles</li>
+                            <li>Animations fluides</li>
+                            <li>Économie d'énergie</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <span class="mod-badge">RGB</span>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">ARC GBA (RGB LEDs)</h3>
+                        <p class="mod-desc">Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes d'animation avancés.</p>
+                        <ul class="mod-features">
+                            <li>Contrôle couleur par zone</li>
+                            <li>Modes breathing & windmill</li>
+                            <li>17 réglages disponibles</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanAmp & De-Hiss</h3>
+                        <p class="mod-desc">Améliorez le son et supprimez le sifflement permanent de la GBA.</p>
+                        <ul class="mod-features">
+                            <li>Suppression du souffle</li>
+                            <li>Volume multiplié</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">Bucket Amp GBA</h3>
+                        <p class="mod-desc">Remplace intégralement le circuit amplificateur d'origine pour un son radicalement supérieur.</p>
+                        <ul class="mod-features">
+                            <li>Remplacement complet du circuit son</li>
+                            <li>Son fort et propre</li>
+                            <li>Résultat bien au-delà d'un boost</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">Colored Speakers GBA</h3>
+                        <p class="mod-desc">Haut-parleurs de remplacement colorés pour personnaliser et améliorer le son de votre GBA.</p>
+                        <ul class="mod-features">
+                            <li>Plusieurs coloris disponibles</li>
+                            <li>Meilleur rendu sonore</li>
+                            <li>Remplacement direct</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- BOUTONS -->
+            <section class="mod-section">
+                <div class="section-header">
+                    <span class="section-icon">🔘</span>
+                    <h2 class="section-name">Boutons</h2>
+                </div>
+                <div class="mods-grid">
+                    <article class="mod-card">
+                        <span class="mod-badge">Clicky</span>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">Tactile Conversion PCB</h3>
+                        <p class="mod-desc">Remplacez les membranes souples par des switches tactiles clicky sur tous les boutons de la GBA.</p>
+                        <ul class="mod-features">
+                            <li>Tous les boutons face + gâchettes</li>
+                            <li>Feeling GBA SP sur GBA</li>
+                            <li>3 flex PCB (D-pad, A/B, Start/Select)</li>
+                        </ul>
+                    </article>
+
+                    <article class="mod-card">
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBA Custom Buttons</h3>
+                        <p class="mod-desc">Boutons de remplacement colorés pour personnaliser l'aspect de votre GBA.</p>
+                        <ul class="mod-features">
+                            <li>Large choix de coloris</li>
+                            <li>Matière de qualité</li>
+                            <li>Installation simple</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

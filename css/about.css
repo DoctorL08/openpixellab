@@ -1,0 +1,111 @@
+/* --- ABOUT PAGE --- */
+.about-page {
+    padding-top: 100px;
+}
+
+.about-content {
+    margin-bottom: 80px;
+}
+
+.story-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .story-card {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2rem;
+}
+
+.doctor-avatar {
+    font-size: 4rem;
+    background: var(--accent-glow);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--text-primary);
+    box-shadow: var(--shadow-glow);
+    overflow: hidden; /* Pour que l'image ne dépasse pas du cercle */
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2) translate(-2%, -2%);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.story-header h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+.story-body p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.story-body strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.story-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.signature {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: var(--text-primary);
+    text-align: right;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .story-card {
+        padding: 2rem;
+    }
+    
+    .story-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .story-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .story-body p {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+}
