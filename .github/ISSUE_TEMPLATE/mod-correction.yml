@@ -1,0 +1,58 @@
+name: ✏️ Correction d'un mod
+description: Proposer une correction, une mise à jour ou un ajout sur une fiche mod du wiki.
+title: "[Correction] "
+labels: ["correction-wiki"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci d'aider à améliorer **OpenPixel Lab** ! 🙌
+        Ta proposition sera relue par un modérateur avant d'être publiée. Sois précis, et ajoute une source si tu en as une.
+  - type: input
+    id: console
+    attributes:
+      label: Console
+      description: La console concernée (pré-remplie si tu viens d'une fiche).
+      placeholder: "ex. Game Boy DMG"
+    validations:
+      required: true
+  - type: input
+    id: mod
+    attributes:
+      label: Mod concerné
+      description: Le nom du mod (pré-rempli si tu viens d'une fiche).
+      placeholder: "ex. RetroPixel IPS Q5 Kit"
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Quel élément veux-tu corriger ?
+      options:
+        - Description / rédaction (fautes, clarté)
+        - Prix
+        - Difficulté d'installation
+        - Lien d'achat
+        - Spécifications techniques
+        - Prérequis / compatibilité
+        - Photo du mod
+        - Nouveau mod à ajouter
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Ta proposition
+      description: Décris précisément la correction ou la nouvelle information.
+      placeholder: "ex. Le prix réel est plutôt autour de 40 €, pas 25 €."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (optionnel mais apprécié)
+      description: Un lien (page produit, review, wiki) qui appuie ta proposition.
+      placeholder: "https://..."
+    validations:
+      required: false

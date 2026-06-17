@@ -2,6 +2,7 @@
 // Source de vérité unique pour header/footer/head : éditer ICI, pas dans chaque HTML.
 
 const DISCORD = "https://discord.gg/jgE5CAmXw2";
+const REPO = "https://github.com/DoctorL08/openpixellab";
 
 export function escapeHtml(s = "") {
   return String(s)
@@ -171,8 +172,17 @@ function sources(srcs) {
     .join(" · ")}</p>`;
 }
 
-export function modCard(mod) {
+export function modCard(mod, ctx = {}) {
   const badge = mod.badge ? `<span class="mod-badge">${escapeHtml(mod.badge)}</span>` : "";
+
+  // Lien "Proposer une correction" → issue GitHub pré-remplie (contribution communautaire)
+  const issueTitle = `[Correction] ${ctx.consoleName || ""} — ${mod.name}`;
+  const issueUrl =
+    `${REPO}/issues/new?template=mod-correction.yml` +
+    `&title=${encodeURIComponent(issueTitle)}` +
+    `&console=${encodeURIComponent(ctx.consoleName || "")}` +
+    `&mod=${encodeURIComponent(`${mod.name} (id: ${mod.id})`)}`;
+  const suggest = `<a class="mod-suggest" href="${issueUrl}" target="_blank" rel="noopener nofollow" title="Signaler une erreur ou proposer une amélioration">✏️ Proposer une correction</a>`;
   const metaBits = [];
   if (mod.difficulty) metaBits.push(`<div class="mod-meta-item">${difficultyDots(mod.difficulty)}</div>`);
   if (mod.price) metaBits.push(`<div class="mod-meta-item mod-price">${escapeHtml(mod.price)}</div>`);
@@ -198,10 +208,11 @@ export function modCard(mod) {
                         <div class="mod-proscons">${pros}${cons}</div>
                         ${buyLinks(mod.buyLinks)}
                         ${sources(mod.sources)}
+                        <div class="mod-footer-actions">${suggest}</div>
                     </article>`;
 }
 
-function section(sec) {
+function section(sec, ctx) {
   const intro = sec.intro ? `<p class="section-intro">${escapeHtml(sec.intro)}</p>` : "";
   return `            <section class="mod-section" id="section-${escapeHtml(sec.id)}">
                 <div class="section-header">
@@ -210,7 +221,7 @@ function section(sec) {
                 </div>
                 ${intro}
                 <div class="mods-grid">
-${sec.mods.map(modCard).join("\n")}
+${sec.mods.map((m) => modCard(m, ctx)).join("\n")}
                 </div>
             </section>`;
 }
@@ -294,7 +305,7 @@ ${tools}
 
             <nav class="console-toc" aria-label="Sommaire des sections">${toc}</nav>
 
-${c.sections.map(section).join("\n\n")}
+${c.sections.map((s) => section(s, { consoleName: c.name, slug: c.slug })).join("\n\n")}
 
             ${srcLine}
         </div>
