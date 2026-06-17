@@ -20,6 +20,7 @@ async function build() {
   }
 
   let count = 0;
+  const index = [];
   for (const file of files) {
     const raw = await readFile(join(DATA_DIR, file), "utf8");
     let data;
@@ -37,8 +38,31 @@ async function build() {
       .flatMap((s) => s.mods)
       .filter((m) => Array.isArray(m.needsReview) && m.needsReview.length).length;
     console.log(`✓ wiki/${data.slug}.html  (${data.sections.reduce((n, s) => n + s.mods.length, 0)} mods, ${flagged} à valider)`);
+
+    // Entrée d'index de recherche (consommée par js/wiki-search.js)
+    index.push({
+      slug: data.slug,
+      name: data.name,
+      fullName: data.fullName,
+      icon: data.icon || "",
+      category: data.category,
+      year: data.year,
+      url: `wiki/${data.slug}.html`,
+      mods: data.sections.flatMap((s) =>
+        s.mods.map((m) => ({ id: m.id, name: m.name, brand: m.brand || "", section: s.name }))
+      ),
+    });
     count++;
   }
+
+  // Index de recherche global (pas de fetch → fonctionne aussi en file://)
+  index.sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  const indexJs =
+    "// Généré automatiquement par build/build.mjs — NE PAS ÉDITER À LA MAIN.\n" +
+    `window.OPL_WIKI_INDEX = ${JSON.stringify(index, null, 2)};\n`;
+  await writeFile(join(ROOT, "js", "wiki-index.js"), indexJs, "utf8");
+  console.log(`✓ js/wiki-index.js  (${index.length} consoles, ${index.reduce((n, c) => n + c.mods.length, 0)} mods indexés)`);
+
   console.log(`\n${count} page(s) générée(s).`);
 }
 

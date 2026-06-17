@@ -654,6 +654,73 @@ h1, h2, h3, h4, .badge {
     border-color: var(--text-primary);
 }
 
+/* Résultats de recherche live */
+.wiki-search-results {
+    max-width: 560px;
+    margin: 0.75rem auto 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 60vh;
+    overflow-y: auto;
+    text-align: left;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+.wiki-search-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    transition: background var(--transition-fast);
+}
+.wiki-search-item:last-child { border-bottom: none; }
+.wiki-search-item:hover { background: var(--bg-card-hover); }
+.wsi-icon { font-size: 1.2rem; flex-shrink: 0; }
+.wsi-body { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.wsi-label { color: var(--text-primary); font-weight: 600; }
+.wsi-sub { color: var(--text-muted); font-size: 0.82rem; }
+.wsi-type {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.wsi-type--console { color: var(--text-secondary); border-color: var(--text-secondary); }
+.wiki-search-empty { padding: 1rem; color: var(--text-muted); text-align: center; font-size: 0.9rem; }
+
+/* Consoles pas encore documentées */
+.model-soon {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: default;
+}
+.model-soon::before {
+    content: '►';
+    font-size: 0.8rem;
+    margin-right: 8px;
+    color: var(--text-muted);
+    opacity: 0.4;
+}
+.soon-badge {
+    margin-left: 0.5rem;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
+    border: 1px dashed var(--border-color);
+    color: var(--text-muted);
+}
+
 /* Accordion Styles */
 .wiki-content {
     padding-bottom: 80px;

@@ -52,7 +52,7 @@
                 <p class="hero-subtitle" data-i18n="wiki_subtitle">Parcourez notre encyclopédie collaborative pour découvrir l'ensemble des mods et améliorations disponibles pour vos consoles préférées.</p>
                 
                 <div class="search-bar">
-                    <input type="text" placeholder="Rechercher une console, un mod..." data-i18n-placeholder="wiki_search_placeholder">
+                    <input type="text" id="wiki-search-input" autocomplete="off" placeholder="Rechercher une console, un mod..." data-i18n-placeholder="wiki_search_placeholder">
                     <button class="btn btn-primary" data-i18n="wiki_search_btn">Rechercher</button>
                 </div>
             </div>
@@ -86,9 +86,9 @@
                                             <li><a href="wiki/gbc.html">Gameboy Color</a></li>
                                             <li><a href="wiki/gba.html">Gameboy Advance</a></li>
                                             <li><a href="wiki/gbasp.html">Gameboy Advance SP</a></li>
-                                            <li><a href="#">Nintendo DS</a></li>
-                                            <li><a href="#">Nintendo DS Lite</a></li>
-                                            <li><a href="#">Nintendo DSi</a></li>
+                                            <li><span class="model-soon">Nintendo DS<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">Nintendo DS Lite<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">Nintendo DSi<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -100,11 +100,11 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">NES / Famicom</a></li>
-                                            <li><a href="#">SNES / Super Famicom</a></li>
+                                            <li><span class="model-soon">NES / Famicom<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">SNES / Super Famicom<span class="soon-badge">Bientôt</span></span></li>
                                             <li><a href="wiki/n64.html">Nintendo 64</a></li>
                                             <li><a href="wiki/gamecube.html">GameCube</a></li>
-                                            <li><a href="#">Wii</a></li>
+                                            <li><span class="model-soon">Wii<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -131,11 +131,11 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">PSP 1000</a></li>
-                                            <li><a href="#">PSP 2000</a></li>
-                                            <li><a href="#">PSP 3000</a></li>
-                                            <li><a href="#">PS Vita 1000</a></li>
-                                            <li><a href="#">PS Vita 2000</a></li>
+                                            <li><span class="model-soon">PSP 1000<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">PSP 2000<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">PSP 3000<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">PS Vita 1000<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">PS Vita 2000<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -147,8 +147,8 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">PlayStation 1</a></li>
-                                            <li><a href="#">PlayStation 2</a></li>
+                                            <li><span class="model-soon">PlayStation 1<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">PlayStation 2<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -175,8 +175,8 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">GameGear</a></li>
-                                            <li><a href="#">Nomad</a></li>
+                                            <li><span class="model-soon">GameGear<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">Nomad<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -188,9 +188,9 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">Master System</a></li>
-                                            <li><a href="#">Mega Drive</a></li>
-                                            <li><a href="#">Dreamcast</a></li>
+                                            <li><span class="model-soon">Master System<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">Mega Drive<span class="soon-badge">Bientôt</span></span></li>
+                                            <li><span class="model-soon">Dreamcast<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -217,7 +217,7 @@
                                     </button>
                                     <div class="accordion-content">
                                         <ul class="models-list">
-                                            <li><a href="#">Neo Geo Pocket</a></li>
+                                            <li><span class="model-soon">Neo Geo Pocket<span class="soon-badge">Bientôt</span></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -260,6 +260,8 @@
         </div>
     </footer>
     
+    <script src="js/wiki-index.js"></script>
+    <script src="js/wiki-search.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
