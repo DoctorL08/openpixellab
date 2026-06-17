@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez tous les mods pour la Nintendo 64 sur OpenPixel Lab. N64Digital, UltraHDMI, RGB mods et joysticks Hall Effect.">
-    <title>Nintendo 64 Mods | OpenPixel Lab</title>
+    <meta name="description" content="Guide des mods Nintendo 64 : sorties HDMI numériques (PixelFX N64Digital, UltraHDMI, GameBox 64HD, Hispeedido), RGB analogique, joysticks à effet Hall sans drift, Expansion Pak et région. Difficulté, prix, prérequis.">
     
+    <title>Mods Nintendo 64 — HDMI (N64Digital), RGB, Hall Effect | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mods Nintendo 64 — HDMI (N64Digital), RGB, Hall Effect | OpenPixel Lab">
+    <meta property="og:description" content="Guide des mods Nintendo 64 : sorties HDMI numériques (PixelFX N64Digital, UltraHDMI, GameBox 64HD, Hispeedido), RGB analogique, joysticks à effet Hall sans drift, Expansion Pak et région. Difficulté, prix, prérequis.">
+    <meta property="og:image" content="../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../Images/Logo OpenPixel Lab.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/console-page.css">
@@ -21,7 +31,7 @@
 
     <header class="header">
         <div class="container nav-container">
-            <div class="logo-container" onclick="window.location.href='../index.html'">
+            <div class="logo-container" onclick="window.location.href='../index.html'" style="cursor:pointer;">
                 <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
                 <span class="logo-text">OpenPixel Lab</span>
             </div>
@@ -31,7 +41,7 @@
                     <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
                     <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
                     <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
-                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <a href="../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
                     <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
                         <span class="lang-icon">FR</span>
                     </button>
@@ -48,113 +58,177 @@
 
     <main class="console-page">
         <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="../index.html">Accueil</a> ›
+                <a href="../wiki.html">Wiki</a> ›
+                <span>Nintendo 64</span>
+            </nav>
+
             <header class="console-hero">
-                <div class="badge">Console de Salon</div>
+                <div class="badge">Console de salon</div>
                 <h1 class="console-title">Nintendo <span class="highlight">64</span></h1>
                 <p class="console-subtitle">La révolution de la 3D. Modernisez votre N64 pour obtenir une image nette sur vos écrans plats modernes.</p>
+                <div class="console-stats">
+                    <span>1996</span> · <span>9 mods référencés</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../configurator.html">🎨 Personnaliser en 3D</a>
+                <a class="cross-link" href="../comparator.html">⚖️ Comparer des setups</a>
+            </div>
             </header>
 
-            <!-- VIDÉO HDMI -->
-            <section class="mod-section">
+            <p class="console-intro">La Nintendo 64 (1996) souffre sur les téléviseurs modernes : sortie composite floue, joystick qui s'use et drifte, et une image dégradée par défaut. Les mods de référence visent trois objectifs : retrouver une image nette (HDMI numérique ou RGB analogique), fiabiliser les manettes (stick à effet Hall, sans drift) et débloquer le potentiel logiciel (Expansion Pak, région). Voici les mods classés par domaine, du plug-and-play à l'installation experte.</p>
+
+            <nav class="console-toc" aria-label="Sommaire des sections"><a href="#section-video" class="console-toc-link">📺 Vidéo &amp; HDMI</a><a href="#section-controls" class="console-toc-link">🕹️ Contrôles &amp; Matériel</a></nav>
+
+            <section class="mod-section" id="section-video">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
-                    <h2 class="section-name">Vidéo & HDMI</h2>
+                    <h2 class="section-name">Vidéo &amp; HDMI</h2>
                 </div>
+                <p class="section-intro">Le mod le plus transformateur sur N64 : remplacer la sortie composite/S-Video floue par un signal numérique HDMI propre, ou par du RGB analogique pour les CRT et scalers externes. Les kits HDMI internes demandent presque tous une soudure de niveau avancé directement sur les pattes des puces de la carte mère.</p>
                 <div class="mods-grid">
-                    <!-- N64DIGITAL -->
-                    <article class="mod-card">
-                        <span class="mod-badge">Premium</span>
+                    <article class="mod-card" id="n64_n64digital">
+                        <div class="mod-card-top"><span class="mod-badge">Premium</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit HDMI numérique N64Digital PixelFX pour Nintendo 64"><span>📷</span></div>
                         <div class="mod-brand">PixelFX</div>
                         <h3 class="mod-name">N64Digital</h3>
-                        <p class="mod-desc">La meilleure sortie HDMI possible pour N64. Un signal 1080p cristallin avec Wi-Fi pour les mises à jour.</p>
-                        <ul class="mod-features">
-                            <li>Image parfaite pixel-to-pixel</li>
-                            <li>Désentrelacement avancé</li>
-                            <li>Scanlines et filtres rétro</li>
-                        </ul>
+                        <p class="mod-desc">La meilleure sortie HDMI possible pour N64. Un signal numérique cristallin jusqu'à 1080p avec Wi-Fi pour les mises à jour.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Expert"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="mod-diff-label">Expert</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 2–4 h</div><div class="mod-meta-item">🔧 Oui (expert, flex + PCB)</div></div>
+                        <ul class="mod-features"><li>Sortie HDMI numérique lag-free jusqu'à 1080p</li><li>RGB/YPbPr analogique simultané via le multiout</li><li>VI De-blur, scanlines, filtres et lissage</li><li>Mises à jour firmware par Wi-Fi</li><li>Compatible toutes régions et modèles (hors Pikachu sans entretoise)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>HDMI numérique</dd></div><div><dt>Résolution</dt><dd>jusqu'à 1080p</dd></div><div><dt>Sortie analogique</dt><dd>RGB/YPbPr via multiout</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Station de soudure fine, Expérience en micro-soudure, Découpe de coque (sauf solution sans découpe)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Qualité d'image de référence</li><li>Désentrelacement et scaling avancés</li><li>Sorties HDMI + analogique en parallèle</li><li>Firmware évolutif via Wi-Fi</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Cher</li><li>Soudure de niveau expert (flex + PCB)</li><li>Découpe de coque requise pour le mini-HDMI (sauf solution sans découpe Laser Bear)</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.pixelfx.co/product-page/n64-hdmi" target="_blank" rel="noopener nofollow">PixelFX ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://docs.pixelfx.co/N64Digital-Details.html" target="_blank" rel="noopener">PixelFX — N64Digital Details</a> · <a href="https://retrorgb.com/n64digital-mod-announced-by-pixel-fx.html" target="_blank" rel="noopener">RetroRGB — N64Digital Mod Announced</a></p>
                     </article>
-
-                    <!-- ULTRAHDMI -->
-                    <article class="mod-card">
-                        <div class="mod-brand">Retro-Active</div>
+                    <article class="mod-card" id="n64_ultrahdmi">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit HDMI UltraHDMI pour Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">Marshallh</div>
                         <h3 class="mod-name">UltraHDMI</h3>
-                        <p class="mod-desc">Le mod HDMI "historique" réputé pour sa fidélité et son mode de dé-blur unique.</p>
-                        <ul class="mod-features">
-                            <li>Fonction De-Blur intégrée</li>
-                            <li>Scaling haute qualité</li>
-                            <li>Menu de configuration complet</li>
-                        </ul>
+                        <p class="mod-desc">Le mod HDMI historique, réputé pour sa fidélité et son mode de dé-blur unique salué par la communauté.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Expert"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="mod-diff-label">Expert</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 2–4 h</div><div class="mod-meta-item">🔧 Oui (expert)</div></div>
+                        <ul class="mod-features"><li>Sortie HDMI numérique</li><li>VI De-blur reconnu comme l'un des meilleurs</li><li>Scaling haute qualité</li><li>Menu de configuration complet</li><li>Options de sortie analogique sur les révisions récentes</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>HDMI numérique</dd></div><div><dt>Fonction</dt><dd>VI De-blur</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Expérience en micro-soudure, Trouver un stock (group buy / installateur)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Qualité d'image de référence</li><li>De-blur excellent</li><li>Configuration poussée</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Disponibilité très limitée (group buys / installateurs)</li><li>Cher</li><li>Soudure de niveau expert</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://consolemods.org/wiki/N64:UltraHDMI_(HDMI)" target="_blank" rel="noopener">ConsoleMods Wiki — UltraHDMI</a> · <a href="https://www.retrorgb.com/ultrahdmi.html" target="_blank" rel="noopener">RetroRGB — UltraHDMI</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <div class="mod-brand">Borti / Tim Worthington</div>
-                        <h3 class="mod-name">RGB Mod Kit</h3>
-                        <p class="mod-desc">La solution idéale pour les possesseurs de CRT ou de scalers externes (OSSC, RetroTINK).</p>
-                        <ul class="mod-features">
-                            <li>Signal RGB analogique pur</li>
-                            <li>Indispensable pour les modèles FR/EU</li>
-                            <li>Qualité d'image pro</li>
-                        </ul>
+                    <article class="mod-card" id="n64_64hd">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit HDMI interne 64HD GameBox Systems pour Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">GameBox Systems</div>
+                        <h3 class="mod-name">64HD (HDMI interne)</h3>
+                        <p class="mod-desc">Alternative haut de gamme au N64Digital : sortie HDMI interne sans découpe de coque, avec un ensemble de fonctions complet.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Expert"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="mod-diff-label">Expert</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 2–3 h</div><div class="mod-meta-item">🔧 Oui (avancé)</div></div>
+                        <ul class="mod-features"><li>Sortie HDMI interne sans découpe</li><li>Résolutions 1080i60 / 720p60 / 480p60 / 240p60</li><li>Modes de scaling (1:1, plein écran, linéaire, overscan)</li><li>VI De-blur, filtres pixel et scanlines</li><li>Compatible toutes régions (PAL &amp; NTSC)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>HDMI numérique interne</dd></div><div><dt>Résolutions</dt><dd>1080i / 720p / 480p / 240p</dd></div><div><dt>De-blur</dt><dd>Oui</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Expérience en micro-soudure</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Sans découpe de coque</li><li>Riche en options de scaling et filtres</li><li>Excellente qualité d'image</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure de niveau avancé sur les pattes des puces</li><li>Prix élevé</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.game-tech.us/product/64hd/" target="_blank" rel="noopener nofollow">Game-Tech ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrorgb.com/a-new-internal-hdmi-mod-for-the-nintendo-64-gamebox-64hd.html" target="_blank" rel="noopener">RetroRGB — GameBox 64HD Internal HDMI Mod</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <div class="mod-brand">Gamebox Systems</div>
-                        <h3 class="mod-name">64HD (HDMI Interne)</h3>
-                        <p class="mod-desc">Alternative accessible au N64Digital. Sortie HDMI interne avec un bon ensemble de fonctionnalités pour un prix réduit.</p>
-                        <ul class="mod-features">
-                            <li>Sortie HDMI interne</li>
-                            <li>Scaling et filtres intégrés</li>
-                            <li>Prix plus accessible</li>
-                        </ul>
-                    </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="n64_hispeedido_hdmi">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit HDMI 720p Hispeedido pour Nintendo 64"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
                         <h3 class="mod-name">N64HDMI (720p)</h3>
-                        <p class="mod-desc">Solution d'entrée de gamme pour passer en HDMI 720p sur N64, idéale pour un budget limité.</p>
-                        <ul class="mod-features">
-                            <li>Sortie 720p</li>
-                            <li>Installation accessible</li>
-                            <li>Bon rapport qualité/prix</li>
-                        </ul>
+                        <p class="mod-desc">Solution HDMI d'entrée de gamme pour passer en 720p sur N64, idéale pour un budget limité.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Oui (avancé)</div></div>
+                        <ul class="mod-features"><li>Sortie HDMI 720p</li><li>3 réglages d'aspect ratio</li><li>8 modes couleur via OSD</li><li>OSD piloté à la manette</li><li>Compatible toutes régions (hors Pikachu)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>HDMI numérique</dd></div><div><dt>Résolution</dt><dd>720p</dd></div><div><dt>OSD</dt><dd>Oui</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Expérience en micro-soudure</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Le meilleur rapport qualité/prix pour passer en HDMI</li><li>OSD à la manette</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Options limitées (pas de scaling avancé ni de de-blur comparable)</li><li>Soudure avancée requise sur les pattes des puces</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.us/products/n64-hdmi-output-mod-hispeedido" target="_blank" rel="noopener nofollow">RetroSix US ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.oldskoolconsoles.com/product-page/n64-hdmi-hispeedido-720p-mod-kit" target="_blank" rel="noopener">Hispeedido N64 HDMI 720p — oldskoolconsoles</a></p>
+                    </article>
+                    <article class="mod-card" id="n64_rgb_mod">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit RGB analogique N64RGB Tim Worthington pour Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">Tim Worthington</div>
+                        <h3 class="mod-name">N64RGB Mod Kit</h3>
+                        <p class="mod-desc">La solution idéale pour les possesseurs de CRT ou de scalers externes (OSSC, RetroTINK) : un signal RGB analogique propre.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Signal RGB analogique pur</li><li>Compatible tous modèles, NTSC comme PAL</li><li>Fonction de-blur sur certaines versions</li><li>Indispensable pour profiter du RGB sur les modèles EU/FR</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>RGB analogique</dd></div><div><dt>Compatibilité</dt><dd>Tous modèles NTSC/PAL</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Câble RGB SCART/multiout, Scaler externe (OSSC/RetroTINK) ou écran CRT RGB</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Qualité d'image pro sur CRT/scaler</li><li>Compatible toutes les révisions de carte</li><li>Mod réversible</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li><li>Pas de sortie HDMI directe (nécessite un scaler externe)</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.oldskoolconsoles.com/product-page/n64rgb-kit-with-deblur-feature-1" target="_blank" rel="noopener nofollow">oldskoolconsoles ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://etim.net.au/n64rgb/" target="_blank" rel="noopener">etim.net.au — N64RGB</a> · <a href="https://consolemods.org/wiki/N64:RGB-Compatible_Systems" target="_blank" rel="noopener">ConsoleMods Wiki — RGB Compatible Systems</a></p>
                     </article>
                 </div>
             </section>
 
-            <!-- CONTRÔLES & ACCESSOIRES -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-controls">
                 <div class="section-header">
                     <span class="section-icon">🕹️</span>
-                    <h2 class="section-name">Contrôles & Matériel</h2>
+                    <h2 class="section-name">Contrôles &amp; Matériel</h2>
                 </div>
+                <p class="section-intro">Le talon d'Achille de la N64 : le joystick mécanique d'origine s'use vite et finit par drifter. Le remplacer (effet Hall ou pièce d'origine) transforme l'expérience. Cette section couvre aussi la RAM et la région.</p>
                 <div class="mods-grid">
-                    <!-- HALL EFFECT -->
-                    <article class="mod-card">
-                        <span class="mod-badge">Nouveauté</span>
-                        <div class="mod-brand">8BitDo / Custom</div>
-                        <h3 class="mod-name">Hall Effect Joystick</h3>
-                        <p class="mod-desc">Remplacez le joystick original fragile par une version magnétique inusable (zéro drift).</p>
-                        <ul class="mod-features">
-                            <li>Précision chirurgicale</li>
-                            <li>Aucune usure physique</li>
-                            <li>Sensation proche de l'original</li>
-                        </ul>
+                    <article class="mod-card" id="n64_hall_stick">
+                        <div class="mod-card-top"><span class="mod-badge">Nouveauté</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Module joystick à effet Hall Retro-Bit pour manette Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">Retro-Bit</div>
+                        <h3 class="mod-name">Stick à effet Hall (module analogique)</h3>
+                        <p class="mod-desc">Remplacez le joystick mécanique fragile par un module magnétique à effet Hall, inusable et sans drift.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Capteurs à effet Hall (aucune usure mécanique)</li><li>Module au format d'origine de la manette</li><li>Style GameCube (Tribute64)</li><li>Installation au tournevis, sans soudure</li></ul>
+                        <dl class="mod-specs"><div><dt>Technologie</dt><dd>Effet Hall</dd></div><div><dt>Montage</dt><dd>Plug-and-play (tournevis)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Tournevis tri-wing pour ouvrir la manette</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Élimine le drift définitivement</li><li>Précision durable</li><li>Installation simple, sans soudure</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Sensation différente du stick d'origine</li><li>Course/feeling à ajuster selon les goûts</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://retrorgb.com/hall-effect-n64-analog-stick-kit-by-retro-bit.html" target="_blank" rel="noopener">RetroRGB — Hall Effect N64 Analog Stick Kit by Retro-Bit</a> · <a href="https://www.gamesradar.com/hardware/retro/i-just-upgraded-nintendos-driftiest-controller-with-a-hall-effect-thumb-stick-but-this-n64-mod-wont-be-for-everyone/" target="_blank" rel="noopener">GamesRadar — N64 Hall Effect thumbstick mod</a></p>
                     </article>
-
-                    <!-- EXPANSION PAK -->
-                    <article class="mod-card">
-                        <span class="mod-badge">Essentiel</span>
+                    <article class="mod-card" id="n64_stick_oem">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit de réparation joystick d'origine Kitsch-Bent pour manette Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">Kitsch-Bent</div>
+                        <h3 class="mod-name">Kit de réparation joystick (style origine)</h3>
+                        <p class="mod-desc">Remplacement fidèle au design Nintendo d'origine pour restaurer un joystick fatigué ou en drift.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Pièces fidèles au design d'origine</li><li>Restaure la sensation d'origine</li><li>Jeux d'engrenages et thumbstick disponibles séparément</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Module mécanique d'origine</dd></div><div><dt>Montage</dt><dd>Tournevis</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Tournevis tri-wing pour ouvrir la manette</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Sensation proche de l'origine</li><li>Pas cher</li><li>Installation sans soudure</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Reste une pièce mécanique (usure à terme)</li><li>Léger deadzone possible selon les lots</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://store.kitsch-bent.com/products/n64-joystick-repair-kit" target="_blank" rel="noopener nofollow">Kitsch-Bent ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://store.kitsch-bent.com/products/n64-joystick-repair-kit" target="_blank" rel="noopener">Kitsch-Bent — N64 Joystick Repair Kit</a></p>
+                    </article>
+                    <article class="mod-card" id="n64_expansion_pak">
+                        <div class="mod-card-top"><span class="mod-badge">Essentiel</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Expansion Pak 8 Mo pour Nintendo 64"><span>📷</span></div>
                         <div class="mod-brand">Nintendo / Generic</div>
                         <h3 class="mod-name">Expansion Pak</h3>
-                        <p class="mod-desc">Doublez la RAM de votre console pour accéder à des résolutions supérieures et aux meilleurs jeux.</p>
-                        <ul class="mod-features">
-                            <li>4MB -> 8MB de RAM</li>
-                            <li>Requis pour Majora's Mask / DK64</li>
-                            <li>Meilleures textures sur certains jeux</li>
-                        </ul>
+                        <p class="mod-desc">Doublez la RAM de votre console pour débloquer des résolutions supérieures et accéder aux jeux qui l'exigent.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 5 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Passe de 4 Mo à 8 Mo de RAM</li><li>Requis pour Majora's Mask et Donkey Kong 64</li><li>Meilleures résolutions/textures sur certains jeux</li></ul>
+                        <dl class="mod-specs"><div><dt>RAM</dt><dd>4 Mo → 8 Mo</dd></div><div><dt>Montage</dt><dd>Slot mémoire</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Outil d'extraction du Jumper Pak (fourni avec l'Expansion Pak d'origine)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Indispensable pour certains titres</li><li>Installation immédiate (slot dédié)</li><li>Réversible</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Modèles d'origine parfois chers</li><li>Les Jumper Pak doit être retiré</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://consolemods.org/wiki/N64:N64_Mods_Wiki" target="_blank" rel="noopener">ConsoleMods Wiki — N64 Mods Wiki</a></p>
+                    </article>
+                    <article class="mod-card" id="n64_region_mod">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Adaptateur de tray région pour Nintendo 64"><span>📷</span></div>
+                        <div class="mod-brand">Générique</div>
+                        <h3 class="mod-name">Mod région / adaptateur de tray</h3>
+                        <p class="mod-desc">Jouez aux imports NTSC : un adaptateur de tray (ou la modification du tiroir cartouche) débloque les jeux US/JP sur une console NTSC.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 15–30 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Tiroir adaptateur pour accepter cartouches US et JP</li><li>Aucune soudure (échange du tray ou retrait du bloc)</li><li>Entièrement réversible</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Région NTSC (US ↔ JP)</dd></div><div><dt>Montage</dt><dd>Tray / tiroir cartouche</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Tournevis gamebit (sécurité)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Accès aux imports NTSC</li><li>Réversible</li><li>Pas de soudure</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Ne rend pas une console NTSC compatible PAL et inversement (différences matérielles)</li><li>Tournevis gamebit requis</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://racketboy.com/retro/how-to-mod-the-n64-to-play-imports-region-mod" target="_blank" rel="noopener">Racketboy — How To Mod The N64 To Play Imports</a></p>
                     </article>
                 </div>
             </section>
+
+            <p class="console-sources">Sources générales : <a href="https://consolemods.org/wiki/N64:N64_Mods_Wiki" target="_blank" rel="noopener">ConsoleMods Wiki — N64 Mods</a> · <a href="https://retrorgb.com/n64rgbcompatible.html" target="_blank" rel="noopener">RetroRGB — N64 RGB Compatible Systems</a></p>
         </div>
     </main>
 
@@ -187,7 +261,7 @@
             <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
         </div>
     </footer>
-    
+
     <script src="../js/script.js"></script>
 </body>
 </html>

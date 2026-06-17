@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez tous les mods disponibles pour la Gameboy Color sur OpenPixel Lab. Écrans OLED, IPS, batteries USB-C et plus.">
-    <title>Gameboy Color Mods | OpenPixel Lab</title>
+    <meta name="description" content="Guide complet des mods pour la Game Boy Color (CGB-001) : kits écran IPS et AMOLED laminés (FunnyPlaying, Hispeedido, BennVenn), batteries USB-C/Qi, LED RGB, amplis audio et boutons. Difficulté, prix, soudure et prérequis.">
     
+    <title>Mods Game Boy Color (GBC) — Écrans IPS/AMOLED, USB-C, RGB, Audio | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mods Game Boy Color (GBC) — Écrans IPS/AMOLED, USB-C, RGB, Audio | OpenPixel Lab">
+    <meta property="og:description" content="Guide complet des mods pour la Game Boy Color (CGB-001) : kits écran IPS et AMOLED laminés (FunnyPlaying, Hispeedido, BennVenn), batteries USB-C/Qi, LED RGB, amplis audio et boutons. Difficulté, prix, soudure et prérequis.">
+    <meta property="og:image" content="../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../Images/Logo OpenPixel Lab.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/console-page.css">
@@ -21,7 +31,7 @@
 
     <header class="header">
         <div class="container nav-container">
-            <div class="logo-container" onclick="window.location.href='../index.html'">
+            <div class="logo-container" onclick="window.location.href='../index.html'" style="cursor:pointer;">
                 <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
                 <span class="logo-text">OpenPixel Lab</span>
             </div>
@@ -31,7 +41,7 @@
                     <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
                     <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
                     <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
-                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <a href="../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
                     <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
                         <span class="lang-icon">FR</span>
                     </button>
@@ -48,278 +58,351 @@
 
     <main class="console-page">
         <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="../index.html">Accueil</a> ›
+                <a href="../wiki.html">Wiki</a> ›
+                <span>Game Boy Color</span>
+            </nav>
+
             <header class="console-hero">
                 <div class="badge">Console Portable</div>
-                <h1 class="console-title">Gameboy <span class="highlight">Color</span></h1>
+                <h1 class="console-title">Game Boy <span class="highlight">Color</span></h1>
                 <p class="console-subtitle">La console qui a apporté la couleur au creux de la main. Découvrez comment la moderniser avec les meilleures technologies actuelles.</p>
+                <div class="console-stats">
+                    <span>1998</span> · <span>20 mods référencés</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../configurator.html">🎨 Personnaliser en 3D</a>
+                <a class="cross-link" href="../comparator.html">⚖️ Comparer des setups</a>
+            </div>
             </header>
 
-            <!-- AFFICHAGE -->
-            <section class="mod-section">
+            <p class="console-intro">La Game Boy Color (1998) reste l'une des plateformes de modding portables les plus populaires. Son écran réflectif d'origine se prête parfaitement à un remplacement IPS ou AMOLED, et son électronique compacte accueille batteries USB-C, régulateurs propres, kits LED RGB et amplificateurs audio. Voici les mods de référence, classés par domaine, avec difficulté, soudure et prérequis.</p>
+
+            <nav class="console-toc" aria-label="Sommaire des sections"><a href="#section-display" class="console-toc-link">📺 Affichage</a><a href="#section-power" class="console-toc-link">⚡ Énergie &amp; Performance</a><a href="#section-audio" class="console-toc-link">✨ Illumination &amp; Audio</a><a href="#section-buttons" class="console-toc-link">🔘 Boutons</a></nav>
+
+            <section class="mod-section" id="section-display">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
                     <h2 class="section-name">Affichage</h2>
                 </div>
+                <p class="section-intro">Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS ou AMOLED rétroéclairé. La plupart des kits demandent une coque adaptée (laminée/IPS-ready) ou une découpe, et une alimentation stabilisée (voir CleanPower dans Énergie).</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_fp_retropixel">
+                        <div class="mod-card-top"><span class="mod-badge">Populaire</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS RetroPixel FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">RetroPixel IPS LCD Kit</h3>
                         <p class="mod-desc">Le kit IPS de référence FunnyPlaying pour GBC, avec rendu pixel-perfect et contrôle de luminosité.</p>
-                        <ul class="mod-features">
-                            <li>Zone d'affichage agrandie</li>
-                            <li>Luminosité réglable</li>
-                            <li>Modes scanlines</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Minimale (fil d'alimentation pour luminosité max)</div></div>
+                        <ul class="mod-features"><li>Zone d'affichage agrandie</li><li>Luminosité réglable</li><li>Modes scanlines / effets pixel</li><li>Logo rétroéclairé personnalisable</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Q5</dd></div><div><dt>OSD</dt><dd>Oui</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Coque IPS-ready ou découpe, CleanPower recommandé</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Image nette et lumineuse</li><li>Effets pixel et palettes</li><li>Écosystème FunnyPlaying complet (coques, LED)</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Découpe de coque nécessaire hors coque IPS-ready</li><li>CleanPower recommandé</li><li>Soudure d'un fil pour la luminosité max</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" target="_blank" rel="noopener">Handheld Legend — GBC Retro Pixel Q5 IPS</a> · <a href="https://docs.handheldlegend.com/s/portal/doc/ips-lcd-kit-tBBmn80iqm" target="_blank" rel="noopener">Handheld Legend — IPS LCD Kit docs</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">Laminé</span>
+                    <article class="mod-card" id="gbc_fp_q5_laminated">
+                        <div class="mod-card-top"><span class="mod-badge">Laminé</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS laminé Q5 V2.0 FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">IPS Laminated Q5 V2.0</h3>
-                        <p class="mod-desc">Le choix de référence pour une image nette et un écran 25% plus grand que l'original, version laminée.</p>
-                        <ul class="mod-features">
-                            <li>Logo rétroéclairé personnalisable</li>
-                            <li>Modes Pixel (Scanlines)</li>
-                            <li>Excellents angles de vision</li>
-                            <li>Vitre laminée sans poussière</li>
-                        </ul>
+                        <p class="mod-desc">Le choix de référence pour une image nette et un écran plus grand que l'original, version laminée.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Minimale (fil d'alimentation pour luminosité max)</div></div>
+                        <ul class="mod-features"><li>Logo rétroéclairé personnalisable</li><li>Modes Pixel (scanlines)</li><li>Excellents angles de vision</li><li>Vitre laminée sans poussière</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Q5 laminé</dd></div><div><dt>OSD</dt><dd>Oui</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Coque laminée recommandée, CleanPower recommandé</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Contraste et netteté supérieurs</li><li>Pas de poussière piégée</li><li>Look usine</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Plus cher que la version non laminée</li><li>Coque laminée recommandée</li><li>CleanPower recommandé</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" target="_blank" rel="noopener">Handheld Legend — GBC Retro Pixel 2.0 Q5 IPS laminé</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">Nouveauté</span>
+                    <article class="mod-card" id="gbc_fp_nes_ves">
+                        <div class="mod-card-top"><span class="mod-badge">Nouveauté</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS laminé modes NES/VES FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">NES/VES RetroPixel Laminated Kit</h3>
                         <p class="mod-desc">Version spéciale avec modes d'affichage NES et VES pour simuler les palettes d'époque.</p>
-                        <ul class="mod-features">
-                            <li>Mode NES (palette rétro)</li>
-                            <li>Mode VES (rendu vintage)</li>
-                            <li>Vitre laminée</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Minimale (fil d'alimentation)</div></div>
+                        <ul class="mod-features"><li>Mode NES (palette rétro)</li><li>Mode VES (rendu vintage)</li><li>Vitre laminée</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS laminé</dd></div><div><dt>Modes</dt><dd>NES / VES</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Coque laminée recommandée, CleanPower recommandé</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Palettes rétro inédites</li><li>Vitre laminée nette</li><li>Personnalisation poussée</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Coque laminée recommandée</li><li>CleanPower recommandé</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">OLED</span>
+                    <article class="mod-card" id="gbc_hsd_amoled">
+                        <div class="mod-card-top"><span class="mod-badge">OLED</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit AMOLED laminé Hispeedido pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
                         <h3 class="mod-name">AMOLED Laminated Kit</h3>
                         <p class="mod-desc">Le summum de l'affichage pour GBC. Des noirs profonds et des couleurs vibrantes que seul l'OLED peut offrir.</p>
-                        <ul class="mod-features">
-                            <li>Dalle AMOLED 2.45"</li>
-                            <li>Contraste infini</li>
-                            <li>Menu OSD complet</li>
-                            <li>Vitre laminée</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Minimale (un fil)</div></div>
+                        <ul class="mod-features"><li>Dalle AMOLED laminée</li><li>Contraste infini</li><li>Contrôle tactile et menu OSD complet</li><li>Scaling intégral 16:1</li><li>Pic de luminosité ~400 nits</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>AMOLED laminé</dd></div><div><dt>OSD</dt><dd>Oui (tactile)</dd></div><div><dt>Luminosité</dt><dd>~400 nits</dd></div><div><dt>Scaling</dt><dd>16:1</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Coque laminée obligatoire, CleanPower recommandé</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Noirs absolus et couleurs vibrantes</li><li>Très lumineux (~400 nits)</li><li>Contrôle tactile pratique</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Compatible uniquement coque laminée (Hispeedido/FunnyPlaying)</li><li>Plus cher</li><li>CleanPower recommandé</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" target="_blank" rel="noopener">Handheld Legend — GBC AMOLED laminé Hispeedido</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_hsd_ips_dropin">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS drop-in 2.45 pouces Hispeedido pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
-                        <h3 class="mod-name">IPS Drop-in 2.45" (OSD)</h3>
-                        <p class="mod-desc">Kit IPS drop-in avec 8 modes d'affichage et menu OSD, installation sans découpe de coque.</p>
-                        <ul class="mod-features">
-                            <li>8 modes d'affichage</li>
-                            <li>Installation sans découpe</li>
-                            <li>Menu OSD complet</li>
-                        </ul>
+                        <h3 class="mod-name">IPS Drop-in 2.45&quot; (OSD)</h3>
+                        <p class="mod-desc">Kit IPS drop-in avec plusieurs modes d'affichage et menu OSD, installation sans découpe de coque.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimale</div></div>
+                        <ul class="mod-features"><li>Plusieurs modes d'affichage</li><li>Installation sans découpe</li><li>Menu OSD complet</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS drop-in</dd></div><div><dt>Taille</dt><dd>2.45&quot;</dd></div><div><dt>OSD</dt><dd>Oui</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : CleanPower recommandé</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Sans découpe de coque</li><li>OSD riche</li><li>Bon rapport qualité/prix</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Zone d'affichage non agrandie</li><li>CleanPower recommandé</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_cgs_tft">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit TFT LCD rétroéclairé Cloud Game Store pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Cloud Game Store</div>
                         <h3 class="mod-name">TFT LCD Backlight Kit</h3>
                         <p class="mod-desc">Solution drop-in sans aucune découpe, idéale pour conserver sa coque d'origine.</p>
-                        <ul class="mod-features">
-                            <li>Installation 100% sans découpe</li>
-                            <li>Taille d'origine préservée</li>
-                            <li>Faible consommation</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimale</div></div>
+                        <ul class="mod-features"><li>Installation 100% sans découpe</li><li>Taille d'origine préservée</li><li>Faible consommation</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>TFT LCD rétroéclairé</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Coque d'origine conservée</li><li>Économique en énergie</li><li>Installation accessible</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Qualité d'image inférieure aux IPS récents</li><li>Disponibilité variable</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_bennvenn">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit LCD BennVenn (Aioli) pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">BennVenn</div>
-                        <h3 class="mod-name">GBC IPS & LCD Kits</h3>
-                        <p class="mod-desc">Des solutions innovantes souvent pionnières, avec une excellente gestion de l'énergie.</p>
-                        <ul class="mod-features">
-                            <li>Basse consommation</li>
-                            <li>Scaling parfait</li>
-                            <li>Support technique réputé</li>
-                        </ul>
+                        <h3 class="mod-name">GBC IPS &amp; LCD Kits (Aioli)</h3>
+                        <p class="mod-desc">Des solutions innovantes souvent pionnières, avec une excellente gestion de l'énergie et un rendu transflectif lisible en plein soleil.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Non (Aioli) / variable selon modèle</div></div>
+                        <ul class="mod-features"><li>Très basse consommation</li><li>Sans soudure, sans découpe (Aioli)</li><li>Pas de tearing ni de flicker</li><li>TFT transflectif lisible au soleil</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>TFT transflectif / LCD</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Consommation parmi les plus faibles du marché</li><li>Installation drop-in</li><li>Pas de bruit parasite dans l'audio</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Palette plus proche de l'origine (moins éclatante qu'un IPS)</li><li>Disponibilité variable</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://bennvenn.myshopify.com/collections/aftermarket-lcds" target="_blank" rel="noopener nofollow">BennVenn ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.zedlabz.com/en-us/products/aioli-freckleshack-drop-in-tft-lcd-screen-upgrade-kit-for-nintendo-game-boy-color-handheld-console-bennvenn" target="_blank" rel="noopener">ZedLabz — BennVenn Aioli (Freckleshack) GBC</a></p>
                     </article>
                 </div>
             </section>
 
-            <!-- ÉNERGIE & PERFORMANCE -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-power">
                 <div class="section-header">
                     <span class="section-icon">⚡</span>
-                    <h2 class="section-name">Énergie & Performance</h2>
+                    <h2 class="section-name">Énergie &amp; Performance</h2>
                 </div>
+                <p class="section-intro">Abandonner les piles AA pour une batterie Li-Po rechargeable en USB-C ou Qi, stabiliser l'alimentation pour un écran IPS/AMOLED, ou overclocker la console.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_cleanjuice_air">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Batterie CleanJuice Air RetroSix USB-C/Qi pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
                         <h3 class="mod-name">CleanJuice Air</h3>
-                        <p class="mod-desc">Remplacez vos piles par une batterie Li-Po haute capacité rechargeable en USB-C ou sans fil.</p>
-                        <ul class="mod-features">
-                            <li>Recharge USB-C</li>
-                            <li>Compatible Sans Fil (Qi)</li>
-                            <li>1600mAh de capacité</li>
-                        </ul>
+                        <p class="mod-desc">Remplacez vos piles par une batterie Li-Po rechargeable en USB-C ou sans fil (Qi).</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Recharge USB-C</li><li>Compatible sans fil (Qi)</li><li>Conçue et testée au Royaume-Uni</li></ul>
+                        <dl class="mod-specs"><div><dt>Recharge</dt><dd>USB-C + Qi sans fil</dd></div><div><dt>Puissance</dt><dd>6.3W</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Coque Prestige RetroSix recommandée</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Recharge filaire et sans fil</li><li>Plus de piles à acheter</li><li>Installation propre avec coque Prestige</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li><li>Coque Prestige RetroSix recommandée (modification invasive sur coque OEM)</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" target="_blank" rel="noopener">Handheld Legend — CleanJuice Air GBC</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_fp_charging">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Module de recharge Li-Po USB-C FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">GBC Battery Charging Mod</h3>
                         <p class="mod-desc">Module de recharge Li-Po USB-C de FunnyPlaying, compact et facile à installer.</p>
-                        <ul class="mod-features">
-                            <li>Recharge USB-C</li>
-                            <li>Compact et discret</li>
-                            <li>Installation simple</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Recharge USB-C</li><li>Compact et discret</li><li>Installation simple</li></ul>
+                        <dl class="mod-specs"><div><dt>Recharge</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Solution USB-C économique</li><li>Encombrement réduit</li><li>Écosystème FunnyPlaying</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li><li>Batterie parfois à ajouter séparément</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">Indispensable</span>
+                    <article class="mod-card" id="gbc_cleanpower">
+                        <div class="mod-card-top"><span class="mod-badge">Indispensable</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Régulateur CleanPower RetroSix pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
                         <h3 class="mod-name">CleanPower Regulator GBC</h3>
-                        <p class="mod-desc">Régulateur de tension pour stabiliser l'alimentation de la GBC avec les mods IPS modernes.</p>
-                        <ul class="mod-features">
-                            <li>Alimentation stable</li>
-                            <li>Évite les flickering d'écran</li>
-                            <li>Indispensable avec IPS</li>
-                        </ul>
+                        <p class="mod-desc">Régulateur de tension pour stabiliser l'alimentation de la GBC avec les mods IPS/AMOLED modernes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>Alimentation stable</li><li>Évite le flickering d'écran</li><li>Indispensable avec un écran rétroéclairé</li></ul>
+                        <dl class="mod-specs"><div><dt>Sortie</dt><dd>5V stable</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Élimine les coupures et le scintillement</li><li>Tension propre</li><li>Petit prix</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_frogulator">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Régulateur Frogulator FroggoCustoms pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FroggoCustoms</div>
                         <h3 class="mod-name">Frogulator DC Regulator</h3>
                         <p class="mod-desc">Alternative fiable au CleanPower pour stabiliser l'alimentation de la GBC et de la Pocket.</p>
-                        <ul class="mod-features">
-                            <li>Alimentation propre et stable</li>
-                            <li>Compatible GBC & Pocket</li>
-                            <li>Compact</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Alimentation propre et stable 5V</li><li>Compatible GBC &amp; Pocket</li><li>Compact</li></ul>
+                        <dl class="mod-specs"><div><dt>Sortie</dt><dd>5V DC</dd></div><div><dt>Compatibilité</dt><dd>GBC &amp; Pocket</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Alternative fiable au CleanPower</li><li>Polyvalent (GBC + Pocket)</li><li>Format compact</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://froggocustoms.com/" target="_blank" rel="noopener nofollow">FroggoCustoms ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://froggocustoms.com/collections/all" target="_blank" rel="noopener">FroggoCustoms — boutique</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">Vitesse</span>
+                    <article class="mod-card" id="gbc_gbaccelerator">
+                        <div class="mod-card-top"><span class="mod-badge">Vitesse</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime, brand">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Module d'overclock GBAccelerator pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Division 6</div>
                         <h3 class="mod-name">GBAccelerator (OC)</h3>
                         <p class="mod-desc">Passez en vitesse x1.5 ou x2 d'une simple pression de bouton. Idéal pour RPG et Pokémon.</p>
-                        <ul class="mod-features">
-                            <li>4 modes de vitesse</li>
-                            <li>Installation propre</li>
-                            <li>Compatible avec la plupart des IPS</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>4 modes de vitesse</li><li>Installation propre</li><li>Compatible avec la plupart des IPS</li></ul>
+                        <dl class="mod-specs"><div><dt>Modes</dt><dd>x1 / x1.5 / x1.75 / x2</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Accélère les jeux lents</li><li>Réversible</li><li>Contrôle par boutons</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li><li>Certains jeux peuvent bugger en overclock</li></ul></div></div>
+                        
+                        
                     </article>
                 </div>
             </section>
 
-            <!-- ILLUMINATION & AUDIO -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-audio">
                 <div class="section-header">
                     <span class="section-icon">✨</span>
-                    <h2 class="section-name">Illumination & Audio</h2>
+                    <h2 class="section-name">Illumination &amp; Audio</h2>
                 </div>
+                <p class="section-intro">Éclairer les boutons en RGB et améliorer le son d'origine, souvent un peu faible, avec un ampli moderne ou un remplacement complet du circuit audio.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">RGB</span>
+                    <article class="mod-card" id="gbc_retroglow">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit LED RGB RetroGlow Handheld Legend pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Handheld Legend</div>
                         <h3 class="mod-name">RetroGlow GBC</h3>
                         <p class="mod-desc">Le kit LED RGB de référence. Éclairez vos boutons avec des millions de couleurs.</p>
-                        <ul class="mod-features">
-                            <li>32 teintes & saturation</li>
-                            <li>Modes Gamer & Fairy Light</li>
-                            <li>Contrôle par Select + D-Pad</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 15–30 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>Couleur par bouton personnalisable</li><li>Réglage teinte / saturation / luminosité</li><li>Contrôle par Select + D-Pad</li><li>Faible consommation (18–25 mA par défaut)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>LED RGB flex</dd></div><div><dt>Consommation</dt><dd>18–25 mA (50 mA max)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Boutons transparents recommandés</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Effet visuel spectaculaire</li><li>Très personnalisable</li><li>N'interfère pas avec les contrôles IPS</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine (solder-in-place)</li><li>Boutons transparents recommandés</li><li>Non recommandé sur coques BoxyPixel</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" target="_blank" rel="noopener">Handheld Legend — RetroGlow GBC</a> · <a href="https://wiki.handheldlegend.com/retroglow-for-gbc-or-install-guide" target="_blank" rel="noopener">HHL Wiki — RetroGlow GBC Install Guide</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">RGB</span>
+                    <article class="mod-card" id="gbc_arc">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Board LED RGB ARC NatalieTheNerd pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">NatalieTheNerd</div>
                         <h3 class="mod-name">ARC GBC (RGB LEDs)</h3>
-                        <p class="mod-desc">Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes breathing & windmill.</p>
-                        <ul class="mod-features">
-                            <li>Contrôle couleur par zone</li>
-                            <li>Modes breathing & windmill</li>
-                            <li>17 réglages de couleur</li>
-                        </ul>
+                        <p class="mod-desc">Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes breathing &amp; windmill.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>Contrôle couleur par zone (D-pad, A/B, Start/Select)</li><li>Modes breathing &amp; windmill</li><li>11 couleurs disponibles</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>LED RGB</dd></div><div><dt>Couleurs</dt><dd>11</dd></div><div><dt>Zones</dt><dd>D-pad / A-B / Start-Select</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Contrôle par zone</li><li>Modes d'animation</li><li>Conçu par une moddeuse reconnue</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://nataliethenerd.com/products/arc-gbc-rgb-leds" target="_blank" rel="noopener nofollow">NatalieTheNerd ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://nataliethenerd.com/products/arc-gbc-rgb-leds" target="_blank" rel="noopener">NatalieTheNerd — ARC GBC RGB</a> · <a href="https://nataliethenerd.com/pages/arc-gbc-install-guide" target="_blank" rel="noopener">NatalieTheNerd — ARC GBC Install Guide</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">RGB</span>
+                    <article class="mod-card" id="gbc_fp_button_led">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit LED boutons FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">GBC Button LED Kit</h3>
                         <p class="mod-desc">Kit LED FunnyPlaying pour illuminer les boutons de votre GBC avec style.</p>
-                        <ul class="mod-features">
-                            <li>Installation simple</li>
-                            <li>Éclairage des boutons</li>
-                            <li>Compatible tous IPS FunnyPlaying</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Installation simple</li><li>Éclairage des boutons</li><li>Compatible kits IPS FunnyPlaying</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>LED boutons</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Bon rapport qualité/prix</li><li>Intégration avec l'écosystème FunnyPlaying</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Personnalisation plus limitée qu'un kit RGB avancé</li><li>Soudure requise</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_cleanamp">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
                         <h3 class="mod-name">CleanAmp Pro</h3>
                         <p class="mod-desc">Un amplificateur de classe D pour un son puissant et cristallin.</p>
-                        <ul class="mod-features">
-                            <li>Son 400% plus fort</li>
-                            <li>Filtrage du bruit de fond</li>
-                            <li>Haut-parleur inclus</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui (basique)</div></div>
+                        <ul class="mod-features"><li>Installation sans câble</li><li>Son nettement plus fort (classe D)</li><li>Filtrage du bruit de fond</li><li>Remplace l'ampli et le HP d'origine</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Ampli classe D</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Volume très supérieur à l'origine</li><li>Son propre</li><li>Installation wire-free</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure de base requise</li><li>Haut-parleur vendu séparément</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk/Game-Boy-Color-CleanAmp-Pro-p492501547" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/copy-of-game-boy-color-cleanamp-pro-retrosix" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.retrosix.wiki/gbc-cleanamp-install-guide" target="_blank" rel="noopener">RetroSix Wiki — GBC CleanAmp Install Guide</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_bucket_amp">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Board Bucket Amp GBC NatalieTheNerd pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">NatalieTheNerd</div>
                         <h3 class="mod-name">Bucket Amp GBC</h3>
                         <p class="mod-desc">Remplace intégralement le circuit sonore d'origine pour un son radicalement amélioré.</p>
-                        <ul class="mod-features">
-                            <li>Remplacement complet du circuit son</li>
-                            <li>Qualité audio supérieure</li>
-                            <li>Résultat bien au-delà d'un simple boost</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Expert"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="mod-diff-label">Expert</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 60+ min</div><div class="mod-meta-item">🔧 Oui (microsoudure)</div></div>
+                        <ul class="mod-features"><li>Remplacement complet du circuit son (MGB AMP)</li><li>Qualité audio supérieure</li><li>Basé sur le design de Bucket Mouse (MGBC)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Remplacement du circuit audio</dd></div><div><dt>Compatibilité</dt><dd>Cartes EM2/3/4 (pas CPU 05/06)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prérequis : Carte mère compatible (EM2/3/4)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Refonte complète du son, pas un simple boost</li><li>Qualité audio supérieure</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Microsoudure requise</li><li>Incompatible cartes CPU 05 et CPU 06 (nécessite EM2/3/4)</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://nataliethenerd.com/pages/bucket-amp-gbc" target="_blank" rel="noopener nofollow">NatalieTheNerd ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://nataliethenerd.com/pages/bucket-amp-gbc" target="_blank" rel="noopener">NatalieTheNerd — Bucket Amp GBC</a> · <a href="https://github.com/nataliethenerd/BucketAmpGBC" target="_blank" rel="noopener">GitHub — BucketAmpGBC</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_hhl_wirefree_amp">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs, soldering, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Amplificateur audio sans câble Handheld Legend pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">Handheld Legend</div>
                         <h3 class="mod-name">Wire Free Audio Amplifier GBC</h3>
                         <p class="mod-desc">Amplificateur sans câble à installer directement sur la carte mère de la GBC.</p>
-                        <ul class="mod-features">
-                            <li>Installation sans câble</li>
-                            <li>Volume significativement amélioré</li>
-                            <li>Compact et discret</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Installation sans câble</li><li>Volume significativement amélioré</li><li>Compact et discret</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Ampli audio wire-free</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Installation wire-free directe</li><li>Gain de volume notable</li><li>Encombrement réduit</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" target="_blank" rel="noopener">Handheld Legend — GBC Wire Free Audio Amplifier</a></p>
                     </article>
                 </div>
             </section>
 
-            <!-- BOUTONS -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-buttons">
                 <div class="section-header">
                     <span class="section-icon">🔘</span>
                     <h2 class="section-name">Boutons</h2>
                 </div>
+                <p class="section-intro">Retrouver un toucher neuf et personnaliser les couleurs : boutons tactiles clicky et boutons de remplacement.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">Clicky</span>
+                    <article class="mod-card" id="gbc_froggo_tactile_v2">
+                        <div class="mod-card-top"><span class="mod-badge">Clicky</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, installTime">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Mod boutons tactiles V2 FroggoCustoms pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FroggoCustoms</div>
                         <h3 class="mod-name">Wire-free Tactile Button Mod V2</h3>
-                        <p class="mod-desc">Passez aux boutons tactiles clicky sans aucun câble. D-pad, A/B, Start/Select en une seule pièce.</p>
-                        <ul class="mod-features">
-                            <li>100% sans soudure</li>
-                            <li>Boutons D-pad, A/B, Start/Select</li>
-                            <li>Anti-ghosting D-pad intégré</li>
-                        </ul>
+                        <p class="mod-desc">Passez aux boutons tactiles clicky sans aucun câble. D-pad, A/B, Start/Select sur une seule pièce.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Board d'un seul tenant (V2)</li><li>Boutons clicky D-pad et A/B</li><li>Anti-ghosting D-pad intégré (rejet des directions opposées)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Boutons tactiles</dd></div><div><dt>Zones</dt><dd>D-pad, A/B, Start/Select</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Feeling tactile clicky</li><li>Installation simplifiée (pièce unique)</li><li>Protection anti-ghosting du D-pad</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise (contrairement au nom « wire-free »)</li><li>Start/Select non tactiles (membranes d'origine inadaptées)</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" target="_blank" rel="noopener nofollow">FroggoCustoms ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" target="_blank" rel="noopener">FroggoCustoms — Tactile Button Mod V2</a> · <a href="https://froggocustoms.com/blogs/installation-guides/game-boy-color-tactile-switch-mod" target="_blank" rel="noopener">FroggoCustoms — Tactile Switch Mod (guide)</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbc_fp_buttons">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Boutons custom FunnyPlaying pour Game Boy Color"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">GBC Custom Buttons</h3>
                         <p class="mod-desc">Boutons de remplacement colorés pour personnaliser l'aspect de votre GBC.</p>
-                        <ul class="mod-features">
-                            <li>Large choix de coloris</li>
-                            <li>Matière de qualité</li>
-                            <li>Installation simple</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Large choix de coloris</li><li>Matière de qualité</li><li>Installation simple</li></ul>
+                        
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Bon rapport qualité/prix</li><li>Beaucoup de couleurs</li><li>Installation sans soudure</li></ul></div></div>
+                        
+                        
                     </article>
                 </div>
             </section>
+
+            <p class="console-sources">Sources générales : <a href="https://gameboy.github.io/wiki/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a> · <a href="https://docs.handheldlegend.com/s/portal/doc/ips-lcd-kit-tBBmn80iqm" target="_blank" rel="noopener">Handheld Legend — IPS LCD Kit (docs)</a></p>
         </div>
     </main>
 
@@ -352,7 +435,7 @@
             <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
         </div>
     </footer>
-    
+
     <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,248 @@
+{
+  "id": "n64",
+  "slug": "n64",
+  "name": "Nintendo 64",
+  "fullName": "Nintendo 64 (NUS-001)",
+  "maker": "Nintendo",
+  "category": "home",
+  "year": 1996,
+  "icon": "🎮",
+  "heroBadge": "Console de salon",
+  "title": "Nintendo 64",
+  "titleHighlight": "64",
+  "tagline": "La révolution de la 3D. Modernisez votre N64 pour obtenir une image nette sur vos écrans plats modernes.",
+  "intro": "La Nintendo 64 (1996) souffre sur les téléviseurs modernes : sortie composite floue, joystick qui s'use et drifte, et une image dégradée par défaut. Les mods de référence visent trois objectifs : retrouver une image nette (HDMI numérique ou RGB analogique), fiabiliser les manettes (stick à effet Hall, sans drift) et débloquer le potentiel logiciel (Expansion Pak, région). Voici les mods classés par domaine, du plug-and-play à l'installation experte.",
+  "configuratorId": null,
+  "comparatorId": "n64",
+  "seo": {
+    "title": "Mods Nintendo 64 — HDMI (N64Digital), RGB, Hall Effect | OpenPixel Lab",
+    "description": "Guide des mods Nintendo 64 : sorties HDMI numériques (PixelFX N64Digital, UltraHDMI, GameBox 64HD, Hispeedido), RGB analogique, joysticks à effet Hall sans drift, Expansion Pak et région. Difficulté, prix, prérequis."
+  },
+  "sources": [
+    { "label": "ConsoleMods Wiki — N64 Mods", "url": "https://consolemods.org/wiki/N64:N64_Mods_Wiki" },
+    { "label": "RetroRGB — N64 RGB Compatible Systems", "url": "https://retrorgb.com/n64rgbcompatible.html" }
+  ],
+  "sections": [
+    {
+      "id": "video",
+      "name": "Vidéo & HDMI",
+      "icon": "📺",
+      "intro": "Le mod le plus transformateur sur N64 : remplacer la sortie composite/S-Video floue par un signal numérique HDMI propre, ou par du RGB analogique pour les CRT et scalers externes. Les kits HDMI internes demandent presque tous une soudure de niveau avancé directement sur les pattes des puces de la carte mère.",
+      "mods": [
+        {
+          "id": "n64_n64digital",
+          "name": "N64Digital",
+          "brand": "PixelFX",
+          "badge": "Premium",
+          "summary": "La meilleure sortie HDMI possible pour N64. Un signal numérique cristallin jusqu'à 1080p avec Wi-Fi pour les mises à jour.",
+          "features": ["Sortie HDMI numérique lag-free jusqu'à 1080p", "RGB/YPbPr analogique simultané via le multiout", "VI De-blur, scanlines, filtres et lissage", "Mises à jour firmware par Wi-Fi", "Compatible toutes régions et modèles (hors Pikachu sans entretoise)"],
+          "pros": ["Qualité d'image de référence", "Désentrelacement et scaling avancés", "Sorties HDMI + analogique en parallèle", "Firmware évolutif via Wi-Fi"],
+          "cons": ["Cher", "Soudure de niveau expert (flex + PCB)", "Découpe de coque requise pour le mini-HDMI (sauf solution sans découpe Laser Bear)"],
+          "specs": { "Type": "HDMI numérique", "Résolution": "jusqu'à 1080p", "Sortie analogique": "RGB/YPbPr via multiout" },
+          "difficulty": 5,
+          "soldering": "Oui (expert, flex + PCB)",
+          "installTime": "2–4 h",
+          "price": "€€€",
+          "prerequisites": ["Station de soudure fine", "Expérience en micro-soudure", "Découpe de coque (sauf solution sans découpe)"],
+          "scoreImpact": { "image": 5, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 0 },
+          "buyLinks": [{ "label": "PixelFX", "url": "https://www.pixelfx.co/product-page/n64-hdmi" }],
+          "sources": [
+            { "label": "PixelFX — N64Digital Details", "url": "https://docs.pixelfx.co/N64Digital-Details.html" },
+            { "label": "RetroRGB — N64Digital Mod Announced", "url": "https://retrorgb.com/n64digital-mod-announced-by-pixel-fx.html" }
+          ],
+          "image": { "src": "", "alt": "Kit HDMI numérique N64Digital PixelFX pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "installTime"]
+        },
+        {
+          "id": "n64_ultrahdmi",
+          "name": "UltraHDMI",
+          "brand": "Marshallh",
+          "summary": "Le mod HDMI historique, réputé pour sa fidélité et son mode de dé-blur unique salué par la communauté.",
+          "features": ["Sortie HDMI numérique", "VI De-blur reconnu comme l'un des meilleurs", "Scaling haute qualité", "Menu de configuration complet", "Options de sortie analogique sur les révisions récentes"],
+          "pros": ["Qualité d'image de référence", "De-blur excellent", "Configuration poussée"],
+          "cons": ["Disponibilité très limitée (group buys / installateurs)", "Cher", "Soudure de niveau expert"],
+          "specs": { "Type": "HDMI numérique", "Fonction": "VI De-blur" },
+          "difficulty": 5,
+          "soldering": "Oui (expert)",
+          "installTime": "2–4 h",
+          "price": "€€€",
+          "prerequisites": ["Expérience en micro-soudure", "Trouver un stock (group buy / installateur)"],
+          "scoreImpact": { "image": 5, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 0 },
+          "buyLinks": [],
+          "sources": [
+            { "label": "ConsoleMods Wiki — UltraHDMI", "url": "https://consolemods.org/wiki/N64:UltraHDMI_(HDMI)" },
+            { "label": "RetroRGB — UltraHDMI", "url": "https://www.retrorgb.com/ultrahdmi.html" }
+          ],
+          "image": { "src": "", "alt": "Kit HDMI UltraHDMI pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "installTime", "brand"]
+        },
+        {
+          "id": "n64_64hd",
+          "name": "64HD (HDMI interne)",
+          "brand": "GameBox Systems",
+          "summary": "Alternative haut de gamme au N64Digital : sortie HDMI interne sans découpe de coque, avec un ensemble de fonctions complet.",
+          "features": ["Sortie HDMI interne sans découpe", "Résolutions 1080i60 / 720p60 / 480p60 / 240p60", "Modes de scaling (1:1, plein écran, linéaire, overscan)", "VI De-blur, filtres pixel et scanlines", "Compatible toutes régions (PAL & NTSC)"],
+          "pros": ["Sans découpe de coque", "Riche en options de scaling et filtres", "Excellente qualité d'image"],
+          "cons": ["Soudure de niveau avancé sur les pattes des puces", "Prix élevé"],
+          "specs": { "Type": "HDMI numérique interne", "Résolutions": "1080i / 720p / 480p / 240p", "De-blur": "Oui" },
+          "difficulty": 5,
+          "soldering": "Oui (avancé)",
+          "installTime": "2–3 h",
+          "price": "€€€",
+          "prerequisites": ["Expérience en micro-soudure"],
+          "scoreImpact": { "image": 5, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 0 },
+          "buyLinks": [{ "label": "Game-Tech", "url": "https://www.game-tech.us/product/64hd/" }],
+          "sources": [
+            { "label": "RetroRGB — GameBox 64HD Internal HDMI Mod", "url": "https://retrorgb.com/a-new-internal-hdmi-mod-for-the-nintendo-64-gamebox-64hd.html" }
+          ],
+          "image": { "src": "", "alt": "Kit HDMI interne 64HD GameBox Systems pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "installTime"]
+        },
+        {
+          "id": "n64_hispeedido_hdmi",
+          "name": "N64HDMI (720p)",
+          "brand": "Hispeedido",
+          "summary": "Solution HDMI d'entrée de gamme pour passer en 720p sur N64, idéale pour un budget limité.",
+          "features": ["Sortie HDMI 720p", "3 réglages d'aspect ratio", "8 modes couleur via OSD", "OSD piloté à la manette", "Compatible toutes régions (hors Pikachu)"],
+          "pros": ["Le meilleur rapport qualité/prix pour passer en HDMI", "OSD à la manette"],
+          "cons": ["Options limitées (pas de scaling avancé ni de de-blur comparable)", "Soudure avancée requise sur les pattes des puces"],
+          "specs": { "Type": "HDMI numérique", "Résolution": "720p", "OSD": "Oui" },
+          "difficulty": 4,
+          "soldering": "Oui (avancé)",
+          "installTime": "1–2 h",
+          "price": "€€",
+          "prerequisites": ["Expérience en micro-soudure"],
+          "scoreImpact": { "image": 4, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 0 },
+          "buyLinks": [{ "label": "RetroSix US", "url": "https://retrosix.us/products/n64-hdmi-output-mod-hispeedido" }],
+          "sources": [
+            { "label": "Hispeedido N64 HDMI 720p — oldskoolconsoles", "url": "https://www.oldskoolconsoles.com/product-page/n64-hdmi-hispeedido-720p-mod-kit" }
+          ],
+          "image": { "src": "", "alt": "Kit HDMI 720p Hispeedido pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "installTime"]
+        },
+        {
+          "id": "n64_rgb_mod",
+          "name": "N64RGB Mod Kit",
+          "brand": "Tim Worthington",
+          "summary": "La solution idéale pour les possesseurs de CRT ou de scalers externes (OSSC, RetroTINK) : un signal RGB analogique propre.",
+          "features": ["Signal RGB analogique pur", "Compatible tous modèles, NTSC comme PAL", "Fonction de-blur sur certaines versions", "Indispensable pour profiter du RGB sur les modèles EU/FR"],
+          "pros": ["Qualité d'image pro sur CRT/scaler", "Compatible toutes les révisions de carte", "Mod réversible"],
+          "cons": ["Soudure requise", "Pas de sortie HDMI directe (nécessite un scaler externe)"],
+          "specs": { "Type": "RGB analogique", "Compatibilité": "Tous modèles NTSC/PAL" },
+          "difficulty": 4,
+          "soldering": "Oui",
+          "installTime": "1–2 h",
+          "price": "€€",
+          "prerequisites": ["Câble RGB SCART/multiout", "Scaler externe (OSSC/RetroTINK) ou écran CRT RGB"],
+          "scoreImpact": { "image": 4, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 0 },
+          "buyLinks": [{ "label": "oldskoolconsoles", "url": "https://www.oldskoolconsoles.com/product-page/n64rgb-kit-with-deblur-feature-1" }],
+          "sources": [
+            { "label": "etim.net.au — N64RGB", "url": "https://etim.net.au/n64rgb/" },
+            { "label": "ConsoleMods Wiki — RGB Compatible Systems", "url": "https://consolemods.org/wiki/N64:RGB-Compatible_Systems" }
+          ],
+          "image": { "src": "", "alt": "Kit RGB analogique N64RGB Tim Worthington pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "installTime"]
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "name": "Contrôles & Matériel",
+      "icon": "🕹️",
+      "intro": "Le talon d'Achille de la N64 : le joystick mécanique d'origine s'use vite et finit par drifter. Le remplacer (effet Hall ou pièce d'origine) transforme l'expérience. Cette section couvre aussi la RAM et la région.",
+      "mods": [
+        {
+          "id": "n64_hall_stick",
+          "name": "Stick à effet Hall (module analogique)",
+          "brand": "Retro-Bit",
+          "badge": "Nouveauté",
+          "summary": "Remplacez le joystick mécanique fragile par un module magnétique à effet Hall, inusable et sans drift.",
+          "features": ["Capteurs à effet Hall (aucune usure mécanique)", "Module au format d'origine de la manette", "Style GameCube (Tribute64)", "Installation au tournevis, sans soudure"],
+          "pros": ["Élimine le drift définitivement", "Précision durable", "Installation simple, sans soudure"],
+          "cons": ["Sensation différente du stick d'origine", "Course/feeling à ajuster selon les goûts"],
+          "specs": { "Technologie": "Effet Hall", "Montage": "Plug-and-play (tournevis)" },
+          "difficulty": 1,
+          "soldering": "Non",
+          "installTime": "10–15 min",
+          "price": "€€",
+          "prerequisites": ["Tournevis tri-wing pour ouvrir la manette"],
+          "scoreImpact": { "image": 0, "audio": 0, "autonomie": 0, "ergonomie": 3, "gameplay": 2 },
+          "buyLinks": [],
+          "sources": [
+            { "label": "RetroRGB — Hall Effect N64 Analog Stick Kit by Retro-Bit", "url": "https://retrorgb.com/hall-effect-n64-analog-stick-kit-by-retro-bit.html" },
+            { "label": "GamesRadar — N64 Hall Effect thumbstick mod", "url": "https://www.gamesradar.com/hardware/retro/i-just-upgraded-nintendos-driftiest-controller-with-a-hall-effect-thumb-stick-but-this-n64-mod-wont-be-for-everyone/" }
+          ],
+          "image": { "src": "", "alt": "Module joystick à effet Hall Retro-Bit pour manette Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "brand"]
+        },
+        {
+          "id": "n64_stick_oem",
+          "name": "Kit de réparation joystick (style origine)",
+          "brand": "Kitsch-Bent",
+          "summary": "Remplacement fidèle au design Nintendo d'origine pour restaurer un joystick fatigué ou en drift.",
+          "features": ["Pièces fidèles au design d'origine", "Restaure la sensation d'origine", "Jeux d'engrenages et thumbstick disponibles séparément"],
+          "pros": ["Sensation proche de l'origine", "Pas cher", "Installation sans soudure"],
+          "cons": ["Reste une pièce mécanique (usure à terme)", "Léger deadzone possible selon les lots"],
+          "specs": { "Type": "Module mécanique d'origine", "Montage": "Tournevis" },
+          "difficulty": 1,
+          "soldering": "Non",
+          "installTime": "10–15 min",
+          "price": "€",
+          "prerequisites": ["Tournevis tri-wing pour ouvrir la manette"],
+          "scoreImpact": { "image": 0, "audio": 0, "autonomie": 0, "ergonomie": 2, "gameplay": 1 },
+          "buyLinks": [{ "label": "Kitsch-Bent", "url": "https://store.kitsch-bent.com/products/n64-joystick-repair-kit" }],
+          "sources": [
+            { "label": "Kitsch-Bent — N64 Joystick Repair Kit", "url": "https://store.kitsch-bent.com/products/n64-joystick-repair-kit" }
+          ],
+          "image": { "src": "", "alt": "Kit de réparation joystick d'origine Kitsch-Bent pour manette Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks"]
+        },
+        {
+          "id": "n64_expansion_pak",
+          "name": "Expansion Pak",
+          "brand": "Nintendo / Generic",
+          "badge": "Essentiel",
+          "summary": "Doublez la RAM de votre console pour débloquer des résolutions supérieures et accéder aux jeux qui l'exigent.",
+          "features": ["Passe de 4 Mo à 8 Mo de RAM", "Requis pour Majora's Mask et Donkey Kong 64", "Meilleures résolutions/textures sur certains jeux"],
+          "pros": ["Indispensable pour certains titres", "Installation immédiate (slot dédié)", "Réversible"],
+          "cons": ["Modèles d'origine parfois chers", "Les Jumper Pak doit être retiré"],
+          "specs": { "RAM": "4 Mo → 8 Mo", "Montage": "Slot mémoire" },
+          "difficulty": 1,
+          "soldering": "Non",
+          "installTime": "5 min",
+          "price": "€€",
+          "prerequisites": ["Outil d'extraction du Jumper Pak (fourni avec l'Expansion Pak d'origine)"],
+          "scoreImpact": { "image": 1, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 2 },
+          "buyLinks": [],
+          "sources": [
+            { "label": "ConsoleMods Wiki — N64 Mods Wiki", "url": "https://consolemods.org/wiki/N64:N64_Mods_Wiki" }
+          ],
+          "image": { "src": "", "alt": "Expansion Pak 8 Mo pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "brand"]
+        },
+        {
+          "id": "n64_region_mod",
+          "name": "Mod région / adaptateur de tray",
+          "brand": "Générique",
+          "summary": "Jouez aux imports NTSC : un adaptateur de tray (ou la modification du tiroir cartouche) débloque les jeux US/JP sur une console NTSC.",
+          "features": ["Tiroir adaptateur pour accepter cartouches US et JP", "Aucune soudure (échange du tray ou retrait du bloc)", "Entièrement réversible"],
+          "pros": ["Accès aux imports NTSC", "Réversible", "Pas de soudure"],
+          "cons": ["Ne rend pas une console NTSC compatible PAL et inversement (différences matérielles)", "Tournevis gamebit requis"],
+          "specs": { "Type": "Région NTSC (US ↔ JP)", "Montage": "Tray / tiroir cartouche" },
+          "difficulty": 2,
+          "soldering": "Non",
+          "installTime": "15–30 min",
+          "price": "€",
+          "prerequisites": ["Tournevis gamebit (sécurité)"],
+          "scoreImpact": { "image": 0, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 1 },
+          "buyLinks": [],
+          "sources": [
+            { "label": "Racketboy — How To Mod The N64 To Play Imports", "url": "https://racketboy.com/retro/how-to-mod-the-n64-to-play-imports-region-mod" }
+          ],
+          "image": { "src": "", "alt": "Adaptateur de tray région pour Nintendo 64", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "brand"]
+        }
+      ]
+    }
+  ]
+}

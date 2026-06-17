@@ -1,0 +1,273 @@
+{
+  "id": "gamecube",
+  "slug": "gamecube",
+  "name": "GameCube",
+  "fullName": "Nintendo GameCube (DOL-001)",
+  "maker": "Nintendo",
+  "category": "home",
+  "year": 2001,
+  "icon": "🎲",
+  "heroBadge": "Console de salon",
+  "title": "Nintendo GameCube",
+  "titleHighlight": "GameCube",
+  "tagline": "Le cube magique de Nintendo. Découvrez comment le faire passer à la haute définition et vous affranchir des disques optiques.",
+  "intro": "La Nintendo GameCube (2001) est une cible de modding particulièrement riche : sortie HDMI numérique de très haute qualité, émulateurs de lecteur optique (ODE), modchip open-source et chargement par carte SD. Selon le modèle (DOL-001 avec port Digital AV, ou DOL-101 sans), les solutions vidéo diffèrent. Voici les mods de référence, classés par domaine.",
+  "configuratorId": "gamecube",
+  "comparatorId": "gamecube",
+  "seo": {
+    "title": "Mods Nintendo GameCube — HDMI interne, ODE, PicoBoot | OpenPixel Lab",
+    "description": "Guide complet des mods pour la Nintendo GameCube : HDMI interne (Retro GEM, GCDual, Hispeedido), émulateurs de lecteur (FlippyDrive, GC Loader), modchip PicoBoot, SD2SP2, Bluetooth et refroidissement. Difficulté, prix, prérequis."
+  },
+  "sources": [
+    { "label": "RetroRGB — GameCube", "url": "https://retrorgb.com/gamecube.html" },
+    { "label": "PicoBoot — GitHub (webhdx)", "url": "https://github.com/webhdx/PicoBoot" }
+  ],
+  "sections": [
+    {
+      "id": "video",
+      "name": "Vidéo & HDMI",
+      "icon": "📺",
+      "intro": "Passer la GameCube en HDMI numérique pour une image parfaite sur écran moderne. Les kits internes se branchent sur le bus vidéo numérique : les modèles DOL-001 disposent d'un port Digital AV, tandis que le DOL-101 (sans ce port) nécessite des kits compatibles digital-to-digital.",
+      "mods": [
+        {
+          "id": "gc_retrogem",
+          "name": "Retro GEM",
+          "brand": "PixelFX",
+          "badge": "Premium",
+          "summary": "La solution HDMI interne haut de gamme : Wi-Fi pour les mises à jour et scaling jusqu'en 1080p/1440p sur l'édition Shiny.",
+          "features": ["Sortie HDMI numérique sans latence", "Mises à jour firmware par Wi-Fi", "Scaling 1080p/1440p et filtres scanlines (édition Shiny)", "Compatible DOL-001 et DOL-101 (NTSC/PAL)"],
+          "pros": ["Qualité d'image de référence", "Filtres et scaling avancés (Shiny)", "Mises à jour Wi-Fi", "Édition Basic upgradable en Shiny"],
+          "cons": ["Soudure avancée requise", "Tarif élevé", "Installation par un pro recommandée"],
+          "specs": { "Type": "HDMI interne", "Résolution": "jusqu'à 1440p (Shiny)", "Mises à jour": "Wi-Fi" },
+          "difficulty": 5,
+          "soldering": "Oui (avancée)",
+          "installTime": "1–2 h",
+          "price": "€€€",
+          "prerequisites": ["Niveau de soudure avancé"],
+          "scoreImpact": { "image": 5, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 1 },
+          "buyLinks": [{ "label": "PixelFX", "url": "https://www.pixelfx.co/product-page/gamecube-hdmi" }],
+          "sources": [{ "label": "PixelFX — GC HDMI Retro GEM Kit", "url": "https://www.pixelfx.co/product-page/gamecube-hdmi" }],
+          "image": { "src": "", "alt": "Kit HDMI interne Retro GEM PixelFX pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+        },
+        {
+          "id": "gc_gcdual",
+          "name": "GCDual",
+          "brand": "Insurrection Industries / citrus3000psi",
+          "summary": "Kit HDMI interne open-source très réputé, basé sur GCVideo, avec sortie simultanée HDMI et analogique.",
+          "features": ["Sortie HDMI numérique (GCVideo)", "Sortie analogique simultanée possible", "OSD avec scanlines et réglages", "Compatible DOL-001"],
+          "pros": ["Qualité GCVideo reconnue", "Double sortie HDMI/analogique", "Open-source"],
+          "cons": ["Soudure requise", "Disponibilité variable"],
+          "specs": { "Type": "HDMI interne", "Base": "GCVideo", "Sortie": "HDMI + analogique" },
+          "difficulty": 4,
+          "soldering": "Oui",
+          "installTime": "1–2 h",
+          "price": "€€€",
+          "prerequisites": [],
+          "buyLinks": [{ "label": "game-tech.us", "url": "https://www.game-tech.us/product/gcdual/" }],
+          "sources": [{ "label": "game-tech.us — GCDual", "url": "https://www.game-tech.us/product/gcdual/" }],
+          "image": { "src": "", "alt": "Kit HDMI interne GCDual pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime", "brand"]
+        },
+        {
+          "id": "gc_hispeedido_hdmi",
+          "name": "Internal HDMI Kit (Digital-to-Digital)",
+          "brand": "Hispeedido",
+          "summary": "Mod HDMI interne digital-to-digital à prix accessible, compatible avec tous les modèles dont le DOL-101.",
+          "features": ["Sortie HDMI 480p/1080p", "Compatible DOL-001 et DOL-101", "Menu OSD (modes vidéo, ratios, désentrelacement)", "Réglage de positionnement de l'image"],
+          "pros": ["Compatible DOL-101 (sans port Digital)", "Menu OSD complet", "Prix accessible"],
+          "cons": ["Soudure requise (PCB + flex)", "Notice parfois sommaire"],
+          "specs": { "Type": "HDMI interne", "Résolution": "480p / 1080p", "OSD": "Oui" },
+          "difficulty": 4,
+          "soldering": "Oui",
+          "installTime": "1–2 h",
+          "price": "€€",
+          "prerequisites": [],
+          "buyLinks": [{ "label": "Hispeedido Store", "url": "https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" }],
+          "sources": [{ "label": "Hispeedido Store — Internal NGC Digital HDMI MOD Kit", "url": "https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" }],
+          "image": { "src": "", "alt": "Kit HDMI interne digital-to-digital Hispeedido pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+        },
+        {
+          "id": "gc_pluto_iix",
+          "name": "Pluto-IIx HDMI",
+          "brand": "KNJN / Citrus3000psi",
+          "summary": "Le mod HDMI interne historique pour les DOL-001, basé sur le firmware open-source GCVideo.",
+          "features": ["Sortie HDMI directe (GCVideo)", "Open-source", "Installation robuste avec support PCB imprimé 3D"],
+          "pros": ["Solution éprouvée", "Open-source (GCVideo)", "Image numérique propre"],
+          "cons": ["Soudure requise", "Réservé au DOL-001 (port Digital AV)", "Largement supplanté par GCDual/Retro GEM"],
+          "specs": { "Type": "HDMI interne", "Base": "GCVideo", "Compatibilité": "DOL-001" },
+          "difficulty": 4,
+          "soldering": "Oui",
+          "installTime": "1–2 h",
+          "price": "€€",
+          "prerequisites": ["Modèle DOL-001 (port Digital AV)"],
+          "buyLinks": [],
+          "sources": [{ "label": "Stone Age Gamer — Pluto Digital HD Chip", "url": "https://stoneagegamer.com/pluto-digital-hd-chip-with-installation-service-for-gamecube.html" }],
+          "image": { "src": "", "alt": "Mod HDMI interne Pluto-IIx pour Nintendo GameCube DOL-001", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime", "brand"]
+        }
+      ]
+    },
+    {
+      "id": "ode",
+      "name": "ODE & Chargement",
+      "icon": "💿",
+      "intro": "Les émulateurs de lecteur optique (ODE) remplacent ou complètent le lecteur DVD pour charger les jeux depuis une carte SD, avec un débit bien supérieur à celui du disque d'origine.",
+      "mods": [
+        {
+          "id": "gc_flippydrive",
+          "name": "FlippyDrive",
+          "brand": "Team Off Broadway",
+          "badge": "Nouveauté",
+          "summary": "ODE sans soudure qui conserve le lecteur disque d'origine tout en chargeant des jeux via microSD ou réseau.",
+          "features": ["Installation 100% sans soudure et réversible", "Préserve le lecteur optique d'origine", "Basé sur le Raspberry Pi Pico (RP2040)", "Chargement microSD ou réseau, 2.8x à 10x plus rapide que les solutions EXI"],
+          "pros": ["Sans soudure et réversible", "Garde le lecteur disque", "Tient dans la coque sans découpe", "Très rapide"],
+          "cons": ["Plus récent (firmware en évolution)", "Nécessite quand même un point d'entrée homebrew"],
+          "specs": { "Type": "ODE", "Base": "RP2040", "Installation": "Sans soudure" },
+          "difficulty": 2,
+          "soldering": "Non",
+          "installTime": "30–45 min",
+          "price": "€€",
+          "prerequisites": [],
+          "scoreImpact": { "image": 0, "audio": 0, "autonomie": 0, "ergonomie": 1, "gameplay": 2 },
+          "buyLinks": [{ "label": "Crowd Supply", "url": "https://www.crowdsupply.com/team-offbroadway/flippydrive" }],
+          "sources": [
+            { "label": "Crowd Supply — FlippyDrive", "url": "https://www.crowdsupply.com/team-offbroadway/flippydrive" },
+            { "label": "Time Extension — New $38 FlippyDrive ODE", "url": "https://www.timeextension.com/news/2024/08/new-usd38-flippydrive-ode-lets-you-keep-your-gamecubes-optical-drive" }
+          ],
+          "image": { "src": "", "alt": "Émulateur de lecteur optique FlippyDrive sans soudure pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "brand"]
+        },
+        {
+          "id": "gc_gcloader",
+          "name": "GC Loader PNP (HW2)",
+          "brand": "GC Loader",
+          "summary": "Remplace entièrement le lecteur DVD par un lecteur microSD haute vitesse, ultra-stable et plug & play.",
+          "features": ["Remplace le lecteur optique", "Interface SD pleine vitesse (jusqu'à 1 To)", "Plug & Play, sans soudure", "Compatible DOL-001 et DOL-101"],
+          "pros": ["Débit maximal", "Fiabilité reconnue", "Sans soudure (tournevis Gamebit 4.5mm requis)"],
+          "cons": ["Supprime le lecteur disque (non réversible sans le conserver)", "Swiss recommandé pour le menu complet"],
+          "specs": { "Type": "ODE (remplacement lecteur)", "Capacité SD": "jusqu'à 1 To", "Installation": "Plug & Play" },
+          "difficulty": 2,
+          "soldering": "Non",
+          "installTime": "30–45 min",
+          "price": "€€€",
+          "prerequisites": ["Tournevis Gamebit 4.5mm"],
+          "buyLinks": [{ "label": "GC Loader", "url": "https://gc-loader.com/product/gc-loader-pnp-hw2/" }],
+          "sources": [{ "label": "GC Loader — PnP HW2", "url": "https://gc-loader.com/product/gc-loader-pnp-hw2/" }],
+          "image": { "src": "", "alt": "Émulateur de lecteur GC Loader PNP pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks"]
+        }
+      ]
+    },
+    {
+      "id": "modchip",
+      "name": "Modchip & Stockage",
+      "icon": "🔧",
+      "intro": "Hacker le boot de la console et ajouter du stockage SD discret pour lancer Swiss et le homebrew sans disque ni ODE complet.",
+      "mods": [
+        {
+          "id": "gc_picoboot",
+          "name": "PicoBoot",
+          "brand": "Open Source (webhdx)",
+          "badge": "Économique",
+          "summary": "Modchip IPL open-source basé sur un Raspberry Pi Pico : boote directement Swiss/homebrew depuis une carte SD.",
+          "features": ["Remplace l'IPL d'origine (boot)", "Basé sur un Raspberry Pi Pico (~5 €)", "Boote ipl.dol (Swiss) automatiquement", "Région-free et firmware reflashable par USB"],
+          "pros": ["Coût dérisoire", "Open-source et reflashable", "S'installe sur l'ensemble ventilateur"],
+          "cons": ["Soudure requise (quelques points)", "Nécessite un loader SD (SD2SP2 ou ODE) pour les jeux"],
+          "specs": { "Type": "Modchip IPL", "Base": "Raspberry Pi Pico (RP2040)", "Firmware": "USB reflashable" },
+          "difficulty": 3,
+          "soldering": "Oui (quelques points)",
+          "installTime": "45–60 min",
+          "price": "€",
+          "prerequisites": ["Loader SD (SD2SP2) ou ODE pour charger les jeux"],
+          "scoreImpact": { "image": 0, "audio": 0, "autonomie": 0, "ergonomie": 1, "gameplay": 2 },
+          "buyLinks": [{ "label": "PicoBoot — GitHub", "url": "https://github.com/webhdx/PicoBoot" }],
+          "sources": [
+            { "label": "PicoBoot — GitHub (webhdx)", "url": "https://github.com/webhdx/PicoBoot" },
+            { "label": "RetroRGB — PicoBoot Is Here", "url": "https://retrorgb.com/picoboot-is-here-the-newest-modchip-for-the-gamecube.html" }
+          ],
+          "image": { "src": "", "alt": "Modchip PicoBoot Raspberry Pi Pico pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks"]
+        },
+        {
+          "id": "gc_sd2sp2",
+          "name": "SD2SP2 Adapter",
+          "brand": "Générique",
+          "summary": "Adaptateur microSD invisible logé dans le Serial Port 2 sous la console, idéal avec PicoBoot et Swiss.",
+          "features": ["Se branche dans le Serial Port 2 (sous la console)", "Sans soudure, sans ouverture", "Libère les slots carte mémoire", "Compatible Swiss, GBI, mGBA"],
+          "pros": ["Discret (sous la console)", "Installation immédiate sans soudure", "Compagnon idéal de PicoBoot"],
+          "cons": ["Nécessite la présence du Serial Port 2", "Débit inférieur à un ODE", "Nécessite PicoBoot ou un disque de boot"],
+          "specs": { "Type": "Loader microSD", "Port": "Serial Port 2", "Installation": "Sans soudure" },
+          "difficulty": 1,
+          "soldering": "Non",
+          "installTime": "5–10 min",
+          "price": "€",
+          "prerequisites": ["GameCube équipée du Serial Port 2", "PicoBoot ou disque de boot homebrew"],
+          "buyLinks": [{ "label": "Stone Age Gamer", "url": "https://stoneagegamer.com/sd2sp2-micro-sd-card-adapter-1-2a-sdloader-for-gamecube-serial-port-2.html" }],
+          "sources": [{ "label": "RetroRGB — GameCube Serial Port SD Adapter", "url": "https://retrorgb.com/gamecube-serial-port-sd-adapter-swiss-updates.html" }],
+          "image": { "src": "", "alt": "Adaptateur microSD SD2SP2 pour Serial Port 2 de la Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks"]
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "name": "Contrôle",
+      "icon": "🎮",
+      "intro": "Jouer en sans-fil avec n'importe quelle manette Bluetooth moderne grâce à BlueRetro, en interne ou via un adaptateur externe.",
+      "mods": [
+        {
+          "id": "gc_blueretro",
+          "name": "BlueRetro Internal Adapter (V3)",
+          "brand": "8BitMods / BlueRetro",
+          "badge": "Sans-fil",
+          "summary": "Module Bluetooth interne (BlueRetro) qui permet d'appairer jusqu'à 4 manettes modernes sans fil.",
+          "features": ["Interface Bluetooth BlueRetro haute vitesse", "Jusqu'à 4 manettes sans fil (mixables avec filaires)", "Compatible PS4/PS5, Xbox, Switch, 8BitDo…", "Sans soudure (remplace la carte des ports manette)"],
+          "pros": ["Jeu sans fil avec manettes modernes", "Installation interne discrète sans soudure", "Mappage des boutons configurable"],
+          "cons": ["Latence Bluetooth sur certaines manettes", "Mise à jour firmware via ordinateur Bluetooth"],
+          "specs": { "Type": "Adaptateur Bluetooth interne", "Manettes": "jusqu'à 4", "Installation": "Sans soudure" },
+          "difficulty": 2,
+          "soldering": "Non",
+          "installTime": "30–45 min",
+          "price": "€€",
+          "prerequisites": [],
+          "buyLinks": [{ "label": "8BitMods", "url": "https://8bitmods.com/internal-bluetooth-blueretro-adapter-for-gamecube-v3/" }],
+          "sources": [
+            { "label": "8BitMods — Internal Bluetooth (BlueRetro) Adapter V3", "url": "https://8bitmods.com/internal-bluetooth-blueretro-adapter-for-gamecube-v3/" },
+            { "label": "Nintendo Life — Stealth GameCube Bluetooth Mod", "url": "https://www.nintendolife.com/news/2022/08/this-stealth-gamecube-mod-allows-you-to-play-with-any-bluetooth-controller" }
+          ],
+          "image": { "src": "", "alt": "Adaptateur Bluetooth interne BlueRetro pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "difficulty", "brand"]
+        }
+      ]
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance & Refroidissement",
+      "icon": "⚙️",
+      "intro": "Réduire le bruit de la console en remplaçant le ventilateur d'origine par un Noctua ultra-silencieux.",
+      "mods": [
+        {
+          "id": "gc_noctua_fan",
+          "name": "40mm Noctua Fan Mod",
+          "brand": "Retro Frog / Noctua",
+          "summary": "Remplace le ventilateur 50mm bruyant d'origine par un Noctua 40mm silencieux via un support imprimé 3D.",
+          "features": ["Support adaptateur imprimé 3D + câble d'adaptation", "Compatible Noctua NF-A4x10 FLX 12V (40x10mm)", "Réutilise les 4 vis d'origine", "Meilleur flux d'air"],
+          "pros": ["Silence quasi total", "Meilleur refroidissement", "Réversible"],
+          "cons": ["Adaptateur 3D et câble requis", "Ventilateur Noctua à acheter séparément"],
+          "specs": { "Ventilateur": "Noctua NF-A4x10 FLX 12V", "Format": "40x10mm", "Adaptateur": "Imprimé 3D" },
+          "difficulty": 2,
+          "soldering": "Non",
+          "installTime": "30–45 min",
+          "price": "€€",
+          "prerequisites": ["Ventilateur Noctua 40mm 12V", "Adaptateur 3D + câble"],
+          "buyLinks": [{ "label": "Stone Age Gamer", "url": "https://stoneagegamer.com/40mm-fan-adapter-plate-and-fan-cable-for-gamecube-retro-frog.html" }],
+          "sources": [{ "label": "Retro Frog — GameCube 40mm fan adapter", "url": "https://retrofrog.net/products/gamecube-40mm-fan-adapter-plate-cable" }],
+          "image": { "src": "", "alt": "Mod ventilateur Noctua 40mm silencieux pour Nintendo GameCube", "credit": "" },
+          "needsReview": ["image", "price", "buyLinks", "brand"]
+        }
+      ]
+    }
+  ]
+}

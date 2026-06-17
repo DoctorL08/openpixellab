@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez tous les mods pour la Gameboy Advance SP sur OpenPixel Lab. Écrans IPS, batteries haute capacité et plus.">
-    <title>Gameboy Advance SP Mods | OpenPixel Lab</title>
+    <meta name="description" content="Guide complet des mods pour la Game Boy Advance SP : kits écran IPS laminés (FunnyPlaying M2, Hispeedido V5), batteries LiPo, USB-C, LED RGB, audio et boutons. Compatible AGS-001 et AGS-101. Difficulté, prix, prérequis.">
     
+    <title>Mods Game Boy Advance SP (AGS-001/101) — Écrans IPS, Batterie, Audio | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mods Game Boy Advance SP (AGS-001/101) — Écrans IPS, Batterie, Audio | OpenPixel Lab">
+    <meta property="og:description" content="Guide complet des mods pour la Game Boy Advance SP : kits écran IPS laminés (FunnyPlaying M2, Hispeedido V5), batteries LiPo, USB-C, LED RGB, audio et boutons. Compatible AGS-001 et AGS-101. Difficulté, prix, prérequis.">
+    <meta property="og:image" content="../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../Images/Logo OpenPixel Lab.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/console-page.css">
@@ -21,7 +31,7 @@
 
     <header class="header">
         <div class="container nav-container">
-            <div class="logo-container" onclick="window.location.href='../index.html'">
+            <div class="logo-container" onclick="window.location.href='../index.html'" style="cursor:pointer;">
                 <img src="../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
                 <span class="logo-text">OpenPixel Lab</span>
             </div>
@@ -31,7 +41,7 @@
                     <a href="../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
                     <a href="../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
                     <a href="../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
-                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <a href="../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
                     <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
                         <span class="lang-icon">FR</span>
                     </button>
@@ -48,197 +58,253 @@
 
     <main class="console-page">
         <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="../index.html">Accueil</a> ›
+                <a href="../wiki.html">Wiki</a> ›
+                <span>Game Boy Advance SP</span>
+            </nav>
+
             <header class="console-hero">
                 <div class="badge">Console Portable</div>
                 <h1 class="console-title">Gameboy <span class="highlight">Advance SP</span></h1>
                 <p class="console-subtitle">Le design iconique à clapet. La SP reste l'une des consoles les plus agréables à modder pour le confort de jeu.</p>
+                <div class="console-stats">
+                    <span>2003</span> · <span>13 mods référencés</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../configurator.html">🎨 Personnaliser en 3D</a>
+                <a class="cross-link" href="../comparator.html">⚖️ Comparer des setups</a>
+            </div>
             </header>
 
-            <!-- AFFICHAGE -->
-            <section class="mod-section">
+            <p class="console-intro">La Game Boy Advance SP (2003) existe en deux variantes : l'AGS-001 (écran frontlight, souvent sombre) et l'AGS-101 (écran backlight, nettement plus lumineux). Les mods d'écran IPS modernes corrigent les deux et donnent une image éclatante quel que soit le modèle de départ. Avec sa coque à clapet, sa batterie intégrée et son électronique compacte, la SP est un excellent compromis confort/modding. Voici les mods de référence, classés par domaine.</p>
+
+            <nav class="console-toc" aria-label="Sommaire des sections"><a href="#section-display" class="console-toc-link">📺 Affichage</a><a href="#section-power" class="console-toc-link">🔋 Énergie</a><a href="#section-audio" class="console-toc-link">🔊 Illumination &amp; Audio</a><a href="#section-buttons" class="console-toc-link">🔘 Boutons</a></nav>
+
+            <section class="mod-section" id="section-display">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
                     <h2 class="section-name">Affichage</h2>
                 </div>
+                <p class="section-intro">Le mod le plus transformateur sur SP : remplacer la dalle d'origine (frontlight AGS-001 ou backlight AGS-101) par un écran IPS lumineux et net. La plupart des kits récents sont laminés et compatibles avec les deux variantes de console.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">Laminé</span>
+                    <article class="mod-card" id="gbasp_fp_m2">
+                        <div class="mod-card-top"><span class="mod-badge">Laminé</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS M2 laminé 3.0&quot; FunnyPlaying pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
-                        <h3 class="mod-name">GBA SP 3.0" IPS Kit M2</h3>
+                        <h3 class="mod-name">GBA SP 3.0&quot; IPS Kit M2</h3>
                         <p class="mod-desc">La version laminée de référence pour la SP. Image ultra nette, zéro poussière, angles de vision parfaits.</p>
-                        <ul class="mod-features">
-                            <li>Vitre laminée</li>
-                            <li>Angles de vision à 178°</li>
-                            <li>Luminosité réglable</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Non (1 fil optionnel pour l'OSD)</div></div>
+                        <ul class="mod-features"><li>Vitre laminée à la dalle</li><li>Angles de vision à 178°</li><li>Luminosité réglable (jusqu'à ~500 cd/m²)</li><li>OSD tactile : 8 niveaux de luminosité, couleurs, effets pixel</li><li>Compatible AGS-001 &amp; AGS-101</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS M2 laminé 3.0&quot;</dd></div><div><dt>Gamut</dt><dd>99% sRGB</dd></div><div><dt>Luminosité</dt><dd>~500 cd/m²</dd></div><div><dt>OSD</dt><dd>Oui (tactile)</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Image cristalline</li><li>Pas de poussière piégée</li><li>Plug-and-play (1 fil optionnel pour l'OSD)</li><li>Mémoire des réglages à l'extinction</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Plus cher que les kits non laminés</li><li>Coque IPS-ready recommandée pour la version à plat</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/3-0-laminated-ips-kit-for-gba-sp" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://funnyplaying.com/products/3-0-inch-ips-gba-sp-backlight-kit-m2" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/3-0-laminated-ips-kit-for-gba-sp" target="_blank" rel="noopener">Handheld Legend — GBA SP 3.0 M2 IPS Kit</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">Laminé</span>
+                    <article class="mod-card" id="gbasp_hsd_laminated">
+                        <div class="mod-card-top"><span class="mod-badge">Laminé</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS laminé Hispeedido pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
                         <h3 class="mod-name">GBA SP IPS Laminated Kit</h3>
                         <p class="mod-desc">Transformez votre écran (même AGS-101) en une dalle ultra-lumineuse aux couleurs parfaites.</p>
-                        <ul class="mod-features">
-                            <li>Installation simplifiée (Laminé)</li>
-                            <li>Zéro poussière sous la vitre</li>
-                            <li>Angles de vision à 178°</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimale (OSD optionnel)</div></div>
+                        <ul class="mod-features"><li>Installation simplifiée (laminé)</li><li>Zéro poussière sous la vitre</li><li>Angles de vision à 178°</li><li>Compatible AGS-001 &amp; AGS-101</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS laminé 3.0&quot;</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Très lumineux</li><li>Look usine</li><li>Installation accessible</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Notice parfois sommaire</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" target="_blank" rel="noopener">Handheld Legend — GBA SP V5 Laminated IPS Kit</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_hsd_v5">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS V5 drop-in Hispeedido pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
-                        <h3 class="mod-name">V5 IPS Drop-in 3.0"</h3>
+                        <h3 class="mod-name">V5 IPS Drop-in 3.0&quot;</h3>
                         <p class="mod-desc">Une version avancée avec de multiples effets de grille de pixels pour un look rétro personnalisable.</p>
-                        <ul class="mod-features">
-                            <li>8 modes de rendu</li>
-                            <li>Luminosité tactile ou par boutons</li>
-                            <li>Installation sans soudure (optionnelle)</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Non (1 fil optionnel pour l'OSD)</div></div>
+                        <ul class="mod-features"><li>Lentille pré-laminée et PCB pré-connecté</li><li>4 effets pixel (normal, rétro AGS-101, scanline 1 &amp; 2)</li><li>Réglages tactiles (luminosité, couleur, mode)</li><li>Taille identique à la dalle d'origine</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS V5 drop-in 3.0&quot;</dd></div><div><dt>Effets pixel</dt><dd>4 modes</dd></div><div><dt>OSD</dt><dd>Oui (1 fil)</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Effets pixel rétro variés</li><li>Installation sans soudure (OSD optionnel)</li><li>Large angle de vision</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>1 fil à souder pour l'OSD</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" target="_blank" rel="noopener">Handheld Legend — GBA SP V5 IPS Kit</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">TV Link</span>
+                    <article class="mod-card" id="gbasp_hsd_v2_tvout">
+                        <div class="mod-card-top"><span class="mod-badge">TV Link</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit IPS V2 avec sortie TV Hispeedido pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
                         <h3 class="mod-name">GBA SP V2 IPS + TV Out</h3>
                         <p class="mod-desc">Kit IPS V2 avec sortie TV intégrée pour jouer sur grand écran directement depuis votre SP.</p>
-                        <ul class="mod-features">
-                            <li>Sortie TV intégrée</li>
-                            <li>OSD complet</li>
-                            <li>Compatible AGS-001 & AGS-101</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Sortie TV intégrée</li><li>OSD complet</li><li>Compatible AGS-001 &amp; AGS-101</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS V2 + TV Out</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Jeu sur grand écran</li><li>OSD complet</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Installation plus complexe (sortie TV)</li><li>Soudure requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-sp-v2-ips-lcd-hispeedido" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://wiki.handheldlegend.com/gba-sp-ips-v2-and-v2-tv-out-hispeedido-or-install-guide" target="_blank" rel="noopener">Hand Held Legend Docs — GBA SP IPS V2 &amp; V2 TV Out Install</a></p>
                     </article>
                 </div>
             </section>
 
-            <!-- ÉNERGIE -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-power">
                 <div class="section-header">
                     <span class="section-icon">🔋</span>
                     <h2 class="section-name">Énergie</h2>
                 </div>
+                <p class="section-intro">Remplacer la cellule LiPo d'origine fatiguée et moderniser la recharge. Un écran IPS lumineux consomme davantage : une batterie neuve de bonne capacité prolonge nettement les sessions.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">Recommandé</span>
+                    <article class="mod-card" id="gbasp_fp_maxplay">
+                        <div class="mod-card-top"><span class="mod-badge">Recommandé</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Batterie LiPo MaxPlay 950mAh FunnyPlaying pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">950mAh LiPo MaxPlay Battery</h3>
                         <p class="mod-desc">Batterie Li-Po 950mAh pour remplacer la cellule d'origine fatiguée avec une capacité optimisée.</p>
-                        <ul class="mod-features">
-                            <li>950mAh de capacité</li>
-                            <li>S'insère dans le slot d'origine</li>
-                            <li>Cellule de haute qualité</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 5–10 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>950mAh de capacité</li><li>S'insère dans le slot d'origine</li><li>PCB noir et contacts dorés</li><li>Compatible Nintendo DS également</li></ul>
+                        <dl class="mod-specs"><div><dt>Capacité</dt><dd>950 mAh</dd></div><div><dt>Type</dt><dd>Li-Po</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>6–10 h d'autonomie sur une SP moddée</li><li>Plug-and-play (slot d'origine)</li><li>Cellule de bonne qualité</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Autonomie réduite si écran très lumineux</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/maxplay-battery-for-game-boy-advance-sp-funnyplaying" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://funnyplaying.com/products/gba-sp-rechargeable-950mah-lipo-maxplay-battery-mod" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/gba-sp-rechargeable-950mah-lipo-maxplay-battery-mod" target="_blank" rel="noopener">FunnyPlaying — GBA SP 950mAh LiPo MaxPlay Battery Mod</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_usbc">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, brand, difficulty">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Mod port de charge USB-C pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Custom / HHL</div>
                         <h3 class="mod-name">USB-C Charging Port</h3>
                         <p class="mod-desc">Remplacez le port propriétaire fragile par un port USB-C universel.</p>
-                        <ul class="mod-features">
-                            <li>Recharge avec n'importe quel câble</li>
-                            <li>Plus robuste que l'original</li>
-                            <li>Look moderne</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>Recharge avec n'importe quel câble USB-C</li><li>Plus robuste que l'original</li><li>Look moderne</li></ul>
+                        <dl class="mod-specs"><div><dt>Recharge</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Recharge universelle</li><li>Connecteur plus solide</li><li>Plus de chargeur propriétaire</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine requise</li><li>Découpe de coque possible selon le kit</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/collections/game-boy-advance-gba-sp-power" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/collections/game-boy-advance-gba-sp-power" target="_blank" rel="noopener">Hand Held Legend — GBA SP Power Mods</a></p>
                     </article>
                 </div>
             </section>
 
-            <!-- ILLUMINATION & AUDIO -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-audio">
                 <div class="section-header">
                     <span class="section-icon">🔊</span>
-                    <h2 class="section-name">Illumination & Audio</h2>
+                    <h2 class="section-name">Illumination &amp; Audio</h2>
                 </div>
+                <p class="section-intro">Éclairer les boutons en RGB et booster le son d'origine, souvent trop faible sur la SP.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">RGB</span>
+                    <article class="mod-card" id="gbasp_retroglow">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Kit LED RGB RetroGlow SP pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Handheld Legend</div>
                         <h3 class="mod-name">RetroGlow SP</h3>
                         <p class="mod-desc">Kit LED RGB pour illuminer les boutons de votre GBA SP avec des millions de couleurs.</p>
-                        <ul class="mod-features">
-                            <li>32 teintes disponibles</li>
-                            <li>Modes d'animation</li>
-                            <li>Contrôle par combinaisons de boutons</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>32 teintes disponibles</li><li>Modes d'animation</li><li>Contrôle par combinaisons de boutons</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>LED RGB</dd></div><div><dt>Teintes</dt><dd>32</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Effet visuel spectaculaire</li><li>Personnalisable</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine</li><li>Consommation supplémentaire</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/collections/game-boy-advance-sp" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.youtube.com/watch?v=_6iZiHNouh4" target="_blank" rel="noopener">YouTube — Hispeedido IPS + RetroGlow RGB LED Flex (GBA SP)</a></p>
                     </article>
-
-                    <article class="mod-card">
-                        <span class="mod-badge">RGB</span>
+                    <article class="mod-card" id="gbasp_arc">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Board LED RGB ARC SP NatalieTheNerd pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">NatalieTheNerd</div>
                         <h3 class="mod-name">ARC SP (RGB LEDs)</h3>
                         <p class="mod-desc">Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes d'animation avancés.</p>
-                        <ul class="mod-features">
-                            <li>Contrôle couleur par zone</li>
-                            <li>Modes breathing & windmill</li>
-                            <li>17 réglages disponibles</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Avancé"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Avancé</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Oui (fine)</div></div>
+                        <ul class="mod-features"><li>Contrôle couleur par zone</li><li>Modes breathing &amp; windmill</li><li>17 réglages disponibles</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>LED RGB</dd></div><div><dt>Réglages</dt><dd>17</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Réglages fins par zone</li><li>Conçu par une moddeuse reconnue</li><li>Faible consommation</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure fine</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_cleanamp">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
-                        <h3 class="mod-name">CleanAmp SP</h3>
+                        <h3 class="mod-name">CleanAmp Pro SP</h3>
                         <p class="mod-desc">Améliorez drastiquement le son de votre SP, souvent trop faible d'origine.</p>
-                        <ul class="mod-features">
-                            <li>Son clair et non distordu</li>
-                            <li>Haut-parleur premium</li>
-                            <li>Installation directe sur le PCB</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>Amplificateur classe D moderne</li><li>Son clair et non distordu</li><li>Remplace l'ampli et le haut-parleur d'origine</li><li>Installation directe sur le PCB</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Ampli classe D</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Volume nettement supérieur</li><li>Son plus propre</li><li>Très efficace énergétiquement</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-sp-cleanamp-pro-retrosix" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.retrosix.wiki/gba-sp-cleanamp-install-guide" target="_blank" rel="noopener">RetroSix Wiki — GBA-SP CleanAmp Install Guide</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_hsd_flexamp">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Amplificateur Flex Amp Hispeedido pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">Hispeedido</div>
                         <h3 class="mod-name">GBA SP Flex Amp</h3>
                         <p class="mod-desc">Amplificateur flex facile à installer pour booster significativement le son de la SP.</p>
-                        <ul class="mod-features">
-                            <li>Très facile à installer</li>
-                            <li>Son nettement plus fort</li>
-                            <li>Compatible AGS-001 & AGS-101</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Facile"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Oui (basique)</div></div>
+                        <ul class="mod-features"><li>Très facile à installer</li><li>Son nettement plus fort</li><li>Compatible AGS-001 &amp; AGS-101</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Ampli flex</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Installation simple</li><li>Gain de volume notable</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li></ul></div></div>
+                        
+                        
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_fp_usbc_audio">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks, difficulty, specs">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Mod combiné USB-C avec audio FunnyPlaying pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">FunnyPlaying</div>
                         <h3 class="mod-name">USB-C Mod with Audio</h3>
                         <p class="mod-desc">Mod combiné qui intègre un port USB-C et améliore la sortie audio en une seule installation.</p>
-                        <ul class="mod-features">
-                            <li>USB-C + amélioration audio</li>
-                            <li>Installation combinée</li>
-                            <li>Compatible toutes SP</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermédiaire"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermédiaire</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Oui</div></div>
+                        <ul class="mod-features"><li>USB-C + amélioration audio</li><li>Installation combinée</li><li>Compatible toutes SP</li></ul>
+                        <dl class="mod-specs"><div><dt>Recharge</dt><dd>USB-C</dd></div><div><dt>Audio</dt><dd>Amélioré</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Deux mods en une seule install</li><li>Recharge USB-C</li><li>Audio amélioré</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Soudure requise</li></ul></div></div>
+                        
+                        
                     </article>
                 </div>
             </section>
 
-            <!-- BOUTONS -->
-            <section class="mod-section">
+            <section class="mod-section" id="section-buttons">
                 <div class="section-header">
                     <span class="section-icon">🔘</span>
                     <h2 class="section-name">Boutons</h2>
                 </div>
+                <p class="section-intro">Retrouver un toucher neuf et personnaliser les couleurs : boutons et membranes silicone de remplacement pour la SP.</p>
                 <div class="mods-grid">
-                    <article class="mod-card">
-                        <span class="mod-badge">Premium</span>
+                    <article class="mod-card" id="gbasp_prestige_buttons">
+                        <div class="mod-card-top"><span class="mod-badge">Premium</span><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Boutons premium Prestige RetroSix pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
                         <h3 class="mod-name">Prestige Buttons GBA SP</h3>
                         <p class="mod-desc">Boutons de remplacement premium pour retrouver un feeling neuf sur votre SP.</p>
-                        <ul class="mod-features">
-                            <li>Matière haute qualité</li>
-                            <li>Feeling proche de l'original</li>
-                            <li>Plusieurs coloris disponibles</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Moules ABS RetroSix pour un ajustement parfait</li><li>Set complet (A, B, L, R, D-pad, Start, Select, luminosité, interrupteur)</li><li>Ressorts et tiges inclus</li><li>Plusieurs coloris disponibles</li></ul>
+                        <dl class="mod-specs"><div><dt>Matière</dt><dd>ABS premium</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Toucher premium</li><li>Set complet</li><li>Large choix de couleurs</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Compromis</span><ul class="mod-pc-list cons"><li>Membranes et vis non incluses</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-sp-prestige-buttons" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-advance-sp-prestige-buttons" target="_blank" rel="noopener">Handheld Legend — GBA SP Prestige Buttons (RetroSix)</a></p>
                     </article>
-
-                    <article class="mod-card">
+                    <article class="mod-card" id="gbasp_silicone_membranes">
+                        <div class="mod-card-top"><span class="mod-review" title="À valider par un modérateur : image, price, buyLinks">⚑ à valider</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Membranes silicone de remplacement RetroSix pour Game Boy Advance SP"><span>📷</span></div>
                         <div class="mod-brand">RetroSix</div>
                         <h3 class="mod-name">Silicone Membranes GBA SP</h3>
                         <p class="mod-desc">Membranes silicone conductives haute qualité pour restaurer la réactivité des boutons SP.</p>
-                        <ul class="mod-features">
-                            <li>Conduction optimisée</li>
-                            <li>Durée de vie étendue</li>
-                            <li>Remplacement direct</li>
-                        </ul>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Très facile"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Très facile</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 Non</div></div>
+                        <ul class="mod-features"><li>Set complet (Start/Select, D-pad, A/B, luminosité)</li><li>Conduction optimisée</li><li>Durée de vie étendue</li><li>Remplacement direct</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Silicone conductif</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Points forts</span><ul class="mod-pc-list pros"><li>Réactivité restaurée</li><li>S'associe aux Prestige Buttons</li><li>Qualité supérieure au générique</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-sp-silicone-button-pads" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-advance-sp-silicone-button-pads" target="_blank" rel="noopener">Handheld Legend — GBA SP Silicone Membranes</a></p>
                     </article>
                 </div>
             </section>
+
+            <p class="console-sources">Sources générales : <a href="https://gameboy.github.io/wiki/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a> · <a href="https://handheldlegend.com/collections/game-boy-advance-sp" target="_blank" rel="noopener">Hand Held Legend — Game Boy Advance SP Mods &amp; Parts</a></p>
         </div>
     </main>
 
@@ -271,7 +337,7 @@
             <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
         </div>
     </footer>
-    
+
     <script src="../js/script.js"></script>
 </body>
 </html>
