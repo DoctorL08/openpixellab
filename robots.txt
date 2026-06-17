@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://openpixel-lab.com/sitemap.xml
