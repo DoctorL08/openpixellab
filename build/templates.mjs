@@ -215,6 +215,34 @@ ${sec.mods.map(modCard).join("\n")}
             </section>`;
 }
 
+/** Données structurées JSON-LD (BreadcrumbList + ItemList des mods). */
+function jsonLd(c, base) {
+  const allMods = c.sections.flatMap((s) => s.mods);
+  const data = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: `${base}index.html` },
+        { "@type": "ListItem", position: 2, name: "Wiki", item: `${base}wiki.html` },
+        { "@type": "ListItem", position: 3, name: c.name },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `Mods pour ${c.fullName || c.name}`,
+      numberOfItems: allMods.length,
+      itemListElement: allMods.map((m, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: `${m.brand ? m.brand + " " : ""}${m.name}`,
+      })),
+    },
+  ];
+  return `    <script type="application/ld+json">\n${JSON.stringify(data)}\n    </script>`;
+}
+
 /** Page console complète (data-driven). base fixé à '../' (sous-dossier wiki/). */
 export function consolePage(c) {
   const base = "../";
@@ -240,6 +268,7 @@ export function consolePage(c) {
   })}
 <body>
     <div class="scanlines"></div>
+${jsonLd(c, base)}
 
 ${header({ base, active: "wiki" })}
 
