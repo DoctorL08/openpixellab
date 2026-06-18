@@ -7,16 +7,28 @@
   "category": "portable",
   "year": 1998,
   "icon": "🌈",
-  "heroBadge": "Console Portable",
+  "heroBadge": { "fr": "Console Portable", "en": "Handheld Console" },
   "title": "Game Boy Color",
   "titleHighlight": "Color",
-  "tagline": "La console qui a apporté la couleur au creux de la main. Découvrez comment la moderniser avec les meilleures technologies actuelles.",
-  "intro": "La Game Boy Color (1998) reste l'une des plateformes de modding portables les plus populaires. Son écran réflectif d'origine se prête parfaitement à un remplacement IPS ou AMOLED, et son électronique compacte accueille batteries USB-C, régulateurs propres, kits LED RGB et amplificateurs audio. Voici les mods de référence, classés par domaine, avec difficulté, soudure et prérequis.",
+  "tagline": {
+    "fr": "La console qui a apporté la couleur au creux de la main. Découvrez comment la moderniser avec les meilleures technologies actuelles.",
+    "en": "The console that brought color to the palm of your hand. Learn how to modernize it with the best current technology."
+  },
+  "intro": {
+    "fr": "La Game Boy Color (1998) reste l'une des plateformes de modding portables les plus populaires. Son écran réflectif d'origine se prête parfaitement à un remplacement IPS ou AMOLED, et son électronique compacte accueille batteries USB-C, régulateurs propres, kits LED RGB et amplificateurs audio. Voici les mods de référence, classés par domaine, avec difficulté, soudure et prérequis.",
+    "en": "The Game Boy Color (1998) remains one of the most popular handheld modding platforms. Its original reflective screen is perfect for an IPS or AMOLED replacement, and its compact electronics accommodate USB-C batteries, clean regulators, RGB LED kits and audio amplifiers. Here are the go-to mods, sorted by category, with difficulty, soldering and prerequisites."
+  },
   "configuratorId": "gameboy_color",
   "comparatorId": "gbc",
   "seo": {
-    "title": "Mods Game Boy Color (GBC) — Écrans IPS/AMOLED, USB-C, RGB, Audio | OpenPixel Lab",
-    "description": "Guide complet des mods pour la Game Boy Color (CGB-001) : kits écran IPS et AMOLED laminés (FunnyPlaying, Hispeedido, BennVenn), batteries USB-C/Qi, LED RGB, amplis audio et boutons. Difficulté, prix, soudure et prérequis."
+    "title": {
+      "fr": "Mods Game Boy Color (GBC) — Écrans IPS/AMOLED, USB-C, RGB, Audio | OpenPixel Lab",
+      "en": "Game Boy Color (GBC) Mods — IPS/AMOLED Screens, USB-C, RGB, Audio | OpenPixel Lab"
+    },
+    "description": {
+      "fr": "Guide complet des mods pour la Game Boy Color (CGB-001) : kits écran IPS et AMOLED laminés (FunnyPlaying, Hispeedido), batteries USB-C/Qi, LED RGB, amplis audio et boutons. Difficulté, prix, soudure et prérequis.",
+      "en": "Complete guide to Game Boy Color (CGB-001) mods: laminated IPS and AMOLED screen kits (FunnyPlaying, Hispeedido), USB-C/Qi batteries, RGB LEDs, audio amps and buttons. Difficulty, price, soldering and prerequisites."
+    }
   },
   "sources": [
     { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gameboy.github.io/wiki/backlightmods" },
@@ -25,426 +37,663 @@
   "sections": [
     {
       "id": "display",
-      "name": "Affichage",
+      "name": { "fr": "Affichage", "en": "Display" },
       "icon": "📺",
-      "intro": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS ou AMOLED rétroéclairé. La plupart des kits demandent une coque adaptée (laminée/IPS-ready) ou une découpe, et une alimentation stabilisée (voir CleanPower dans Énergie).",
+      "intro": {
+        "fr": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS ou AMOLED rétroéclairé. La plupart des kits demandent une coque adaptée (laminée/IPS-ready) ou une découpe, et une alimentation stabilisée (voir CleanPower dans Énergie).",
+        "en": "The most transformative mod: replacing the original reflective panel with a backlit IPS or AMOLED screen. Most kits require an appropriate shell (laminated/IPS-ready) or trimming, plus stabilized power (see CleanPower under Power)."
+      },
       "mods": [
         {
           "id": "gbc_fp_retropixel",
           "name": "RetroPixel IPS LCD Kit",
           "brand": "FunnyPlaying",
-          "badge": "Populaire",
-          "summary": "Le kit IPS de référence FunnyPlaying pour GBC, avec rendu pixel-perfect et contrôle de luminosité.",
-          "features": ["Zone d'affichage agrandie", "Luminosité réglable", "Modes scanlines / effets pixel", "Logo rétroéclairé personnalisable"],
-          "pros": ["Image nette et lumineuse", "Effets pixel et palettes", "Écosystème FunnyPlaying complet (coques, LED)"],
-          "cons": ["Découpe de coque nécessaire hors coque IPS-ready", "CleanPower recommandé", "Soudure d'un fil pour la luminosité max"],
-          "specs": { "Type": "IPS Q5", "OSD": "Oui" },
+          "badge": { "fr": "Populaire", "en": "Popular" },
+          "summary": {
+            "fr": "Le kit IPS de référence FunnyPlaying pour GBC, avec rendu pixel-perfect et contrôle de luminosité.",
+            "en": "FunnyPlaying's benchmark IPS kit for the GBC, with pixel-perfect rendering and brightness control."
+          },
+          "features": {
+            "fr": ["Zone d'affichage agrandie", "Luminosité réglable", "Modes scanlines / effets pixel", "Logo rétroéclairé personnalisable"],
+            "en": ["Enlarged display area", "Adjustable brightness", "Scanline / pixel-effect modes", "Customizable backlit logo"]
+          },
+          "pros": {
+            "fr": ["Image nette et lumineuse", "Effets pixel et palettes", "Écosystème FunnyPlaying complet (coques, LED)"],
+            "en": ["Sharp, bright image", "Pixel effects and palettes", "Complete FunnyPlaying ecosystem (shells, LEDs)"]
+          },
+          "cons": {
+            "fr": ["Découpe de coque nécessaire hors coque IPS-ready", "CleanPower recommandé", "Soudure d'un fil pour la luminosité max"],
+            "en": ["Shell trimming required unless using an IPS-ready shell", "CleanPower recommended", "One wire to solder for max brightness"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5", "OSD": "Oui" },
+            "en": { "Type": "IPS Q5", "OSD": "Yes" }
+          },
           "difficulty": 3,
-          "soldering": "Minimale (fil d'alimentation pour luminosité max)",
+          "soldering": { "fr": "Minimale (fil d'alimentation pour luminosité max)", "en": "Minimal (power wire for max brightness)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready ou découpe", "CleanPower recommandé"],
+          "prerequisites": { "fr": ["Coque IPS-ready ou découpe", "CleanPower recommandé"], "en": ["IPS-ready shell or trimming", "CleanPower recommended"] },
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
-          "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }],
-          "sources": [{ "label": "Handheld Legend — GBC Retro Pixel Q5 IPS", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }, { "label": "Handheld Legend — IPS LCD Kit docs", "url": "https://docs.handheldlegend.com/s/portal/doc/ips-lcd-kit-tBBmn80iqm" }],
-          "image": { "src": "", "alt": "Kit IPS RetroPixel FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-kit-1" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }],
+          "sources": [{ "label": "FunnyPlaying — GBC Retro Pixel IPS LCD Kit", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-kit-1" }, { "label": "Handheld Legend — GBC Retro Pixel Q5 IPS", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }, { "label": "Handheld Legend — IPS LCD Kit docs", "url": "https://docs.handheldlegend.com/s/portal/doc/ips-lcd-kit-tBBmn80iqm" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS RetroPixel FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying RetroPixel IPS kit for Game Boy Color" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "gbc_fp_q5_laminated",
           "name": "IPS Laminated Q5 V2.0",
           "brand": "FunnyPlaying",
-          "badge": "Laminé",
-          "summary": "Le choix de référence pour une image nette et un écran plus grand que l'original, version laminée.",
-          "features": ["Logo rétroéclairé personnalisable", "Modes Pixel (scanlines)", "Excellents angles de vision", "Vitre laminée sans poussière"],
-          "pros": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "Look usine"],
-          "cons": ["Plus cher que la version non laminée", "Coque laminée recommandée", "CleanPower recommandé"],
-          "specs": { "Type": "IPS Q5 laminé", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "Le choix de référence pour une image nette et un écran plus grand que l'original, version laminée.",
+            "en": "The go-to choice for a sharp image and a larger-than-original screen, in laminated form."
+          },
+          "features": {
+            "fr": ["Logo rétroéclairé personnalisable", "Modes Pixel (scanlines)", "Excellents angles de vision", "Vitre laminée sans poussière"],
+            "en": ["Customizable backlit logo", "Pixel modes (scanlines)", "Excellent viewing angles", "Dust-free laminated glass"]
+          },
+          "pros": {
+            "fr": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "Look usine"],
+            "en": ["Superior contrast and sharpness", "No trapped dust", "Factory look"]
+          },
+          "cons": {
+            "fr": ["Plus cher que la version non laminée", "Coque laminée recommandée", "CleanPower recommandé"],
+            "en": ["Pricier than the non-laminated version", "Laminated shell recommended", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5 laminé", "OSD": "Oui" },
+            "en": { "Type": "Laminated IPS Q5", "OSD": "Yes" }
+          },
           "difficulty": 3,
-          "soldering": "Minimale (fil d'alimentation pour luminosité max)",
+          "soldering": { "fr": "Minimale (fil d'alimentation pour luminosité max)", "en": "Minimal (power wire for max brightness)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": ["Coque laminée recommandée", "CleanPower recommandé"],
+          "prerequisites": { "fr": ["Coque laminée recommandée", "CleanPower recommandé"], "en": ["Laminated shell recommended", "CleanPower recommended"] },
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
-          "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
-          "sources": [{ "label": "Handheld Legend — GBC Retro Pixel 2.0 Q5 IPS laminé", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
-          "image": { "src": "", "alt": "Kit IPS laminé Q5 V2.0 FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "specs"]
-        },
-        {
-          "id": "gbc_fp_nes_ves",
-          "name": "NES/VES RetroPixel Laminated Kit",
-          "brand": "FunnyPlaying",
-          "badge": "Nouveauté",
-          "summary": "Version spéciale avec modes d'affichage NES et VES pour simuler les palettes d'époque.",
-          "features": ["Mode NES (palette rétro)", "Mode VES (rendu vintage)", "Vitre laminée"],
-          "pros": ["Palettes rétro inédites", "Vitre laminée nette", "Personnalisation poussée"],
-          "cons": ["Coque laminée recommandée", "CleanPower recommandé"],
-          "specs": { "Type": "IPS laminé", "Modes": "NES / VES" },
-          "difficulty": 3,
-          "soldering": "Minimale (fil d'alimentation)",
-          "installTime": "45–60 min",
-          "price": "€€",
-          "prerequisites": ["Coque laminée recommandée", "CleanPower recommandé"],
-          "buyLinks": [],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit IPS laminé modes NES/VES FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-2-0-replacement-laminated-display" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
+          "sources": [{ "label": "FunnyPlaying — GBC Retro Pixel IPS LCD 2.0 Laminated", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-2-0-replacement-laminated-display" }, { "label": "Handheld Legend — GBC Retro Pixel 2.0 Q5 IPS laminé", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS laminé Q5 V2.0 FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying Q5 V2.0 laminated IPS kit for Game Boy Color" }, "credit": "" },
+          "needsReview": ["image", "price", "specs"]
         },
         {
           "id": "gbc_hsd_amoled",
           "name": "AMOLED Laminated Kit",
           "brand": "Hispeedido",
-          "badge": "OLED",
-          "summary": "Le summum de l'affichage pour GBC. Des noirs profonds et des couleurs vibrantes que seul l'OLED peut offrir.",
-          "features": ["Dalle AMOLED laminée", "Contraste infini", "Contrôle tactile et menu OSD complet", "Scaling intégral 16:1", "Pic de luminosité ~400 nits"],
-          "pros": ["Noirs absolus et couleurs vibrantes", "Très lumineux (~400 nits)", "Contrôle tactile pratique"],
-          "cons": ["Compatible uniquement coque laminée (Hispeedido/FunnyPlaying)", "Plus cher", "CleanPower recommandé"],
-          "specs": { "Type": "AMOLED laminé", "OSD": "Oui (tactile)", "Luminosité": "~400 nits", "Scaling": "16:1" },
+          "badge": { "fr": "OLED", "en": "OLED" },
+          "summary": {
+            "fr": "Le summum de l'affichage pour GBC. Des noirs profonds et des couleurs vibrantes que seul l'OLED peut offrir.",
+            "en": "The pinnacle of GBC displays. Deep blacks and vibrant colors only OLED can deliver."
+          },
+          "features": {
+            "fr": ["Dalle AMOLED laminée", "Contraste infini", "Contrôle tactile et menu OSD complet", "Scaling intégral 16:1", "Pic de luminosité ~400 nits"],
+            "en": ["Laminated AMOLED panel", "Infinite contrast", "Touch control and full OSD menu", "Full 16:1 scaling", "~400 nits peak brightness"]
+          },
+          "pros": {
+            "fr": ["Noirs absolus et couleurs vibrantes", "Très lumineux (~400 nits)", "Contrôle tactile pratique"],
+            "en": ["Absolute blacks and vibrant colors", "Very bright (~400 nits)", "Handy touch control"]
+          },
+          "cons": {
+            "fr": ["Compatible uniquement coque laminée (Hispeedido/FunnyPlaying)", "Plus cher", "CleanPower recommandé"],
+            "en": ["Only compatible with a laminated shell (Hispeedido/FunnyPlaying)", "Pricier", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "AMOLED laminé", "OSD": "Oui (tactile)", "Luminosité": "~400 nits", "Scaling": "16:1" },
+            "en": { "Type": "Laminated AMOLED", "OSD": "Yes (touch)", "Brightness": "~400 nits", "Scaling": "16:1" }
+          },
           "difficulty": 3,
-          "soldering": "Minimale (un fil)",
+          "soldering": { "fr": "Minimale (un fil)", "en": "Minimal (one wire)" },
           "installTime": "45–60 min",
           "price": "€€€",
-          "prerequisites": ["Coque laminée obligatoire", "CleanPower recommandé"],
+          "prerequisites": { "fr": ["Coque laminée obligatoire", "CleanPower recommandé"], "en": ["Laminated shell required", "CleanPower recommended"] },
           "scoreImpact": { "image": 5, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" }],
           "sources": [{ "label": "Handheld Legend — GBC AMOLED laminé Hispeedido", "url": "https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" }],
-          "image": { "src": "", "alt": "Kit AMOLED laminé Hispeedido pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit AMOLED laminé Hispeedido pour Game Boy Color", "en": "Hispeedido laminated AMOLED kit for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gbc_hsd_ips_dropin",
           "name": "IPS Drop-in 2.45\" (OSD)",
           "brand": "Hispeedido",
-          "summary": "Kit IPS drop-in avec plusieurs modes d'affichage et menu OSD, installation sans découpe de coque.",
-          "features": ["Plusieurs modes d'affichage", "Installation sans découpe", "Menu OSD complet"],
-          "pros": ["Sans découpe de coque", "OSD riche", "Bon rapport qualité/prix"],
-          "cons": ["Zone d'affichage non agrandie", "CleanPower recommandé"],
-          "specs": { "Type": "IPS drop-in", "Taille": "2.45\"", "OSD": "Oui" },
+          "summary": {
+            "fr": "Kit IPS drop-in avec plusieurs modes d'affichage et menu OSD, installation sans découpe de coque.",
+            "en": "Drop-in IPS kit with multiple display modes and an OSD menu, installed with no shell trimming."
+          },
+          "features": {
+            "fr": ["Plusieurs modes d'affichage", "Installation sans découpe", "Menu OSD complet"],
+            "en": ["Multiple display modes", "No-trim installation", "Full OSD menu"]
+          },
+          "pros": {
+            "fr": ["Sans découpe de coque", "OSD riche", "Bon rapport qualité/prix"],
+            "en": ["No shell trimming", "Rich OSD", "Good value for money"]
+          },
+          "cons": {
+            "fr": ["Zone d'affichage non agrandie", "CleanPower recommandé"],
+            "en": ["Display area not enlarged", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS drop-in", "Taille": "2.45\"", "OSD": "Oui" },
+            "en": { "Type": "Drop-in IPS", "Size": "2.45\"", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé"],
+          "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS drop-in 2.45 pouces Hispeedido pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS drop-in 2.45 pouces Hispeedido pour Game Boy Color", "en": "Hispeedido 2.45-inch drop-in IPS kit for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cgs_tft",
           "name": "TFT LCD Backlight Kit",
           "brand": "Cloud Game Store",
-          "summary": "Solution drop-in sans aucune découpe, idéale pour conserver sa coque d'origine.",
-          "features": ["Installation 100% sans découpe", "Taille d'origine préservée", "Faible consommation"],
-          "pros": ["Coque d'origine conservée", "Économique en énergie", "Installation accessible"],
-          "cons": ["Qualité d'image inférieure aux IPS récents", "Disponibilité variable"],
-          "specs": { "Type": "TFT LCD rétroéclairé" },
+          "summary": {
+            "fr": "Solution drop-in sans aucune découpe, idéale pour conserver sa coque d'origine.",
+            "en": "A no-trim drop-in solution, ideal for keeping your original shell."
+          },
+          "features": {
+            "fr": ["Installation 100% sans découpe", "Taille d'origine préservée", "Faible consommation"],
+            "en": ["100% no-trim installation", "Original size preserved", "Low power draw"]
+          },
+          "pros": {
+            "fr": ["Coque d'origine conservée", "Économique en énergie", "Installation accessible"],
+            "en": ["Original shell kept", "Energy-efficient", "Beginner-friendly install"]
+          },
+          "cons": {
+            "fr": ["Qualité d'image inférieure aux IPS récents", "Disponibilité variable"],
+            "en": ["Lower image quality than recent IPS panels", "Variable availability"]
+          },
+          "specs": {
+            "fr": { "Type": "TFT LCD rétroéclairé" },
+            "en": { "Type": "Backlit TFT LCD" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit TFT LCD rétroéclairé Cloud Game Store pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit TFT LCD rétroéclairé Cloud Game Store pour Game Boy Color", "en": "Cloud Game Store backlit TFT LCD kit for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
-        },
-        {
-          "id": "gbc_bennvenn",
-          "name": "GBC IPS & LCD Kits (Aioli)",
-          "brand": "BennVenn",
-          "summary": "Des solutions innovantes souvent pionnières, avec une excellente gestion de l'énergie et un rendu transflectif lisible en plein soleil.",
-          "features": ["Très basse consommation", "Sans soudure, sans découpe (Aioli)", "Pas de tearing ni de flicker", "TFT transflectif lisible au soleil"],
-          "pros": ["Consommation parmi les plus faibles du marché", "Installation drop-in", "Pas de bruit parasite dans l'audio"],
-          "cons": ["Palette plus proche de l'origine (moins éclatante qu'un IPS)", "Disponibilité variable"],
-          "specs": { "Type": "TFT transflectif / LCD" },
-          "difficulty": 2,
-          "soldering": "Non (Aioli) / variable selon modèle",
-          "installTime": "30–45 min",
-          "price": "€€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "BennVenn", "url": "https://bennvenn.myshopify.com/collections/aftermarket-lcds" }],
-          "sources": [{ "label": "ZedLabz — BennVenn Aioli (Freckleshack) GBC", "url": "https://www.zedlabz.com/en-us/products/aioli-freckleshack-drop-in-tft-lcd-screen-upgrade-kit-for-nintendo-game-boy-color-handheld-console-bennvenn" }],
-          "image": { "src": "", "alt": "Kit LCD BennVenn (Aioli) pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         }
       ]
     },
     {
       "id": "power",
-      "name": "Énergie & Performance",
+      "name": { "fr": "Énergie & Performance", "en": "Power & Performance" },
       "icon": "⚡",
-      "intro": "Abandonner les piles AA pour une batterie Li-Po rechargeable en USB-C ou Qi, stabiliser l'alimentation pour un écran IPS/AMOLED, ou overclocker la console.",
+      "intro": {
+        "fr": "Abandonner les piles AA pour une batterie Li-Po rechargeable en USB-C ou Qi, stabiliser l'alimentation pour un écran IPS/AMOLED, ou overclocker la console.",
+        "en": "Ditch the AA batteries for a rechargeable USB-C or Qi Li-Po battery, stabilize power for an IPS/AMOLED screen, or overclock the console."
+      },
       "mods": [
         {
           "id": "gbc_cleanjuice_air",
           "name": "CleanJuice Air",
           "brand": "RetroSix",
-          "summary": "Remplacez vos piles par une batterie Li-Po rechargeable en USB-C ou sans fil (Qi).",
-          "features": ["Recharge USB-C", "Compatible sans fil (Qi)", "Conçue et testée au Royaume-Uni"],
-          "pros": ["Recharge filaire et sans fil", "Plus de piles à acheter", "Installation propre avec coque Prestige"],
-          "cons": ["Soudure requise", "Coque Prestige RetroSix recommandée (modification invasive sur coque OEM)"],
-          "specs": { "Recharge": "USB-C + Qi sans fil", "Puissance": "6.3W" },
+          "summary": {
+            "fr": "Remplacez vos piles par une batterie Li-Po rechargeable en USB-C ou sans fil (Qi).",
+            "en": "Replace your batteries with a Li-Po battery rechargeable via USB-C or wirelessly (Qi)."
+          },
+          "features": {
+            "fr": ["Recharge USB-C", "Compatible sans fil (Qi)", "Conçue et testée au Royaume-Uni"],
+            "en": ["USB-C charging", "Wireless (Qi) compatible", "Designed and tested in the UK"]
+          },
+          "pros": {
+            "fr": ["Recharge filaire et sans fil", "Plus de piles à acheter", "Installation propre avec coque Prestige"],
+            "en": ["Wired and wireless charging", "No more batteries to buy", "Clean install with a Prestige shell"]
+          },
+          "cons": {
+            "fr": ["Soudure requise", "Coque Prestige RetroSix recommandée (modification invasive sur coque OEM)"],
+            "en": ["Soldering required", "RetroSix Prestige shell recommended (invasive modification on an OEM shell)"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C + Qi sans fil", "Puissance": "6.3W" },
+            "en": { "Charging": "USB-C + Qi wireless", "Power": "6.3W" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Coque Prestige RetroSix recommandée"],
+          "prerequisites": { "fr": ["Coque Prestige RetroSix recommandée"], "en": ["RetroSix Prestige shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" }, { "label": "RetroSix", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }],
           "sources": [{ "label": "Handheld Legend — CleanJuice Air GBC", "url": "https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" }],
-          "image": { "src": "", "alt": "Batterie CleanJuice Air RetroSix USB-C/Qi pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie CleanJuice Air RetroSix USB-C/Qi pour Game Boy Color", "en": "RetroSix CleanJuice Air USB-C/Qi battery for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "specs"]
         },
         {
           "id": "gbc_fp_charging",
           "name": "GBC Battery Charging Mod",
           "brand": "FunnyPlaying",
-          "summary": "Module de recharge Li-Po USB-C de FunnyPlaying, compact et facile à installer.",
-          "features": ["Recharge USB-C", "Compact et discret", "Installation simple"],
-          "pros": ["Solution USB-C économique", "Encombrement réduit", "Écosystème FunnyPlaying"],
-          "cons": ["Soudure requise", "Batterie parfois à ajouter séparément"],
-          "specs": { "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Module de recharge Li-Po USB-C de FunnyPlaying, compact et facile à installer.",
+            "en": "FunnyPlaying's USB-C Li-Po charging module, compact and easy to install."
+          },
+          "features": {
+            "fr": ["Recharge USB-C", "Compact et discret", "Installation simple"],
+            "en": ["USB-C charging", "Compact and discreet", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Solution USB-C économique", "Encombrement réduit", "Écosystème FunnyPlaying"],
+            "en": ["Affordable USB-C solution", "Small footprint", "FunnyPlaying ecosystem"]
+          },
+          "cons": {
+            "fr": ["Soudure requise", "Batterie parfois à ajouter séparément"],
+            "en": ["Soldering required", "Battery sometimes sold separately"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C" },
+            "en": { "Charging": "USB-C" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
-          "sources": [],
-          "image": { "src": "", "alt": "Module de recharge Li-Po USB-C FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-battery-charging-mod" }],
+          "sources": [{ "label": "FunnyPlaying — GBC Battery Charging Mod", "url": "https://funnyplaying.com/products/gbc-battery-charging-mod" }],
+          "image": { "src": "", "alt": { "fr": "Module de recharge Li-Po USB-C FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying USB-C Li-Po charging module for Game Boy Color" }, "credit": "" },
+          "needsReview": ["image", "price", "difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cleanpower",
           "name": "CleanPower Regulator GBC",
           "brand": "RetroSix",
-          "badge": "Indispensable",
-          "summary": "Régulateur de tension pour stabiliser l'alimentation de la GBC avec les mods IPS/AMOLED modernes.",
-          "features": ["Alimentation stable", "Évite le flickering d'écran", "Indispensable avec un écran rétroéclairé"],
-          "pros": ["Élimine les coupures et le scintillement", "Tension propre", "Petit prix"],
-          "cons": ["Soudure fine requise"],
-          "specs": { "Sortie": "5V stable" },
+          "badge": { "fr": "Indispensable", "en": "Essential" },
+          "summary": {
+            "fr": "Régulateur de tension pour stabiliser l'alimentation de la GBC avec les mods IPS/AMOLED modernes.",
+            "en": "Voltage regulator to stabilize the GBC's power with modern IPS/AMOLED mods."
+          },
+          "features": {
+            "fr": ["Alimentation stable", "Évite le flickering d'écran", "Indispensable avec un écran rétroéclairé"],
+            "en": ["Stable power", "Prevents screen flickering", "Essential with a backlit screen"]
+          },
+          "pros": {
+            "fr": ["Élimine les coupures et le scintillement", "Tension propre", "Petit prix"],
+            "en": ["Eliminates dropouts and flicker", "Clean voltage", "Low price"]
+          },
+          "cons": {
+            "fr": ["Soudure fine requise"],
+            "en": ["Fine soldering required"]
+          },
+          "specs": {
+            "fr": { "Sortie": "5V stable" },
+            "en": { "Output": "Stable 5V" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "20–30 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Régulateur CleanPower RetroSix pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Color", "en": "RetroSix CleanPower regulator for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "specs"]
         },
         {
           "id": "gbc_frogulator",
           "name": "Frogulator DC Regulator",
           "brand": "FroggoCustoms",
-          "summary": "Alternative fiable au CleanPower pour stabiliser l'alimentation de la GBC et de la Pocket.",
-          "features": ["Alimentation propre et stable 5V", "Compatible GBC & Pocket", "Compact"],
-          "pros": ["Alternative fiable au CleanPower", "Polyvalent (GBC + Pocket)", "Format compact"],
-          "cons": ["Soudure requise"],
-          "specs": { "Sortie": "5V DC", "Compatibilité": "GBC & Pocket" },
+          "summary": {
+            "fr": "Alternative fiable au CleanPower pour stabiliser l'alimentation de la GBC et de la Pocket.",
+            "en": "A reliable alternative to CleanPower for stabilizing the power of the GBC and the Pocket."
+          },
+          "features": {
+            "fr": ["Alimentation propre et stable 5V", "Compatible GBC & Pocket", "Compact"],
+            "en": ["Clean, stable 5V power", "Compatible with GBC & Pocket", "Compact"]
+          },
+          "pros": {
+            "fr": ["Alternative fiable au CleanPower", "Polyvalent (GBC + Pocket)", "Format compact"],
+            "en": ["Reliable alternative to CleanPower", "Versatile (GBC + Pocket)", "Compact form factor"]
+          },
+          "cons": {
+            "fr": ["Soudure requise"],
+            "en": ["Soldering required"]
+          },
+          "specs": {
+            "fr": { "Sortie": "5V DC", "Compatibilité": "GBC & Pocket" },
+            "en": { "Output": "5V DC", "Compatibility": "GBC & Pocket" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "20–30 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/" }],
           "sources": [{ "label": "FroggoCustoms — boutique", "url": "https://froggocustoms.com/collections/all" }],
-          "image": { "src": "", "alt": "Régulateur Frogulator FroggoCustoms pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Régulateur Frogulator FroggoCustoms pour Game Boy Color", "en": "FroggoCustoms Frogulator regulator for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "soldering", "installTime"]
         },
         {
           "id": "gbc_gbaccelerator",
           "name": "GBAccelerator (OC)",
           "brand": "Division 6",
-          "badge": "Vitesse",
-          "summary": "Passez en vitesse x1.5 ou x2 d'une simple pression de bouton. Idéal pour RPG et Pokémon.",
-          "features": ["4 modes de vitesse", "Installation propre", "Compatible avec la plupart des IPS"],
-          "pros": ["Accélère les jeux lents", "Réversible", "Contrôle par boutons"],
-          "cons": ["Soudure requise", "Certains jeux peuvent bugger en overclock"],
-          "specs": { "Modes": "x1 / x1.5 / x1.75 / x2" },
+          "badge": { "fr": "Vitesse", "en": "Speed" },
+          "summary": {
+            "fr": "Passez en vitesse x1.5 ou x2 d'une simple pression de bouton. Idéal pour RPG et Pokémon.",
+            "en": "Switch to x1.5 or x2 speed at the press of a button. Ideal for RPGs and Pokémon."
+          },
+          "features": {
+            "fr": ["4 modes de vitesse", "Installation propre", "Compatible avec la plupart des IPS"],
+            "en": ["4 speed modes", "Clean install", "Compatible with most IPS kits"]
+          },
+          "pros": {
+            "fr": ["Accélère les jeux lents", "Réversible", "Contrôle par boutons"],
+            "en": ["Speeds up slow games", "Reversible", "Button control"]
+          },
+          "cons": {
+            "fr": ["Soudure requise", "Certains jeux peuvent bugger en overclock"],
+            "en": ["Soldering required", "Some games may glitch when overclocked"]
+          },
+          "specs": {
+            "fr": { "Modes": "x1 / x1.5 / x1.75 / x2" },
+            "en": { "Modes": "x1 / x1.5 / x1.75 / x2" }
+          },
           "difficulty": 4,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Module d'overclock GBAccelerator pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator pour Game Boy Color", "en": "GBAccelerator overclock module for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
         }
       ]
     },
     {
       "id": "audio",
-      "name": "Illumination & Audio",
+      "name": { "fr": "Illumination & Audio", "en": "Lighting & Audio" },
       "icon": "✨",
-      "intro": "Éclairer les boutons en RGB et améliorer le son d'origine, souvent un peu faible, avec un ampli moderne ou un remplacement complet du circuit audio.",
+      "intro": {
+        "fr": "Éclairer les boutons en RGB et améliorer le son d'origine, souvent un peu faible, avec un ampli moderne ou un remplacement complet du circuit audio.",
+        "en": "Light up the buttons in RGB and improve the often-weak stock sound with a modern amp or a full audio-circuit replacement."
+      },
       "mods": [
         {
           "id": "gbc_retroglow",
           "name": "RetroGlow GBC",
           "brand": "Handheld Legend",
-          "badge": "RGB",
-          "summary": "Le kit LED RGB de référence. Éclairez vos boutons avec des millions de couleurs.",
-          "features": ["Couleur par bouton personnalisable", "Réglage teinte / saturation / luminosité", "Contrôle par Select + D-Pad", "Faible consommation (18–25 mA par défaut)"],
-          "pros": ["Effet visuel spectaculaire", "Très personnalisable", "N'interfère pas avec les contrôles IPS"],
-          "cons": ["Soudure fine (solder-in-place)", "Boutons transparents recommandés", "Non recommandé sur coques BoxyPixel"],
-          "specs": { "Type": "LED RGB flex", "Consommation": "18–25 mA (50 mA max)" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Le kit LED RGB de référence. Éclairez vos boutons avec des millions de couleurs.",
+            "en": "The benchmark RGB LED kit. Light up your buttons with millions of colors."
+          },
+          "features": {
+            "fr": ["Couleur par bouton personnalisable", "Réglage teinte / saturation / luminosité", "Contrôle par Select + D-Pad", "Faible consommation (18–25 mA par défaut)"],
+            "en": ["Customizable per-button color", "Hue / saturation / brightness adjustment", "Select + D-Pad control", "Low power draw (18–25 mA by default)"]
+          },
+          "pros": {
+            "fr": ["Effet visuel spectaculaire", "Très personnalisable", "N'interfère pas avec les contrôles IPS"],
+            "en": ["Spectacular visual effect", "Highly customizable", "Doesn't interfere with IPS controls"]
+          },
+          "cons": {
+            "fr": ["Soudure fine (solder-in-place)", "Boutons transparents recommandés", "Non recommandé sur coques BoxyPixel"],
+            "en": ["Fine soldering (solder-in-place)", "Transparent buttons recommended", "Not recommended on BoxyPixel shells"]
+          },
+          "specs": {
+            "fr": { "Type": "LED RGB flex", "Consommation": "18–25 mA (50 mA max)" },
+            "en": { "Type": "RGB LED flex", "Power draw": "18–25 mA (50 mA max)" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "15–30 min",
           "price": "€€",
-          "prerequisites": ["Boutons transparents recommandés"],
+          "prerequisites": { "fr": ["Boutons transparents recommandés"], "en": ["Transparent buttons recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" }],
           "sources": [{ "label": "Handheld Legend — RetroGlow GBC", "url": "https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" }, { "label": "HHL Wiki — RetroGlow GBC Install Guide", "url": "https://wiki.handheldlegend.com/retroglow-for-gbc-or-install-guide" }],
-          "image": { "src": "", "alt": "Kit LED RGB RetroGlow Handheld Legend pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow Handheld Legend pour Game Boy Color", "en": "Handheld Legend RetroGlow RGB LED kit for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gbc_arc",
           "name": "ARC GBC (RGB LEDs)",
           "brand": "NatalieTheNerd",
-          "badge": "RGB",
-          "summary": "Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes breathing & windmill.",
-          "features": ["Contrôle couleur par zone (D-pad, A/B, Start/Select)", "Modes breathing & windmill", "11 couleurs disponibles"],
-          "pros": ["Contrôle par zone", "Modes d'animation", "Conçu par une moddeuse reconnue"],
-          "cons": ["Soudure fine requise"],
-          "specs": { "Type": "LED RGB", "Couleurs": "11", "Zones": "D-pad / A-B / Start-Select" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Board RGB avec contrôle par zone (D-pad, A/B, Start/Select) et modes breathing & windmill.",
+            "en": "RGB board with per-zone control (D-pad, A/B, Start/Select) and breathing & windmill modes."
+          },
+          "features": {
+            "fr": ["Contrôle couleur par zone (D-pad, A/B, Start/Select)", "Modes breathing & windmill", "11 couleurs disponibles"],
+            "en": ["Per-zone color control (D-pad, A/B, Start/Select)", "Breathing & windmill modes", "11 colors available"]
+          },
+          "pros": {
+            "fr": ["Contrôle par zone", "Modes d'animation", "Conçu par une moddeuse reconnue"],
+            "en": ["Per-zone control", "Animation modes", "Designed by a respected modder"]
+          },
+          "cons": {
+            "fr": ["Soudure fine requise"],
+            "en": ["Fine soldering required"]
+          },
+          "specs": {
+            "fr": { "Type": "LED RGB", "Couleurs": "11", "Zones": "D-pad / A-B / Start-Select" },
+            "en": { "Type": "RGB LED", "Colors": "11", "Zones": "D-pad / A-B / Start-Select" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/arc-gbc-rgb-leds" }],
           "sources": [{ "label": "NatalieTheNerd — ARC GBC RGB", "url": "https://nataliethenerd.com/products/arc-gbc-rgb-leds" }, { "label": "NatalieTheNerd — ARC GBC Install Guide", "url": "https://nataliethenerd.com/pages/arc-gbc-install-guide" }],
-          "image": { "src": "", "alt": "Board LED RGB ARC NatalieTheNerd pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Board LED RGB ARC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd ARC RGB LED board for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gbc_fp_button_led",
           "name": "GBC Button LED Kit",
           "brand": "FunnyPlaying",
-          "badge": "RGB",
-          "summary": "Kit LED FunnyPlaying pour illuminer les boutons de votre GBC avec style.",
-          "features": ["Installation simple", "Éclairage des boutons", "Compatible kits IPS FunnyPlaying"],
-          "pros": ["Bon rapport qualité/prix", "Intégration avec l'écosystème FunnyPlaying"],
-          "cons": ["Personnalisation plus limitée qu'un kit RGB avancé", "Soudure requise"],
-          "specs": { "Type": "LED boutons" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Kit LED FunnyPlaying pour illuminer les boutons de votre GBC avec style.",
+            "en": "FunnyPlaying LED kit to light up your GBC's buttons in style."
+          },
+          "features": {
+            "fr": ["Installation simple", "Éclairage des boutons", "Compatible kits IPS FunnyPlaying"],
+            "en": ["Easy install", "Button lighting", "Compatible with FunnyPlaying IPS kits"]
+          },
+          "pros": {
+            "fr": ["Bon rapport qualité/prix", "Intégration avec l'écosystème FunnyPlaying"],
+            "en": ["Good value for money", "Integration with the FunnyPlaying ecosystem"]
+          },
+          "cons": {
+            "fr": ["Personnalisation plus limitée qu'un kit RGB avancé", "Soudure requise"],
+            "en": ["More limited customization than an advanced RGB kit", "Soldering required"]
+          },
+          "specs": {
+            "fr": { "Type": "LED boutons" },
+            "en": { "Type": "Button LEDs" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit LED boutons FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-button-led-kit" }],
+          "sources": [{ "label": "FunnyPlaying — GBC Button LED Kit", "url": "https://funnyplaying.com/products/gbc-button-led-kit" }],
+          "image": { "src": "", "alt": { "fr": "Kit LED boutons FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying button LED kit for Game Boy Color" }, "credit": "" },
+          "needsReview": ["image", "price", "difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cleanamp",
           "name": "CleanAmp Pro",
           "brand": "RetroSix",
-          "summary": "Un amplificateur de classe D pour un son puissant et cristallin.",
-          "features": ["Installation sans câble", "Son nettement plus fort (classe D)", "Filtrage du bruit de fond", "Remplace l'ampli et le HP d'origine"],
-          "pros": ["Volume très supérieur à l'origine", "Son propre", "Installation wire-free"],
-          "cons": ["Soudure de base requise", "Haut-parleur vendu séparément"],
-          "specs": { "Type": "Ampli classe D" },
+          "summary": {
+            "fr": "Un amplificateur de classe D pour un son puissant et cristallin.",
+            "en": "A class-D amplifier for powerful, crystal-clear sound."
+          },
+          "features": {
+            "fr": ["Installation sans câble", "Son nettement plus fort (classe D)", "Filtrage du bruit de fond", "Remplace l'ampli et le HP d'origine"],
+            "en": ["Wire-free installation", "Noticeably louder sound (class-D)", "Background-noise filtering", "Replaces the original amp and speaker"]
+          },
+          "pros": {
+            "fr": ["Volume très supérieur à l'origine", "Son propre", "Installation wire-free"],
+            "en": ["Much higher volume than stock", "Clean sound", "Wire-free install"]
+          },
+          "cons": {
+            "fr": ["Soudure de base requise", "Haut-parleur vendu séparément"],
+            "en": ["Basic soldering required", "Speaker sold separately"]
+          },
+          "specs": {
+            "fr": { "Type": "Ampli classe D" },
+            "en": { "Type": "Class-D amp" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (basique)",
+          "soldering": { "fr": "Oui (basique)", "en": "Yes (basic)" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/Game-Boy-Color-CleanAmp-Pro-p492501547" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/copy-of-game-boy-color-cleanamp-pro-retrosix" }],
           "sources": [{ "label": "RetroSix Wiki — GBC CleanAmp Install Guide", "url": "https://www.retrosix.wiki/gbc-cleanamp-install-guide" }],
-          "image": { "src": "", "alt": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Color", "en": "RetroSix CleanAmp Pro audio amplifier for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gbc_bucket_amp",
           "name": "Bucket Amp GBC",
           "brand": "NatalieTheNerd",
-          "summary": "Remplace intégralement le circuit sonore d'origine pour un son radicalement amélioré.",
-          "features": ["Remplacement complet du circuit son (MGB AMP)", "Qualité audio supérieure", "Basé sur le design de Bucket Mouse (MGBC)"],
-          "pros": ["Refonte complète du son, pas un simple boost", "Qualité audio supérieure"],
-          "cons": ["Microsoudure requise", "Incompatible cartes CPU 05 et CPU 06 (nécessite EM2/3/4)"],
-          "specs": { "Type": "Remplacement du circuit audio", "Compatibilité": "Cartes EM2/3/4 (pas CPU 05/06)" },
+          "summary": {
+            "fr": "Remplace intégralement le circuit sonore d'origine pour un son radicalement amélioré.",
+            "en": "Fully replaces the original sound circuit for a radically improved audio."
+          },
+          "features": {
+            "fr": ["Remplacement complet du circuit son (MGB AMP)", "Qualité audio supérieure", "Basé sur le design de Bucket Mouse (MGBC)"],
+            "en": ["Full sound-circuit replacement (MGB AMP)", "Superior audio quality", "Based on the Bucket Mouse design (MGBC)"]
+          },
+          "pros": {
+            "fr": ["Refonte complète du son, pas un simple boost", "Qualité audio supérieure"],
+            "en": ["A complete sound overhaul, not just a boost", "Superior audio quality"]
+          },
+          "cons": {
+            "fr": ["Microsoudure requise", "Incompatible cartes CPU 05 et CPU 06 (nécessite EM2/3/4)"],
+            "en": ["Micro-soldering required", "Incompatible with CPU 05 and CPU 06 boards (needs EM2/3/4)"]
+          },
+          "specs": {
+            "fr": { "Type": "Remplacement du circuit audio", "Compatibilité": "Cartes EM2/3/4 (pas CPU 05/06)" },
+            "en": { "Type": "Audio-circuit replacement", "Compatibility": "EM2/3/4 boards (not CPU 05/06)" }
+          },
           "difficulty": 5,
-          "soldering": "Oui (microsoudure)",
+          "soldering": { "fr": "Oui (microsoudure)", "en": "Yes (micro-soldering)" },
           "installTime": "60+ min",
           "price": "€€",
-          "prerequisites": ["Carte mère compatible (EM2/3/4)"],
+          "prerequisites": { "fr": ["Carte mère compatible (EM2/3/4)"], "en": ["Compatible motherboard (EM2/3/4)"] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/pages/bucket-amp-gbc" }],
           "sources": [{ "label": "NatalieTheNerd — Bucket Amp GBC", "url": "https://nataliethenerd.com/pages/bucket-amp-gbc" }, { "label": "GitHub — BucketAmpGBC", "url": "https://github.com/nataliethenerd/BucketAmpGBC" }],
-          "image": { "src": "", "alt": "Board Bucket Amp GBC NatalieTheNerd pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Board Bucket Amp GBC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd Bucket Amp GBC board for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "installTime"]
         },
         {
           "id": "gbc_hhl_wirefree_amp",
           "name": "Wire Free Audio Amplifier GBC",
           "brand": "Handheld Legend",
-          "summary": "Amplificateur sans câble à installer directement sur la carte mère de la GBC.",
-          "features": ["Installation sans câble", "Volume significativement amélioré", "Compact et discret"],
-          "pros": ["Installation wire-free directe", "Gain de volume notable", "Encombrement réduit"],
-          "cons": ["Soudure requise"],
-          "specs": { "Type": "Ampli audio wire-free" },
+          "summary": {
+            "fr": "Amplificateur sans câble à installer directement sur la carte mère de la GBC.",
+            "en": "Wire-free amplifier to install directly on the GBC's motherboard."
+          },
+          "features": {
+            "fr": ["Installation sans câble", "Volume significativement amélioré", "Compact et discret"],
+            "en": ["Wire-free installation", "Significantly improved volume", "Compact and discreet"]
+          },
+          "pros": {
+            "fr": ["Installation wire-free directe", "Gain de volume notable", "Encombrement réduit"],
+            "en": ["Direct wire-free install", "Notable volume gain", "Small footprint"]
+          },
+          "cons": {
+            "fr": ["Soudure requise"],
+            "en": ["Soldering required"]
+          },
+          "specs": {
+            "fr": { "Type": "Ampli audio wire-free" },
+            "en": { "Type": "Wire-free audio amp" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" }],
           "sources": [{ "label": "Handheld Legend — GBC Wire Free Audio Amplifier", "url": "https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" }],
-          "image": { "src": "", "alt": "Amplificateur audio sans câble Handheld Legend pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Amplificateur audio sans câble Handheld Legend pour Game Boy Color", "en": "Handheld Legend wire-free audio amplifier for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
         }
       ]
     },
     {
       "id": "buttons",
-      "name": "Boutons",
+      "name": { "fr": "Boutons", "en": "Buttons" },
       "icon": "🔘",
-      "intro": "Retrouver un toucher neuf et personnaliser les couleurs : boutons tactiles clicky et boutons de remplacement.",
+      "intro": {
+        "fr": "Retrouver un toucher neuf et personnaliser les couleurs : boutons tactiles clicky et boutons de remplacement.",
+        "en": "Restore a fresh feel and customize the colors: clicky tactile buttons and replacement buttons."
+      },
       "mods": [
         {
           "id": "gbc_froggo_tactile_v2",
           "name": "Wire-free Tactile Button Mod V2",
           "brand": "FroggoCustoms",
-          "badge": "Clicky",
-          "summary": "Passez aux boutons tactiles clicky sans aucun câble. D-pad, A/B, Start/Select sur une seule pièce.",
-          "features": ["Board d'un seul tenant (V2)", "Boutons clicky D-pad et A/B", "Anti-ghosting D-pad intégré (rejet des directions opposées)"],
-          "pros": ["Feeling tactile clicky", "Installation simplifiée (pièce unique)", "Protection anti-ghosting du D-pad"],
-          "cons": ["Soudure requise (contrairement au nom « wire-free »)", "Start/Select non tactiles (membranes d'origine inadaptées)"],
-          "specs": { "Type": "Boutons tactiles", "Zones": "D-pad, A/B, Start/Select" },
+          "badge": { "fr": "Clicky", "en": "Clicky" },
+          "summary": {
+            "fr": "Passez aux boutons tactiles clicky sans aucun câble. D-pad, A/B, Start/Select sur une seule pièce.",
+            "en": "Switch to clicky tactile buttons with no wires. D-pad, A/B, Start/Select on a single board."
+          },
+          "features": {
+            "fr": ["Board d'un seul tenant (V2)", "Boutons clicky D-pad et A/B", "Anti-ghosting D-pad intégré (rejet des directions opposées)"],
+            "en": ["Single-piece board (V2)", "Clicky D-pad and A/B buttons", "Built-in D-pad anti-ghosting (rejects opposing directions)"]
+          },
+          "pros": {
+            "fr": ["Feeling tactile clicky", "Installation simplifiée (pièce unique)", "Protection anti-ghosting du D-pad"],
+            "en": ["Clicky tactile feel", "Simplified install (single piece)", "D-pad anti-ghosting protection"]
+          },
+          "cons": {
+            "fr": ["Soudure requise (contrairement au nom « wire-free »)", "Start/Select non tactiles (membranes d'origine inadaptées)"],
+            "en": ["Soldering required (despite the \"wire-free\" name)", "Start/Select not tactile (original membranes unsuitable)"]
+          },
+          "specs": {
+            "fr": { "Type": "Boutons tactiles", "Zones": "D-pad, A/B, Start/Select" },
+            "en": { "Type": "Tactile buttons", "Zones": "D-pad, A/B, Start/Select" }
+          },
           "difficulty": 4,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" }],
           "sources": [{ "label": "FroggoCustoms — Tactile Button Mod V2", "url": "https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" }, { "label": "FroggoCustoms — Tactile Switch Mod (guide)", "url": "https://froggocustoms.com/blogs/installation-guides/game-boy-color-tactile-switch-mod" }],
-          "image": { "src": "", "alt": "Mod boutons tactiles V2 FroggoCustoms pour Game Boy Color", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Mod boutons tactiles V2 FroggoCustoms pour Game Boy Color", "en": "FroggoCustoms V2 tactile button mod for Game Boy Color" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gbc_fp_buttons",
           "name": "GBC Custom Buttons",
           "brand": "FunnyPlaying",
-          "summary": "Boutons de remplacement colorés pour personnaliser l'aspect de votre GBC.",
-          "features": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
-          "pros": ["Bon rapport qualité/prix", "Beaucoup de couleurs", "Installation sans soudure"],
-          "cons": [],
-          "specs": {},
+          "summary": {
+            "fr": "Boutons de remplacement colorés pour personnaliser l'aspect de votre GBC.",
+            "en": "Colorful replacement buttons to customize the look of your GBC."
+          },
+          "features": {
+            "fr": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
+            "en": ["Wide range of colors", "Quality material", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Bon rapport qualité/prix", "Beaucoup de couleurs", "Installation sans soudure"],
+            "en": ["Good value for money", "Lots of colors", "Solder-free installation"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": { "fr": {}, "en": {} },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/cgb-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons custom FunnyPlaying pour Game Boy Color", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying custom buttons for Game Boy Color" }, "credit": "" },
+          "needsReview": ["image", "price"]
         }
       ]
     }

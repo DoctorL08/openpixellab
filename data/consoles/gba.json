@@ -7,16 +7,28 @@
   "category": "portable",
   "year": 2001,
   "icon": "🎮",
-  "heroBadge": "Console Portable",
+  "heroBadge": { "fr": "Console Portable", "en": "Handheld Console" },
   "title": "Gameboy Advance",
   "titleHighlight": "Advance",
-  "tagline": "L'âge d'or du 32-bit portable. Découvrez comment transformer votre GBA en une console moderne ultra-puissante.",
-  "intro": "La Game Boy Advance (AGB-001, 2001) souffre d'un seul vrai défaut : son écran d'origine non rétroéclairé, illisible sans lampe. Heureusement, c'est aussi l'une des consoles les plus moddées au monde. Écrans IPS et TFT laminés, batteries USB-C, amplis audio, RGB et boutons clicky : voici les mods de référence pour réveiller le 32-bit de Nintendo, classés par domaine.",
+  "tagline": {
+    "fr": "L'âge d'or du 32-bit portable. Découvrez comment transformer votre GBA en une console moderne ultra-puissante.",
+    "en": "The golden age of 32-bit handhelds. Learn how to turn your GBA into a powerful modern console."
+  },
+  "intro": {
+    "fr": "La Game Boy Advance (AGB-001, 2001) souffre d'un seul vrai défaut : son écran d'origine non rétroéclairé, illisible sans lampe. Heureusement, c'est aussi l'une des consoles les plus moddées au monde. Écrans IPS et TFT laminés, batteries USB-C, amplis audio, RGB et boutons clicky : voici les mods de référence pour réveiller le 32-bit de Nintendo, classés par domaine.",
+    "en": "The Game Boy Advance (AGB-001, 2001) has just one real flaw: its original non-backlit screen, unreadable without a lamp. Fortunately, it's also one of the most modded consoles in the world. Laminated IPS and TFT screens, USB-C batteries, audio amps, RGB and clicky buttons: here are the go-to mods to wake up Nintendo's 32-bit handheld, sorted by category."
+  },
   "configuratorId": "gameboy_advance",
   "comparatorId": "gba",
   "seo": {
-    "title": "Mods Game Boy Advance (AGB-001) — Écrans IPS, ITA TFT, HDMI, USB-C | OpenPixel Lab",
-    "description": "Guide complet des mods pour la Game Boy Advance : kits écran IPS et ITA TFT laminés (FunnyPlaying, Hispeedido), sortie HDMI 720p, batteries USB-C, ampli audio, LED RGB et boutons tactiles. Difficulté, prix, prérequis et soudure."
+    "title": {
+      "fr": "Mods Game Boy Advance (AGB-001) — Écrans IPS, ITA TFT, HDMI, USB-C | OpenPixel Lab",
+      "en": "Game Boy Advance (AGB-001) Mods — IPS Screens, ITA TFT, HDMI, USB-C | OpenPixel Lab"
+    },
+    "description": {
+      "fr": "Guide complet des mods pour la Game Boy Advance : kits écran IPS et ITA TFT laminés (FunnyPlaying, Hispeedido), sortie HDMI 720p, batteries USB-C, ampli audio, LED RGB et boutons tactiles. Difficulté, prix, prérequis et soudure.",
+      "en": "Complete guide to Game Boy Advance mods: laminated IPS and ITA TFT screen kits (FunnyPlaying, Hispeedido), 720p HDMI output, USB-C batteries, audio amp, RGB LEDs and tactile buttons. Difficulty, price, prerequisites and soldering."
+    }
   },
   "sources": [
     { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gbwiki.org/other/backlightmods" }
@@ -24,482 +36,799 @@
   "sections": [
     {
       "id": "display",
-      "name": "Affichage & Vidéo",
+      "name": { "fr": "Affichage & Vidéo", "en": "Display & Video" },
       "icon": "📺",
-      "intro": "Le mod incontournable de la GBA : remplacer la dalle réflective d'origine, illisible sans lumière, par un écran IPS ou TFT rétroéclairé. Les versions laminées suppriment la poussière et offrent le meilleur contraste ; les kits ITA s'installent sans découpe de coque.",
+      "intro": {
+        "fr": "Le mod incontournable de la GBA : remplacer la dalle réflective d'origine, illisible sans lumière, par un écran IPS ou TFT rétroéclairé. Les versions laminées suppriment la poussière et offrent le meilleur contraste ; les kits ITA s'installent sans découpe de coque.",
+        "en": "The must-have GBA mod: replacing the original reflective panel, unreadable without light, with a backlit IPS or TFT screen. Laminated versions remove dust and offer the best contrast; ITA kits install with no shell trimming."
+      },
       "mods": [
         {
           "id": "gba_fp_ips_max_lam",
           "name": "AGB IPS MAX Laminated Kit",
           "brand": "FunnyPlaying",
-          "badge": "Laminé",
-          "summary": "Le standard incontesté pour la GBA. Une clarté bluffante, une image parfaitement centrée et une installation sans poussière.",
-          "features": ["Dalle IPS laminée à la vitre", "Image parfaitement centrée", "OSD : luminosité, palettes et effets pixel", "Contrôle tactile ou par boutons", "Soudure optionnelle"],
-          "pros": ["Image cristalline, contraste maximal", "Pas de poussière piégée", "Installation accessible (soudure optionnelle)", "Look usine"],
-          "cons": ["Coque IPS-ready recommandée", "Soudure requise pour le contrôle par boutons de l'OSD"],
-          "specs": { "Type": "IPS laminé", "Résolution": "240x160", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "Le standard incontesté pour la GBA. Une clarté bluffante, une image parfaitement centrée et une installation sans poussière.",
+            "en": "The undisputed standard for the GBA. Stunning clarity, a perfectly centered image and a dust-free install."
+          },
+          "features": {
+            "fr": ["Dalle IPS laminée à la vitre", "Image parfaitement centrée", "OSD : luminosité, palettes et effets pixel", "Contrôle tactile ou par boutons", "Soudure optionnelle"],
+            "en": ["IPS panel laminated to the glass", "Perfectly centered image", "OSD: brightness, palettes and pixel effects", "Touch or button control", "Optional soldering"]
+          },
+          "pros": {
+            "fr": ["Image cristalline, contraste maximal", "Pas de poussière piégée", "Installation accessible (soudure optionnelle)", "Look usine"],
+            "en": ["Crystal-clear image, maximum contrast", "No trapped dust", "Beginner-friendly install (optional soldering)", "Factory look"]
+          },
+          "cons": {
+            "fr": ["Coque IPS-ready recommandée", "Soudure requise pour le contrôle par boutons de l'OSD"],
+            "en": ["IPS-ready shell recommended", "Soldering required for button control of the OSD"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS laminé", "Résolution": "240x160", "OSD": "Oui" },
+            "en": { "Type": "Laminated IPS", "Resolution": "240x160", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Optionnelle (boutons OSD)",
+          "soldering": { "fr": "Optionnelle (boutons OSD)", "en": "Optional (OSD buttons)" },
           "installTime": "30–60 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "scoreImpact": { "image": 5, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/agb-ips-max-display-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [{ "label": "FunnyPlaying — AGB IPS MAX Laminated", "url": "https://funnyplaying.com/products/agb-ips-max-display-kit" }, { "label": "Handheld Legend Wiki — Install Guide", "url": "https://wiki.handheldlegend.com/agb-laminated-ips-funnyplaying-or-install-guide" }],
-          "image": { "src": "", "alt": "Kit IPS MAX laminé FunnyPlaying pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS MAX laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX laminated kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_fp_ips_m2",
           "name": "3.0\" IPS Backlight Kit M2",
           "brand": "FunnyPlaying",
-          "summary": "Kit IPS 3 pouces de deuxième génération, plus lumineux et avec un OSD amélioré pour un écran agrandi.",
-          "features": ["Dalle 3.0 pouces (agrandie)", "OSD amélioré", "Luminosité accrue", "Palettes et effets pixel"],
-          "pros": ["Écran plus grand que l'origine", "OSD complet", "Très lumineux"],
-          "cons": ["Découpe de coque nécessaire pour la grande dalle", "CleanPower / batterie adaptée recommandés"],
-          "specs": { "Type": "IPS", "Taille": "3.0 pouces", "OSD": "Oui" },
+          "summary": {
+            "fr": "Kit IPS 3 pouces de deuxième génération, plus lumineux et avec un OSD amélioré pour un écran agrandi.",
+            "en": "Second-generation 3-inch IPS kit, brighter and with an improved OSD for a larger screen."
+          },
+          "features": {
+            "fr": ["Dalle 3.0 pouces (agrandie)", "OSD amélioré", "Luminosité accrue", "Palettes et effets pixel"],
+            "en": ["3.0-inch panel (enlarged)", "Improved OSD", "Higher brightness", "Palettes and pixel effects"]
+          },
+          "pros": {
+            "fr": ["Écran plus grand que l'origine", "OSD complet", "Très lumineux"],
+            "en": ["Larger screen than stock", "Full OSD", "Very bright"]
+          },
+          "cons": {
+            "fr": ["Découpe de coque nécessaire pour la grande dalle", "CleanPower / batterie adaptée recommandés"],
+            "en": ["Shell trimming required for the large panel", "CleanPower / suitable battery recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS", "Taille": "3.0 pouces", "OSD": "Oui" },
+            "en": { "Type": "IPS", "Size": "3.0 inches", "OSD": "Yes" }
+          },
           "difficulty": 3,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": ["Découpe de coque pour la dalle 3.0\""],
-          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit IPS 3.0 pouces M2 FunnyPlaying pour Game Boy Advance", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "installTime"]
+          "prerequisites": { "fr": ["Découpe de coque pour la dalle 3.0\""], "en": ["Shell trimming for the 3.0\" panel"] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" }],
+          "sources": [{ "label": "FunnyPlaying — 3.0 Inch IPS AGB Laminated Kit", "url": "https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS 3.0 pouces M2 FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying 3.0-inch M2 IPS kit for Game Boy Advance" }, "credit": "" },
+          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_fp_ita_tft",
           "name": "ITA TFT Kit (sans découpe)",
           "brand": "FunnyPlaying",
-          "summary": "Le kit TFT \"In The Air\" basé sur la dalle inférieure de DSi, qui s'installe sans découpe de coque, parfait pour préserver l'original.",
-          "features": ["Aucune découpe de coque", "Dalle DSi 240x160 au format d'origine", "Très faible consommation (0,15 W mini)", "Réglage par capteur tactile, boutons ou OSD", "Pas de ghosting"],
-          "pros": ["Installation sans découpe (plug & play)", "Consommation très basse", "Idéal pour débuter", "Préserve la coque d'origine"],
-          "cons": ["Trim des onglets plastique de la dalle parfois nécessaire", "Choix du nappe 32/40 broches selon la carte"],
-          "specs": { "Type": "TFT (dalle DSi)", "Résolution": "240x160", "Conso mini": "0,15 W", "OSD": "Oui" },
+          "summary": {
+            "fr": "Le kit TFT \"In The Air\" basé sur la dalle inférieure de DSi, qui s'installe sans découpe de coque, parfait pour préserver l'original.",
+            "en": "The \"In The Air\" TFT kit based on the DSi bottom panel, installing with no shell trimming, perfect for preserving the original."
+          },
+          "features": {
+            "fr": ["Aucune découpe de coque", "Dalle DSi 240x160 au format d'origine", "Très faible consommation (0,15 W mini)", "Réglage par capteur tactile, boutons ou OSD", "Pas de ghosting"],
+            "en": ["No shell trimming", "DSi 240x160 panel at the original size", "Very low power draw (0.15 W min)", "Adjustment via touch sensor, buttons or OSD", "No ghosting"]
+          },
+          "pros": {
+            "fr": ["Installation sans découpe (plug & play)", "Consommation très basse", "Idéal pour débuter", "Préserve la coque d'origine"],
+            "en": ["No-trim install (plug & play)", "Very low power draw", "Ideal for beginners", "Preserves the original shell"]
+          },
+          "cons": {
+            "fr": ["Trim des onglets plastique de la dalle parfois nécessaire", "Choix du nappe 32/40 broches selon la carte"],
+            "en": ["Trimming the panel's plastic tabs is sometimes needed", "32/40-pin ribbon choice depending on the board"]
+          },
+          "specs": {
+            "fr": { "Type": "TFT (dalle DSi)", "Résolution": "240x160", "Conso mini": "0,15 W", "OSD": "Oui" },
+            "en": { "Type": "TFT (DSi panel)", "Resolution": "240x160", "Min draw": "0.15 W", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Non (ou minime)",
+          "soldering": { "fr": "Non (ou minime)", "en": "No (or minimal)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Vérifier carte 32 ou 40 broches"],
+          "prerequisites": { "fr": ["Vérifier carte 32 ou 40 broches"], "en": ["Check for a 32- or 40-pin board"] },
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/funnyplaying-ita-new-agb-tft-backlight-kit-for-game-boy-advance" }],
           "sources": [{ "label": "FunnyPlaying — ITA TFT Kit", "url": "https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" }, { "label": "Handheld Legend Wiki — ITA TFT Install", "url": "https://wiki.handheldlegend.com/agb-ita-tft-display-funnyplaying-or-install-guide" }],
-          "image": { "src": "", "alt": "Kit ITA TFT sans découpe FunnyPlaying pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit ITA TFT sans découpe FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying no-trim ITA TFT kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_fp_ita_tft_lam",
           "name": "ITA TFT Laminated Kit (OSD)",
           "brand": "FunnyPlaying",
-          "badge": "Laminé",
-          "summary": "Version laminée du kit ITA avec menu OSD pour un contrôle total sans découpe de coque.",
-          "features": ["Laminé sans découpe", "Menu OSD complet (BRT, FRM, X/Y)", "Meilleure qualité d'image que le non laminé", "Fonction mémoire de luminosité"],
-          "pros": ["Sans découpe ET laminé", "Image plus nette, zéro poussière", "OSD complet"],
-          "cons": ["Plus cher que le ITA non laminé", "Trim des onglets parfois nécessaire"],
-          "specs": { "Type": "TFT laminé (dalle DSi)", "Résolution": "240x160", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "Version laminée du kit ITA avec menu OSD pour un contrôle total sans découpe de coque.",
+            "en": "Laminated version of the ITA kit with an OSD menu for full control with no shell trimming."
+          },
+          "features": {
+            "fr": ["Laminé sans découpe", "Menu OSD complet (BRT, FRM, X/Y)", "Meilleure qualité d'image que le non laminé", "Fonction mémoire de luminosité"],
+            "en": ["Laminated, no trimming", "Full OSD menu (BRT, FRM, X/Y)", "Better image quality than non-laminated", "Brightness memory function"]
+          },
+          "pros": {
+            "fr": ["Sans découpe ET laminé", "Image plus nette, zéro poussière", "OSD complet"],
+            "en": ["No-trim AND laminated", "Sharper image, zero dust", "Full OSD"]
+          },
+          "cons": {
+            "fr": ["Plus cher que le ITA non laminé", "Trim des onglets parfois nécessaire"],
+            "en": ["Pricier than the non-laminated ITA", "Trimming the tabs is sometimes needed"]
+          },
+          "specs": {
+            "fr": { "Type": "TFT laminé (dalle DSi)", "Résolution": "240x160", "OSD": "Oui" },
+            "en": { "Type": "Laminated TFT (DSi panel)", "Resolution": "240x160", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Non (ou minime)",
+          "soldering": { "fr": "Non (ou minime)", "en": "No (or minimal)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Vérifier carte 32 ou 40 broches"],
+          "prerequisites": { "fr": ["Vérifier carte 32 ou 40 broches"], "en": ["Check for a 32- or 40-pin board"] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" }],
           "sources": [{ "label": "FunnyPlaying — ITA TFT Laminated", "url": "https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" }],
-          "image": { "src": "", "alt": "Kit ITA TFT laminé FunnyPlaying pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit ITA TFT laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying laminated ITA TFT kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_hsd_ips_v2",
           "name": "IPS V2 Kit (Touch Sensor)",
           "brand": "Hispeedido",
-          "summary": "Kit IPS V2 avec capteur tactile pour le contrôle de la luminosité au toucher, sans soudure obligatoire.",
-          "features": ["Contrôle tactile de la luminosité", "Soudure optionnelle", "Installation propre", "Multiples niveaux de luminosité"],
-          "pros": ["Réglage au toucher pratique", "Installation accessible", "Bon rapport qualité/prix"],
-          "cons": ["Notice parfois sommaire", "Coque IPS-ready recommandée"],
-          "specs": { "Type": "IPS", "OSD": "Oui" },
+          "summary": {
+            "fr": "Kit IPS V2 avec capteur tactile pour le contrôle de la luminosité au toucher, sans soudure obligatoire.",
+            "en": "IPS V2 kit with a touch sensor for brightness control by touch, with no mandatory soldering."
+          },
+          "features": {
+            "fr": ["Contrôle tactile de la luminosité", "Soudure optionnelle", "Installation propre", "Multiples niveaux de luminosité"],
+            "en": ["Touch brightness control", "Optional soldering", "Clean install", "Multiple brightness levels"]
+          },
+          "pros": {
+            "fr": ["Réglage au toucher pratique", "Installation accessible", "Bon rapport qualité/prix"],
+            "en": ["Handy touch adjustment", "Beginner-friendly install", "Good value for money"]
+          },
+          "cons": {
+            "fr": ["Notice parfois sommaire", "Coque IPS-ready recommandée"],
+            "en": ["Sometimes sparse instructions", "IPS-ready shell recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS", "OSD": "Oui" },
+            "en": { "Type": "IPS", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Optionnelle",
+          "soldering": { "fr": "Optionnelle", "en": "Optional" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS V2 Touch Sensor Hispeedido pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS V2 Touch Sensor Hispeedido pour Game Boy Advance", "en": "Hispeedido IPS V2 touch-sensor kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_ips_v5",
           "name": "V5 IPS Backlight Kit",
           "brand": "Hispeedido",
-          "summary": "Le kit IPS V5 d'Hispeedido avec dalle haute qualité et multiples modes d'affichage.",
-          "features": ["Haute luminosité", "Plusieurs modes d'affichage", "Excellente fidélité des couleurs", "OSD"],
-          "pros": ["Très lumineux", "Bonne fidélité des couleurs", "Plusieurs modes"],
-          "cons": ["Coque IPS-ready recommandée", "Consommation accrue"],
-          "specs": { "Type": "IPS", "OSD": "Oui" },
+          "summary": {
+            "fr": "Le kit IPS V5 d'Hispeedido avec dalle haute qualité et multiples modes d'affichage.",
+            "en": "Hispeedido's V5 IPS kit with a high-quality panel and multiple display modes."
+          },
+          "features": {
+            "fr": ["Haute luminosité", "Plusieurs modes d'affichage", "Excellente fidélité des couleurs", "OSD"],
+            "en": ["High brightness", "Multiple display modes", "Excellent color fidelity", "OSD"]
+          },
+          "pros": {
+            "fr": ["Très lumineux", "Bonne fidélité des couleurs", "Plusieurs modes"],
+            "en": ["Very bright", "Good color fidelity", "Multiple modes"]
+          },
+          "cons": {
+            "fr": ["Coque IPS-ready recommandée", "Consommation accrue"],
+            "en": ["IPS-ready shell recommended", "Higher power draw"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS", "OSD": "Oui" },
+            "en": { "Type": "IPS", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS V5 Hispeedido pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS V5 Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 IPS kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_ips_v5_lam",
           "name": "V5 IPS Laminated (OSD)",
           "brand": "Hispeedido",
-          "badge": "Laminé",
-          "summary": "Version laminée du V5 avec menu OSD complet pour le meilleur rendu possible sur GBA.",
-          "features": ["Vitre laminée", "OSD complet", "Résolution et couleurs optimisées", "Haute luminosité"],
-          "pros": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "OSD complet"],
-          "cons": ["Plus cher que la version non laminée", "Coque IPS-ready recommandée"],
-          "specs": { "Type": "IPS laminé", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "Version laminée du V5 avec menu OSD complet pour le meilleur rendu possible sur GBA.",
+            "en": "Laminated version of the V5 with a full OSD menu for the best possible image on the GBA."
+          },
+          "features": {
+            "fr": ["Vitre laminée", "OSD complet", "Résolution et couleurs optimisées", "Haute luminosité"],
+            "en": ["Laminated glass", "Full OSD", "Optimized resolution and colors", "High brightness"]
+          },
+          "pros": {
+            "fr": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "OSD complet"],
+            "en": ["Superior contrast and sharpness", "No trapped dust", "Full OSD"]
+          },
+          "cons": {
+            "fr": ["Plus cher que la version non laminée", "Coque IPS-ready recommandée"],
+            "en": ["Pricier than the non-laminated version", "IPS-ready shell recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS laminé", "OSD": "Oui" },
+            "en": { "Type": "Laminated IPS", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS V5 laminé Hispeedido pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS V5 laminé Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 laminated IPS kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_hdmi",
           "name": "TFT HDMI Kit (Sortie TV)",
           "brand": "Hispeedido",
-          "badge": "TV Link",
-          "summary": "Jouez sur votre téléviseur moderne avec une sortie HDMI 720p intégrée directement dans la console.",
-          "features": ["Sortie HDMI 720p", "Adaptateur micro-HD inclus", "Dalle DSi avec 8 modes couleur", "2 ratios d'affichage TV", "Capteurs tactiles"],
-          "pros": ["Jouer sur grand écran", "Idéal pour le streaming", "Affichage de qualité"],
-          "cons": ["Mod avancé : découpe importante des deux demi-coques", "Soudure de 2 fils audio requise", "Connecteur HDMI fragile"],
-          "specs": { "Type": "TFT + HDMI", "Sortie": "720p", "Compatibilité": "32/40 broches" },
+          "badge": { "fr": "TV Link", "en": "TV Link" },
+          "summary": {
+            "fr": "Jouez sur votre téléviseur moderne avec une sortie HDMI 720p intégrée directement dans la console.",
+            "en": "Play on your modern TV with a 720p HDMI output built directly into the console."
+          },
+          "features": {
+            "fr": ["Sortie HDMI 720p", "Adaptateur micro-HD inclus", "Dalle DSi avec 8 modes couleur", "2 ratios d'affichage TV", "Capteurs tactiles"],
+            "en": ["720p HDMI output", "Micro-HD adapter included", "DSi panel with 8 color modes", "2 TV display ratios", "Touch sensors"]
+          },
+          "pros": {
+            "fr": ["Jouer sur grand écran", "Idéal pour le streaming", "Affichage de qualité"],
+            "en": ["Play on a big screen", "Ideal for streaming", "Quality display"]
+          },
+          "cons": {
+            "fr": ["Mod avancé : découpe importante des deux demi-coques", "Soudure de 2 fils audio requise", "Connecteur HDMI fragile"],
+            "en": ["Advanced mod: major trimming of both shell halves", "2 audio wires to solder required", "Fragile HDMI connector"]
+          },
+          "specs": {
+            "fr": { "Type": "TFT + HDMI", "Sortie": "720p", "Compatibilité": "32/40 broches" },
+            "en": { "Type": "TFT + HDMI", "Output": "720p", "Compatibility": "32/40-pin" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (2 fils audio)",
+          "soldering": { "fr": "Oui (2 fils audio)", "en": "Yes (2 audio wires)" },
           "installTime": "60–90 min",
           "price": "€€€",
-          "prerequisites": ["Découpe importante de coque", "Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Découpe importante de coque", "Coque IPS-ready recommandée"], "en": ["Major shell trimming", "IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" }],
           "sources": [{ "label": "Handheld Legend — TFT HDMI Kit", "url": "https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" }, { "label": "Handheld Legend Wiki — HDMI Out Install", "url": "https://wiki.handheldlegend.com/agb-hispeedido-hdmi-out-kit-or-install-guide" }],
-          "image": { "src": "", "alt": "Kit TFT HDMI sortie TV Hispeedido pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit TFT HDMI sortie TV Hispeedido pour Game Boy Advance", "en": "Hispeedido TFT HDMI TV-output kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_cgs_ips",
           "name": "IPS LCD Backlight Kit",
           "brand": "Cloud Game Store",
-          "summary": "Kit IPS accessible et fiable pour une première entrée dans le modding GBA.",
-          "features": ["Bon rapport qualité/prix", "Installation accessible", "Luminosité améliorée"],
-          "pros": ["Pas cher", "Bonne porte d'entrée au modding GBA"],
-          "cons": ["Coque IPS-ready recommandée", "OSD plus limité que la concurrence"],
-          "specs": { "Type": "IPS" },
+          "summary": {
+            "fr": "Kit IPS accessible et fiable pour une première entrée dans le modding GBA.",
+            "en": "An affordable, reliable IPS kit for a first entry into GBA modding."
+          },
+          "features": {
+            "fr": ["Bon rapport qualité/prix", "Installation accessible", "Luminosité améliorée"],
+            "en": ["Good value for money", "Beginner-friendly install", "Improved brightness"]
+          },
+          "pros": {
+            "fr": ["Pas cher", "Bonne porte d'entrée au modding GBA"],
+            "en": ["Affordable", "A good gateway into GBA modding"]
+          },
+          "cons": {
+            "fr": ["Coque IPS-ready recommandée", "OSD plus limité que la concurrence"],
+            "en": ["IPS-ready shell recommended", "More limited OSD than the competition"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS" },
+            "en": { "Type": "IPS" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Coque IPS-ready recommandée"],
+          "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS LCD Cloud Game Store pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS LCD Cloud Game Store pour Game Boy Advance", "en": "Cloud Game Store IPS LCD kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "brand"]
-        },
-        {
-          "id": "gba_bennvenn_lcd",
-          "name": "GBA LCD Kits",
-          "brand": "BennVenn",
-          "summary": "Des écrans alternatifs de haute qualité avec un focus sur la fidélité des couleurs et la basse consommation.",
-          "features": ["Très faible ghosting", "Gestion d'énergie intelligente", "Fidélité des couleurs"],
-          "pros": ["Très faible consommation", "Fiabilité reconnue", "Peu de ghosting"],
-          "cons": ["Disponibilité variable"],
-          "specs": { "Type": "LCD/IPS" },
-          "difficulty": 3,
-          "soldering": "Oui (basique)",
-          "installTime": "45–60 min",
-          "price": "€€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "BennVenn", "url": "https://bennvenn.myshopify.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit LCD BennVenn pour Game Boy Advance", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         }
       ]
     },
     {
       "id": "power",
-      "name": "Énergie & Performance",
+      "name": { "fr": "Énergie & Performance", "en": "Power & Performance" },
       "icon": "⚡",
-      "intro": "Abandonner les 2 piles AA pour une batterie USB-C rechargeable (essentielle pour alimenter un écran rétroéclairé gourmand), ou accélérer la console pour réduire le grind.",
+      "intro": {
+        "fr": "Abandonner les 2 piles AA pour une batterie USB-C rechargeable (essentielle pour alimenter un écran rétroéclairé gourmand), ou accélérer la console pour réduire le grind.",
+        "en": "Ditch the 2 AA batteries for a rechargeable USB-C battery (essential to power a power-hungry backlit screen), or speed up the console to reduce the grind."
+      },
       "mods": [
         {
           "id": "gba_cleanjuice_v13",
           "name": "CleanJuice V1.3 (Li-Ion, USB-C)",
           "brand": "RetroSix",
-          "badge": "Populaire",
-          "summary": "La solution USB-C Li-Ion la plus populaire pour GBA. Rechargez pendant que vous jouez, sans aucune soudure.",
-          "features": ["1700 mAh de capacité", "Recharge USB-C", "Installation sans soudure (drop-in)", "Indicateur de batterie faible (LED rouge)"],
-          "pros": ["Aucune soudure", "USB-C moderne", "Recharge en jouant"],
-          "cons": ["Découpe de la trappe pour le port USB-C (sauf cache pré-découpé)", "Modif du logement piles sur coque OEM"],
-          "specs": { "Capacité": "1700 mAh", "Recharge": "USB-C" },
+          "badge": { "fr": "Populaire", "en": "Popular" },
+          "summary": {
+            "fr": "La solution USB-C Li-Ion la plus populaire pour GBA. Rechargez pendant que vous jouez, sans aucune soudure.",
+            "en": "The most popular USB-C Li-Ion solution for the GBA. Charge while you play, with no soldering at all."
+          },
+          "features": {
+            "fr": ["1700 mAh de capacité", "Recharge USB-C", "Installation sans soudure (drop-in)", "Indicateur de batterie faible (LED rouge)"],
+            "en": ["1700 mAh capacity", "USB-C charging", "Solder-free (drop-in) install", "Low-battery indicator (red LED)"]
+          },
+          "pros": {
+            "fr": ["Aucune soudure", "USB-C moderne", "Recharge en jouant"],
+            "en": ["No soldering", "Modern USB-C", "Charge while playing"]
+          },
+          "cons": {
+            "fr": ["Découpe de la trappe pour le port USB-C (sauf cache pré-découpé)", "Modif du logement piles sur coque OEM"],
+            "en": ["Door trimming for the USB-C port (unless using a pre-cut cover)", "Battery compartment modification on an OEM shell"]
+          },
+          "specs": {
+            "fr": { "Capacité": "1700 mAh", "Recharge": "USB-C" },
+            "en": { "Capacity": "1700 mAh", "Charging": "USB-C" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "15–20 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "scoreImpact": { "image": 0, "audio": 0, "autonomie": 3, "ergonomie": 0, "gameplay": 0 },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanJuice-USB-C-Battery-Pack-Game-Boy-Advance-p195931214" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" }],
           "sources": [{ "label": "Handheld Legend — CleanJuice V1.3 GBA", "url": "https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" }],
-          "image": { "src": "", "alt": "Batterie USB-C CleanJuice V1.3 RetroSix pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice V1.3 RetroSix pour Game Boy Advance", "en": "RetroSix CleanJuice V1.3 USB-C battery for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_cleanjuice_aa",
           "name": "CleanJuice AA USB-C Pack",
           "brand": "RetroSix",
-          "summary": "Gardez le format piles AA avec un port USB-C intégré pour recharger des NiMH directement dans la GBA.",
-          "features": ["Préserve le format piles AA", "Recharge USB-C des NiMH", "Aucune modification de coque"],
-          "pros": ["Conserve le look d'origine (piles AA)", "Recharge sans retirer les piles", "Pas de découpe de coque"],
-          "cons": ["Autonomie dépendante des NiMH utilisées"],
-          "specs": { "Format": "Piles AA NiMH", "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Gardez le format piles AA avec un port USB-C intégré pour recharger des NiMH directement dans la GBA.",
+            "en": "Keep the AA battery format with a built-in USB-C port to charge NiMH cells right inside the GBA."
+          },
+          "features": {
+            "fr": ["Préserve le format piles AA", "Recharge USB-C des NiMH", "Aucune modification de coque"],
+            "en": ["Preserves the AA battery format", "USB-C charging of NiMH cells", "No shell modification"]
+          },
+          "pros": {
+            "fr": ["Conserve le look d'origine (piles AA)", "Recharge sans retirer les piles", "Pas de découpe de coque"],
+            "en": ["Keeps the original look (AA batteries)", "Charge without removing the cells", "No shell trimming"]
+          },
+          "cons": {
+            "fr": ["Autonomie dépendante des NiMH utilisées"],
+            "en": ["Runtime depends on the NiMH cells used"]
+          },
+          "specs": {
+            "fr": { "Format": "Piles AA NiMH", "Recharge": "USB-C" },
+            "en": { "Format": "AA NiMH batteries", "Charging": "USB-C" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Pack AA USB-C CleanJuice RetroSix pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Pack AA USB-C CleanJuice RetroSix pour Game Boy Advance", "en": "RetroSix CleanJuice AA USB-C pack for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_fp_ips_max_battery",
           "name": "AGB IPS MAX Battery USB-C",
           "brand": "FunnyPlaying",
-          "summary": "Module batterie Li-Ion USB-C conçu spécifiquement pour les kits AGB IPS MAX de FunnyPlaying.",
-          "features": ["Conçu pour kit AGB IPS MAX", "Recharge USB-C", "Installation intégrée"],
-          "pros": ["Parfaitement adapté à l'IPS MAX", "USB-C", "Intégration propre"],
-          "cons": ["Pensé pour l'écosystème FunnyPlaying"],
-          "specs": { "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Module batterie Li-Ion USB-C conçu spécifiquement pour les kits AGB IPS MAX de FunnyPlaying.",
+            "en": "USB-C Li-Ion battery module designed specifically for FunnyPlaying's AGB IPS MAX kits."
+          },
+          "features": {
+            "fr": ["Conçu pour kit AGB IPS MAX", "Recharge USB-C", "Installation intégrée"],
+            "en": ["Designed for the AGB IPS MAX kit", "USB-C charging", "Integrated install"]
+          },
+          "pros": {
+            "fr": ["Parfaitement adapté à l'IPS MAX", "USB-C", "Intégration propre"],
+            "en": ["Perfectly suited to the IPS MAX", "USB-C", "Clean integration"]
+          },
+          "cons": {
+            "fr": ["Pensé pour l'écosystème FunnyPlaying"],
+            "en": ["Designed for the FunnyPlaying ecosystem"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C" },
+            "en": { "Charging": "USB-C" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "20–30 min",
           "price": "€€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Batterie USB-C AGB IPS MAX FunnyPlaying pour Game Boy Advance", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "installTime"]
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
+          "sources": [{ "label": "FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
+          "image": { "src": "", "alt": { "fr": "Batterie USB-C AGB IPS MAX FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX USB-C battery for Game Boy Advance" }, "credit": "" },
+          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_fp_battery",
           "name": "GBA Rechargeable Battery Mod",
           "brand": "FunnyPlaying",
-          "summary": "Module batterie rechargeable universel FunnyPlaying pour remplacer les AA de la GBA.",
-          "features": ["Recharge USB-C", "Compatible tous modèles GBA", "Installation simple"],
-          "pros": ["Universel", "USB-C", "Installation simple"],
-          "cons": ["Découpe possible de la trappe pour le port USB-C"],
-          "specs": { "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Module batterie rechargeable universel FunnyPlaying pour remplacer les AA de la GBA.",
+            "en": "Universal FunnyPlaying rechargeable battery module to replace the GBA's AA cells."
+          },
+          "features": {
+            "fr": ["Recharge USB-C", "Compatible tous modèles GBA", "Installation simple"],
+            "en": ["USB-C charging", "Compatible with all GBA models", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Universel", "USB-C", "Installation simple"],
+            "en": ["Universal", "USB-C", "Easy install"]
+          },
+          "cons": {
+            "fr": ["Découpe possible de la trappe pour le port USB-C"],
+            "en": ["Possible door trimming for the USB-C port"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C" },
+            "en": { "Charging": "USB-C" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (optionnelle)",
+          "soldering": { "fr": "Minimale (optionnelle)", "en": "Minimal (optional)" },
           "installTime": "20–30 min",
           "price": "€€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Module batterie rechargeable FunnyPlaying pour Game Boy Advance", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "installTime"]
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
+          "sources": [{ "label": "FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
+          "image": { "src": "", "alt": { "fr": "Module batterie rechargeable FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying rechargeable battery module for Game Boy Advance" }, "credit": "" },
+          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_hsd_battery_1800",
           "name": "GBA USB-C Battery 1800mAh",
           "brand": "Hispeedido",
-          "summary": "Batterie Li-Po 1800mAh avec recharge USB-C intégrée pour une bonne autonomie.",
-          "features": ["1800 mAh de capacité", "Recharge USB-C", "Plug & Play"],
-          "pros": ["Bonne autonomie", "USB-C", "Installation simple"],
-          "cons": ["Découpe possible de la trappe pour le port USB-C"],
-          "specs": { "Capacité": "1800 mAh", "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Batterie Li-Po 1800mAh avec recharge USB-C intégrée pour une bonne autonomie.",
+            "en": "1800mAh Li-Po battery with built-in USB-C charging for good runtime."
+          },
+          "features": {
+            "fr": ["1800 mAh de capacité", "Recharge USB-C", "Plug & Play"],
+            "en": ["1800 mAh capacity", "USB-C charging", "Plug & Play"]
+          },
+          "pros": {
+            "fr": ["Bonne autonomie", "USB-C", "Installation simple"],
+            "en": ["Good runtime", "USB-C", "Easy install"]
+          },
+          "cons": {
+            "fr": ["Découpe possible de la trappe pour le port USB-C"],
+            "en": ["Possible door trimming for the USB-C port"]
+          },
+          "specs": {
+            "fr": { "Capacité": "1800 mAh", "Recharge": "USB-C" },
+            "en": { "Capacity": "1800 mAh", "Charging": "USB-C" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "15–20 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": "Batterie USB-C 1800mAh Hispeedido pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie USB-C 1800mAh Hispeedido pour Game Boy Advance", "en": "Hispeedido 1800mAh USB-C battery for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_gbaccelerator",
           "name": "GBAccelerator (OC)",
           "brand": "Division 6",
-          "badge": "Vitesse",
-          "summary": "Accélérez vos sessions de grind dans Pokémon ou RPG à 1.5x ou 2x la vitesse normale, sans glitch d'horloge.",
-          "features": ["4 vitesses : 0,85x / 1x / 1,5x / 1,75x", "Changement à chaud par combinaison de 3 boutons", "Installation 100% interne", "Pas de glitch d'horloge"],
-          "pros": ["Accélère les jeux lents", "Réversible", "Sans glitch contrairement aux mods de quartz"],
-          "cons": ["Soudure de base requise", "Certains jeux peuvent mal réagir en overclock"],
-          "specs": { "Vitesses": "0,85x / 1x / 1,5x / 1,75x" },
+          "badge": { "fr": "Vitesse", "en": "Speed" },
+          "summary": {
+            "fr": "Accélérez vos sessions de grind dans Pokémon ou RPG à 1.5x ou 2x la vitesse normale, sans glitch d'horloge.",
+            "en": "Speed up your grinding in Pokémon or RPGs to 1.5x or 2x normal speed, with no clock glitches."
+          },
+          "features": {
+            "fr": ["4 vitesses : 0,85x / 1x / 1,5x / 1,75x", "Changement à chaud par combinaison de 3 boutons", "Installation 100% interne", "Pas de glitch d'horloge"],
+            "en": ["4 speeds: 0.85x / 1x / 1.5x / 1.75x", "On-the-fly switching via a 3-button combo", "100% internal install", "No clock glitches"]
+          },
+          "pros": {
+            "fr": ["Accélère les jeux lents", "Réversible", "Sans glitch contrairement aux mods de quartz"],
+            "en": ["Speeds up slow games", "Reversible", "Glitch-free unlike crystal-swap mods"]
+          },
+          "cons": {
+            "fr": ["Soudure de base requise", "Certains jeux peuvent mal réagir en overclock"],
+            "en": ["Basic soldering required", "Some games may react badly when overclocked"]
+          },
+          "specs": {
+            "fr": { "Vitesses": "0,85x / 1x / 1,5x / 1,75x" },
+            "en": { "Speeds": "0.85x / 1x / 1.5x / 1.75x" }
+          },
           "difficulty": 4,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Division 6", "url": "https://division-6.com/products/gbaccelerator-gba/" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/gbaccerlerator-game-boy-advance-accelerator" }],
           "sources": [{ "label": "Division 6 — GBAccelerator GBA", "url": "https://division-6.com/products/gbaccelerator-gba/" }, { "label": "Handheld Legend — Install Guide", "url": "https://handheldlegend.com/blogs/installation-instructions/gbaccelerator-installation-game-boy-advance-division-6" }],
-          "image": { "src": "", "alt": "Module d'overclock GBAccelerator Division 6 pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator Division 6 pour Game Boy Advance", "en": "Division 6 GBAccelerator overclock module for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         }
       ]
     },
     {
       "id": "audio",
-      "name": "Illumination & Audio",
+      "name": { "fr": "Illumination & Audio", "en": "Lighting & Audio" },
       "icon": "✨",
-      "intro": "Éclairer les boutons en RGB et corriger la faiblesse audio de la GBA : son trop bas et souffle (hiss) permanent du circuit d'origine.",
+      "intro": {
+        "fr": "Éclairer les boutons en RGB et corriger la faiblesse audio de la GBA : son trop bas et souffle (hiss) permanent du circuit d'origine.",
+        "en": "Light up the buttons in RGB and fix the GBA's weak audio: too-low volume and the constant hiss of the original circuit."
+      },
       "mods": [
         {
           "id": "gba_retroglow",
           "name": "RetroGlow GBA",
           "brand": "Handheld Legend",
-          "badge": "RGB",
-          "summary": "Le kit LED RGB complet pour vos boutons. Personnalisation infinie via Select + D-Pad.",
-          "features": ["32 teintes et 32 niveaux de saturation", "2 modes d'animation", "Contrôle via Select + D-Pad", "Faible consommation"],
-          "pros": ["Effet visuel spectaculaire", "Très personnalisable", "Install rapide (15–30 min)"],
-          "cons": ["Soudure fine", "Consommation supplémentaire"],
-          "specs": { "Type": "LED RGB", "Teintes": "32", "Saturation": "32 niveaux" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Le kit LED RGB complet pour vos boutons. Personnalisation infinie via Select + D-Pad.",
+            "en": "The complete RGB LED kit for your buttons. Endless customization via Select + D-Pad."
+          },
+          "features": {
+            "fr": ["32 teintes et 32 niveaux de saturation", "2 modes d'animation", "Contrôle via Select + D-Pad", "Faible consommation"],
+            "en": ["32 hues and 32 saturation levels", "2 animation modes", "Control via Select + D-Pad", "Low power draw"]
+          },
+          "pros": {
+            "fr": ["Effet visuel spectaculaire", "Très personnalisable", "Install rapide (15–30 min)"],
+            "en": ["Spectacular visual effect", "Highly customizable", "Quick install (15–30 min)"]
+          },
+          "cons": {
+            "fr": ["Soudure fine", "Consommation supplémentaire"],
+            "en": ["Fine soldering", "Extra power draw"]
+          },
+          "specs": {
+            "fr": { "Type": "LED RGB", "Teintes": "32", "Saturation": "32 niveaux" },
+            "en": { "Type": "RGB LED", "Hues": "32", "Saturation": "32 levels" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "15–30 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" }],
           "sources": [{ "label": "Handheld Legend — RetroGlow GBA", "url": "https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" }, { "label": "Handheld Legend Wiki — Install Guide", "url": "https://wiki.handheldlegend.com/retroglow-for-gba-agb-or-install-guide" }],
-          "image": { "src": "", "alt": "Kit LED RGB RetroGlow pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy Advance", "en": "RetroGlow RGB LED kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_arc",
           "name": "ARC GBA (RGB LEDs)",
           "brand": "NatalieTheNerd",
-          "badge": "RGB",
-          "summary": "Board RGB avec contrôle de couleur par zone (D-pad, A/B, Start/Select) et modes d'animation avancés.",
-          "features": ["Contrôle couleur par zone", "17 réglages (3 modes d'animation, 4 niveaux de luminosité)", "Modes breathing & windmill", "Très faible consommation", "Compatible écran moderne (n'utilise pas L/R/Select)"],
-          "pros": ["Réglages fins par zone", "Faible consommation", "Conçu par une moddeuse reconnue", "Compatible kits IPS"],
-          "cons": ["Soudure requise"],
-          "specs": { "Type": "LED RGB", "Réglages": "17", "Luminosité": "4 niveaux" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Board RGB avec contrôle de couleur par zone (D-pad, A/B, Start/Select) et modes d'animation avancés.",
+            "en": "RGB board with per-zone color control (D-pad, A/B, Start/Select) and advanced animation modes."
+          },
+          "features": {
+            "fr": ["Contrôle couleur par zone", "17 réglages (3 modes d'animation, 4 niveaux de luminosité)", "Modes breathing & windmill", "Très faible consommation", "Compatible écran moderne (n'utilise pas L/R/Select)"],
+            "en": ["Per-zone color control", "17 settings (3 animation modes, 4 brightness levels)", "Breathing & windmill modes", "Very low power draw", "Compatible with modern screens (doesn't use L/R/Select)"]
+          },
+          "pros": {
+            "fr": ["Réglages fins par zone", "Faible consommation", "Conçu par une moddeuse reconnue", "Compatible kits IPS"],
+            "en": ["Fine per-zone adjustments", "Low power draw", "Designed by a respected modder", "Compatible with IPS kits"]
+          },
+          "cons": {
+            "fr": ["Soudure requise"],
+            "en": ["Soldering required"]
+          },
+          "specs": {
+            "fr": { "Type": "LED RGB", "Réglages": "17", "Luminosité": "4 niveaux" },
+            "en": { "Type": "RGB LED", "Settings": "17", "Brightness": "4 levels" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/arc-gba-rgb-leds" }],
           "sources": [{ "label": "NatalieTheNerd — ARC GBA", "url": "https://nataliethenerd.com/products/arc-gba-rgb-leds" }, { "label": "NatalieTheNerd — Install Guide", "url": "https://nataliethenerd.com/pages/arc-gba-install-guide" }],
-          "image": { "src": "", "alt": "Kit LED RGB ARC NatalieTheNerd pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit LED RGB ARC NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd ARC RGB LED kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "gba_cleanamp_dehiss",
           "name": "CleanAmp & De-Hiss",
           "brand": "RetroSix",
-          "summary": "Améliorez le son et supprimez le sifflement permanent de la GBA grâce à un ampli Class D et un kit anti-bruit.",
-          "features": ["Ampli audio Class D efficace", "Kit De-Hiss / Dehum (condensateurs)", "Suppression du souffle", "Volume nettement augmenté"],
-          "pros": ["Volume multiplié", "Son plus propre", "De-Hiss filtre le bruit CPU/SRAM/régulateur"],
-          "cons": ["Soudure requise", "De-Hiss recommandé en complément de l'ampli"],
-          "specs": { "Type": "Ampli Class D + filtre" },
+          "summary": {
+            "fr": "Améliorez le son et supprimez le sifflement permanent de la GBA grâce à un ampli Class D et un kit anti-bruit.",
+            "en": "Improve the sound and remove the GBA's constant hiss with a class-D amp and a noise-cancelling kit."
+          },
+          "features": {
+            "fr": ["Ampli audio Class D efficace", "Kit De-Hiss / Dehum (condensateurs)", "Suppression du souffle", "Volume nettement augmenté"],
+            "en": ["Efficient class-D audio amp", "De-Hiss / Dehum kit (capacitors)", "Hiss removal", "Significantly increased volume"]
+          },
+          "pros": {
+            "fr": ["Volume multiplié", "Son plus propre", "De-Hiss filtre le bruit CPU/SRAM/régulateur"],
+            "en": ["Multiplied volume", "Cleaner sound", "De-Hiss filters CPU/SRAM/regulator noise"]
+          },
+          "cons": {
+            "fr": ["Soudure requise", "De-Hiss recommandé en complément de l'ampli"],
+            "en": ["Soldering required", "De-Hiss recommended alongside the amp"]
+          },
+          "specs": {
+            "fr": { "Type": "Ampli Class D + filtre" },
+            "en": { "Type": "Class-D amp + filter" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" }],
           "sources": [{ "label": "Handheld Legend — CleanAmp Pro GBA", "url": "https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" }, { "label": "Handheld Legend — Wire-Free Dehum Dehiss", "url": "https://handheldlegend.com/products/game-boy-advance-wire-free-dehum-dehiss-kit" }],
-          "image": { "src": "", "alt": "Ampli audio CleanAmp et kit De-Hiss RetroSix pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Ampli audio CleanAmp et kit De-Hiss RetroSix pour Game Boy Advance", "en": "RetroSix CleanAmp amp and De-Hiss kit for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_bucket_amp",
           "name": "Bucket Amp GBA",
           "brand": "NatalieTheNerd",
-          "summary": "Remplace intégralement le circuit amplificateur d'origine pour un son radicalement supérieur.",
-          "features": ["Remplacement complet du circuit son d'origine", "Son fort et propre", "Basé sur l'ampli de Bucket Mouse (MGBC)", "Résultat bien au-delà d'un simple boost"],
-          "pros": ["Qualité sonore exceptionnelle", "Remplace une conception datée plutôt que de la booster"],
-          "cons": ["Soudure de petits composants : mod difficile pour débutants"],
-          "specs": { "Type": "Remplacement d'ampli" },
+          "summary": {
+            "fr": "Remplace intégralement le circuit amplificateur d'origine pour un son radicalement supérieur.",
+            "en": "Fully replaces the original amplifier circuit for radically superior sound."
+          },
+          "features": {
+            "fr": ["Remplacement complet du circuit son d'origine", "Son fort et propre", "Basé sur l'ampli de Bucket Mouse (MGBC)", "Résultat bien au-delà d'un simple boost"],
+            "en": ["Full replacement of the original sound circuit", "Loud, clean sound", "Based on the Bucket Mouse amp (MGBC)", "Results far beyond a simple boost"]
+          },
+          "pros": {
+            "fr": ["Qualité sonore exceptionnelle", "Remplace une conception datée plutôt que de la booster"],
+            "en": ["Exceptional sound quality", "Replaces a dated design rather than boosting it"]
+          },
+          "cons": {
+            "fr": ["Soudure de petits composants : mod difficile pour débutants"],
+            "en": ["Small-component soldering: a tough mod for beginners"]
+          },
+          "specs": {
+            "fr": { "Type": "Remplacement d'ampli" },
+            "en": { "Type": "Amp replacement" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (composants fins)",
+          "soldering": { "fr": "Oui (composants fins)", "en": "Yes (fine components)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": ["Bonne maîtrise de la soudure fine"],
+          "prerequisites": { "fr": ["Bonne maîtrise de la soudure fine"], "en": ["Solid fine-soldering skills"] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/bucket-amp-gba" }],
           "sources": [{ "label": "NatalieTheNerd — Bucket Amp GBA", "url": "https://nataliethenerd.com/products/bucket-amp-gba" }],
-          "image": { "src": "", "alt": "Bucket Amp NatalieTheNerd pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Bucket Amp NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd Bucket Amp for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "gba_cgs_speakers",
           "name": "Colored Speakers GBA",
           "brand": "Cloud Game Store",
-          "summary": "Haut-parleurs de remplacement colorés pour personnaliser et améliorer le son de votre GBA.",
-          "features": ["Plusieurs coloris disponibles", "Meilleur rendu sonore", "Remplacement direct"],
-          "pros": ["Remplacement direct", "Améliore un HP fatigué", "Touche esthétique"],
-          "cons": ["Gain limité sans ampli dédié"],
-          "specs": { "Format": "Origine GBA" },
+          "summary": {
+            "fr": "Haut-parleurs de remplacement colorés pour personnaliser et améliorer le son de votre GBA.",
+            "en": "Colored replacement speakers to customize and improve your GBA's sound."
+          },
+          "features": {
+            "fr": ["Plusieurs coloris disponibles", "Meilleur rendu sonore", "Remplacement direct"],
+            "en": ["Several colors available", "Better sound output", "Direct replacement"]
+          },
+          "pros": {
+            "fr": ["Remplacement direct", "Améliore un HP fatigué", "Touche esthétique"],
+            "en": ["Direct replacement", "Improves a worn speaker", "Aesthetic touch"]
+          },
+          "cons": {
+            "fr": ["Gain limité sans ampli dédié"],
+            "en": ["Limited gain without a dedicated amp"]
+          },
+          "specs": {
+            "fr": { "Format": "Origine GBA" },
+            "en": { "Format": "Stock GBA" }
+          },
           "difficulty": 1,
-          "soldering": "Non (ou minime)",
+          "soldering": { "fr": "Non (ou minime)", "en": "No (or minimal)" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Haut-parleurs colorés Cloud Game Store pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Haut-parleurs colorés Cloud Game Store pour Game Boy Advance", "en": "Cloud Game Store colored speakers for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "brand"]
         }
       ]
     },
     {
       "id": "buttons",
-      "name": "Boutons",
+      "name": { "fr": "Boutons", "en": "Buttons" },
       "icon": "🔘",
-      "intro": "Corriger le toucher mou des boutons membrane d'origine et personnaliser les couleurs : conversion tactile clicky et boutons custom.",
+      "intro": {
+        "fr": "Corriger le toucher mou des boutons membrane d'origine et personnaliser les couleurs : conversion tactile clicky et boutons custom.",
+        "en": "Fix the mushy feel of the original membrane buttons and customize the colors: clicky tactile conversion and custom buttons."
+      },
       "mods": [
         {
           "id": "gba_tactile_pcb",
           "name": "Tactile Conversion PCB",
           "brand": "Handheld Legend",
-          "badge": "Clicky",
-          "summary": "Remplacez les membranes souples par des switches tactiles clicky sur tous les boutons de la GBA, pour un feeling type GBA SP.",
-          "features": ["Tous les boutons de façade (+ gâchettes avec triggers clicky)", "Feeling clicky type GBA SP", "Flex-PCB de conversion tactile", "Compatible kits IPS"],
-          "pros": ["Fin du toucher mou d'origine", "Boutons clicky satisfaisants", "Compatible écran moderne"],
-          "cons": ["Pression un peu plus ferme (sensation 2 étages)", "Ajustement de membrane parfois nécessaire (Start/Select)", "Fermeture de coque parfois serrée"],
-          "specs": { "Type": "Flex-PCB tactile" },
+          "badge": { "fr": "Clicky", "en": "Clicky" },
+          "summary": {
+            "fr": "Remplacez les membranes souples par des switches tactiles clicky sur tous les boutons de la GBA, pour un feeling type GBA SP.",
+            "en": "Replace the soft membranes with clicky tactile switches on all the GBA's buttons, for a GBA SP-style feel."
+          },
+          "features": {
+            "fr": ["Tous les boutons de façade (+ gâchettes avec triggers clicky)", "Feeling clicky type GBA SP", "Flex-PCB de conversion tactile", "Compatible kits IPS"],
+            "en": ["All face buttons (+ shoulders with clicky triggers)", "GBA SP-style clicky feel", "Tactile-conversion flex PCB", "Compatible with IPS kits"]
+          },
+          "pros": {
+            "fr": ["Fin du toucher mou d'origine", "Boutons clicky satisfaisants", "Compatible écran moderne"],
+            "en": ["No more mushy stock feel", "Satisfying clicky buttons", "Compatible with modern screens"]
+          },
+          "cons": {
+            "fr": ["Pression un peu plus ferme (sensation 2 étages)", "Ajustement de membrane parfois nécessaire (Start/Select)", "Fermeture de coque parfois serrée"],
+            "en": ["Slightly firmer press (two-stage feel)", "Membrane adjustment sometimes needed (Start/Select)", "Shell can be tight to close"]
+          },
+          "specs": {
+            "fr": { "Type": "Flex-PCB tactile" },
+            "en": { "Type": "Tactile flex PCB" }
+          },
           "difficulty": 3,
-          "soldering": "Non (montage flex)",
+          "soldering": { "fr": "Non (montage flex)", "en": "No (flex mount)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["Boutons et membranes à prévoir"],
+          "prerequisites": { "fr": ["Boutons et membranes à prévoir"], "en": ["Buttons and membranes to plan for"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" }],
           "sources": [{ "label": "Handheld Legend — Tactile Conversion PCB", "url": "https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" }, { "label": "GitHub — Zekfoo/tactileAGB", "url": "https://github.com/Zekfoo/tactileAGB" }],
-          "image": { "src": "", "alt": "PCB de conversion tactile Handheld Legend pour Game Boy Advance", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "PCB de conversion tactile Handheld Legend pour Game Boy Advance", "en": "Handheld Legend tactile-conversion PCB for Game Boy Advance" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "soldering"]
         },
         {
           "id": "gba_fp_buttons",
           "name": "GBA Custom Buttons",
           "brand": "FunnyPlaying",
-          "summary": "Boutons de remplacement colorés pour personnaliser l'aspect de votre GBA.",
-          "features": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
-          "pros": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
-          "cons": [],
-          "specs": {},
+          "summary": {
+            "fr": "Boutons de remplacement colorés pour personnaliser l'aspect de votre GBA.",
+            "en": "Colorful replacement buttons to customize the look of your GBA."
+          },
+          "features": {
+            "fr": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
+            "en": ["Wide range of colors", "Quality material", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
+            "en": ["Good value for money", "Lots of colors"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": { "fr": {}, "en": {} },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com" }],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/agb-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons custom FunnyPlaying pour Game Boy Advance", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying custom buttons for Game Boy Advance" }, "credit": "" },
+          "needsReview": ["image", "price"]
         }
       ]
     }

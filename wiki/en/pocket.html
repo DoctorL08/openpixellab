@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to Game Boy Pocket MGB-001 mods: laminated IPS screen kits (FunnyPlaying, Hispeedido), 5V CleanPower regulators, USB-C and Qi batteries, audio and buttons. Difficulty, price, soldering and prerequisites.">
+    <link rel="canonical" href="https://openpixel-lab.com/wiki/en/pocket.html">
+    <link rel="alternate" hreflang="fr" href="https://openpixel-lab.com/wiki/pocket.html">
+    <link rel="alternate" hreflang="en" href="https://openpixel-lab.com/wiki/en/pocket.html">
+    <link rel="alternate" hreflang="x-default" href="https://openpixel-lab.com/wiki/pocket.html">
+    <title>Game Boy Pocket (MGB-001) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Game Boy Pocket (MGB-001) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab">
+    <meta property="og:description" content="Complete guide to Game Boy Pocket MGB-001 mods: laminated IPS screen kits (FunnyPlaying, Hispeedido), 5V CleanPower regulators, USB-C and Qi batteries, audio and buttons. Difficulty, price, soldering and prerequisites.">
+    <meta property="og:image" content="../../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../../Images/Logo OpenPixel Lab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/console-page.css">
+</head>
+<body>
+    <script>window.OPL_PAGE_LANG = "en";</script>
+    <div class="scanlines"></div>
+    <script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"../../index.html"},{"@type":"ListItem","position":2,"name":"Wiki","item":"../../wiki.html"},{"@type":"ListItem","position":3,"name":"Game Boy Pocket"}]},{"@context":"https://schema.org","@type":"ItemList","name":"Mods — Game Boy Pocket (MGB-001)","numberOfItems":15,"itemListElement":[{"@type":"ListItem","position":1,"name":"FunnyPlaying MGB IPS Laminated Kit"},{"@type":"ListItem","position":2,"name":"Hispeedido GBP Q5 IPS LCD (OSD)"},{"@type":"ListItem","position":3,"name":"Hispeedido GBP Laminated 2.8\" IPS Kit"},{"@type":"ListItem","position":4,"name":"Cloud Game Store Drop-in TFT Kit"},{"@type":"ListItem","position":5,"name":"Handheld Legend Backlight & Bivert"},{"@type":"ListItem","position":6,"name":"RetroSix CleanPower Regulator"},{"@type":"ListItem","position":7,"name":"NatalieTheNerd Safer Charge Pocket"},{"@type":"ListItem","position":8,"name":"RetroSix CleanJuice Air (MGB)"},{"@type":"ListItem","position":9,"name":"FroggoCustoms Frogulator DC Regulator"},{"@type":"ListItem","position":10,"name":"Hispeedido USB-C Battery Cover"},{"@type":"ListItem","position":11,"name":"RetroSix CleanAmp Pocket"},{"@type":"ListItem","position":12,"name":"Cloud Game Store Wire Free Audio Amplifier"},{"@type":"ListItem","position":13,"name":"RetroSix Prestige Buttons Pocket"},{"@type":"ListItem","position":14,"name":"FunnyPlaying Custom Buttons GBP"},{"@type":"ListItem","position":15,"name":"Hispeedido GBP Buttons"}]}]
+    </script>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+                <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="../../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a> ›
+                <a href="../../wiki.html">Wiki</a> ›
+                <span>Game Boy Pocket</span>
+            </nav>
+
+            <header class="console-hero">
+                <div class="badge">Handheld Console</div>
+                <h1 class="console-title">Game Boy Pocket <span class="highlight">MGB-001</span></h1>
+                <p class="console-subtitle">The elegance of miniaturization. The Pocket needs special attention to its power supply to be perfectly modernized.</p>
+                <div class="console-stats">
+                    <span>1996</span> · <span>15 mods listed</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../../configurator.html">🎨 Customize in 3D</a>
+                <a class="cross-link" href="../../comparator.html">⚖️ Compare setups</a>
+            </div>
+            </header>
+
+            <p class="console-intro">The Game Boy Pocket (MGB-001, 1996) takes the DMG formula into a slimmer body powered by just two AAA batteries. More compact but also tighter on power, it demands clean power as soon as you add an IPS screen. Here are the go-to mods to restore and elevate it, sorted by category, with their difficulty, price and prerequisites.</p>
+
+            <nav class="console-toc" aria-label="Sections overview"><a href="#section-display" class="console-toc-link">📺 Display</a><a href="#section-power" class="console-toc-link">⚡ Power (Critical)</a><a href="#section-audio" class="console-toc-link">🔊 Audio</a><a href="#section-buttons" class="console-toc-link">🔘 Buttons</a></nav>
+
+            <section class="mod-section" id="section-display">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Display</h2>
+                </div>
+                <p class="section-intro">The most transformative mod: replacing the original reflective panel with a backlit IPS screen. On the Pocket, almost every IPS kit requires clean power (see CleanPower under Power), because the stock regulator is quickly overwhelmed.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="pocket_fp_ips_lam">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying MGB laminated IPS kit for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">MGB IPS Laminated Kit</h3>
+                        <p class="mod-desc">The sharpest screen for your Pocket: vivid colors, laminated glass and a clean install.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–60 min</div><div class="mod-meta-item">🔧 Minimal (1 power wire)</div></div>
+                        <ul class="mod-features"><li>Perfectly centered image</li><li>Glass laminated to the panel</li><li>Color palettes and scanline modes</li><li>Brightness adjustable via the contrast wheel</li><li>Nearly solder-free (1 power wire + optional touch sensor)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated IPS</dd></div><div><dt>OSD</dt><dd>Yes</dd></div><div><dt>Control</dt><dd>Contrast wheel</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended (stable power), Shell trimming or aftermarket shell</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Crystal-clear image</li><li>Zero trapped dust</li><li>Beginner-friendly install</li><li>Factory look</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Stock shell trimming required (or an aftermarket shell)</li><li>Higher battery drain</li><li>CleanPower strongly recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" target="_blank" rel="noopener">FunnyPlaying — GBP/GBL Retro Pixel IPS LCD Kit</a> · <a href="https://michaeliantorno.com/mod-guide-game-boy-pocket-funnyplaying-ips-lcd/" target="_blank" rel="noopener">Michael Iantorno — Mod Guide GBP FunnyPlaying IPS</a> · <a href="https://www.retromodding.com/blogs/tutorials/game-boy-pocket-ips-lcd-kit-installation-guide" target="_blank" rel="noopener">Retro Modding — GBP IPS Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20MGB%20IPS%20Laminated%20Kit&console=Game%20Boy%20Pocket&mod=MGB%20IPS%20Laminated%20Kit%20(id%3A%20pocket_fp_ips_lam)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_hsd_q5">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido Q5 OSD IPS kit for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">GBP Q5 IPS LCD (OSD)</h3>
+                        <p class="mod-desc">IPS kit with a full OSD menu for complete control over brightness, colors and display effects.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal</div></div>
+                        <ul class="mod-features"><li>Built-in OSD menu</li><li>Adjustable brightness (contrast wheel)</li><li>Pixel and scanline effects</li><li>Customizable color palettes</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Q5</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Rich OSD</li><li>Good value for money</li><li>Sharp image</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Sometimes sparse instructions</li><li>CleanPower recommended</li><li>Higher power draw</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-pocket-ips-lcd-backlight-hhl" target="_blank" rel="noopener">Handheld Legend — GBP Q5 IPS LCD Hispeedido</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20GBP%20Q5%20IPS%20LCD%20(OSD)&console=Game%20Boy%20Pocket&mod=GBP%20Q5%20IPS%20LCD%20(OSD)%20(id%3A%20pocket_hsd_q5)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_hsd_lam_28">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido 2.8-inch laminated IPS kit for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">GBP Laminated 2.8&quot; IPS Kit</h3>
+                        <p class="mod-desc">2.8-inch laminated kit for a glare-free, dust-free image that's 22% larger than stock.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–60 min</div><div class="mod-meta-item">🔧 Minimal</div></div>
+                        <ul class="mod-features"><li>2.8&quot; laminated panel (480x432, +22% vs stock)</li><li>Zero dust under the glass</li><li>20 brightness levels, 36 palettes, 5 pixel effects</li><li>Wide viewing angles (178°)</li><li>OSD: position, battery, colors, reset</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated IPS 2.8&quot;</dd></div><div><dt>Resolution</dt><dd>480x432</dd></div><div><dt>Size</dt><dd>+22% vs stock</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended, Shell trimming or aftermarket shell</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Large laminated panel</li><li>Vibrant image</li><li>Full OSD</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Permanent mount (foam adhesive, test fit first)</li><li>Shell trimming required</li><li>CleanPower recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" target="_blank" rel="noopener">Handheld Legend — GBP Laminated 2.8&quot; IPS Hispeedido</a> · <a href="https://retrogamerepairshop.com/products/game-boy-pocket-laminated-q5-kit-with-osd-hispeedido" target="_blank" rel="noopener">Retro Game Repair Shop — GBP Laminated Q5 OSD</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20GBP%20Laminated%202.8%22%20IPS%20Kit&console=Game%20Boy%20Pocket&mod=GBP%20Laminated%202.8%22%20IPS%20Kit%20(id%3A%20pocket_hsd_lam_28)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_cloud_tft">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, brand, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Cloud Game Store drop-in TFT kit for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">Drop-in TFT Kit</h3>
+                        <p class="mod-desc">The ideal option to keep your stock shell with no trimming: a backlit TFT panel at the original size.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes (basic)</div></div>
+                        <ul class="mod-features"><li>No-trim shell installation</li><li>Stock size preserved</li><li>Low power draw</li><li>Color palettes</li><li>Multiple brightness levels</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Backlit TFT</dd></div><div><dt>Trimming</dt><dd>None</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Preserves the stock shell</li><li>Low power draw</li><li>Keeps the stock screen ratio</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>TFT panel (lower image quality than IPS)</li><li>Soldering required despite being drop-in</li><li>Panel sometimes smaller than OEM</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://www.retromodding.com/products/game-boy-pocket-backlight" target="_blank" rel="noopener">Retro Modding — Backlit TFT LCD for Game Boy Pocket</a> · <a href="https://handheldlegend.com/products/tft-lcd-for-game-boy-backlight" target="_blank" rel="noopener">Handheld Legend — GBC/Pocket TFT LCD</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Drop-in%20TFT%20Kit&console=Game%20Boy%20Pocket&mod=Drop-in%20TFT%20Kit%20(id%3A%20pocket_cloud_tft)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_backlight_bivert">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Backlight and bivert mod for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">Backlight &amp; Bivert</h3>
+                        <p class="mod-desc">The traditional method: keep the original screen while greatly improving visibility with a backlight and a bivert chip.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 45–90 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>Authentic look preserved</li><li>Improved contrast (bivert module)</li><li>Several backlight colors</li><li>Keeps the original reflective panel</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Backlight + bivert module</dd></div><div><dt>Screen</dt><dd>Original kept</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Keeps the authentic retro look</li><li>Affordable</li><li>Low power consumption</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering and reflector removal are tricky</li><li>Harder than drop-in kits</li><li>28 AWG wire required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-backlight-v3" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/blogs/news/115066947-game-boy-pocket-bivert-installation-and-comparison" target="_blank" rel="noopener">Handheld Legend — GBP Bivert Installation</a> · <a href="https://gameboy.github.io/wiki/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Backlight%20%26%20Bivert&console=Game%20Boy%20Pocket&mod=Backlight%20%26%20Bivert%20(id%3A%20pocket_backlight_bivert)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-power">
+                <div class="section-header">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="section-name">Power (Critical)</h2>
+                </div>
+                <p class="section-intro">The Pocket only has two AAA batteries and a fragile regulator: stabilizing the power supply is essential with an IPS screen. Switch to a rechargeable USB-C or Qi Li-Po battery for modern runtime, too.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="pocket_cleanpower">
+                        <div class="mod-card-top"><span class="mod-badge">Essential</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanPower regulator for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanPower Regulator</h3>
+                        <p class="mod-desc">The Pocket lacks the current for IPS mods. This 5V regulator replaces the stock power supply and stabilizes the whole system.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>Clean, stable 5V output</li><li>Eliminates random reboots</li><li>Stabilizes screen brightness</li><li>2.5V to 12V input</li><li>Compatible with aftermarket IPS screens (FunnyPlaying, Hispeedido)</li></ul>
+                        <dl class="mod-specs"><div><dt>Output</dt><dd>Stable 5V</dd></div><div><dt>Input</dt><dd>2.5V – 12V</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Eliminates dropouts with an IPS screen</li><li>Clean voltage</li><li>Low price</li><li>High power efficiency</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering required</li><li>Doesn't support original (OEM) screens</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-pocket-cleanpower-regulator" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" target="_blank" rel="noopener">RetroSix — GBP CleanPower Regulator</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20CleanPower%20Regulator&console=Game%20Boy%20Pocket&mod=CleanPower%20Regulator%20(id%3A%20pocket_cleanpower)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_safer_charge">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="NatalieTheNerd Safer Charge module for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">Safer Charge Pocket</h3>
+                        <p class="mod-desc">Integrate a Li-Po battery safely with smart USB-C charging and full protection.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>USB-C charging</li><li>Short-circuit protection</li><li>Clean, safe charge management</li><li>Ultra-compact form factor</li><li>Works on Pocket and Color (Safer Charge DC)</li></ul>
+                        <dl class="mod-specs"><div><dt>Charging</dt><dd>USB-C</dd></div><div><dt>Protection</dt><dd>Short-circuit / charge</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Li-Po battery in good condition (never swollen)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Safe charging</li><li>Modern USB-C</li><li>Very compact</li><li>Designed by a respected modder</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required (USB-C, F1, header pins)</li><li>Li-Po handling is risky if careless</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://nataliethenerd.com/pages/safer-charge-dc" target="_blank" rel="noopener nofollow">Natalie the Nerd ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://nataliethenerd.com/pages/safer-charge-dc" target="_blank" rel="noopener">Natalie the Nerd — Safer Charge DC</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Safer%20Charge%20Pocket&console=Game%20Boy%20Pocket&mod=Safer%20Charge%20Pocket%20(id%3A%20pocket_safer_charge)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_cleanjuice_air">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanJuice Air wireless battery for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice Air (MGB)</h3>
+                        <p class="mod-desc">The all-in-one drop-in Li-Po battery with Qi wireless charging (and even reverse charging from a phone).</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–60 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Qi wireless charging</li><li>2.6W power, up to ~9h of play (stock console)</li><li>Reverse charging supported</li><li>Drop-in form factor optimized for the Pocket</li></ul>
+                        <dl class="mod-specs"><div><dt>Charging</dt><dd>Qi wireless</dd></div><div><dt>Power</dt><dd>2.6W</dd></div><div><dt>Runtime</dt><dd>~9h (stock)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : RetroSix ABS shell (otherwise major trimming)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Super convenient wireless charging</li><li>No port to drill</li><li>Good battery life</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Heavy AAA compartment trimming if not a RetroSix shell</li><li>Pricier than a plain USB-C battery</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/cleanjuice-air-wireless-battery-pack-for-game-boy-pocket" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" target="_blank" rel="noopener">RetroSix — CleanJuice Air GBP</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20CleanJuice%20Air%20(MGB)&console=Game%20Boy%20Pocket&mod=CleanJuice%20Air%20(MGB)%20(id%3A%20pocket_cleanjuice_air)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_frogulator">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FroggoCustoms Frogulator DC regulator for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">FroggoCustoms</div>
+                        <h3 class="mod-name">Frogulator DC Regulator</h3>
+                        <p class="mod-desc">A reliable, compact DC regulator as an alternative to CleanPower, with a built-in battery indicator (the frog's eyes change color!).</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>5V rail for the console and backlit screens</li><li>Built-in battery indicator (LED eyes)</li><li>Switchable NiMH / Li-Po mode</li><li>Works on Pocket and GBC</li><li>Compact and discreet</li></ul>
+                        <dl class="mod-specs"><div><dt>Output</dt><dd>5V</dd></div><div><dt>Compatibility</dt><dd>Pocket / GBC</dd></div><div><dt>Indicator</dt><dd>Battery (NiMH/Li-Po)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Backlit aftermarket screen (no OEM screen)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Stable power</li><li>Fun battery indicator</li><li>Works on Pocket and GBC</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Stock regulator through-holes must be cleared</li><li>Doesn't work with OEM screens (even biverted)</li><li>Header pins must be soldered yourself</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" target="_blank" rel="noopener nofollow">FroggoCustoms ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" target="_blank" rel="noopener">FroggoCustoms — Frogulator GBC/Pocket DC Regulator</a> · <a href="https://froggocustoms.com/blogs/installation-guides/game-boy-color-pocket-frogulator" target="_blank" rel="noopener">FroggoCustoms — Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Frogulator%20DC%20Regulator&console=Game%20Boy%20Pocket&mod=Frogulator%20DC%20Regulator%20(id%3A%20pocket_frogulator)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_usbc_cover">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido USB-C battery cover for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">USB-C Battery Cover</h3>
+                        <p class="mod-desc">Battery cover with a built-in USB-C port for modern, solder-free charging on a Li-Po battery.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 10–20 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>USB-C port built into the cover</li><li>Solder-free installation</li><li>Charge and play</li><li>Li-Po compatible</li><li>Works with USB-A to USB-C and USB-C to USB-C chargers</li></ul>
+                        <dl class="mod-specs"><div><dt>Charging</dt><dd>USB-C</dd></div><div><dt>Battery</dt><dd>Li-Po</dd></div><div><dt>Soldering</dt><dd>No</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No soldering</li><li>Convenient USB-C charging</li><li>Easy install</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Li-Po battery must be handled with care</li><li>Capacity limited by the form factor</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" target="_blank" rel="noopener nofollow">Retro Modding ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" target="_blank" rel="noopener">Retro Modding — USB-C Battery Pack Hispeedido GBP</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20USB-C%20Battery%20Cover&console=Game%20Boy%20Pocket&mod=USB-C%20Battery%20Cover%20(id%3A%20pocket_usbc_cover)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-audio">
+                <div class="section-header">
+                    <span class="section-icon">🔊</span>
+                    <h2 class="section-name">Audio</h2>
+                </div>
+                <p class="section-intro">The Pocket's original speaker is small and limited: a class-D amp or a wireless module restores volume and clarity.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="pocket_cleanamp">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanAmp audio amplifier for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanAmp Pocket</h3>
+                        <p class="mod-desc">The ideal class-D amp for the little Pocket, with filtering to avoid noise. Sound up to 500% louder.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Class-D amplifier</li><li>Sound up to 500% louder than stock</li><li>Premium speaker included</li><li>Controlled power draw</li><li>Noise filtering</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Class-D amp</dd></div><div><dt>Gain</dt><dd>Up to +500%</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Much higher volume</li><li>Crystal-clear sound</li><li>Quality speaker</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required (28-30 AWG wire)</li><li>Mind the components near the pads</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/cleanamp-audio-amplifier-with-speaker-for-game-boy" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrosix.freshdesk.com/support/solutions/articles/77000419623-game-boy-pocket-cleanamp-v1-1-install-guide" target="_blank" rel="noopener">RetroSix — GBP CleanAmp v1.1 Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20CleanAmp%20Pocket&console=Game%20Boy%20Pocket&mod=CleanAmp%20Pocket%20(id%3A%20pocket_cleanamp)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_cloud_wirefree_amp">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, brand, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Cloud Game Store wire-free audio amplifier for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">Wire Free Audio Amplifier</h3>
+                        <p class="mod-desc">Wire-free audio amplifier for a direct install to boost the Pocket's sound.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Minimal</div></div>
+                        <ul class="mod-features"><li>Wire-free installation</li><li>Significantly improved volume</li><li>Compatible with all Pocket revisions</li><li>Compact form factor</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Wire-free amp</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Simplified install (no wiring)</li><li>Good volume gain</li><li>Discreet</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Variable availability</li><li>Possible contact soldering depending on the revision</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Wire%20Free%20Audio%20Amplifier&console=Game%20Boy%20Pocket&mod=Wire%20Free%20Audio%20Amplifier%20(id%3A%20pocket_cloud_wirefree_amp)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-buttons">
+                <div class="section-header">
+                    <span class="section-icon">🔘</span>
+                    <h2 class="section-name">Buttons</h2>
+                </div>
+                <p class="section-intro">Restore a fresh feel and customize the colors: replacement buttons for the Pocket.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="pocket_prestige_buttons">
+                        <div class="mod-card-top"><span class="mod-badge">Premium</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix Prestige premium buttons for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">Prestige Buttons Pocket</h3>
+                        <p class="mod-desc">Premium replacement buttons to restore a perfect feel on your Pocket.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>High-quality material</li><li>Feel close to the original</li><li>Several colors available</li><li>Solder-free installation</li></ul>
+                        <dl class="mod-specs"><div><dt>Material</dt><dd>Premium</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Premium feel</li><li>Wide color selection</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Pricier than generic buttons</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Prestige%20Buttons%20Pocket&console=Game%20Boy%20Pocket&mod=Prestige%20Buttons%20Pocket%20(id%3A%20pocket_prestige_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_fp_buttons">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying custom buttons for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">Custom Buttons GBP</h3>
+                        <p class="mod-desc">Colorful replacement buttons to customize the look of your Pocket.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Wide range of colors</li><li>Quality material</li><li>Easy install</li></ul>
+                        
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Good value for money</li><li>Lots of colors</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/gbp-custom-buttons" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20Custom%20Buttons%20GBP&console=Game%20Boy%20Pocket&mod=Custom%20Buttons%20GBP%20(id%3A%20pocket_fp_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="pocket_hsd_buttons">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido replacement buttons for Game Boy Pocket"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">GBP Buttons</h3>
+                        <p class="mod-desc">Quality replacement buttons for the Game Boy Pocket.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Compatible with all Pocket revisions</li><li>Several colors</li><li>Good wear resistance</li><li>Easy install</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Replacement buttons</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Affordable</li><li>Several colors</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Pocket%20%E2%80%94%20GBP%20Buttons&console=Game%20Boy%20Pocket&mod=GBP%20Buttons%20(id%3A%20pocket_hsd_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <p class="console-sources">General sources : <a href="https://gameboy.github.io/wiki/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

@@ -7,16 +7,28 @@
   "category": "portable",
   "year": 1989,
   "icon": "🧱",
-  "heroBadge": "Console Portable",
+  "heroBadge": { "fr": "Console Portable", "en": "Handheld Console" },
   "title": "Gameboy DMG-001",
   "titleHighlight": "DMG-001",
-  "tagline": "La « Brique » originale qui a tout déclenché. Apprenez à restaurer et sublimer la console mythique de Nintendo.",
-  "intro": "La Game Boy DMG-001 (1989) est la plateforme de modding la plus documentée au monde. Coque généreuse, électronique simple et communauté immense : c'est la console idéale pour un premier projet comme pour un custom haut de gamme. Voici les mods de référence, classés par domaine.",
+  "tagline": {
+    "fr": "La « Brique » originale qui a tout déclenché. Apprenez à restaurer et sublimer la console mythique de Nintendo.",
+    "en": "The original \"Brick\" that started it all. Learn how to restore and elevate Nintendo's legendary console."
+  },
+  "intro": {
+    "fr": "La Game Boy DMG-001 (1989) est la plateforme de modding la plus documentée au monde. Coque généreuse, électronique simple et communauté immense : c'est la console idéale pour un premier projet comme pour un custom haut de gamme. Voici les mods de référence, classés par domaine.",
+    "en": "The Game Boy DMG-001 (1989) is the most documented modding platform in the world. Roomy shell, simple electronics and a huge community: it's the ideal console for a first project as well as a high-end custom. Here are the go-to mods, sorted by category."
+  },
   "configuratorId": "gameboy_dmg",
   "comparatorId": "dmg",
   "seo": {
-    "title": "Mods Game Boy DMG (Original) — Écrans IPS, USB-C, Audio | OpenPixel Lab",
-    "description": "Guide complet des mods pour la Game Boy DMG-001 : kits écran IPS (FunnyPlaying, Hispeedido, BennVenn), batteries USB-C, LED RGB, audio et boutons. Difficulté, prix, prérequis."
+    "title": {
+      "fr": "Mods Game Boy DMG (Original) — Écrans IPS, USB-C, Audio | OpenPixel Lab",
+      "en": "Game Boy DMG (Original) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab"
+    },
+    "description": {
+      "fr": "Guide complet des mods pour la Game Boy DMG-001 : kits écran IPS (FunnyPlaying, Hispeedido), batteries USB-C, LED RGB, audio et boutons. Difficulté, prix, prérequis.",
+      "en": "Complete guide to Game Boy DMG-001 mods: IPS screen kits (FunnyPlaying, Hispeedido), USB-C batteries, RGB LEDs, audio and buttons. Difficulty, price, prerequisites."
+    }
   },
   "sources": [
     { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gameboy.github.io/wiki/backlightmods" }
@@ -24,365 +36,586 @@
   "sections": [
     {
       "id": "display",
-      "name": "Affichage",
+      "name": { "fr": "Affichage", "en": "Display" },
       "icon": "📺",
-      "intro": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS rétroéclairé. Quasiment tous les kits IPS demandent une alimentation propre (voir CleanPower dans Énergie).",
+      "intro": {
+        "fr": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS rétroéclairé. Quasiment tous les kits IPS demandent une alimentation propre (voir CleanPower dans Énergie).",
+        "en": "The most transformative mod: replacing the original reflective panel with a backlit IPS screen. Almost every IPS kit needs clean power (see CleanPower under Power)."
+      },
       "mods": [
         {
           "id": "dmg_fp_q5",
           "name": "RetroPixel IPS Q5 Kit",
           "brand": "FunnyPlaying",
-          "badge": "Populaire",
-          "summary": "Une dalle IPS géante pour une clarté absolue et des palettes de couleurs personnalisables.",
-          "features": ["Dalle ~11% plus grande que l'origine", "Luminosité réglable (molette de contraste)", "OSD : 15 niveaux de luminosité, 36 palettes, 4 effets pixel", "Quasi sans soudure (hors haut-parleur)"],
-          "pros": ["Image cristalline", "Rétroéclairage lumineux", "Palettes de couleurs", "Installation accessible"],
-          "cons": ["Consomme plus de batterie", "CleanPower fortement recommandé"],
-          "specs": { "Type": "IPS Q5", "Taille": "+11% vs origine", "OSD": "Oui (15/36/4)" },
+          "badge": { "fr": "Populaire", "en": "Popular" },
+          "summary": {
+            "fr": "Une dalle IPS géante pour une clarté absolue et des palettes de couleurs personnalisables.",
+            "en": "A giant IPS panel for absolute clarity and customizable color palettes."
+          },
+          "features": {
+            "fr": ["Dalle ~11% plus grande que l'origine", "Luminosité réglable (molette de contraste)", "OSD : 15 niveaux de luminosité, 36 palettes, 4 effets pixel", "Quasi sans soudure (hors haut-parleur)"],
+            "en": ["Panel ~11% larger than stock", "Adjustable brightness (contrast wheel)", "OSD: 15 brightness levels, 36 palettes, 4 pixel effects", "Nearly solder-free (except the speaker)"]
+          },
+          "pros": {
+            "fr": ["Image cristalline", "Rétroéclairage lumineux", "Palettes de couleurs", "Installation accessible"],
+            "en": ["Crystal-clear image", "Bright backlight", "Color palettes", "Beginner-friendly install"]
+          },
+          "cons": {
+            "fr": ["Consomme plus de batterie", "CleanPower fortement recommandé"],
+            "en": ["Higher battery drain", "CleanPower strongly recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5", "Taille": "+11% vs origine", "OSD": "Oui (15/36/4)" },
+            "en": { "Type": "IPS Q5", "Size": "+11% vs stock", "OSD": "Yes (15/36/4)" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (haut-parleur uniquement)",
+          "soldering": { "fr": "Minimale (haut-parleur uniquement)", "en": "Minimal (speaker only)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé (alimentation stable)"],
+          "prerequisites": { "fr": ["CleanPower recommandé (alimentation stable)"], "en": ["CleanPower recommended (stable power)"] },
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
-          "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
-          "sources": [{ "label": "Handheld Legend — Retro Pixel Q5", "url": "https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" }],
-          "image": { "src": "", "alt": "Kit IPS RetroPixel Q5 FunnyPlaying pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" }],
+          "sources": [{ "label": "FunnyPlaying — DMG RetroPixel IPS Q5", "url": "https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" }, { "label": "Handheld Legend — Retro Pixel Q5", "url": "https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS RetroPixel Q5 FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying RetroPixel Q5 IPS kit for Game Boy DMG" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "dmg_fp_q5_lam",
           "name": "RetroPixel IPS Laminated Kit",
           "brand": "FunnyPlaying",
-          "badge": "Laminé",
-          "summary": "La version laminée du RetroPixel : zéro poussière sous la vitre et une image encore plus nette.",
-          "features": ["Vitre laminée à la dalle", "Zéro reflet parasite", "Palettes de couleurs personnalisables"],
-          "pros": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "Look usine"],
-          "cons": ["Plus cher que la version non laminée", "CleanPower recommandé"],
-          "specs": { "Type": "IPS Q5 laminé", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "La version laminée du RetroPixel : zéro poussière sous la vitre et une image encore plus nette.",
+            "en": "The laminated version of the RetroPixel: zero dust under the glass and an even sharper image."
+          },
+          "features": {
+            "fr": ["Vitre laminée à la dalle", "Zéro reflet parasite", "Palettes de couleurs personnalisables"],
+            "en": ["Glass laminated to the panel", "Zero stray reflections", "Customizable color palettes"]
+          },
+          "pros": {
+            "fr": ["Contraste et netteté supérieurs", "Pas de poussière piégée", "Look usine"],
+            "en": ["Superior contrast and sharpness", "No trapped dust", "Factory look"]
+          },
+          "cons": {
+            "fr": ["Plus cher que la version non laminée", "CleanPower recommandé"],
+            "en": ["Pricier than the non-laminated version", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5 laminé", "OSD": "Oui" },
+            "en": { "Type": "Laminated IPS Q5", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (haut-parleur uniquement)",
+          "soldering": { "fr": "Minimale (haut-parleur uniquement)", "en": "Minimal (speaker only)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé"],
-          "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit IPS laminé FunnyPlaying pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" }],
+          "sources": [{ "label": "FunnyPlaying — DMG RetroPixel IPS Laminated Q5", "url": "https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS laminé FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying laminated IPS kit for Game Boy DMG" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "dmg_hsd_v4",
           "name": "V4 Q5 IPS LCD (OSD)",
           "brand": "Hispeedido",
-          "summary": "Kit IPS avec menu OSD complet pour ajuster luminosité, couleurs et effets pixel à la volée.",
-          "features": ["Menu OSD intégré", "Effets scanlines", "Luminosité multi-niveaux"],
-          "pros": ["OSD riche", "Bon rapport qualité/prix"],
-          "cons": ["Notice parfois sommaire", "CleanPower recommandé"],
-          "specs": { "Type": "IPS Q5", "OSD": "Oui" },
+          "summary": {
+            "fr": "Kit IPS avec menu OSD complet pour ajuster luminosité, couleurs et effets pixel à la volée.",
+            "en": "IPS kit with a full OSD menu to adjust brightness, colors and pixel effects on the fly."
+          },
+          "features": {
+            "fr": ["Menu OSD intégré", "Effets scanlines", "Luminosité multi-niveaux"],
+            "en": ["Built-in OSD menu", "Scanline effects", "Multi-level brightness"]
+          },
+          "pros": {
+            "fr": ["OSD riche", "Bon rapport qualité/prix"],
+            "en": ["Rich OSD", "Good value for money"]
+          },
+          "cons": {
+            "fr": ["Notice parfois sommaire", "CleanPower recommandé"],
+            "en": ["Sometimes sparse instructions", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5", "OSD": "Oui" },
+            "en": { "Type": "IPS Q5", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé"],
+          "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS V4 Q5 Hispeedido pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS V4 Q5 Hispeedido pour Game Boy DMG", "en": "Hispeedido V4 Q5 IPS kit for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "dmg_hsd_v5",
           "name": "V5 Ultra IPS LCD (OSD)",
           "brand": "Hispeedido",
-          "badge": "Nouveauté",
-          "summary": "La version améliorée avec une luminosité maximale et des modes d'affichage supplémentaires.",
-          "features": ["Luminosité ultra élevée", "OSD avancé", "Modes d'affichage supplémentaires"],
-          "pros": ["Très lumineux", "OSD complet"],
-          "cons": ["Consommation accrue", "CleanPower recommandé"],
-          "specs": { "Type": "IPS Ultra", "OSD": "Oui (avancé)" },
+          "badge": { "fr": "Nouveauté", "en": "New" },
+          "summary": {
+            "fr": "La version améliorée avec une luminosité maximale et des modes d'affichage supplémentaires.",
+            "en": "The upgraded version with maximum brightness and extra display modes."
+          },
+          "features": {
+            "fr": ["Luminosité ultra élevée", "OSD avancé", "Modes d'affichage supplémentaires"],
+            "en": ["Ultra-high brightness", "Advanced OSD", "Extra display modes"]
+          },
+          "pros": {
+            "fr": ["Très lumineux", "OSD complet"],
+            "en": ["Very bright", "Full OSD"]
+          },
+          "cons": {
+            "fr": ["Consommation accrue", "CleanPower recommandé"],
+            "en": ["Higher power draw", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Ultra", "OSD": "Oui (avancé)" },
+            "en": { "Type": "IPS Ultra", "OSD": "Yes (advanced)" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé"],
+          "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit IPS V5 Ultra Hispeedido pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS V5 Ultra Hispeedido pour Game Boy DMG", "en": "Hispeedido V5 Ultra IPS kit for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
-        },
-        {
-          "id": "dmg_bennvenn",
-          "name": "LCD Replacement Kit",
-          "brand": "BennVenn",
-          "summary": "Des kits reconnus pour leur basse consommation et leur respect du look original.",
-          "features": ["Consommation d'énergie optimisée", "Pas de ghosting", "Installation robuste"],
-          "pros": ["Très faible consommation", "Fiabilité reconnue"],
-          "cons": ["Disponibilité variable"],
-          "specs": { "Type": "LCD/IPS" },
-          "difficulty": 3,
-          "soldering": "Oui (basique)",
-          "installTime": "45–60 min",
-          "price": "€€",
-          "prerequisites": [],
-          "buyLinks": [{ "label": "BennVenn", "url": "https://bennvenn.myshopify.com" }],
-          "sources": [],
-          "image": { "src": "", "alt": "Kit LCD BennVenn pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
         }
       ]
     },
     {
       "id": "power",
-      "name": "Énergie & Performance",
+      "name": { "fr": "Énergie & Performance", "en": "Power & Performance" },
       "icon": "⚡",
-      "intro": "Abandonner les 4 piles AA pour une batterie USB-C rechargeable, stabiliser l'alimentation pour un écran IPS, ou overclocker la console.",
+      "intro": {
+        "fr": "Abandonner les 4 piles AA pour une batterie USB-C rechargeable, stabiliser l'alimentation pour un écran IPS, ou overclocker la console.",
+        "en": "Ditch the 4 AA batteries for a rechargeable USB-C battery, stabilize power for an IPS screen, or overclock the console."
+      },
       "mods": [
         {
           "id": "dmg_cleanjuice",
           "name": "CleanJuice Original (2500mAh)",
           "brand": "RetroSix",
-          "summary": "Fini les 4 piles AA. Passez à une batterie rechargeable USB-C de 2500mAh.",
-          "features": ["Recharge USB-C", "Installation sans découpe", "Grande autonomie"],
-          "pros": ["Plus de piles à acheter", "USB-C moderne", "S'installe sans modifier la coque"],
-          "cons": ["Soudure requise sur la carte"],
-          "specs": { "Capacité": "2500 mAh", "Recharge": "USB-C" },
+          "summary": {
+            "fr": "Fini les 4 piles AA. Passez à une batterie rechargeable USB-C de 2500mAh.",
+            "en": "No more 4 AA batteries. Switch to a 2500mAh rechargeable USB-C battery."
+          },
+          "features": {
+            "fr": ["Recharge USB-C", "Installation sans découpe", "Grande autonomie"],
+            "en": ["USB-C charging", "No-trim installation", "Long battery life"]
+          },
+          "pros": {
+            "fr": ["Plus de piles à acheter", "USB-C moderne", "S'installe sans modifier la coque"],
+            "en": ["No more batteries to buy", "Modern USB-C", "Installs without modifying the shell"]
+          },
+          "cons": {
+            "fr": ["Soudure requise sur la carte"],
+            "en": ["Board soldering required"]
+          },
+          "specs": {
+            "fr": { "Capacité": "2500 mAh", "Recharge": "USB-C" },
+            "en": { "Capacity": "2500 mAh", "Charging": "USB-C" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Batterie USB-C CleanJuice RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice USB-C battery for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_cleanjuice_xl",
           "name": "CleanJuice XL (3000mAh)",
           "brand": "RetroSix",
-          "summary": "La version haute capacité du CleanJuice pour une autonomie maximale.",
-          "features": ["3000 mAh de capacité", "Recharge USB-C", "Format identique à l'original"],
-          "pros": ["Autonomie maximale", "USB-C"],
-          "cons": ["Soudure requise"],
-          "specs": { "Capacité": "3000 mAh", "Recharge": "USB-C" },
+          "summary": {
+            "fr": "La version haute capacité du CleanJuice pour une autonomie maximale.",
+            "en": "The high-capacity version of the CleanJuice for maximum battery life."
+          },
+          "features": {
+            "fr": ["3000 mAh de capacité", "Recharge USB-C", "Format identique à l'original"],
+            "en": ["3000 mAh capacity", "USB-C charging", "Same form factor as the original"]
+          },
+          "pros": {
+            "fr": ["Autonomie maximale", "USB-C"],
+            "en": ["Maximum battery life", "USB-C"]
+          },
+          "cons": {
+            "fr": ["Soudure requise"],
+            "en": ["Soldering required"]
+          },
+          "specs": {
+            "fr": { "Capacité": "3000 mAh", "Recharge": "USB-C" },
+            "en": { "Capacity": "3000 mAh", "Charging": "USB-C" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Batterie USB-C CleanJuice XL RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice XL RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice XL USB-C battery for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_cleanpower",
           "name": "CleanPower v2.0",
           "brand": "RetroSix",
-          "badge": "Indispensable",
-          "summary": "Remplacez le régulateur de tension d'origine pour une alimentation propre et stable, indispensable avec un mod IPS.",
-          "features": ["Alimentation 5V stable", "Évite les reboots intempestifs", "Compatible tous IPS"],
-          "pros": ["Élimine les coupures avec écran IPS", "Tension propre", "Petit prix"],
-          "cons": ["Soudure fine requise"],
-          "specs": { "Sortie": "5V stable" },
+          "badge": { "fr": "Indispensable", "en": "Essential" },
+          "summary": {
+            "fr": "Remplacez le régulateur de tension d'origine pour une alimentation propre et stable, indispensable avec un mod IPS.",
+            "en": "Replace the stock voltage regulator for clean, stable power, essential with an IPS mod."
+          },
+          "features": {
+            "fr": ["Alimentation 5V stable", "Évite les reboots intempestifs", "Compatible tous IPS"],
+            "en": ["Stable 5V power", "Prevents random reboots", "Compatible with all IPS kits"]
+          },
+          "pros": {
+            "fr": ["Élimine les coupures avec écran IPS", "Tension propre", "Petit prix"],
+            "en": ["Eliminates dropouts with an IPS screen", "Clean voltage", "Low price"]
+          },
+          "cons": {
+            "fr": ["Soudure fine requise"],
+            "en": ["Fine soldering required"]
+          },
+          "specs": {
+            "fr": { "Sortie": "5V stable" },
+            "en": { "Output": "Stable 5V" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "20–30 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Module d'alimentation CleanPower RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Module d'alimentation CleanPower RetroSix pour Game Boy DMG", "en": "RetroSix CleanPower power module for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_gbaccelerator",
           "name": "GBAccelerator (Overclock)",
           "brand": "Division 6",
-          "badge": "Vitesse",
-          "summary": "Boostez la vitesse de vos jeux (x1.5, x1.75, x2) pour accélérer le farming ou les dialogues lents.",
-          "features": ["4 modes de vitesse", "Contrôle par boutons", "Indicateur LED de vitesse"],
-          "pros": ["Accélère les jeux lents", "Réversible", "Ludique"],
-          "cons": ["Soudure requise", "Certains jeux peuvent bugger en overclock"],
-          "specs": { "Modes": "x1 / x1.5 / x1.75 / x2" },
+          "badge": { "fr": "Vitesse", "en": "Speed" },
+          "summary": {
+            "fr": "Boostez la vitesse de vos jeux (x1.5, x1.75, x2) pour accélérer le farming ou les dialogues lents.",
+            "en": "Boost your games' speed (x1.5, x1.75, x2) to speed up farming or slow dialogue."
+          },
+          "features": {
+            "fr": ["4 modes de vitesse", "Contrôle par boutons", "Indicateur LED de vitesse"],
+            "en": ["4 speed modes", "Button control", "LED speed indicator"]
+          },
+          "pros": {
+            "fr": ["Accélère les jeux lents", "Réversible", "Ludique"],
+            "en": ["Speeds up slow games", "Reversible", "Fun"]
+          },
+          "cons": {
+            "fr": ["Soudure requise", "Certains jeux peuvent bugger en overclock"],
+            "en": ["Soldering required", "Some games may glitch when overclocked"]
+          },
+          "specs": {
+            "fr": { "Modes": "x1 / x1.5 / x1.75 / x2" },
+            "en": { "Modes": "x1 / x1.5 / x1.75 / x2" }
+          },
           "difficulty": 4,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Module d'overclock GBAccelerator pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator pour Game Boy DMG", "en": "GBAccelerator overclock module for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "brand"]
         }
       ]
     },
     {
       "id": "audio",
-      "name": "Illumination & Audio",
+      "name": { "fr": "Illumination & Audio", "en": "Lighting & Audio" },
       "icon": "🔊",
-      "intro": "Éclairer les boutons en RGB et améliorer le son d'origine, souvent un peu faible.",
+      "intro": {
+        "fr": "Éclairer les boutons en RGB et améliorer le son d'origine, souvent un peu faible.",
+        "en": "Light up the buttons in RGB and improve the often-weak stock sound."
+      },
       "mods": [
         {
           "id": "dmg_retroglow",
           "name": "RetroGlow DMG",
           "brand": "Handheld Legend",
-          "badge": "RGB",
-          "summary": "Le kit LED RGB le plus avancé pour éclairer vos boutons avec style.",
-          "features": ["Totalement personnalisable", "Modes d'animation", "Contrôle par combinaisons"],
-          "pros": ["Effet visuel spectaculaire", "Personnalisable"],
-          "cons": ["Soudure fine", "Consommation supplémentaire"],
-          "specs": { "Type": "LED RGB" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Le kit LED RGB le plus avancé pour éclairer vos boutons avec style.",
+            "en": "The most advanced RGB LED kit to light up your buttons in style."
+          },
+          "features": {
+            "fr": ["Totalement personnalisable", "Modes d'animation", "Contrôle par combinaisons"],
+            "en": ["Fully customizable", "Animation modes", "Button-combo control"]
+          },
+          "pros": {
+            "fr": ["Effet visuel spectaculaire", "Personnalisable"],
+            "en": ["Spectacular visual effect", "Customizable"]
+          },
+          "cons": {
+            "fr": ["Soudure fine", "Consommation supplémentaire"],
+            "en": ["Fine soldering", "Extra power draw"]
+          },
+          "specs": {
+            "fr": { "Type": "LED RGB" },
+            "en": { "Type": "RGB LED" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": "Kit LED RGB RetroGlow pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy DMG", "en": "RetroGlow RGB LED kit for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "dmg_arc",
           "name": "ARC DMG (RGB LEDs)",
           "brand": "NatalieTheNerd",
-          "badge": "RGB",
-          "summary": "Le kit LED original de NatalieTheNerd. 11 couleurs au choix avec modes d'animation.",
-          "features": ["11 couleurs disponibles", "Très faible consommation", "4 niveaux de luminosité"],
-          "pros": ["Faible consommation", "Réglages fins", "Conçu par une moddeuse reconnue"],
-          "cons": ["Soudure fine"],
-          "specs": { "Couleurs": "11", "Luminosité": "4 niveaux" },
+          "badge": { "fr": "RGB", "en": "RGB" },
+          "summary": {
+            "fr": "Le kit LED original de NatalieTheNerd. 11 couleurs au choix avec modes d'animation.",
+            "en": "NatalieTheNerd's original LED kit. 11 colors to choose from with animation modes."
+          },
+          "features": {
+            "fr": ["11 couleurs disponibles", "Très faible consommation", "4 niveaux de luminosité"],
+            "en": ["11 colors available", "Very low power draw", "4 brightness levels"]
+          },
+          "pros": {
+            "fr": ["Faible consommation", "Réglages fins", "Conçu par une moddeuse reconnue"],
+            "en": ["Low power draw", "Fine adjustments", "Designed by a respected modder"]
+          },
+          "cons": {
+            "fr": ["Soudure fine"],
+            "en": ["Fine soldering"]
+          },
+          "specs": {
+            "fr": { "Couleurs": "11", "Luminosité": "4 niveaux" },
+            "en": { "Colors": "11", "Brightness": "4 levels" }
+          },
           "difficulty": 4,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Kit LED RGB ARC NatalieTheNerd pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit LED RGB ARC NatalieTheNerd pour Game Boy DMG", "en": "NatalieTheNerd ARC RGB LED kit for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "dmg_cleanamp",
           "name": "CleanAmp DMG",
           "brand": "RetroSix",
-          "summary": "Boostez le volume de votre Gameboy avec cet ampli haute performance.",
-          "features": ["Son clair et puissant", "Haut-parleur 2W inclus", "Filtrage actif du bruit"],
-          "pros": ["Volume nettement supérieur", "Son plus propre"],
-          "cons": ["Soudure requise"],
-          "specs": { "Puissance": "2W" },
+          "summary": {
+            "fr": "Boostez le volume de votre Gameboy avec cet ampli haute performance.",
+            "en": "Boost your Game Boy's volume with this high-performance amplifier."
+          },
+          "features": {
+            "fr": ["Son clair et puissant", "Haut-parleur 2W inclus", "Filtrage actif du bruit"],
+            "en": ["Clear, powerful sound", "2W speaker included", "Active noise filtering"]
+          },
+          "pros": {
+            "fr": ["Volume nettement supérieur", "Son plus propre"],
+            "en": ["Much higher volume", "Cleaner sound"]
+          },
+          "cons": {
+            "fr": ["Soudure requise"],
+            "en": ["Soldering required"]
+          },
+          "specs": {
+            "fr": { "Puissance": "2W" },
+            "en": { "Power": "2W" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Amplificateur audio CleanAmp RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp RetroSix pour Game Boy DMG", "en": "RetroSix CleanAmp audio amplifier for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_clear_speaker",
           "name": "Clear DMG Speaker",
           "brand": "FunnyPlaying",
-          "summary": "Haut-parleur de remplacement haute qualité pour retrouver un son clair et fort.",
-          "features": ["Son cristallin", "Installation directe", "Format d'origine"],
-          "pros": ["Remplacement direct", "Améliore un HP fatigué"],
-          "cons": ["Gain limité sans ampli"],
-          "specs": { "Format": "Origine DMG" },
+          "summary": {
+            "fr": "Haut-parleur de remplacement haute qualité pour retrouver un son clair et fort.",
+            "en": "High-quality replacement speaker to restore clear, loud sound."
+          },
+          "features": {
+            "fr": ["Son cristallin", "Installation directe", "Format d'origine"],
+            "en": ["Crystal-clear sound", "Direct fit", "Original form factor"]
+          },
+          "pros": {
+            "fr": ["Remplacement direct", "Améliore un HP fatigué"],
+            "en": ["Direct replacement", "Improves a worn speaker"]
+          },
+          "cons": {
+            "fr": ["Gain limité sans ampli"],
+            "en": ["Limited gain without an amp"]
+          },
+          "specs": {
+            "fr": { "Format": "Origine DMG" },
+            "en": { "Format": "Stock DMG" }
+          },
           "difficulty": 1,
-          "soldering": "Non (ou minime)",
+          "soldering": { "fr": "Non (ou minime)", "en": "No (or minimal)" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/clear-dmg-speaker" }],
           "sources": [],
-          "image": { "src": "", "alt": "Haut-parleur de remplacement FunnyPlaying pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Haut-parleur de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement speaker for Game Boy DMG" }, "credit": "" },
+          "needsReview": ["image", "price"]
         }
       ]
     },
     {
       "id": "buttons",
-      "name": "Boutons",
+      "name": { "fr": "Boutons", "en": "Buttons" },
       "icon": "🔘",
-      "intro": "Retrouver un toucher neuf et personnaliser les couleurs : boutons et membranes silicone.",
+      "intro": {
+        "fr": "Retrouver un toucher neuf et personnaliser les couleurs : boutons et membranes silicone.",
+        "en": "Restore a fresh feel and customize the colors: buttons and silicone membranes."
+      },
       "mods": [
         {
           "id": "dmg_prestige_buttons",
           "name": "Prestige Buttons DMG",
           "brand": "RetroSix",
-          "badge": "Premium",
-          "summary": "Boutons de remplacement premium pour retrouver un feeling parfait sur votre DMG.",
-          "features": ["Matière haute qualité", "Feeling proche de l'original", "Plusieurs coloris disponibles"],
-          "pros": ["Toucher premium", "Large choix de couleurs"],
-          "cons": ["Plus chers que des boutons génériques"],
-          "specs": { "Matière": "Premium" },
+          "badge": { "fr": "Premium", "en": "Premium" },
+          "summary": {
+            "fr": "Boutons de remplacement premium pour retrouver un feeling parfait sur votre DMG.",
+            "en": "Premium replacement buttons to restore a perfect feel on your DMG."
+          },
+          "features": {
+            "fr": ["Matière haute qualité", "Feeling proche de l'original", "Plusieurs coloris disponibles"],
+            "en": ["High-quality material", "Feel close to the original", "Several colors available"]
+          },
+          "pros": {
+            "fr": ["Toucher premium", "Large choix de couleurs"],
+            "en": ["Premium feel", "Wide color selection"]
+          },
+          "cons": {
+            "fr": ["Plus chers que des boutons génériques"],
+            "en": ["Pricier than generic buttons"]
+          },
+          "specs": {
+            "fr": { "Matière": "Premium" },
+            "en": { "Material": "Premium" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons premium Prestige RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige premium buttons for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_prestige_membranes",
           "name": "Prestige Silicone Membranes DMG",
           "brand": "RetroSix",
-          "summary": "Membranes silicone conductives haute qualité pour restaurer la réactivité des boutons.",
-          "features": ["Conduction optimisée", "Durée de vie étendue", "Remplacement direct"],
-          "pros": ["Réactivité restaurée", "Qualité supérieure au générique"],
-          "cons": [],
-          "specs": { "Type": "Silicone conductif" },
+          "summary": {
+            "fr": "Membranes silicone conductives haute qualité pour restaurer la réactivité des boutons.",
+            "en": "High-quality conductive silicone membranes to restore button responsiveness."
+          },
+          "features": {
+            "fr": ["Conduction optimisée", "Durée de vie étendue", "Remplacement direct"],
+            "en": ["Optimized conductivity", "Extended lifespan", "Direct replacement"]
+          },
+          "pros": {
+            "fr": ["Réactivité restaurée", "Qualité supérieure au générique"],
+            "en": ["Restored responsiveness", "Higher quality than generic"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": {
+            "fr": { "Type": "Silicone conductif" },
+            "en": { "Type": "Conductive silicone" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Membranes silicone Prestige RetroSix pour Game Boy DMG", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Membranes silicone Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige silicone membranes for Game Boy DMG" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "dmg_fp_buttons",
           "name": "Custom Buttons DMG",
           "brand": "FunnyPlaying",
-          "summary": "Boutons de remplacement colorés pour personnaliser l'aspect de votre DMG.",
-          "features": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
-          "pros": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
-          "cons": [],
-          "specs": {},
+          "summary": {
+            "fr": "Boutons de remplacement colorés pour personnaliser l'aspect de votre DMG.",
+            "en": "Colorful replacement buttons to customize the look of your DMG."
+          },
+          "features": {
+            "fr": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
+            "en": ["Wide range of colors", "Quality material", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
+            "en": ["Good value for money", "Lots of colors"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": { "fr": {}, "en": {} },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gb-dmg-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons custom FunnyPlaying pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying custom buttons for Game Boy DMG" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "dmg_fp_pads",
           "name": "Replacement Silicone Pads DMG",
           "brand": "FunnyPlaying",
-          "summary": "Membranes silicone de remplacement pour redonner vie aux boutons usés.",
-          "features": ["Compatible tous boutons DMG", "Réactivité restaurée", "Facile à installer"],
-          "pros": ["Pas cher", "Installation immédiate"],
-          "cons": [],
-          "specs": { "Type": "Silicone" },
+          "summary": {
+            "fr": "Membranes silicone de remplacement pour redonner vie aux boutons usés.",
+            "en": "Replacement silicone membranes to bring worn buttons back to life."
+          },
+          "features": {
+            "fr": ["Compatible tous boutons DMG", "Réactivité restaurée", "Facile à installer"],
+            "en": ["Compatible with all DMG buttons", "Restored responsiveness", "Easy to install"]
+          },
+          "pros": {
+            "fr": ["Pas cher", "Installation immédiate"],
+            "en": ["Affordable", "Instant install"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": {
+            "fr": { "Type": "Silicone" },
+            "en": { "Type": "Silicone" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/replacement-silicone-pads-for-gb-dmg" }],
           "sources": [],
-          "image": { "src": "", "alt": "Membranes silicone de remplacement FunnyPlaying pour Game Boy DMG", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Membranes silicone de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement silicone membranes for Game Boy DMG" }, "credit": "" },
+          "needsReview": ["image", "price"]
         }
       ]
     }

@@ -7,16 +7,28 @@
   "category": "portable",
   "year": 1996,
   "icon": "🎮",
-  "heroBadge": "Console Portable",
+  "heroBadge": { "fr": "Console Portable", "en": "Handheld Console" },
   "title": "Game Boy Pocket MGB-001",
   "titleHighlight": "MGB-001",
-  "tagline": "L'élégance de la miniaturisation. La Pocket demande une attention particulière à l'alimentation pour être parfaitement modernisée.",
-  "intro": "La Game Boy Pocket (MGB-001, 1996) reprend la formule de la DMG dans un format affiné alimenté par seulement deux piles AAA. Plus compacte mais aussi plus tendue côté énergie, elle réclame une alimentation propre dès qu'on lui greffe un écran IPS. Voici les mods de référence pour la restaurer et la sublimer, classés par domaine, avec leur difficulté, prix et prérequis.",
+  "tagline": {
+    "fr": "L'élégance de la miniaturisation. La Pocket demande une attention particulière à l'alimentation pour être parfaitement modernisée.",
+    "en": "The elegance of miniaturization. The Pocket needs special attention to its power supply to be perfectly modernized."
+  },
+  "intro": {
+    "fr": "La Game Boy Pocket (MGB-001, 1996) reprend la formule de la DMG dans un format affiné alimenté par seulement deux piles AAA. Plus compacte mais aussi plus tendue côté énergie, elle réclame une alimentation propre dès qu'on lui greffe un écran IPS. Voici les mods de référence pour la restaurer et la sublimer, classés par domaine, avec leur difficulté, prix et prérequis.",
+    "en": "The Game Boy Pocket (MGB-001, 1996) takes the DMG formula into a slimmer body powered by just two AAA batteries. More compact but also tighter on power, it demands clean power as soon as you add an IPS screen. Here are the go-to mods to restore and elevate it, sorted by category, with their difficulty, price and prerequisites."
+  },
   "configuratorId": "gameboy_pocket",
   "comparatorId": "pocket",
   "seo": {
-    "title": "Mods Game Boy Pocket (MGB-001) — Écrans IPS, USB-C, Audio | OpenPixel Lab",
-    "description": "Guide complet des mods pour la Game Boy Pocket MGB-001 : kits écran IPS laminés (FunnyPlaying, Hispeedido), régulateurs 5V CleanPower, batteries USB-C et Qi, audio et boutons. Difficulté, prix, soudure et prérequis."
+    "title": {
+      "fr": "Mods Game Boy Pocket (MGB-001) — Écrans IPS, USB-C, Audio | OpenPixel Lab",
+      "en": "Game Boy Pocket (MGB-001) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab"
+    },
+    "description": {
+      "fr": "Guide complet des mods pour la Game Boy Pocket MGB-001 : kits écran IPS laminés (FunnyPlaying, Hispeedido), régulateurs 5V CleanPower, batteries USB-C et Qi, audio et boutons. Difficulté, prix, soudure et prérequis.",
+      "en": "Complete guide to Game Boy Pocket MGB-001 mods: laminated IPS screen kits (FunnyPlaying, Hispeedido), 5V CleanPower regulators, USB-C and Qi batteries, audio and buttons. Difficulty, price, soldering and prerequisites."
+    }
   },
   "sources": [
     { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gameboy.github.io/wiki/backlightmods" }
@@ -24,322 +36,556 @@
   "sections": [
     {
       "id": "display",
-      "name": "Affichage",
+      "name": { "fr": "Affichage", "en": "Display" },
       "icon": "📺",
-      "intro": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS rétroéclairé. Sur la Pocket, presque tous les kits IPS exigent une alimentation propre (voir CleanPower dans Énergie), car le régulateur d'origine est vite saturé.",
+      "intro": {
+        "fr": "Le mod le plus transformateur : remplacer la dalle réflective d'origine par un écran IPS rétroéclairé. Sur la Pocket, presque tous les kits IPS exigent une alimentation propre (voir CleanPower dans Énergie), car le régulateur d'origine est vite saturé.",
+        "en": "The most transformative mod: replacing the original reflective panel with a backlit IPS screen. On the Pocket, almost every IPS kit requires clean power (see CleanPower under Power), because the stock regulator is quickly overwhelmed."
+      },
       "mods": [
         {
           "id": "pocket_fp_ips_lam",
           "name": "MGB IPS Laminated Kit",
           "brand": "FunnyPlaying",
-          "badge": "Laminé",
-          "summary": "L'écran le plus net pour votre Pocket : couleurs vives, vitre laminée et installation propre.",
-          "features": ["Image parfaitement centrée", "Vitre laminée à la dalle", "Palettes de couleurs et modes scanlines", "Luminosité réglable via la molette de contraste", "Quasi sans soudure (1 fil d'alimentation + capteur tactile optionnel)"],
-          "pros": ["Image cristalline", "Zéro poussière piégée", "Installation accessible", "Look usine"],
-          "cons": ["Découpe de coque d'origine nécessaire (ou coque aftermarket)", "Consomme plus de batterie", "CleanPower fortement recommandé"],
-          "specs": { "Type": "IPS laminé", "OSD": "Oui", "Contrôle": "Molette de contraste" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "L'écran le plus net pour votre Pocket : couleurs vives, vitre laminée et installation propre.",
+            "en": "The sharpest screen for your Pocket: vivid colors, laminated glass and a clean install."
+          },
+          "features": {
+            "fr": ["Image parfaitement centrée", "Vitre laminée à la dalle", "Palettes de couleurs et modes scanlines", "Luminosité réglable via la molette de contraste", "Quasi sans soudure (1 fil d'alimentation + capteur tactile optionnel)"],
+            "en": ["Perfectly centered image", "Glass laminated to the panel", "Color palettes and scanline modes", "Brightness adjustable via the contrast wheel", "Nearly solder-free (1 power wire + optional touch sensor)"]
+          },
+          "pros": {
+            "fr": ["Image cristalline", "Zéro poussière piégée", "Installation accessible", "Look usine"],
+            "en": ["Crystal-clear image", "Zero trapped dust", "Beginner-friendly install", "Factory look"]
+          },
+          "cons": {
+            "fr": ["Découpe de coque d'origine nécessaire (ou coque aftermarket)", "Consomme plus de batterie", "CleanPower fortement recommandé"],
+            "en": ["Stock shell trimming required (or an aftermarket shell)", "Higher battery drain", "CleanPower strongly recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS laminé", "OSD": "Oui", "Contrôle": "Molette de contraste" },
+            "en": { "Type": "Laminated IPS", "OSD": "Yes", "Control": "Contrast wheel" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale (1 fil d'alimentation)",
+          "soldering": { "fr": "Minimale (1 fil d'alimentation)", "en": "Minimal (1 power wire)" },
           "installTime": "30–60 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé (alimentation stable)", "Découpe de coque ou coque aftermarket"],
+          "prerequisites": {
+            "fr": ["CleanPower recommandé (alimentation stable)", "Découpe de coque ou coque aftermarket"],
+            "en": ["CleanPower recommended (stable power)", "Shell trimming or aftermarket shell"]
+          },
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
-          "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
-          "sources": [{ "label": "Michael Iantorno — Mod Guide GBP FunnyPlaying IPS", "url": "https://michaeliantorno.com/mod-guide-game-boy-pocket-funnyplaying-ips-lcd/" }, { "label": "Retro Modding — GBP IPS Install Guide", "url": "https://www.retromodding.com/blogs/tutorials/game-boy-pocket-ips-lcd-kit-installation-guide" }],
-          "image": { "src": "", "alt": "Kit IPS laminé MGB FunnyPlaying pour Game Boy Pocket", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" }],
+          "sources": [{ "label": "FunnyPlaying — GBP/GBL Retro Pixel IPS LCD Kit", "url": "https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" }, { "label": "Michael Iantorno — Mod Guide GBP FunnyPlaying IPS", "url": "https://michaeliantorno.com/mod-guide-game-boy-pocket-funnyplaying-ips-lcd/" }, { "label": "Retro Modding — GBP IPS Install Guide", "url": "https://www.retromodding.com/blogs/tutorials/game-boy-pocket-ips-lcd-kit-installation-guide" }],
+          "image": { "src": "", "alt": { "fr": "Kit IPS laminé MGB FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying MGB laminated IPS kit for Game Boy Pocket" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "pocket_hsd_q5",
           "name": "GBP Q5 IPS LCD (OSD)",
           "brand": "Hispeedido",
-          "summary": "Kit IPS avec menu OSD complet pour un contrôle total de la luminosité, des couleurs et des effets d'affichage.",
-          "features": ["Menu OSD intégré", "Luminosité ajustable (molette de contraste)", "Effets pixel et scanlines", "Palettes de couleurs personnalisables"],
-          "pros": ["OSD riche", "Bon rapport qualité/prix", "Image nette"],
-          "cons": ["Notice parfois sommaire", "CleanPower recommandé", "Consommation accrue"],
-          "specs": { "Type": "IPS Q5", "OSD": "Oui" },
+          "summary": {
+            "fr": "Kit IPS avec menu OSD complet pour un contrôle total de la luminosité, des couleurs et des effets d'affichage.",
+            "en": "IPS kit with a full OSD menu for complete control over brightness, colors and display effects."
+          },
+          "features": {
+            "fr": ["Menu OSD intégré", "Luminosité ajustable (molette de contraste)", "Effets pixel et scanlines", "Palettes de couleurs personnalisables"],
+            "en": ["Built-in OSD menu", "Adjustable brightness (contrast wheel)", "Pixel and scanline effects", "Customizable color palettes"]
+          },
+          "pros": {
+            "fr": ["OSD riche", "Bon rapport qualité/prix", "Image nette"],
+            "en": ["Rich OSD", "Good value for money", "Sharp image"]
+          },
+          "cons": {
+            "fr": ["Notice parfois sommaire", "CleanPower recommandé", "Consommation accrue"],
+            "en": ["Sometimes sparse instructions", "CleanPower recommended", "Higher power draw"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS Q5", "OSD": "Oui" },
+            "en": { "Type": "IPS Q5", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé"],
+          "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [{ "label": "Handheld Legend — GBP Q5 IPS LCD Hispeedido", "url": "https://handheldlegend.com/products/game-boy-pocket-ips-lcd-backlight-hhl" }],
-          "image": { "src": "", "alt": "Kit IPS Q5 OSD Hispeedido pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS Q5 OSD Hispeedido pour Game Boy Pocket", "en": "Hispeedido Q5 OSD IPS kit for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "pocket_hsd_lam_28",
           "name": "GBP Laminated 2.8\" IPS Kit",
           "brand": "Hispeedido",
-          "badge": "Laminé",
-          "summary": "Kit laminé 2,8 pouces pour une image sans reflet, sans poussière, 22% plus grande que l'origine.",
-          "features": ["Dalle 2,8\" laminée (480x432, +22% vs origine)", "Zéro poussière sous la vitre", "20 niveaux de luminosité, 36 palettes, 5 effets pixel", "Angles de vision larges (178°)", "OSD : position, batterie, couleurs, reset"],
-          "pros": ["Grande dalle laminée", "Image éclatante", "OSD complet"],
-          "cons": ["Montage définitif (adhésif mousse, à tester avant)", "Découpe de coque nécessaire", "CleanPower recommandé"],
-          "specs": { "Type": "IPS laminé 2,8\"", "Résolution": "480x432", "Taille": "+22% vs origine", "OSD": "Oui" },
+          "badge": { "fr": "Laminé", "en": "Laminated" },
+          "summary": {
+            "fr": "Kit laminé 2,8 pouces pour une image sans reflet, sans poussière, 22% plus grande que l'origine.",
+            "en": "2.8-inch laminated kit for a glare-free, dust-free image that's 22% larger than stock."
+          },
+          "features": {
+            "fr": ["Dalle 2,8\" laminée (480x432, +22% vs origine)", "Zéro poussière sous la vitre", "20 niveaux de luminosité, 36 palettes, 5 effets pixel", "Angles de vision larges (178°)", "OSD : position, batterie, couleurs, reset"],
+            "en": ["2.8\" laminated panel (480x432, +22% vs stock)", "Zero dust under the glass", "20 brightness levels, 36 palettes, 5 pixel effects", "Wide viewing angles (178°)", "OSD: position, battery, colors, reset"]
+          },
+          "pros": {
+            "fr": ["Grande dalle laminée", "Image éclatante", "OSD complet"],
+            "en": ["Large laminated panel", "Vibrant image", "Full OSD"]
+          },
+          "cons": {
+            "fr": ["Montage définitif (adhésif mousse, à tester avant)", "Découpe de coque nécessaire", "CleanPower recommandé"],
+            "en": ["Permanent mount (foam adhesive, test fit first)", "Shell trimming required", "CleanPower recommended"]
+          },
+          "specs": {
+            "fr": { "Type": "IPS laminé 2,8\"", "Résolution": "480x432", "Taille": "+22% vs origine", "OSD": "Oui" },
+            "en": { "Type": "Laminated IPS 2.8\"", "Resolution": "480x432", "Size": "+22% vs stock", "OSD": "Yes" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "30–60 min",
           "price": "€€",
-          "prerequisites": ["CleanPower recommandé", "Découpe de coque ou coque aftermarket"],
+          "prerequisites": {
+            "fr": ["CleanPower recommandé", "Découpe de coque ou coque aftermarket"],
+            "en": ["CleanPower recommended", "Shell trimming or aftermarket shell"]
+          },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" }],
           "sources": [{ "label": "Handheld Legend — GBP Laminated 2.8\" IPS Hispeedido", "url": "https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" }, { "label": "Retro Game Repair Shop — GBP Laminated Q5 OSD", "url": "https://retrogamerepairshop.com/products/game-boy-pocket-laminated-q5-kit-with-osd-hispeedido" }],
-          "image": { "src": "", "alt": "Kit IPS laminé 2,8 pouces Hispeedido pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit IPS laminé 2,8 pouces Hispeedido pour Game Boy Pocket", "en": "Hispeedido 2.8-inch laminated IPS kit for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "pocket_cloud_tft",
           "name": "Drop-in TFT Kit",
           "brand": "Cloud Game Store",
-          "summary": "L'option idéale pour garder sa coque d'origine sans aucune découpe : une dalle TFT rétroéclairée à la taille d'origine.",
-          "features": ["Installation sans découpe de coque", "Taille d'origine conservée", "Faible consommation", "Palettes de couleurs", "Plusieurs niveaux de luminosité"],
-          "pros": ["Préserve la coque d'origine", "Faible consommation", "Ratio d'écran stock conservé"],
-          "cons": ["Dalle TFT (qualité d'image inférieure à l'IPS)", "Soudure requise malgré le drop-in", "Dalle parfois plus petite que l'OEM"],
-          "specs": { "Type": "TFT rétroéclairé", "Découpe": "Aucune" },
+          "summary": {
+            "fr": "L'option idéale pour garder sa coque d'origine sans aucune découpe : une dalle TFT rétroéclairée à la taille d'origine.",
+            "en": "The ideal option to keep your stock shell with no trimming: a backlit TFT panel at the original size."
+          },
+          "features": {
+            "fr": ["Installation sans découpe de coque", "Taille d'origine conservée", "Faible consommation", "Palettes de couleurs", "Plusieurs niveaux de luminosité"],
+            "en": ["No-trim shell installation", "Stock size preserved", "Low power draw", "Color palettes", "Multiple brightness levels"]
+          },
+          "pros": {
+            "fr": ["Préserve la coque d'origine", "Faible consommation", "Ratio d'écran stock conservé"],
+            "en": ["Preserves the stock shell", "Low power draw", "Keeps the stock screen ratio"]
+          },
+          "cons": {
+            "fr": ["Dalle TFT (qualité d'image inférieure à l'IPS)", "Soudure requise malgré le drop-in", "Dalle parfois plus petite que l'OEM"],
+            "en": ["TFT panel (lower image quality than IPS)", "Soldering required despite being drop-in", "Panel sometimes smaller than OEM"]
+          },
+          "specs": {
+            "fr": { "Type": "TFT rétroéclairé", "Découpe": "Aucune" },
+            "en": { "Type": "Backlit TFT", "Trimming": "None" }
+          },
           "difficulty": 2,
-          "soldering": "Oui (basique)",
+          "soldering": { "fr": "Oui (basique)", "en": "Yes (basic)" },
           "installTime": "30–45 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [{ "label": "Retro Modding — Backlit TFT LCD for Game Boy Pocket", "url": "https://www.retromodding.com/products/game-boy-pocket-backlight" }, { "label": "Handheld Legend — GBC/Pocket TFT LCD", "url": "https://handheldlegend.com/products/tft-lcd-for-game-boy-backlight" }],
-          "image": { "src": "", "alt": "Kit TFT drop-in Cloud Game Store pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Kit TFT drop-in Cloud Game Store pour Game Boy Pocket", "en": "Cloud Game Store drop-in TFT kit for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "brand", "specs"]
         },
         {
           "id": "pocket_backlight_bivert",
           "name": "Backlight & Bivert",
           "brand": "Handheld Legend",
-          "summary": "La méthode traditionnelle : garder l'écran d'origine tout en améliorant nettement sa visibilité grâce à un rétroéclairage et au bivert.",
-          "features": ["Look authentique conservé", "Contraste amélioré (module bivert)", "Plusieurs couleurs de rétroéclairage", "Conserve la dalle réflective d'origine"],
-          "pros": ["Garde le rendu rétro authentique", "Économique", "Peu gourmand en énergie"],
-          "cons": ["Soudure fine et retrait du réflecteur délicats", "Difficulté supérieure aux kits drop-in", "Fil 28 AWG requis"],
-          "specs": { "Type": "Rétroéclairage + module bivert", "Écran": "Origine conservé" },
+          "summary": {
+            "fr": "La méthode traditionnelle : garder l'écran d'origine tout en améliorant nettement sa visibilité grâce à un rétroéclairage et au bivert.",
+            "en": "The traditional method: keep the original screen while greatly improving visibility with a backlight and a bivert chip."
+          },
+          "features": {
+            "fr": ["Look authentique conservé", "Contraste amélioré (module bivert)", "Plusieurs couleurs de rétroéclairage", "Conserve la dalle réflective d'origine"],
+            "en": ["Authentic look preserved", "Improved contrast (bivert module)", "Several backlight colors", "Keeps the original reflective panel"]
+          },
+          "pros": {
+            "fr": ["Garde le rendu rétro authentique", "Économique", "Peu gourmand en énergie"],
+            "en": ["Keeps the authentic retro look", "Affordable", "Low power consumption"]
+          },
+          "cons": {
+            "fr": ["Soudure fine et retrait du réflecteur délicats", "Difficulté supérieure aux kits drop-in", "Fil 28 AWG requis"],
+            "en": ["Fine soldering and reflector removal are tricky", "Harder than drop-in kits", "28 AWG wire required"]
+          },
+          "specs": {
+            "fr": { "Type": "Rétroéclairage + module bivert", "Écran": "Origine conservé" },
+            "en": { "Type": "Backlight + bivert module", "Screen": "Original kept" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "45–90 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-backlight-v3" }],
           "sources": [{ "label": "Handheld Legend — GBP Bivert Installation", "url": "https://handheldlegend.com/blogs/news/115066947-game-boy-pocket-bivert-installation-and-comparison" }, { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gameboy.github.io/wiki/backlightmods" }],
-          "image": { "src": "", "alt": "Mod rétroéclairage et bivert pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Mod rétroéclairage et bivert pour Game Boy Pocket", "en": "Backlight and bivert mod for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         }
       ]
     },
     {
       "id": "power",
-      "name": "Énergie (Critique)",
+      "name": { "fr": "Énergie (Critique)", "en": "Power (Critical)" },
       "icon": "⚡",
-      "intro": "La Pocket ne dispose que de deux piles AAA et d'un régulateur fragile : stabiliser l'alimentation est indispensable avec un écran IPS. Passez aussi à une batterie Li-Po rechargeable USB-C ou Qi pour une autonomie moderne.",
+      "intro": {
+        "fr": "La Pocket ne dispose que de deux piles AAA et d'un régulateur fragile : stabiliser l'alimentation est indispensable avec un écran IPS. Passez aussi à une batterie Li-Po rechargeable USB-C ou Qi pour une autonomie moderne.",
+        "en": "The Pocket only has two AAA batteries and a fragile regulator: stabilizing the power supply is essential with an IPS screen. Switch to a rechargeable USB-C or Qi Li-Po battery for modern runtime, too."
+      },
       "mods": [
         {
           "id": "pocket_cleanpower",
           "name": "CleanPower Regulator",
           "brand": "RetroSix",
-          "badge": "Indispensable",
-          "summary": "La Pocket manque de courant pour les mods IPS. Ce régulateur 5V remplace l'alimentation d'origine et stabilise tout le système.",
-          "features": ["Sortie 5V propre et stable", "Supprime les reboots intempestifs", "Stabilise la luminosité de l'écran", "Entrée 2,5V à 12V", "Compatible écrans aftermarket IPS (FunnyPlaying, Hispeedido)"],
-          "pros": ["Élimine les coupures avec écran IPS", "Tension propre", "Petit prix", "Efficacité énergétique élevée"],
-          "cons": ["Soudure fine requise", "Ne supporte pas les écrans d'origine (OEM)"],
-          "specs": { "Sortie": "5V stable", "Entrée": "2,5V – 12V" },
+          "badge": { "fr": "Indispensable", "en": "Essential" },
+          "summary": {
+            "fr": "La Pocket manque de courant pour les mods IPS. Ce régulateur 5V remplace l'alimentation d'origine et stabilise tout le système.",
+            "en": "The Pocket lacks the current for IPS mods. This 5V regulator replaces the stock power supply and stabilizes the whole system."
+          },
+          "features": {
+            "fr": ["Sortie 5V propre et stable", "Supprime les reboots intempestifs", "Stabilise la luminosité de l'écran", "Entrée 2,5V à 12V", "Compatible écrans aftermarket IPS (FunnyPlaying, Hispeedido)"],
+            "en": ["Clean, stable 5V output", "Eliminates random reboots", "Stabilizes screen brightness", "2.5V to 12V input", "Compatible with aftermarket IPS screens (FunnyPlaying, Hispeedido)"]
+          },
+          "pros": {
+            "fr": ["Élimine les coupures avec écran IPS", "Tension propre", "Petit prix", "Efficacité énergétique élevée"],
+            "en": ["Eliminates dropouts with an IPS screen", "Clean voltage", "Low price", "High power efficiency"]
+          },
+          "cons": {
+            "fr": ["Soudure fine requise", "Ne supporte pas les écrans d'origine (OEM)"],
+            "en": ["Fine soldering required", "Doesn't support original (OEM) screens"]
+          },
+          "specs": {
+            "fr": { "Sortie": "5V stable", "Entrée": "2,5V – 12V" },
+            "en": { "Output": "Stable 5V", "Input": "2.5V – 12V" }
+          },
           "difficulty": 3,
-          "soldering": "Oui (fine)",
+          "soldering": { "fr": "Oui (fine)", "en": "Yes (fine)" },
           "installTime": "20–30 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-pocket-cleanpower-regulator" }],
           "sources": [{ "label": "RetroSix — GBP CleanPower Regulator", "url": "https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" }],
-          "image": { "src": "", "alt": "Régulateur CleanPower RetroSix pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Pocket", "en": "RetroSix CleanPower regulator for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "pocket_safer_charge",
           "name": "Safer Charge Pocket",
           "brand": "NatalieTheNerd",
-          "summary": "Intégrez une batterie Li-Po en toute sécurité avec une recharge USB-C intelligente et une protection complète.",
-          "features": ["Recharge USB-C", "Protection contre les courts-circuits", "Gestion de charge propre et sécurisée", "Format ultra-compact", "Compatible Pocket et Color (Safer Charge DC)"],
-          "pros": ["Charge sécurisée", "USB-C moderne", "Très compact", "Conçu par une moddeuse reconnue"],
-          "cons": ["Soudure requise (USB-C, F1, header pins)", "Manipulation Li-Po à risque si négligée"],
-          "specs": { "Recharge": "USB-C", "Protection": "Court-circuit / charge" },
+          "summary": {
+            "fr": "Intégrez une batterie Li-Po en toute sécurité avec une recharge USB-C intelligente et une protection complète.",
+            "en": "Integrate a Li-Po battery safely with smart USB-C charging and full protection."
+          },
+          "features": {
+            "fr": ["Recharge USB-C", "Protection contre les courts-circuits", "Gestion de charge propre et sécurisée", "Format ultra-compact", "Compatible Pocket et Color (Safer Charge DC)"],
+            "en": ["USB-C charging", "Short-circuit protection", "Clean, safe charge management", "Ultra-compact form factor", "Works on Pocket and Color (Safer Charge DC)"]
+          },
+          "pros": {
+            "fr": ["Charge sécurisée", "USB-C moderne", "Très compact", "Conçu par une moddeuse reconnue"],
+            "en": ["Safe charging", "Modern USB-C", "Very compact", "Designed by a respected modder"]
+          },
+          "cons": {
+            "fr": ["Soudure requise (USB-C, F1, header pins)", "Manipulation Li-Po à risque si négligée"],
+            "en": ["Soldering required (USB-C, F1, header pins)", "Li-Po handling is risky if careless"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C", "Protection": "Court-circuit / charge" },
+            "en": { "Charging": "USB-C", "Protection": "Short-circuit / charge" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "45–60 min",
           "price": "€€",
-          "prerequisites": ["Batterie Li-Po en bon état (jamais gonflée)"],
+          "prerequisites": { "fr": ["Batterie Li-Po en bon état (jamais gonflée)"], "en": ["Li-Po battery in good condition (never swollen)"] },
           "buyLinks": [{ "label": "Natalie the Nerd", "url": "https://nataliethenerd.com/pages/safer-charge-dc" }],
           "sources": [{ "label": "Natalie the Nerd — Safer Charge DC", "url": "https://nataliethenerd.com/pages/safer-charge-dc" }],
-          "image": { "src": "", "alt": "Module de charge Safer Charge NatalieTheNerd pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Module de charge Safer Charge NatalieTheNerd pour Game Boy Pocket", "en": "NatalieTheNerd Safer Charge module for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "pocket_cleanjuice_air",
           "name": "CleanJuice Air (MGB)",
           "brand": "RetroSix",
-          "summary": "La batterie Li-Po tout-en-un drop-in avec recharge sans fil Qi (et même reverse charge depuis un téléphone).",
-          "features": ["Recharge sans fil Qi", "2,6W de puissance, jusqu'à ~9h de jeu (console stock)", "Reverse charge possible", "Format drop-in optimisé pour Pocket"],
-          "pros": ["Recharge sans fil ultra pratique", "Pas de port à percer", "Bonne autonomie"],
-          "cons": ["Découpe lourde du compartiment AAA si coque non RetroSix", "Plus cher qu'une simple batterie USB-C"],
-          "specs": { "Recharge": "Sans fil Qi", "Puissance": "2,6W", "Autonomie": "~9h (stock)" },
+          "summary": {
+            "fr": "La batterie Li-Po tout-en-un drop-in avec recharge sans fil Qi (et même reverse charge depuis un téléphone).",
+            "en": "The all-in-one drop-in Li-Po battery with Qi wireless charging (and even reverse charging from a phone)."
+          },
+          "features": {
+            "fr": ["Recharge sans fil Qi", "2,6W de puissance, jusqu'à ~9h de jeu (console stock)", "Reverse charge possible", "Format drop-in optimisé pour Pocket"],
+            "en": ["Qi wireless charging", "2.6W power, up to ~9h of play (stock console)", "Reverse charging supported", "Drop-in form factor optimized for the Pocket"]
+          },
+          "pros": {
+            "fr": ["Recharge sans fil ultra pratique", "Pas de port à percer", "Bonne autonomie"],
+            "en": ["Super convenient wireless charging", "No port to drill", "Good battery life"]
+          },
+          "cons": {
+            "fr": ["Découpe lourde du compartiment AAA si coque non RetroSix", "Plus cher qu'une simple batterie USB-C"],
+            "en": ["Heavy AAA compartment trimming if not a RetroSix shell", "Pricier than a plain USB-C battery"]
+          },
+          "specs": {
+            "fr": { "Recharge": "Sans fil Qi", "Puissance": "2,6W", "Autonomie": "~9h (stock)" },
+            "en": { "Charging": "Qi wireless", "Power": "2.6W", "Runtime": "~9h (stock)" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–60 min",
           "price": "€€",
-          "prerequisites": ["Coque RetroSix ABS (sinon découpe importante)"],
+          "prerequisites": { "fr": ["Coque RetroSix ABS (sinon découpe importante)"], "en": ["RetroSix ABS shell (otherwise major trimming)"] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-air-wireless-battery-pack-for-game-boy-pocket" }],
           "sources": [{ "label": "RetroSix — CleanJuice Air GBP", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }],
-          "image": { "src": "", "alt": "Batterie sans fil CleanJuice Air RetroSix pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Batterie sans fil CleanJuice Air RetroSix pour Game Boy Pocket", "en": "RetroSix CleanJuice Air wireless battery for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "pocket_frogulator",
           "name": "Frogulator DC Regulator",
           "brand": "FroggoCustoms",
-          "summary": "Régulateur DC alternatif au CleanPower, fiable et compact, avec indicateur de batterie intégré (les yeux de la grenouille changent de couleur !).",
-          "features": ["Rail 5V pour la console et les écrans rétroéclairés", "Indicateur de batterie intégré (yeux LED)", "Mode NiMH / Li-Po commutable", "Compatible Pocket et GBC", "Compact et discret"],
-          "pros": ["Alimentation stable", "Indicateur de batterie ludique", "Compatible Pocket et GBC"],
-          "cons": ["Nettoyage des trous traversants du régulateur d'origine requis", "Ne fonctionne pas avec les écrans OEM (même biverts)", "Header pins à souder soi-même"],
-          "specs": { "Sortie": "5V", "Compatibilité": "Pocket / GBC", "Indicateur": "Batterie (NiMH/Li-Po)" },
+          "summary": {
+            "fr": "Régulateur DC alternatif au CleanPower, fiable et compact, avec indicateur de batterie intégré (les yeux de la grenouille changent de couleur !).",
+            "en": "A reliable, compact DC regulator as an alternative to CleanPower, with a built-in battery indicator (the frog's eyes change color!)."
+          },
+          "features": {
+            "fr": ["Rail 5V pour la console et les écrans rétroéclairés", "Indicateur de batterie intégré (yeux LED)", "Mode NiMH / Li-Po commutable", "Compatible Pocket et GBC", "Compact et discret"],
+            "en": ["5V rail for the console and backlit screens", "Built-in battery indicator (LED eyes)", "Switchable NiMH / Li-Po mode", "Works on Pocket and GBC", "Compact and discreet"]
+          },
+          "pros": {
+            "fr": ["Alimentation stable", "Indicateur de batterie ludique", "Compatible Pocket et GBC"],
+            "en": ["Stable power", "Fun battery indicator", "Works on Pocket and GBC"]
+          },
+          "cons": {
+            "fr": ["Nettoyage des trous traversants du régulateur d'origine requis", "Ne fonctionne pas avec les écrans OEM (même biverts)", "Header pins à souder soi-même"],
+            "en": ["Stock regulator through-holes must be cleared", "Doesn't work with OEM screens (even biverted)", "Header pins must be soldered yourself"]
+          },
+          "specs": {
+            "fr": { "Sortie": "5V", "Compatibilité": "Pocket / GBC", "Indicateur": "Batterie (NiMH/Li-Po)" },
+            "en": { "Output": "5V", "Compatibility": "Pocket / GBC", "Indicator": "Battery (NiMH/Li-Po)" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": ["Écran aftermarket rétroéclairé (pas d'écran OEM)"],
+          "prerequisites": { "fr": ["Écran aftermarket rétroéclairé (pas d'écran OEM)"], "en": ["Backlit aftermarket screen (no OEM screen)"] },
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" }],
           "sources": [{ "label": "FroggoCustoms — Frogulator GBC/Pocket DC Regulator", "url": "https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" }, { "label": "FroggoCustoms — Install Guide", "url": "https://froggocustoms.com/blogs/installation-guides/game-boy-color-pocket-frogulator" }],
-          "image": { "src": "", "alt": "Régulateur DC Frogulator FroggoCustoms pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Régulateur DC Frogulator FroggoCustoms pour Game Boy Pocket", "en": "FroggoCustoms Frogulator DC regulator for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         },
         {
           "id": "pocket_usbc_cover",
           "name": "USB-C Battery Cover",
           "brand": "Hispeedido",
-          "summary": "Couvercle de batterie avec port USB-C intégré pour une recharge moderne sans souder, sur batterie Li-Po.",
-          "features": ["Port USB-C intégré au couvercle", "Installation sans soudure", "Charge and play", "Compatible Li-Po", "Compatible chargeurs USB-A vers USB-C et USB-C vers USB-C"],
-          "pros": ["Sans soudure", "Recharge USB-C pratique", "Installation simple"],
-          "cons": ["Batterie Li-Po à manipuler avec précaution", "Capacité limitée par le format"],
-          "specs": { "Recharge": "USB-C", "Batterie": "Li-Po", "Soudure": "Non" },
+          "summary": {
+            "fr": "Couvercle de batterie avec port USB-C intégré pour une recharge moderne sans souder, sur batterie Li-Po.",
+            "en": "Battery cover with a built-in USB-C port for modern, solder-free charging on a Li-Po battery."
+          },
+          "features": {
+            "fr": ["Port USB-C intégré au couvercle", "Installation sans soudure", "Charge and play", "Compatible Li-Po", "Compatible chargeurs USB-A vers USB-C et USB-C vers USB-C"],
+            "en": ["USB-C port built into the cover", "Solder-free installation", "Charge and play", "Li-Po compatible", "Works with USB-A to USB-C and USB-C to USB-C chargers"]
+          },
+          "pros": {
+            "fr": ["Sans soudure", "Recharge USB-C pratique", "Installation simple"],
+            "en": ["No soldering", "Convenient USB-C charging", "Easy install"]
+          },
+          "cons": {
+            "fr": ["Batterie Li-Po à manipuler avec précaution", "Capacité limitée par le format"],
+            "en": ["Li-Po battery must be handled with care", "Capacity limited by the form factor"]
+          },
+          "specs": {
+            "fr": { "Recharge": "USB-C", "Batterie": "Li-Po", "Soudure": "Non" },
+            "en": { "Charging": "USB-C", "Battery": "Li-Po", "Soldering": "No" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–20 min",
           "price": "€€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Retro Modding", "url": "https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" }],
           "sources": [{ "label": "Retro Modding — USB-C Battery Pack Hispeedido GBP", "url": "https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" }],
-          "image": { "src": "", "alt": "Couvercle batterie USB-C Hispeedido pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Couvercle batterie USB-C Hispeedido pour Game Boy Pocket", "en": "Hispeedido USB-C battery cover for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty"]
         }
       ]
     },
     {
       "id": "audio",
-      "name": "Audio",
+      "name": { "fr": "Audio", "en": "Audio" },
       "icon": "🔊",
-      "intro": "Le haut-parleur d'origine de la Pocket est petit et limité : un ampli class D ou un module sans fil redonne du volume et de la clarté.",
+      "intro": {
+        "fr": "Le haut-parleur d'origine de la Pocket est petit et limité : un ampli class D ou un module sans fil redonne du volume et de la clarté.",
+        "en": "The Pocket's original speaker is small and limited: a class-D amp or a wireless module restores volume and clarity."
+      },
       "mods": [
         {
           "id": "pocket_cleanamp",
           "name": "CleanAmp Pocket",
           "brand": "RetroSix",
-          "summary": "L'ampli class D idéal pour la petite Pocket, avec filtrage pour éviter les bruits parasites. Son jusqu'à 500% plus fort.",
-          "features": ["Amplificateur class D", "Son jusqu'à 500% plus fort que l'origine", "Haut-parleur premium inclus", "Consommation maîtrisée", "Filtrage du bruit"],
-          "pros": ["Volume nettement supérieur", "Son cristallin", "Haut-parleur de qualité"],
-          "cons": ["Soudure requise (fil 28-30 AWG)", "Attention aux composants proches des pads"],
-          "specs": { "Type": "Ampli class D", "Gain": "Jusqu'à +500%" },
+          "summary": {
+            "fr": "L'ampli class D idéal pour la petite Pocket, avec filtrage pour éviter les bruits parasites. Son jusqu'à 500% plus fort.",
+            "en": "The ideal class-D amp for the little Pocket, with filtering to avoid noise. Sound up to 500% louder."
+          },
+          "features": {
+            "fr": ["Amplificateur class D", "Son jusqu'à 500% plus fort que l'origine", "Haut-parleur premium inclus", "Consommation maîtrisée", "Filtrage du bruit"],
+            "en": ["Class-D amplifier", "Sound up to 500% louder than stock", "Premium speaker included", "Controlled power draw", "Noise filtering"]
+          },
+          "pros": {
+            "fr": ["Volume nettement supérieur", "Son cristallin", "Haut-parleur de qualité"],
+            "en": ["Much higher volume", "Crystal-clear sound", "Quality speaker"]
+          },
+          "cons": {
+            "fr": ["Soudure requise (fil 28-30 AWG)", "Attention aux composants proches des pads"],
+            "en": ["Soldering required (28-30 AWG wire)", "Mind the components near the pads"]
+          },
+          "specs": {
+            "fr": { "Type": "Ampli class D", "Gain": "Jusqu'à +500%" },
+            "en": { "Type": "Class-D amp", "Gain": "Up to +500%" }
+          },
           "difficulty": 3,
-          "soldering": "Oui",
+          "soldering": { "fr": "Oui", "en": "Yes" },
           "installTime": "30–45 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanamp-audio-amplifier-with-speaker-for-game-boy" }],
           "sources": [{ "label": "RetroSix — GBP CleanAmp v1.1 Install Guide", "url": "https://retrosix.freshdesk.com/support/solutions/articles/77000419623-game-boy-pocket-cleanamp-v1-1-install-guide" }],
-          "image": { "src": "", "alt": "Amplificateur audio CleanAmp RetroSix pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp RetroSix pour Game Boy Pocket", "en": "RetroSix CleanAmp audio amplifier for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "pocket_cloud_wirefree_amp",
           "name": "Wire Free Audio Amplifier",
           "brand": "Cloud Game Store",
-          "summary": "Amplificateur audio sans câble à installer directement pour booster le son de la Pocket.",
-          "features": ["Installation sans câble", "Volume significativement amélioré", "Compatible toutes versions Pocket", "Format compact"],
-          "pros": ["Installation simplifiée (sans câblage)", "Bon gain de volume", "Discret"],
-          "cons": ["Disponibilité variable", "Soudure de contact possible selon la révision"],
-          "specs": { "Type": "Ampli sans câble" },
+          "summary": {
+            "fr": "Amplificateur audio sans câble à installer directement pour booster le son de la Pocket.",
+            "en": "Wire-free audio amplifier for a direct install to boost the Pocket's sound."
+          },
+          "features": {
+            "fr": ["Installation sans câble", "Volume significativement amélioré", "Compatible toutes versions Pocket", "Format compact"],
+            "en": ["Wire-free installation", "Significantly improved volume", "Compatible with all Pocket revisions", "Compact form factor"]
+          },
+          "pros": {
+            "fr": ["Installation simplifiée (sans câblage)", "Bon gain de volume", "Discret"],
+            "en": ["Simplified install (no wiring)", "Good volume gain", "Discreet"]
+          },
+          "cons": {
+            "fr": ["Disponibilité variable", "Soudure de contact possible selon la révision"],
+            "en": ["Variable availability", "Possible contact soldering depending on the revision"]
+          },
+          "specs": {
+            "fr": { "Type": "Ampli sans câble" },
+            "en": { "Type": "Wire-free amp" }
+          },
           "difficulty": 2,
-          "soldering": "Minimale",
+          "soldering": { "fr": "Minimale", "en": "Minimal" },
           "installTime": "20–30 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Amplificateur audio sans câble Cloud Game Store pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Amplificateur audio sans câble Cloud Game Store pour Game Boy Pocket", "en": "Cloud Game Store wire-free audio amplifier for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks", "difficulty", "brand", "specs"]
         }
       ]
     },
     {
       "id": "buttons",
-      "name": "Boutons",
+      "name": { "fr": "Boutons", "en": "Buttons" },
       "icon": "🔘",
-      "intro": "Retrouver un toucher neuf et personnaliser les couleurs : boutons de remplacement pour la Pocket.",
+      "intro": {
+        "fr": "Retrouver un toucher neuf et personnaliser les couleurs : boutons de remplacement pour la Pocket.",
+        "en": "Restore a fresh feel and customize the colors: replacement buttons for the Pocket."
+      },
       "mods": [
         {
           "id": "pocket_prestige_buttons",
           "name": "Prestige Buttons Pocket",
           "brand": "RetroSix",
-          "badge": "Premium",
-          "summary": "Boutons de remplacement premium pour retrouver un feeling parfait sur votre Pocket.",
-          "features": ["Matière haute qualité", "Feeling proche de l'original", "Plusieurs coloris disponibles", "Installation sans soudure"],
-          "pros": ["Toucher premium", "Large choix de couleurs"],
-          "cons": ["Plus chers que des boutons génériques"],
-          "specs": { "Matière": "Premium" },
+          "badge": { "fr": "Premium", "en": "Premium" },
+          "summary": {
+            "fr": "Boutons de remplacement premium pour retrouver un feeling parfait sur votre Pocket.",
+            "en": "Premium replacement buttons to restore a perfect feel on your Pocket."
+          },
+          "features": {
+            "fr": ["Matière haute qualité", "Feeling proche de l'original", "Plusieurs coloris disponibles", "Installation sans soudure"],
+            "en": ["High-quality material", "Feel close to the original", "Several colors available", "Solder-free installation"]
+          },
+          "pros": {
+            "fr": ["Toucher premium", "Large choix de couleurs"],
+            "en": ["Premium feel", "Wide color selection"]
+          },
+          "cons": {
+            "fr": ["Plus chers que des boutons génériques"],
+            "en": ["Pricier than generic buttons"]
+          },
+          "specs": {
+            "fr": { "Matière": "Premium" },
+            "en": { "Material": "Premium" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons premium Prestige RetroSix pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy Pocket", "en": "RetroSix Prestige premium buttons for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         },
         {
           "id": "pocket_fp_buttons",
           "name": "Custom Buttons GBP",
           "brand": "FunnyPlaying",
-          "summary": "Boutons de remplacement colorés pour personnaliser l'aspect de votre Pocket.",
-          "features": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
-          "pros": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
-          "cons": [],
-          "specs": {},
+          "summary": {
+            "fr": "Boutons de remplacement colorés pour personnaliser l'aspect de votre Pocket.",
+            "en": "Colorful replacement buttons to customize the look of your Pocket."
+          },
+          "features": {
+            "fr": ["Large choix de coloris", "Matière de qualité", "Installation simple"],
+            "en": ["Wide range of colors", "Quality material", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Bon rapport qualité/prix", "Beaucoup de couleurs"],
+            "en": ["Good value for money", "Lots of colors"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": { "fr": {}, "en": {} },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
-          "buyLinks": [],
+          "prerequisites": { "fr": [], "en": [] },
+          "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbp-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons custom FunnyPlaying pour Game Boy Pocket", "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying custom buttons for Game Boy Pocket" }, "credit": "" },
+          "needsReview": ["image", "price"]
         },
         {
           "id": "pocket_hsd_buttons",
           "name": "GBP Buttons",
           "brand": "Hispeedido",
-          "summary": "Boutons de remplacement de qualité pour la Game Boy Pocket.",
-          "features": ["Compatible toutes versions Pocket", "Plusieurs coloris", "Bonne résistance à l'usure", "Installation simple"],
-          "pros": ["Économiques", "Plusieurs couleurs"],
-          "cons": [],
-          "specs": { "Type": "Boutons de remplacement" },
+          "summary": {
+            "fr": "Boutons de remplacement de qualité pour la Game Boy Pocket.",
+            "en": "Quality replacement buttons for the Game Boy Pocket."
+          },
+          "features": {
+            "fr": ["Compatible toutes versions Pocket", "Plusieurs coloris", "Bonne résistance à l'usure", "Installation simple"],
+            "en": ["Compatible with all Pocket revisions", "Several colors", "Good wear resistance", "Easy install"]
+          },
+          "pros": {
+            "fr": ["Économiques", "Plusieurs couleurs"],
+            "en": ["Affordable", "Several colors"]
+          },
+          "cons": { "fr": [], "en": [] },
+          "specs": {
+            "fr": { "Type": "Boutons de remplacement" },
+            "en": { "Type": "Replacement buttons" }
+          },
           "difficulty": 1,
-          "soldering": "Non",
+          "soldering": { "fr": "Non", "en": "No" },
           "installTime": "10–15 min",
           "price": "€",
-          "prerequisites": [],
+          "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [],
-          "image": { "src": "", "alt": "Boutons de remplacement Hispeedido pour Game Boy Pocket", "credit": "" },
+          "image": { "src": "", "alt": { "fr": "Boutons de remplacement Hispeedido pour Game Boy Pocket", "en": "Hispeedido replacement buttons for Game Boy Pocket" }, "credit": "" },
           "needsReview": ["image", "price", "buyLinks"]
         }
       ]

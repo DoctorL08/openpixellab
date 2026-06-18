@@ -1,4 +1,4 @@
-// js/wiki-search.js — Recherche live sur le wiki (consoles + mods).
+// js/wiki-search.js — Recherche live sur le wiki (consoles + mods), bilingue FR/EN.
 // Dépend de js/wiki-index.js (window.OPL_WIKI_INDEX), généré par le build.
 
 (function () {
@@ -23,44 +23,69 @@
       .toLowerCase()
       .trim();
 
-  // Aplatissement : consoles + mods en une liste de cibles recherchables
+  const lang = () =>
+    ((localStorage.getItem("lang") || document.documentElement.lang || "fr").startsWith("en") ? "en" : "fr");
+
+  const STR = {
+    fr: { console: "Console", mod: "Mod", empty: "Aucun résultat — essaie « IPS », « USB-C », « HDMI », « DMG »…" },
+    en: { console: "Console", mod: "Mod", empty: "No results — try “IPS”, “USB-C”, “HDMI”, “DMG”…" },
+  };
+
+  // Aplatissement : consoles + mods, avec champs des deux langues (résolus au rendu)
   const targets = [];
   index.forEach((c) => {
     targets.push({
       type: "console",
-      label: c.fullName || c.name,
-      sub: `${c.year || ""} · ${c.mods.length} mods`,
       icon: c.icon || "🎮",
-      url: c.url,
-      hay: norm(`${c.name} ${c.fullName}`),
+      label_fr: c.fullName || c.name,
+      label_en: c.fullName_en || c.name_en || c.fullName || c.name,
+      sub_fr: `${c.year || ""} · ${c.mods.length} mods`,
+      sub_en: `${c.year || ""} · ${c.mods.length} mods`,
+      url_fr: c.url,
+      url_en: c.url_en || c.url,
+      hay: norm(`${c.name} ${c.fullName} ${c.name_en} ${c.fullName_en}`),
     });
     c.mods.forEach((m) => {
       targets.push({
         type: "mod",
-        label: m.name,
-        sub: `${m.brand ? m.brand + " · " : ""}${c.name} · ${m.section}`,
         icon: "🔧",
-        url: `${c.url}#${m.id}`,
-        hay: norm(`${m.name} ${m.brand} ${c.name}`),
+        label_fr: m.name,
+        label_en: m.name_en || m.name,
+        sub_fr: `${m.brand ? m.brand + " · " : ""}${c.name} · ${m.section}`,
+        sub_en: `${m.brand ? m.brand + " · " : ""}${c.name_en || c.name} · ${m.section_en || m.section}`,
+        url_fr: `${c.url}#${m.id}`,
+        url_en: `${c.url_en || c.url}#${m.id}`,
+        hay: norm(`${m.name} ${m.name_en} ${m.brand} ${c.name} ${c.name_en}`),
       });
     });
   });
 
   let currentResults = [];
 
+  function resolve(t, lg) {
+    return {
+      type: t.type,
+      icon: t.icon,
+      label: lg === "en" ? t.label_en : t.label_fr,
+      sub: lg === "en" ? t.sub_en : t.sub_fr,
+      url: lg === "en" ? t.url_en : t.url_fr,
+    };
+  }
+
   function render(results) {
-    currentResults = results;
-    if (results.length === 0) {
-      panel.innerHTML = `<div class="wiki-search-empty">Aucun résultat — essaie « IPS », « USB-C », « HDMI », « DMG »…</div>`;
+    const lg = lang();
+    currentResults = results.map((t) => resolve(t, lg));
+    if (currentResults.length === 0) {
+      panel.innerHTML = `<div class="wiki-search-empty">${escapeHtml(STR[lg].empty)}</div>`;
       panel.hidden = false;
       return;
     }
-    panel.innerHTML = results
+    panel.innerHTML = currentResults
       .map(
         (r) => `<a class="wiki-search-item" href="${r.url}" role="option">
         <span class="wsi-icon">${r.icon}</span>
         <span class="wsi-body"><span class="wsi-label">${escapeHtml(r.label)}</span><span class="wsi-sub">${escapeHtml(r.sub)}</span></span>
-        <span class="wsi-type wsi-type--${r.type}">${r.type === "console" ? "Console" : "Mod"}</span>
+        <span class="wsi-type wsi-type--${r.type}">${r.type === "console" ? STR[lg].console : STR[lg].mod}</span>
       </a>`
       )
       .join("");
@@ -82,9 +107,8 @@
     const scored = [];
     for (const t of targets) {
       if (tokens.every((tok) => t.hay.includes(tok))) {
-        // Score : consoles d'abord, puis match en début de label
         let score = t.type === "console" ? 0 : 10;
-        if (norm(t.label).startsWith(tokens[0])) score -= 3;
+        if (t.hay.startsWith(tokens[0])) score -= 3;
         scored.push({ t, score });
       }
     }

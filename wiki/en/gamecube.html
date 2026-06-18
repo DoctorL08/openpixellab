@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to Nintendo GameCube mods: internal HDMI (Retro GEM, GCDual, Hispeedido), drive emulators (FlippyDrive, GC Loader), PicoBoot modchip, SD2SP2, Bluetooth and cooling. Difficulty, price, prerequisites.">
+    <link rel="canonical" href="https://openpixel-lab.com/wiki/en/gamecube.html">
+    <link rel="alternate" hreflang="fr" href="https://openpixel-lab.com/wiki/gamecube.html">
+    <link rel="alternate" hreflang="en" href="https://openpixel-lab.com/wiki/en/gamecube.html">
+    <link rel="alternate" hreflang="x-default" href="https://openpixel-lab.com/wiki/gamecube.html">
+    <title>Nintendo GameCube Mods — Internal HDMI, ODE, PicoBoot | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nintendo GameCube Mods — Internal HDMI, ODE, PicoBoot | OpenPixel Lab">
+    <meta property="og:description" content="Complete guide to Nintendo GameCube mods: internal HDMI (Retro GEM, GCDual, Hispeedido), drive emulators (FlippyDrive, GC Loader), PicoBoot modchip, SD2SP2, Bluetooth and cooling. Difficulty, price, prerequisites.">
+    <meta property="og:image" content="../../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../../Images/Logo OpenPixel Lab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/console-page.css">
+</head>
+<body>
+    <script>window.OPL_PAGE_LANG = "en";</script>
+    <div class="scanlines"></div>
+    <script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"../../index.html"},{"@type":"ListItem","position":2,"name":"Wiki","item":"../../wiki.html"},{"@type":"ListItem","position":3,"name":"GameCube"}]},{"@context":"https://schema.org","@type":"ItemList","name":"Mods — Nintendo GameCube (DOL-001)","numberOfItems":10,"itemListElement":[{"@type":"ListItem","position":1,"name":"PixelFX Retro GEM"},{"@type":"ListItem","position":2,"name":"Insurrection Industries / citrus3000psi GCDual"},{"@type":"ListItem","position":3,"name":"Hispeedido Internal HDMI Kit (Digital-to-Digital)"},{"@type":"ListItem","position":4,"name":"KNJN / Citrus3000psi Pluto-IIx HDMI"},{"@type":"ListItem","position":5,"name":"Team Off Broadway FlippyDrive"},{"@type":"ListItem","position":6,"name":"GC Loader GC Loader PNP (HW2)"},{"@type":"ListItem","position":7,"name":"Open Source (webhdx) PicoBoot"},{"@type":"ListItem","position":8,"name":"Générique SD2SP2 Adapter"},{"@type":"ListItem","position":9,"name":"8BitMods / BlueRetro BlueRetro Internal Adapter (V3)"},{"@type":"ListItem","position":10,"name":"Retro Frog / Noctua 40mm Noctua Fan Mod"}]}]
+    </script>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+                <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="../../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a> ›
+                <a href="../../wiki.html">Wiki</a> ›
+                <span>GameCube</span>
+            </nav>
+
+            <header class="console-hero">
+                <div class="badge">Home Console</div>
+                <h1 class="console-title">Nintendo <span class="highlight">GameCube</span></h1>
+                <p class="console-subtitle">Nintendo's magic cube. Learn how to take it to high definition and break free from optical discs.</p>
+                <div class="console-stats">
+                    <span>2001</span> · <span>10 mods listed</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../../configurator.html">🎨 Customize in 3D</a>
+                <a class="cross-link" href="../../comparator.html">⚖️ Compare setups</a>
+            </div>
+            </header>
+
+            <p class="console-intro">The Nintendo GameCube (2001) is an especially rich modding target: very high-quality digital HDMI output, optical drive emulators (ODE), open-source modchip and SD card loading. Depending on the model (DOL-001 with a Digital AV port, or DOL-101 without), the video solutions differ. Here are the go-to mods, sorted by category.</p>
+
+            <nav class="console-toc" aria-label="Sections overview"><a href="#section-video" class="console-toc-link">📺 Video &amp; HDMI</a><a href="#section-ode" class="console-toc-link">💿 ODE &amp; Loading</a><a href="#section-modchip" class="console-toc-link">🔧 Modchip &amp; Storage</a><a href="#section-control" class="console-toc-link">🎮 Control</a><a href="#section-maintenance" class="console-toc-link">⚙️ Maintenance &amp; Cooling</a></nav>
+
+            <section class="mod-section" id="section-video">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Video &amp; HDMI</h2>
+                </div>
+                <p class="section-intro">Take the GameCube to digital HDMI for a perfect image on modern displays. Internal kits tap into the digital video bus: DOL-001 models have a Digital AV port, while the DOL-101 (without it) needs digital-to-digital compatible kits.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gc_retrogem">
+                        <div class="mod-card-top"><span class="mod-badge">Premium</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, installTime">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="PixelFX Retro GEM internal HDMI kit for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">PixelFX</div>
+                        <h3 class="mod-name">Retro GEM</h3>
+                        <p class="mod-desc">The high-end internal HDMI solution: Wi-Fi for updates and scaling up to 1080p/1440p on the Shiny edition.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Expert"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="mod-diff-label">Expert</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Yes (advanced)</div></div>
+                        <ul class="mod-features"><li>Lag-free digital HDMI output</li><li>Firmware updates over Wi-Fi</li><li>1080p/1440p scaling and scanline filters (Shiny edition)</li><li>Compatible with DOL-001 and DOL-101 (NTSC/PAL)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Internal HDMI</dd></div><div><dt>Resolution</dt><dd>up to 1440p (Shiny)</dd></div><div><dt>Updates</dt><dd>Wi-Fi</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Advanced soldering skills</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Benchmark image quality</li><li>Advanced filters and scaling (Shiny)</li><li>Wi-Fi updates</li><li>Basic edition upgradable to Shiny</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Advanced soldering required</li><li>High price</li><li>Professional installation recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.pixelfx.co/product-page/gamecube-hdmi" target="_blank" rel="noopener nofollow">PixelFX ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.pixelfx.co/product-page/gamecube-hdmi" target="_blank" rel="noopener">PixelFX — GC HDMI Retro GEM Kit</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20Retro%20GEM&console=GameCube&mod=Retro%20GEM%20(id%3A%20gc_retrogem)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gc_gcdual">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, installTime, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="GCDual internal HDMI kit for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">Insurrection Industries / citrus3000psi</div>
+                        <h3 class="mod-name">GCDual</h3>
+                        <p class="mod-desc">A highly regarded open-source internal HDMI kit based on GCVideo, with simultaneous HDMI and analog output.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Digital HDMI output (GCVideo)</li><li>Simultaneous analog output possible</li><li>OSD with scanlines and settings</li><li>Compatible with DOL-001</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Internal HDMI</dd></div><div><dt>Base</dt><dd>GCVideo</dd></div><div><dt>Output</dt><dd>HDMI + analog</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Proven GCVideo quality</li><li>Dual HDMI/analog output</li><li>Open-source</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li><li>Variable availability</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.game-tech.us/product/gcdual/" target="_blank" rel="noopener nofollow">game-tech.us ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.game-tech.us/product/gcdual/" target="_blank" rel="noopener">game-tech.us — GCDual</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20GCDual&console=GameCube&mod=GCDual%20(id%3A%20gc_gcdual)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gc_hispeedido_hdmi">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, installTime">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido digital-to-digital internal HDMI kit for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">Internal HDMI Kit (Digital-to-Digital)</h3>
+                        <p class="mod-desc">An affordable digital-to-digital internal HDMI mod, compatible with all models including the DOL-101.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>480p/1080p HDMI output</li><li>Compatible with DOL-001 and DOL-101</li><li>OSD menu (video modes, ratios, deinterlacing)</li><li>Image positioning adjustment</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Internal HDMI</dd></div><div><dt>Resolution</dt><dd>480p / 1080p</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Compatible with DOL-101 (no Digital port)</li><li>Full OSD menu</li><li>Affordable price</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required (PCB + flex)</li><li>Sometimes sparse instructions</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" target="_blank" rel="noopener nofollow">Hispeedido Store ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" target="_blank" rel="noopener">Hispeedido Store — Internal NGC Digital HDMI MOD Kit</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20Internal%20HDMI%20Kit%20(Digital-to-Digital)&console=GameCube&mod=Internal%20HDMI%20Kit%20(Digital-to-Digital)%20(id%3A%20gc_hispeedido_hdmi)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gc_pluto_iix">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, installTime, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Pluto-IIx internal HDMI mod for Nintendo GameCube DOL-001"><span>📷</span></div>
+                        <div class="mod-brand">KNJN / Citrus3000psi</div>
+                        <h3 class="mod-name">Pluto-IIx HDMI</h3>
+                        <p class="mod-desc">The original internal HDMI mod for DOL-001 units, based on the open-source GCVideo firmware.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 1–2 h</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Direct HDMI output (GCVideo)</li><li>Open-source</li><li>Robust install with a 3D-printed PCB mount</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Internal HDMI</dd></div><div><dt>Base</dt><dd>GCVideo</dd></div><div><dt>Compatibility</dt><dd>DOL-001</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : DOL-001 model (Digital AV port)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Proven solution</li><li>Open-source (GCVideo)</li><li>Clean digital image</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li><li>DOL-001 only (Digital AV port)</li><li>Largely superseded by GCDual/Retro GEM</li></ul></div></div>
+                        
+                        <p class="mod-sources">Sources : <a href="https://stoneagegamer.com/pluto-digital-hd-chip-with-installation-service-for-gamecube.html" target="_blank" rel="noopener">Stone Age Gamer — Pluto Digital HD Chip</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20Pluto-IIx%20HDMI&console=GameCube&mod=Pluto-IIx%20HDMI%20(id%3A%20gc_pluto_iix)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-ode">
+                <div class="section-header">
+                    <span class="section-icon">💿</span>
+                    <h2 class="section-name">ODE &amp; Loading</h2>
+                </div>
+                <p class="section-intro">Optical drive emulators (ODE) replace or supplement the DVD drive to load games from an SD card, with throughput far higher than the original disc.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gc_flippydrive">
+                        <div class="mod-card-top"><span class="mod-badge">New</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FlippyDrive solder-free optical drive emulator for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">Team Off Broadway</div>
+                        <h3 class="mod-name">FlippyDrive</h3>
+                        <p class="mod-desc">A solder-free ODE that keeps the original disc drive while loading games via microSD or network.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>100% solder-free, reversible install</li><li>Preserves the original optical drive</li><li>Based on the Raspberry Pi Pico (RP2040)</li><li>microSD or network loading, 2.8x to 10x faster than EXI solutions</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>ODE</dd></div><div><dt>Base</dt><dd>RP2040</dd></div><div><dt>Installation</dt><dd>Solder-free</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Solder-free and reversible</li><li>Keeps the disc drive</li><li>Fits inside the shell with no trimming</li><li>Very fast</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Newer (evolving firmware)</li><li>Still needs a homebrew entry point</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://www.crowdsupply.com/team-offbroadway/flippydrive" target="_blank" rel="noopener nofollow">Crowd Supply ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://www.crowdsupply.com/team-offbroadway/flippydrive" target="_blank" rel="noopener">Crowd Supply — FlippyDrive</a> · <a href="https://www.timeextension.com/news/2024/08/new-usd38-flippydrive-ode-lets-you-keep-your-gamecubes-optical-drive" target="_blank" rel="noopener">Time Extension — New $38 FlippyDrive ODE</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20FlippyDrive&console=GameCube&mod=FlippyDrive%20(id%3A%20gc_flippydrive)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gc_gcloader">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="GC Loader PNP drive emulator for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">GC Loader</div>
+                        <h3 class="mod-name">GC Loader PNP (HW2)</h3>
+                        <p class="mod-desc">Fully replaces the DVD drive with a high-speed microSD reader that's rock-solid and plug &amp; play.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Replaces the optical drive</li><li>Full-speed SD interface (up to 1 TB)</li><li>Plug &amp; Play, no soldering</li><li>Compatible with DOL-001 and DOL-101</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>ODE (drive replacement)</dd></div><div><dt>SD capacity</dt><dd>up to 1 TB</dd></div><div><dt>Installation</dt><dd>Plug &amp; Play</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : 4.5mm Gamebit screwdriver</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Maximum throughput</li><li>Proven reliability</li><li>Solder-free (4.5mm Gamebit screwdriver required)</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Removes the disc drive (not reversible unless you keep it)</li><li>Swiss recommended for the full menu</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://gc-loader.com/product/gc-loader-pnp-hw2/" target="_blank" rel="noopener nofollow">GC Loader ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://gc-loader.com/product/gc-loader-pnp-hw2/" target="_blank" rel="noopener">GC Loader — PnP HW2</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20GC%20Loader%20PNP%20(HW2)&console=GameCube&mod=GC%20Loader%20PNP%20(HW2)%20(id%3A%20gc_gcloader)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-modchip">
+                <div class="section-header">
+                    <span class="section-icon">🔧</span>
+                    <h2 class="section-name">Modchip &amp; Storage</h2>
+                </div>
+                <p class="section-intro">Hack the console's boot and add discreet SD storage to launch Swiss and homebrew without a disc or a full ODE.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gc_picoboot">
+                        <div class="mod-card-top"><span class="mod-badge">Budget</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="PicoBoot Raspberry Pi Pico modchip for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">Open Source (webhdx)</div>
+                        <h3 class="mod-name">PicoBoot</h3>
+                        <p class="mod-desc">Open-source IPL modchip based on a Raspberry Pi Pico: boots Swiss/homebrew straight from an SD card.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes (a few points)</div></div>
+                        <ul class="mod-features"><li>Replaces the original IPL (boot)</li><li>Based on a Raspberry Pi Pico (~$5)</li><li>Auto-boots ipl.dol (Swiss)</li><li>Region-free and USB-reflashable firmware</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPL modchip</dd></div><div><dt>Base</dt><dd>Raspberry Pi Pico (RP2040)</dd></div><div><dt>Firmware</dt><dd>USB reflashable</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : SD loader (SD2SP2) or ODE to load games</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Tiny cost</li><li>Open-source and reflashable</li><li>Mounts on the fan assembly</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required (a few points)</li><li>Needs an SD loader (SD2SP2 or ODE) for games</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://github.com/webhdx/PicoBoot" target="_blank" rel="noopener nofollow">PicoBoot — GitHub ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://github.com/webhdx/PicoBoot" target="_blank" rel="noopener">PicoBoot — GitHub (webhdx)</a> · <a href="https://retrorgb.com/picoboot-is-here-the-newest-modchip-for-the-gamecube.html" target="_blank" rel="noopener">RetroRGB — PicoBoot Is Here</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20PicoBoot&console=GameCube&mod=PicoBoot%20(id%3A%20gc_picoboot)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gc_sd2sp2">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="SD2SP2 microSD adapter for the Nintendo GameCube Serial Port 2"><span>📷</span></div>
+                        <div class="mod-brand">Générique</div>
+                        <h3 class="mod-name">SD2SP2 Adapter</h3>
+                        <p class="mod-desc">An invisible microSD adapter that sits in Serial Port 2 under the console, ideal with PicoBoot and Swiss.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 5–10 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Plugs into Serial Port 2 (under the console)</li><li>No soldering, no opening</li><li>Frees up the memory card slots</li><li>Compatible with Swiss, GBI, mGBA</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>microSD loader</dd></div><div><dt>Port</dt><dd>Serial Port 2</dd></div><div><dt>Installation</dt><dd>Solder-free</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : GameCube with Serial Port 2, PicoBoot or a homebrew boot disc</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Discreet (under the console)</li><li>Instant solder-free install</li><li>Ideal PicoBoot companion</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Requires Serial Port 2 to be present</li><li>Lower throughput than an ODE</li><li>Requires PicoBoot or a boot disc</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://stoneagegamer.com/sd2sp2-micro-sd-card-adapter-1-2a-sdloader-for-gamecube-serial-port-2.html" target="_blank" rel="noopener nofollow">Stone Age Gamer ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrorgb.com/gamecube-serial-port-sd-adapter-swiss-updates.html" target="_blank" rel="noopener">RetroRGB — GameCube Serial Port SD Adapter</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20SD2SP2%20Adapter&console=GameCube&mod=SD2SP2%20Adapter%20(id%3A%20gc_sd2sp2)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-control">
+                <div class="section-header">
+                    <span class="section-icon">🎮</span>
+                    <h2 class="section-name">Control</h2>
+                </div>
+                <p class="section-intro">Play wirelessly with any modern Bluetooth controller thanks to BlueRetro, internally or via an external adapter.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gc_blueretro">
+                        <div class="mod-card-top"><span class="mod-badge">Wireless</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="BlueRetro internal Bluetooth adapter for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">8BitMods / BlueRetro</div>
+                        <h3 class="mod-name">BlueRetro Internal Adapter (V3)</h3>
+                        <p class="mod-desc">An internal Bluetooth module (BlueRetro) that pairs up to 4 modern controllers wirelessly.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>High-speed BlueRetro Bluetooth interface</li><li>Up to 4 wireless controllers (mixable with wired)</li><li>Compatible with PS4/PS5, Xbox, Switch, 8BitDo…</li><li>Solder-free (replaces the controller port board)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Internal Bluetooth adapter</dd></div><div><dt>Controllers</dt><dd>up to 4</dd></div><div><dt>Installation</dt><dd>Solder-free</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Wireless play with modern controllers</li><li>Discreet internal solder-free install</li><li>Configurable button mapping</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Bluetooth latency on some controllers</li><li>Firmware updates via a Bluetooth computer</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://8bitmods.com/internal-bluetooth-blueretro-adapter-for-gamecube-v3/" target="_blank" rel="noopener nofollow">8BitMods ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://8bitmods.com/internal-bluetooth-blueretro-adapter-for-gamecube-v3/" target="_blank" rel="noopener">8BitMods — Internal Bluetooth (BlueRetro) Adapter V3</a> · <a href="https://www.nintendolife.com/news/2022/08/this-stealth-gamecube-mod-allows-you-to-play-with-any-bluetooth-controller" target="_blank" rel="noopener">Nintendo Life — Stealth GameCube Bluetooth Mod</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%20BlueRetro%20Internal%20Adapter%20(V3)&console=GameCube&mod=BlueRetro%20Internal%20Adapter%20(V3)%20(id%3A%20gc_blueretro)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-maintenance">
+                <div class="section-header">
+                    <span class="section-icon">⚙️</span>
+                    <h2 class="section-name">Maintenance &amp; Cooling</h2>
+                </div>
+                <p class="section-intro">Reduce console noise by replacing the original fan with an ultra-quiet Noctua.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gc_noctua_fan">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Quiet 40mm Noctua fan mod for Nintendo GameCube"><span>📷</span></div>
+                        <div class="mod-brand">Retro Frog / Noctua</div>
+                        <h3 class="mod-name">40mm Noctua Fan Mod</h3>
+                        <p class="mod-desc">Replaces the noisy stock 50mm fan with a quiet 40mm Noctua via a 3D-printed bracket.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>3D-printed adapter bracket + adapter cable</li><li>Compatible with Noctua NF-A4x10 FLX 12V (40x10mm)</li><li>Reuses the 4 original screws</li><li>Better airflow</li></ul>
+                        <dl class="mod-specs"><div><dt>Fan</dt><dd>Noctua NF-A4x10 FLX 12V</dd></div><div><dt>Size</dt><dd>40x10mm</dd></div><div><dt>Adapter</dt><dd>3D-printed</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : 40mm 12V Noctua fan, 3D adapter + cable</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Near-total silence</li><li>Better cooling</li><li>Reversible</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>3D adapter and cable required</li><li>Noctua fan sold separately</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://stoneagegamer.com/40mm-fan-adapter-plate-and-fan-cable-for-gamecube-retro-frog.html" target="_blank" rel="noopener nofollow">Stone Age Gamer ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://retrofrog.net/products/gamecube-40mm-fan-adapter-plate-cable" target="_blank" rel="noopener">Retro Frog — GameCube 40mm fan adapter</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20GameCube%20%E2%80%94%2040mm%20Noctua%20Fan%20Mod&console=GameCube&mod=40mm%20Noctua%20Fan%20Mod%20(id%3A%20gc_noctua_fan)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <p class="console-sources">General sources : <a href="https://retrorgb.com/gamecube.html" target="_blank" rel="noopener">RetroRGB — GameCube</a> · <a href="https://github.com/webhdx/PicoBoot" target="_blank" rel="noopener">PicoBoot — GitHub (webhdx)</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

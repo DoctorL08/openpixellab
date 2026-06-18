@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to Game Boy Advance mods: laminated IPS and ITA TFT screen kits (FunnyPlaying, Hispeedido), 720p HDMI output, USB-C batteries, audio amp, RGB LEDs and tactile buttons. Difficulty, price, prerequisites and soldering.">
+    <link rel="canonical" href="https://openpixel-lab.com/wiki/en/gba.html">
+    <link rel="alternate" hreflang="fr" href="https://openpixel-lab.com/wiki/gba.html">
+    <link rel="alternate" hreflang="en" href="https://openpixel-lab.com/wiki/en/gba.html">
+    <link rel="alternate" hreflang="x-default" href="https://openpixel-lab.com/wiki/gba.html">
+    <title>Game Boy Advance (AGB-001) Mods — IPS Screens, ITA TFT, HDMI, USB-C | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Game Boy Advance (AGB-001) Mods — IPS Screens, ITA TFT, HDMI, USB-C | OpenPixel Lab">
+    <meta property="og:description" content="Complete guide to Game Boy Advance mods: laminated IPS and ITA TFT screen kits (FunnyPlaying, Hispeedido), 720p HDMI output, USB-C batteries, audio amp, RGB LEDs and tactile buttons. Difficulty, price, prerequisites and soldering.">
+    <meta property="og:image" content="../../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../../Images/Logo OpenPixel Lab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/console-page.css">
+</head>
+<body>
+    <script>window.OPL_PAGE_LANG = "en";</script>
+    <div class="scanlines"></div>
+    <script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"../../index.html"},{"@type":"ListItem","position":2,"name":"Wiki","item":"../../wiki.html"},{"@type":"ListItem","position":3,"name":"Game Boy Advance"}]},{"@context":"https://schema.org","@type":"ItemList","name":"Mods — Game Boy Advance (AGB-001)","numberOfItems":22,"itemListElement":[{"@type":"ListItem","position":1,"name":"FunnyPlaying AGB IPS MAX Laminated Kit"},{"@type":"ListItem","position":2,"name":"FunnyPlaying 3.0\" IPS Backlight Kit M2"},{"@type":"ListItem","position":3,"name":"FunnyPlaying ITA TFT Kit (sans découpe)"},{"@type":"ListItem","position":4,"name":"FunnyPlaying ITA TFT Laminated Kit (OSD)"},{"@type":"ListItem","position":5,"name":"Hispeedido IPS V2 Kit (Touch Sensor)"},{"@type":"ListItem","position":6,"name":"Hispeedido V5 IPS Backlight Kit"},{"@type":"ListItem","position":7,"name":"Hispeedido V5 IPS Laminated (OSD)"},{"@type":"ListItem","position":8,"name":"Hispeedido TFT HDMI Kit (Sortie TV)"},{"@type":"ListItem","position":9,"name":"Cloud Game Store IPS LCD Backlight Kit"},{"@type":"ListItem","position":10,"name":"RetroSix CleanJuice V1.3 (Li-Ion, USB-C)"},{"@type":"ListItem","position":11,"name":"RetroSix CleanJuice AA USB-C Pack"},{"@type":"ListItem","position":12,"name":"FunnyPlaying AGB IPS MAX Battery USB-C"},{"@type":"ListItem","position":13,"name":"FunnyPlaying GBA Rechargeable Battery Mod"},{"@type":"ListItem","position":14,"name":"Hispeedido GBA USB-C Battery 1800mAh"},{"@type":"ListItem","position":15,"name":"Division 6 GBAccelerator (OC)"},{"@type":"ListItem","position":16,"name":"Handheld Legend RetroGlow GBA"},{"@type":"ListItem","position":17,"name":"NatalieTheNerd ARC GBA (RGB LEDs)"},{"@type":"ListItem","position":18,"name":"RetroSix CleanAmp & De-Hiss"},{"@type":"ListItem","position":19,"name":"NatalieTheNerd Bucket Amp GBA"},{"@type":"ListItem","position":20,"name":"Cloud Game Store Colored Speakers GBA"},{"@type":"ListItem","position":21,"name":"Handheld Legend Tactile Conversion PCB"},{"@type":"ListItem","position":22,"name":"FunnyPlaying GBA Custom Buttons"}]}]
+    </script>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+                <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="../../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a> ›
+                <a href="../../wiki.html">Wiki</a> ›
+                <span>Game Boy Advance</span>
+            </nav>
+
+            <header class="console-hero">
+                <div class="badge">Handheld Console</div>
+                <h1 class="console-title">Gameboy <span class="highlight">Advance</span></h1>
+                <p class="console-subtitle">The golden age of 32-bit handhelds. Learn how to turn your GBA into a powerful modern console.</p>
+                <div class="console-stats">
+                    <span>2001</span> · <span>22 mods listed</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../../configurator.html">🎨 Customize in 3D</a>
+                <a class="cross-link" href="../../comparator.html">⚖️ Compare setups</a>
+            </div>
+            </header>
+
+            <p class="console-intro">The Game Boy Advance (AGB-001, 2001) has just one real flaw: its original non-backlit screen, unreadable without a lamp. Fortunately, it's also one of the most modded consoles in the world. Laminated IPS and TFT screens, USB-C batteries, audio amps, RGB and clicky buttons: here are the go-to mods to wake up Nintendo's 32-bit handheld, sorted by category.</p>
+
+            <nav class="console-toc" aria-label="Sections overview"><a href="#section-display" class="console-toc-link">📺 Display &amp; Video</a><a href="#section-power" class="console-toc-link">⚡ Power &amp; Performance</a><a href="#section-audio" class="console-toc-link">✨ Lighting &amp; Audio</a><a href="#section-buttons" class="console-toc-link">🔘 Buttons</a></nav>
+
+            <section class="mod-section" id="section-display">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Display &amp; Video</h2>
+                </div>
+                <p class="section-intro">The must-have GBA mod: replacing the original reflective panel, unreadable without light, with a backlit IPS or TFT screen. Laminated versions remove dust and offer the best contrast; ITA kits install with no shell trimming.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gba_fp_ips_max_lam">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying AGB IPS MAX laminated kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">AGB IPS MAX Laminated Kit</h3>
+                        <p class="mod-desc">The undisputed standard for the GBA. Stunning clarity, a perfectly centered image and a dust-free install.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–60 min</div><div class="mod-meta-item">🔧 Optional (OSD buttons)</div></div>
+                        <ul class="mod-features"><li>IPS panel laminated to the glass</li><li>Perfectly centered image</li><li>OSD: brightness, palettes and pixel effects</li><li>Touch or button control</li><li>Optional soldering</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated IPS</dd></div><div><dt>Resolution</dt><dd>240x160</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Crystal-clear image, maximum contrast</li><li>No trapped dust</li><li>Beginner-friendly install (optional soldering)</li><li>Factory look</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>IPS-ready shell recommended</li><li>Soldering required for button control of the OSD</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/agb-ips-max-display-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/agb-ips-max-display-kit" target="_blank" rel="noopener">FunnyPlaying — AGB IPS MAX Laminated</a> · <a href="https://wiki.handheldlegend.com/agb-laminated-ips-funnyplaying-or-install-guide" target="_blank" rel="noopener">Handheld Legend Wiki — Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20AGB%20IPS%20MAX%20Laminated%20Kit&console=Game%20Boy%20Advance&mod=AGB%20IPS%20MAX%20Laminated%20Kit%20(id%3A%20gba_fp_ips_max_lam)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_ips_m2">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, difficulty, specs, installTime">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying 3.0-inch M2 IPS kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">3.0&quot; IPS Backlight Kit M2</h3>
+                        <p class="mod-desc">Second-generation 3-inch IPS kit, brighter and with an improved OSD for a larger screen.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>3.0-inch panel (enlarged)</li><li>Improved OSD</li><li>Higher brightness</li><li>Palettes and pixel effects</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS</dd></div><div><dt>Size</dt><dd>3.0 inches</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Shell trimming for the 3.0&quot; panel</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Larger screen than stock</li><li>Full OSD</li><li>Very bright</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Shell trimming required for the large panel</li><li>CleanPower / suitable battery recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" target="_blank" rel="noopener">FunnyPlaying — 3.0 Inch IPS AGB Laminated Kit</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%203.0%22%20IPS%20Backlight%20Kit%20M2&console=Game%20Boy%20Advance&mod=3.0%22%20IPS%20Backlight%20Kit%20M2%20(id%3A%20gba_fp_ips_m2)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_ita_tft">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying no-trim ITA TFT kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">ITA TFT Kit (sans découpe)</h3>
+                        <p class="mod-desc">The &quot;In The Air&quot; TFT kit based on the DSi bottom panel, installing with no shell trimming, perfect for preserving the original.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No (or minimal)</div></div>
+                        <ul class="mod-features"><li>No shell trimming</li><li>DSi 240x160 panel at the original size</li><li>Very low power draw (0.15 W min)</li><li>Adjustment via touch sensor, buttons or OSD</li><li>No ghosting</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>TFT (DSi panel)</dd></div><div><dt>Resolution</dt><dd>240x160</dd></div><div><dt>Min draw</dt><dd>0.15 W</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Check for a 32- or 40-pin board</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No-trim install (plug &amp; play)</li><li>Very low power draw</li><li>Ideal for beginners</li><li>Preserves the original shell</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Trimming the panel's plastic tabs is sometimes needed</li><li>32/40-pin ribbon choice depending on the board</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/funnyplaying-ita-new-agb-tft-backlight-kit-for-game-boy-advance" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" target="_blank" rel="noopener">FunnyPlaying — ITA TFT Kit</a> · <a href="https://wiki.handheldlegend.com/agb-ita-tft-display-funnyplaying-or-install-guide" target="_blank" rel="noopener">Handheld Legend Wiki — ITA TFT Install</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20ITA%20TFT%20Kit%20(sans%20d%C3%A9coupe)&console=Game%20Boy%20Advance&mod=ITA%20TFT%20Kit%20(sans%20d%C3%A9coupe)%20(id%3A%20gba_fp_ita_tft)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_ita_tft_lam">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying laminated ITA TFT kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">ITA TFT Laminated Kit (OSD)</h3>
+                        <p class="mod-desc">Laminated version of the ITA kit with an OSD menu for full control with no shell trimming.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No (or minimal)</div></div>
+                        <ul class="mod-features"><li>Laminated, no trimming</li><li>Full OSD menu (BRT, FRM, X/Y)</li><li>Better image quality than non-laminated</li><li>Brightness memory function</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated TFT (DSi panel)</dd></div><div><dt>Resolution</dt><dd>240x160</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Check for a 32- or 40-pin board</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No-trim AND laminated</li><li>Sharper image, zero dust</li><li>Full OSD</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Pricier than the non-laminated ITA</li><li>Trimming the tabs is sometimes needed</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" target="_blank" rel="noopener">FunnyPlaying — ITA TFT Laminated</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20ITA%20TFT%20Laminated%20Kit%20(OSD)&console=Game%20Boy%20Advance&mod=ITA%20TFT%20Laminated%20Kit%20(OSD)%20(id%3A%20gba_fp_ita_tft_lam)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_hsd_ips_v2">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido IPS V2 touch-sensor kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">IPS V2 Kit (Touch Sensor)</h3>
+                        <p class="mod-desc">IPS V2 kit with a touch sensor for brightness control by touch, with no mandatory soldering.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Optional</div></div>
+                        <ul class="mod-features"><li>Touch brightness control</li><li>Optional soldering</li><li>Clean install</li><li>Multiple brightness levels</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Handy touch adjustment</li><li>Beginner-friendly install</li><li>Good value for money</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Sometimes sparse instructions</li><li>IPS-ready shell recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20IPS%20V2%20Kit%20(Touch%20Sensor)&console=Game%20Boy%20Advance&mod=IPS%20V2%20Kit%20(Touch%20Sensor)%20(id%3A%20gba_hsd_ips_v2)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_hsd_ips_v5">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido V5 IPS kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V5 IPS Backlight Kit</h3>
+                        <p class="mod-desc">Hispeedido's V5 IPS kit with a high-quality panel and multiple display modes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>High brightness</li><li>Multiple display modes</li><li>Excellent color fidelity</li><li>OSD</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Very bright</li><li>Good color fidelity</li><li>Multiple modes</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>IPS-ready shell recommended</li><li>Higher power draw</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20V5%20IPS%20Backlight%20Kit&console=Game%20Boy%20Advance&mod=V5%20IPS%20Backlight%20Kit%20(id%3A%20gba_hsd_ips_v5)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_hsd_ips_v5_lam">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido V5 laminated IPS kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V5 IPS Laminated (OSD)</h3>
+                        <p class="mod-desc">Laminated version of the V5 with a full OSD menu for the best possible image on the GBA.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>Laminated glass</li><li>Full OSD</li><li>Optimized resolution and colors</li><li>High brightness</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated IPS</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Superior contrast and sharpness</li><li>No trapped dust</li><li>Full OSD</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Pricier than the non-laminated version</li><li>IPS-ready shell recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20V5%20IPS%20Laminated%20(OSD)&console=Game%20Boy%20Advance&mod=V5%20IPS%20Laminated%20(OSD)%20(id%3A%20gba_hsd_ips_v5_lam)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_hsd_hdmi">
+                        <div class="mod-card-top"><span class="mod-badge">TV Link</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido TFT HDMI TV-output kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">TFT HDMI Kit (Sortie TV)</h3>
+                        <p class="mod-desc">Play on your modern TV with a 720p HDMI output built directly into the console.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€€</div><div class="mod-meta-item">⏱ 60–90 min</div><div class="mod-meta-item">🔧 Yes (2 audio wires)</div></div>
+                        <ul class="mod-features"><li>720p HDMI output</li><li>Micro-HD adapter included</li><li>DSi panel with 8 color modes</li><li>2 TV display ratios</li><li>Touch sensors</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>TFT + HDMI</dd></div><div><dt>Output</dt><dd>720p</dd></div><div><dt>Compatibility</dt><dd>32/40-pin</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Major shell trimming, IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Play on a big screen</li><li>Ideal for streaming</li><li>Quality display</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Advanced mod: major trimming of both shell halves</li><li>2 audio wires to solder required</li><li>Fragile HDMI connector</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" target="_blank" rel="noopener">Handheld Legend — TFT HDMI Kit</a> · <a href="https://wiki.handheldlegend.com/agb-hispeedido-hdmi-out-kit-or-install-guide" target="_blank" rel="noopener">Handheld Legend Wiki — HDMI Out Install</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20TFT%20HDMI%20Kit%20(Sortie%20TV)&console=Game%20Boy%20Advance&mod=TFT%20HDMI%20Kit%20(Sortie%20TV)%20(id%3A%20gba_hsd_hdmi)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_cgs_ips">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Cloud Game Store IPS LCD kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">IPS LCD Backlight Kit</h3>
+                        <p class="mod-desc">An affordable, reliable IPS kit for a first entry into GBA modding.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>Good value for money</li><li>Beginner-friendly install</li><li>Improved brightness</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : IPS-ready shell recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Affordable</li><li>A good gateway into GBA modding</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>IPS-ready shell recommended</li><li>More limited OSD than the competition</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20IPS%20LCD%20Backlight%20Kit&console=Game%20Boy%20Advance&mod=IPS%20LCD%20Backlight%20Kit%20(id%3A%20gba_cgs_ips)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-power">
+                <div class="section-header">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="section-name">Power &amp; Performance</h2>
+                </div>
+                <p class="section-intro">Ditch the 2 AA batteries for a rechargeable USB-C battery (essential to power a power-hungry backlit screen), or speed up the console to reduce the grind.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gba_cleanjuice_v13">
+                        <div class="mod-card-top"><span class="mod-badge">Popular</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanJuice V1.3 USB-C battery for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice V1.3 (Li-Ion, USB-C)</h3>
+                        <p class="mod-desc">The most popular USB-C Li-Ion solution for the GBA. Charge while you play, with no soldering at all.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 15–20 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>1700 mAh capacity</li><li>USB-C charging</li><li>Solder-free (drop-in) install</li><li>Low-battery indicator (red LED)</li></ul>
+                        <dl class="mod-specs"><div><dt>Capacity</dt><dd>1700 mAh</dd></div><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No soldering</li><li>Modern USB-C</li><li>Charge while playing</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Door trimming for the USB-C port (unless using a pre-cut cover)</li><li>Battery compartment modification on an OEM shell</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk/CleanJuice-USB-C-Battery-Pack-Game-Boy-Advance-p195931214" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" target="_blank" rel="noopener">Handheld Legend — CleanJuice V1.3 GBA</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20CleanJuice%20V1.3%20(Li-Ion%2C%20USB-C)&console=Game%20Boy%20Advance&mod=CleanJuice%20V1.3%20(Li-Ion%2C%20USB-C)%20(id%3A%20gba_cleanjuice_v13)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_cleanjuice_aa">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanJuice AA USB-C pack for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice AA USB-C Pack</h3>
+                        <p class="mod-desc">Keep the AA battery format with a built-in USB-C port to charge NiMH cells right inside the GBA.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Preserves the AA battery format</li><li>USB-C charging of NiMH cells</li><li>No shell modification</li></ul>
+                        <dl class="mod-specs"><div><dt>Format</dt><dd>AA NiMH batteries</dd></div><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Keeps the original look (AA batteries)</li><li>Charge without removing the cells</li><li>No shell trimming</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Runtime depends on the NiMH cells used</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20CleanJuice%20AA%20USB-C%20Pack&console=Game%20Boy%20Advance&mod=CleanJuice%20AA%20USB-C%20Pack%20(id%3A%20gba_cleanjuice_aa)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_ips_max_battery">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, difficulty, specs, installTime">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying AGB IPS MAX USB-C battery for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">AGB IPS MAX Battery USB-C</h3>
+                        <p class="mod-desc">USB-C Li-Ion battery module designed specifically for FunnyPlaying's AGB IPS MAX kits.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>Designed for the AGB IPS MAX kit</li><li>USB-C charging</li><li>Integrated install</li></ul>
+                        <dl class="mod-specs"><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Perfectly suited to the IPS MAX</li><li>USB-C</li><li>Clean integration</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Designed for the FunnyPlaying ecosystem</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" target="_blank" rel="noopener">FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20AGB%20IPS%20MAX%20Battery%20USB-C&console=Game%20Boy%20Advance&mod=AGB%20IPS%20MAX%20Battery%20USB-C%20(id%3A%20gba_fp_ips_max_battery)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_battery">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, difficulty, specs, installTime">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying rechargeable battery module for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBA Rechargeable Battery Mod</h3>
+                        <p class="mod-desc">Universal FunnyPlaying rechargeable battery module to replace the GBA's AA cells.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Minimal (optional)</div></div>
+                        <ul class="mod-features"><li>USB-C charging</li><li>Compatible with all GBA models</li><li>Easy install</li></ul>
+                        <dl class="mod-specs"><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Universal</li><li>USB-C</li><li>Easy install</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Possible door trimming for the USB-C port</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" target="_blank" rel="noopener">FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20GBA%20Rechargeable%20Battery%20Mod&console=Game%20Boy%20Advance&mod=GBA%20Rechargeable%20Battery%20Mod%20(id%3A%20gba_fp_battery)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_hsd_battery_1800">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, specs">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido 1800mAh USB-C battery for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">GBA USB-C Battery 1800mAh</h3>
+                        <p class="mod-desc">1800mAh Li-Po battery with built-in USB-C charging for good runtime.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 15–20 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>1800 mAh capacity</li><li>USB-C charging</li><li>Plug &amp; Play</li></ul>
+                        <dl class="mod-specs"><div><dt>Capacity</dt><dd>1800 mAh</dd></div><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Good runtime</li><li>USB-C</li><li>Easy install</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Possible door trimming for the USB-C port</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20GBA%20USB-C%20Battery%201800mAh&console=Game%20Boy%20Advance&mod=GBA%20USB-C%20Battery%201800mAh%20(id%3A%20gba_hsd_battery_1800)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_gbaccelerator">
+                        <div class="mod-card-top"><span class="mod-badge">Speed</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Division 6 GBAccelerator overclock module for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Division 6</div>
+                        <h3 class="mod-name">GBAccelerator (OC)</h3>
+                        <p class="mod-desc">Speed up your grinding in Pokémon or RPGs to 1.5x or 2x normal speed, with no clock glitches.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>4 speeds: 0.85x / 1x / 1.5x / 1.75x</li><li>On-the-fly switching via a 3-button combo</li><li>100% internal install</li><li>No clock glitches</li></ul>
+                        <dl class="mod-specs"><div><dt>Speeds</dt><dd>0.85x / 1x / 1.5x / 1.75x</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Speeds up slow games</li><li>Reversible</li><li>Glitch-free unlike crystal-swap mods</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Basic soldering required</li><li>Some games may react badly when overclocked</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://division-6.com/products/gbaccelerator-gba/" target="_blank" rel="noopener nofollow">Division 6 ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/gbaccerlerator-game-boy-advance-accelerator" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://division-6.com/products/gbaccelerator-gba/" target="_blank" rel="noopener">Division 6 — GBAccelerator GBA</a> · <a href="https://handheldlegend.com/blogs/installation-instructions/gbaccelerator-installation-game-boy-advance-division-6" target="_blank" rel="noopener">Handheld Legend — Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20GBAccelerator%20(OC)&console=Game%20Boy%20Advance&mod=GBAccelerator%20(OC)%20(id%3A%20gba_gbaccelerator)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-audio">
+                <div class="section-header">
+                    <span class="section-icon">✨</span>
+                    <h2 class="section-name">Lighting &amp; Audio</h2>
+                </div>
+                <p class="section-intro">Light up the buttons in RGB and fix the GBA's weak audio: too-low volume and the constant hiss of the original circuit.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gba_retroglow">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroGlow RGB LED kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">RetroGlow GBA</h3>
+                        <p class="mod-desc">The complete RGB LED kit for your buttons. Endless customization via Select + D-Pad.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 15–30 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>32 hues and 32 saturation levels</li><li>2 animation modes</li><li>Control via Select + D-Pad</li><li>Low power draw</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>RGB LED</dd></div><div><dt>Hues</dt><dd>32</dd></div><div><dt>Saturation</dt><dd>32 levels</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Spectacular visual effect</li><li>Highly customizable</li><li>Quick install (15–30 min)</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering</li><li>Extra power draw</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" target="_blank" rel="noopener">Handheld Legend — RetroGlow GBA</a> · <a href="https://wiki.handheldlegend.com/retroglow-for-gba-agb-or-install-guide" target="_blank" rel="noopener">Handheld Legend Wiki — Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20RetroGlow%20GBA&console=Game%20Boy%20Advance&mod=RetroGlow%20GBA%20(id%3A%20gba_retroglow)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_arc">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="NatalieTheNerd ARC RGB LED kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">ARC GBA (RGB LEDs)</h3>
+                        <p class="mod-desc">RGB board with per-zone color control (D-pad, A/B, Start/Select) and advanced animation modes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>Per-zone color control</li><li>17 settings (3 animation modes, 4 brightness levels)</li><li>Breathing &amp; windmill modes</li><li>Very low power draw</li><li>Compatible with modern screens (doesn't use L/R/Select)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>RGB LED</dd></div><div><dt>Settings</dt><dd>17</dd></div><div><dt>Brightness</dt><dd>4 levels</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Fine per-zone adjustments</li><li>Low power draw</li><li>Designed by a respected modder</li><li>Compatible with IPS kits</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://nataliethenerd.com/products/arc-gba-rgb-leds" target="_blank" rel="noopener nofollow">NatalieTheNerd ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://nataliethenerd.com/products/arc-gba-rgb-leds" target="_blank" rel="noopener">NatalieTheNerd — ARC GBA</a> · <a href="https://nataliethenerd.com/pages/arc-gba-install-guide" target="_blank" rel="noopener">NatalieTheNerd — Install Guide</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20ARC%20GBA%20(RGB%20LEDs)&console=Game%20Boy%20Advance&mod=ARC%20GBA%20(RGB%20LEDs)%20(id%3A%20gba_arc)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_cleanamp_dehiss">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanAmp amp and De-Hiss kit for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanAmp &amp; De-Hiss</h3>
+                        <p class="mod-desc">Improve the sound and remove the GBA's constant hiss with a class-D amp and a noise-cancelling kit.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Efficient class-D audio amp</li><li>De-Hiss / Dehum kit (capacitors)</li><li>Hiss removal</li><li>Significantly increased volume</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Class-D amp + filter</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Multiplied volume</li><li>Cleaner sound</li><li>De-Hiss filters CPU/SRAM/regulator noise</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li><li>De-Hiss recommended alongside the amp</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" target="_blank" rel="noopener nofollow">RetroSix ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" target="_blank" rel="noopener">Handheld Legend — CleanAmp Pro GBA</a> · <a href="https://handheldlegend.com/products/game-boy-advance-wire-free-dehum-dehiss-kit" target="_blank" rel="noopener">Handheld Legend — Wire-Free Dehum Dehiss</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20CleanAmp%20%26%20De-Hiss&console=Game%20Boy%20Advance&mod=CleanAmp%20%26%20De-Hiss%20(id%3A%20gba_cleanamp_dehiss)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_bucket_amp">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="NatalieTheNerd Bucket Amp for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">Bucket Amp GBA</h3>
+                        <p class="mod-desc">Fully replaces the original amplifier circuit for radically superior sound.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes (fine components)</div></div>
+                        <ul class="mod-features"><li>Full replacement of the original sound circuit</li><li>Loud, clean sound</li><li>Based on the Bucket Mouse amp (MGBC)</li><li>Results far beyond a simple boost</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Amp replacement</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Solid fine-soldering skills</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Exceptional sound quality</li><li>Replaces a dated design rather than boosting it</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Small-component soldering: a tough mod for beginners</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://nataliethenerd.com/products/bucket-amp-gba" target="_blank" rel="noopener nofollow">NatalieTheNerd ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://nataliethenerd.com/products/bucket-amp-gba" target="_blank" rel="noopener">NatalieTheNerd — Bucket Amp GBA</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20Bucket%20Amp%20GBA&console=Game%20Boy%20Advance&mod=Bucket%20Amp%20GBA%20(id%3A%20gba_bucket_amp)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_cgs_speakers">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Cloud Game Store colored speakers for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Cloud Game Store</div>
+                        <h3 class="mod-name">Colored Speakers GBA</h3>
+                        <p class="mod-desc">Colored replacement speakers to customize and improve your GBA's sound.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No (or minimal)</div></div>
+                        <ul class="mod-features"><li>Several colors available</li><li>Better sound output</li><li>Direct replacement</li></ul>
+                        <dl class="mod-specs"><div><dt>Format</dt><dd>Stock GBA</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Direct replacement</li><li>Improves a worn speaker</li><li>Aesthetic touch</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Limited gain without a dedicated amp</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20Colored%20Speakers%20GBA&console=Game%20Boy%20Advance&mod=Colored%20Speakers%20GBA%20(id%3A%20gba_cgs_speakers)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-buttons">
+                <div class="section-header">
+                    <span class="section-icon">🔘</span>
+                    <h2 class="section-name">Buttons</h2>
+                </div>
+                <p class="section-intro">Fix the mushy feel of the original membrane buttons and customize the colors: clicky tactile conversion and custom buttons.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="gba_tactile_pcb">
+                        <div class="mod-card-top"><span class="mod-badge">Clicky</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, soldering">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Handheld Legend tactile-conversion PCB for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">Tactile Conversion PCB</h3>
+                        <p class="mod-desc">Replace the soft membranes with clicky tactile switches on all the GBA's buttons, for a GBA SP-style feel.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 No (flex mount)</div></div>
+                        <ul class="mod-features"><li>All face buttons (+ shoulders with clicky triggers)</li><li>GBA SP-style clicky feel</li><li>Tactile-conversion flex PCB</li><li>Compatible with IPS kits</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Tactile flex PCB</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : Buttons and membranes to plan for</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No more mushy stock feel</li><li>Satisfying clicky buttons</li><li>Compatible with modern screens</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Slightly firmer press (two-stage feel)</li><li>Membrane adjustment sometimes needed (Start/Select)</li><li>Shell can be tight to close</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" target="_blank" rel="noopener">Handheld Legend — Tactile Conversion PCB</a> · <a href="https://github.com/Zekfoo/tactileAGB" target="_blank" rel="noopener">GitHub — Zekfoo/tactileAGB</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20Tactile%20Conversion%20PCB&console=Game%20Boy%20Advance&mod=Tactile%20Conversion%20PCB%20(id%3A%20gba_tactile_pcb)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="gba_fp_buttons">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying custom buttons for Game Boy Advance"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">GBA Custom Buttons</h3>
+                        <p class="mod-desc">Colorful replacement buttons to customize the look of your GBA.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Wide range of colors</li><li>Quality material</li><li>Easy install</li></ul>
+                        
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Good value for money</li><li>Lots of colors</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/agb-custom-buttons" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20Advance%20%E2%80%94%20GBA%20Custom%20Buttons&console=Game%20Boy%20Advance&mod=GBA%20Custom%20Buttons%20(id%3A%20gba_fp_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <p class="console-sources">General sources : <a href="https://gbwiki.org/other/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

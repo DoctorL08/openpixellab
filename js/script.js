@@ -271,8 +271,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    let currentLang = localStorage.getItem('lang') || 'fr';
+    // Sur une fiche console (générée bilingue), la langue est imposée par la page.
+    const pageLang = typeof window.OPL_PAGE_LANG !== 'undefined' ? window.OPL_PAGE_LANG : null;
+    let currentLang = pageLang || localStorage.getItem('lang') || 'fr';
+    if (pageLang) localStorage.setItem('lang', pageLang);
     const langToggleBtn = document.getElementById('lang-toggle');
+
+    // Sur une fiche console, le toggle navigue vers l'URL équivalente (FR ↔ EN)
+    // au lieu de simplement échanger le texte data-i18n.
+    function consoleCounterpartUrl(targetLang) {
+        if (!pageLang) return null;
+        const path = window.location.pathname;
+        const isEn = path.includes('/wiki/en/');
+        if (targetLang === 'en') return isEn ? null : path.replace('/wiki/', '/wiki/en/');
+        return isEn ? path.replace('/wiki/en/', '/wiki/') : null;
+    }
     const langIcon = langToggleBtn ? langToggleBtn.querySelector('.lang-icon') : null;
 
     function applyTranslations(lang) {
@@ -299,15 +312,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
+        localizeWikiLinks(lang);
+
         if (langIcon) {
             langIcon.textContent = lang === 'fr' ? 'FR' : 'EN';
         }
     }
 
+    // Réécrit les liens vers les fiches console (wiki/<slug>.html ↔ wiki/en/<slug>.html)
+    // selon la langue active. N'affecte pas wiki.html, index.html, etc.
+    function localizeWikiLinks(lang) {
+        document.querySelectorAll('a[href]').forEach((a) => {
+            const href = a.getAttribute('href');
+            const m = href && href.match(/^wiki\/(?:en\/)?([a-z0-9_-]+)\.html(#.*)?$/i);
+            if (!m) return;
+            const slug = m[1];
+            const hash = m[2] || '';
+            a.setAttribute('href', lang === 'en' ? `wiki/en/${slug}.html${hash}` : `wiki/${slug}.html${hash}`);
+        });
+    }
+
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'fr' ? 'en' : 'fr';
-            localStorage.setItem('lang', currentLang);
+            const next = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('lang', next);
+            const target = consoleCounterpartUrl(next);
+            if (target) { window.location.href = target; return; }
+            currentLang = next;
             applyTranslations(currentLang);
         });
         

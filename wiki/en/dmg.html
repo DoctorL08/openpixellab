@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var t=localStorage.getItem('opl-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to Game Boy DMG-001 mods: IPS screen kits (FunnyPlaying, Hispeedido), USB-C batteries, RGB LEDs, audio and buttons. Difficulty, price, prerequisites.">
+    <link rel="canonical" href="https://openpixel-lab.com/wiki/en/dmg.html">
+    <link rel="alternate" hreflang="fr" href="https://openpixel-lab.com/wiki/dmg.html">
+    <link rel="alternate" hreflang="en" href="https://openpixel-lab.com/wiki/en/dmg.html">
+    <link rel="alternate" hreflang="x-default" href="https://openpixel-lab.com/wiki/dmg.html">
+    <title>Game Boy DMG (Original) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Game Boy DMG (Original) Mods — IPS Screens, USB-C, Audio | OpenPixel Lab">
+    <meta property="og:description" content="Complete guide to Game Boy DMG-001 mods: IPS screen kits (FunnyPlaying, Hispeedido), USB-C batteries, RGB LEDs, audio and buttons. Difficulty, price, prerequisites.">
+    <meta property="og:image" content="../../Images/Logo OpenPixel Lab.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../../Images/Logo OpenPixel Lab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/console-page.css">
+</head>
+<body>
+    <script>window.OPL_PAGE_LANG = "en";</script>
+    <div class="scanlines"></div>
+    <script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"../../index.html"},{"@type":"ListItem","position":2,"name":"Wiki","item":"../../wiki.html"},{"@type":"ListItem","position":3,"name":"Game Boy DMG"}]},{"@context":"https://schema.org","@type":"ItemList","name":"Mods — Game Boy DMG-001","numberOfItems":16,"itemListElement":[{"@type":"ListItem","position":1,"name":"FunnyPlaying RetroPixel IPS Q5 Kit"},{"@type":"ListItem","position":2,"name":"FunnyPlaying RetroPixel IPS Laminated Kit"},{"@type":"ListItem","position":3,"name":"Hispeedido V4 Q5 IPS LCD (OSD)"},{"@type":"ListItem","position":4,"name":"Hispeedido V5 Ultra IPS LCD (OSD)"},{"@type":"ListItem","position":5,"name":"RetroSix CleanJuice Original (2500mAh)"},{"@type":"ListItem","position":6,"name":"RetroSix CleanJuice XL (3000mAh)"},{"@type":"ListItem","position":7,"name":"RetroSix CleanPower v2.0"},{"@type":"ListItem","position":8,"name":"Division 6 GBAccelerator (Overclock)"},{"@type":"ListItem","position":9,"name":"Handheld Legend RetroGlow DMG"},{"@type":"ListItem","position":10,"name":"NatalieTheNerd ARC DMG (RGB LEDs)"},{"@type":"ListItem","position":11,"name":"RetroSix CleanAmp DMG"},{"@type":"ListItem","position":12,"name":"FunnyPlaying Clear DMG Speaker"},{"@type":"ListItem","position":13,"name":"RetroSix Prestige Buttons DMG"},{"@type":"ListItem","position":14,"name":"RetroSix Prestige Silicone Membranes DMG"},{"@type":"ListItem","position":15,"name":"FunnyPlaying Custom Buttons DMG"},{"@type":"ListItem","position":16,"name":"FunnyPlaying Replacement Silicone Pads DMG"}]}]
+    </script>
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-container" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+                <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img theme-logo">
+                <span class="logo-text">OpenPixel Lab</span>
+            </div>
+            <div class="nav-right">
+                <nav class="nav-links" id="nav-links">
+                    <a href="../../index.html" class="nav-link" data-i18n="nav_home">Accueil</a>
+                    <a href="../../wiki.html" class="nav-link active" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" class="nav-link" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" class="nav-link" data-i18n="nav_partners">Partenaires</a>
+                    <a href="../../index.html#communaute" class="nav-link btn-primary" data-i18n="nav_join">Rejoindre la commu</a>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-icon">FR</span>
+                    </button>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle theme-moon" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="console-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a> ›
+                <a href="../../wiki.html">Wiki</a> ›
+                <span>Game Boy DMG</span>
+            </nav>
+
+            <header class="console-hero">
+                <div class="badge">Handheld Console</div>
+                <h1 class="console-title">Gameboy <span class="highlight">DMG-001</span></h1>
+                <p class="console-subtitle">The original &quot;Brick&quot; that started it all. Learn how to restore and elevate Nintendo's legendary console.</p>
+                <div class="console-stats">
+                    <span>1989</span> · <span>16 mods listed</span>
+                </div>
+
+            <div class="console-cross-links">
+                <a class="cross-link" href="../../configurator.html">🎨 Customize in 3D</a>
+                <a class="cross-link" href="../../comparator.html">⚖️ Compare setups</a>
+            </div>
+            </header>
+
+            <p class="console-intro">The Game Boy DMG-001 (1989) is the most documented modding platform in the world. Roomy shell, simple electronics and a huge community: it's the ideal console for a first project as well as a high-end custom. Here are the go-to mods, sorted by category.</p>
+
+            <nav class="console-toc" aria-label="Sections overview"><a href="#section-display" class="console-toc-link">📺 Display</a><a href="#section-power" class="console-toc-link">⚡ Power &amp; Performance</a><a href="#section-audio" class="console-toc-link">🔊 Lighting &amp; Audio</a><a href="#section-buttons" class="console-toc-link">🔘 Buttons</a></nav>
+
+            <section class="mod-section" id="section-display">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-name">Display</h2>
+                </div>
+                <p class="section-intro">The most transformative mod: replacing the original reflective panel with a backlit IPS screen. Almost every IPS kit needs clean power (see CleanPower under Power).</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="dmg_fp_q5">
+                        <div class="mod-card-top"><span class="mod-badge">Popular</span><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying RetroPixel Q5 IPS kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">RetroPixel IPS Q5 Kit</h3>
+                        <p class="mod-desc">A giant IPS panel for absolute clarity and customizable color palettes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal (speaker only)</div></div>
+                        <ul class="mod-features"><li>Panel ~11% larger than stock</li><li>Adjustable brightness (contrast wheel)</li><li>OSD: 15 brightness levels, 36 palettes, 4 pixel effects</li><li>Nearly solder-free (except the speaker)</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Q5</dd></div><div><dt>Size</dt><dd>+11% vs stock</dd></div><div><dt>OSD</dt><dd>Yes (15/36/4)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended (stable power)</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Crystal-clear image</li><li>Bright backlight</li><li>Color palettes</li><li>Beginner-friendly install</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Higher battery drain</li><li>CleanPower strongly recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a><a class="mod-buy-link" href="https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" target="_blank" rel="noopener">FunnyPlaying — DMG RetroPixel IPS Q5</a> · <a href="https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" target="_blank" rel="noopener">Handheld Legend — Retro Pixel Q5</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20RetroPixel%20IPS%20Q5%20Kit&console=Game%20Boy%20DMG&mod=RetroPixel%20IPS%20Q5%20Kit%20(id%3A%20dmg_fp_q5)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_fp_q5_lam">
+                        <div class="mod-card-top"><span class="mod-badge">Laminated</span><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying laminated IPS kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">RetroPixel IPS Laminated Kit</h3>
+                        <p class="mod-desc">The laminated version of the RetroPixel: zero dust under the glass and an even sharper image.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal (speaker only)</div></div>
+                        <ul class="mod-features"><li>Glass laminated to the panel</li><li>Zero stray reflections</li><li>Customizable color palettes</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Laminated IPS Q5</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Superior contrast and sharpness</li><li>No trapped dust</li><li>Factory look</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Pricier than the non-laminated version</li><li>CleanPower recommended</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        <p class="mod-sources">Sources : <a href="https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" target="_blank" rel="noopener">FunnyPlaying — DMG RetroPixel IPS Laminated Q5</a></p>
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20RetroPixel%20IPS%20Laminated%20Kit&console=Game%20Boy%20DMG&mod=RetroPixel%20IPS%20Laminated%20Kit%20(id%3A%20dmg_fp_q5_lam)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_hsd_v4">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido V4 Q5 IPS kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V4 Q5 IPS LCD (OSD)</h3>
+                        <p class="mod-desc">IPS kit with a full OSD menu to adjust brightness, colors and pixel effects on the fly.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal</div></div>
+                        <ul class="mod-features"><li>Built-in OSD menu</li><li>Scanline effects</li><li>Multi-level brightness</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Q5</dd></div><div><dt>OSD</dt><dd>Yes</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Rich OSD</li><li>Good value for money</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Sometimes sparse instructions</li><li>CleanPower recommended</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20V4%20Q5%20IPS%20LCD%20(OSD)&console=Game%20Boy%20DMG&mod=V4%20Q5%20IPS%20LCD%20(OSD)%20(id%3A%20dmg_hsd_v4)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_hsd_v5">
+                        <div class="mod-card-top"><span class="mod-badge">New</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="Hispeedido V5 Ultra IPS kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">Hispeedido</div>
+                        <h3 class="mod-name">V5 Ultra IPS LCD (OSD)</h3>
+                        <p class="mod-desc">The upgraded version with maximum brightness and extra display modes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Easy"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Easy</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Minimal</div></div>
+                        <ul class="mod-features"><li>Ultra-high brightness</li><li>Advanced OSD</li><li>Extra display modes</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>IPS Ultra</dd></div><div><dt>OSD</dt><dd>Yes (advanced)</dd></div></dl>
+                        <p class="mod-prereq">⚠ Prerequisites : CleanPower recommended</p>
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Very bright</li><li>Full OSD</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Higher power draw</li><li>CleanPower recommended</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20V5%20Ultra%20IPS%20LCD%20(OSD)&console=Game%20Boy%20DMG&mod=V5%20Ultra%20IPS%20LCD%20(OSD)%20(id%3A%20dmg_hsd_v5)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-power">
+                <div class="section-header">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="section-name">Power &amp; Performance</h2>
+                </div>
+                <p class="section-intro">Ditch the 4 AA batteries for a rechargeable USB-C battery, stabilize power for an IPS screen, or overclock the console.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="dmg_cleanjuice">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanJuice USB-C battery for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice Original (2500mAh)</h3>
+                        <p class="mod-desc">No more 4 AA batteries. Switch to a 2500mAh rechargeable USB-C battery.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>USB-C charging</li><li>No-trim installation</li><li>Long battery life</li></ul>
+                        <dl class="mod-specs"><div><dt>Capacity</dt><dd>2500 mAh</dd></div><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>No more batteries to buy</li><li>Modern USB-C</li><li>Installs without modifying the shell</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Board soldering required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20CleanJuice%20Original%20(2500mAh)&console=Game%20Boy%20DMG&mod=CleanJuice%20Original%20(2500mAh)%20(id%3A%20dmg_cleanjuice)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_cleanjuice_xl">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanJuice XL USB-C battery for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanJuice XL (3000mAh)</h3>
+                        <p class="mod-desc">The high-capacity version of the CleanJuice for maximum battery life.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>3000 mAh capacity</li><li>USB-C charging</li><li>Same form factor as the original</li></ul>
+                        <dl class="mod-specs"><div><dt>Capacity</dt><dd>3000 mAh</dd></div><div><dt>Charging</dt><dd>USB-C</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Maximum battery life</li><li>USB-C</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20CleanJuice%20XL%20(3000mAh)&console=Game%20Boy%20DMG&mod=CleanJuice%20XL%20(3000mAh)%20(id%3A%20dmg_cleanjuice_xl)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_cleanpower">
+                        <div class="mod-card-top"><span class="mod-badge">Essential</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanPower power module for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanPower v2.0</h3>
+                        <p class="mod-desc">Replace the stock voltage regulator for clean, stable power, essential with an IPS mod.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 20–30 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>Stable 5V power</li><li>Prevents random reboots</li><li>Compatible with all IPS kits</li></ul>
+                        <dl class="mod-specs"><div><dt>Output</dt><dd>Stable 5V</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Eliminates dropouts with an IPS screen</li><li>Clean voltage</li><li>Low price</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20CleanPower%20v2.0&console=Game%20Boy%20DMG&mod=CleanPower%20v2.0%20(id%3A%20dmg_cleanpower)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_gbaccelerator">
+                        <div class="mod-card-top"><span class="mod-badge">Speed</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty, brand">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="GBAccelerator overclock module for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">Division 6</div>
+                        <h3 class="mod-name">GBAccelerator (Overclock)</h3>
+                        <p class="mod-desc">Boost your games' speed (x1.5, x1.75, x2) to speed up farming or slow dialogue.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>4 speed modes</li><li>Button control</li><li>LED speed indicator</li></ul>
+                        <dl class="mod-specs"><div><dt>Modes</dt><dd>x1 / x1.5 / x1.75 / x2</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Speeds up slow games</li><li>Reversible</li><li>Fun</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li><li>Some games may glitch when overclocked</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20GBAccelerator%20(Overclock)&console=Game%20Boy%20DMG&mod=GBAccelerator%20(Overclock)%20(id%3A%20dmg_gbaccelerator)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-audio">
+                <div class="section-header">
+                    <span class="section-icon">🔊</span>
+                    <h2 class="section-name">Lighting &amp; Audio</h2>
+                </div>
+                <p class="section-intro">Light up the buttons in RGB and improve the often-weak stock sound.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="dmg_retroglow">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroGlow RGB LED kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">Handheld Legend</div>
+                        <h3 class="mod-name">RetroGlow DMG</h3>
+                        <p class="mod-desc">The most advanced RGB LED kit to light up your buttons in style.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>Fully customizable</li><li>Animation modes</li><li>Button-combo control</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>RGB LED</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Spectacular visual effect</li><li>Customizable</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering</li><li>Extra power draw</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://handheldlegend.com" target="_blank" rel="noopener nofollow">Handheld Legend ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20RetroGlow%20DMG&console=Game%20Boy%20DMG&mod=RetroGlow%20DMG%20(id%3A%20dmg_retroglow)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_arc">
+                        <div class="mod-card-top"><span class="mod-badge">RGB</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks, difficulty">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="NatalieTheNerd ARC RGB LED kit for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">NatalieTheNerd</div>
+                        <h3 class="mod-name">ARC DMG (RGB LEDs)</h3>
+                        <p class="mod-desc">NatalieTheNerd's original LED kit. 11 colors to choose from with animation modes.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Advanced"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="mod-diff-label">Advanced</span></span></div><div class="mod-meta-item mod-price">€€</div><div class="mod-meta-item">⏱ 45–60 min</div><div class="mod-meta-item">🔧 Yes (fine)</div></div>
+                        <ul class="mod-features"><li>11 colors available</li><li>Very low power draw</li><li>4 brightness levels</li></ul>
+                        <dl class="mod-specs"><div><dt>Colors</dt><dd>11</dd></div><div><dt>Brightness</dt><dd>4 levels</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Low power draw</li><li>Fine adjustments</li><li>Designed by a respected modder</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Fine soldering</li></ul></div></div>
+                        
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20ARC%20DMG%20(RGB%20LEDs)&console=Game%20Boy%20DMG&mod=ARC%20DMG%20(RGB%20LEDs)%20(id%3A%20dmg_arc)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_cleanamp">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix CleanAmp audio amplifier for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">CleanAmp DMG</h3>
+                        <p class="mod-desc">Boost your Game Boy's volume with this high-performance amplifier.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Intermediate"><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Intermediate</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 30–45 min</div><div class="mod-meta-item">🔧 Yes</div></div>
+                        <ul class="mod-features"><li>Clear, powerful sound</li><li>2W speaker included</li><li>Active noise filtering</li></ul>
+                        <dl class="mod-specs"><div><dt>Power</dt><dd>2W</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Much higher volume</li><li>Cleaner sound</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Soldering required</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20CleanAmp%20DMG&console=Game%20Boy%20DMG&mod=CleanAmp%20DMG%20(id%3A%20dmg_cleanamp)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_clear_speaker">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying replacement speaker for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">Clear DMG Speaker</h3>
+                        <p class="mod-desc">High-quality replacement speaker to restore clear, loud sound.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No (or minimal)</div></div>
+                        <ul class="mod-features"><li>Crystal-clear sound</li><li>Direct fit</li><li>Original form factor</li></ul>
+                        <dl class="mod-specs"><div><dt>Format</dt><dd>Stock DMG</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Direct replacement</li><li>Improves a worn speaker</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Limited gain without an amp</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/clear-dmg-speaker" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20Clear%20DMG%20Speaker&console=Game%20Boy%20DMG&mod=Clear%20DMG%20Speaker%20(id%3A%20dmg_clear_speaker)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mod-section" id="section-buttons">
+                <div class="section-header">
+                    <span class="section-icon">🔘</span>
+                    <h2 class="section-name">Buttons</h2>
+                </div>
+                <p class="section-intro">Restore a fresh feel and customize the colors: buttons and silicone membranes.</p>
+                <div class="mods-grid">
+                    <article class="mod-card" id="dmg_prestige_buttons">
+                        <div class="mod-card-top"><span class="mod-badge">Premium</span><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix Prestige premium buttons for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">Prestige Buttons DMG</h3>
+                        <p class="mod-desc">Premium replacement buttons to restore a perfect feel on your DMG.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>High-quality material</li><li>Feel close to the original</li><li>Several colors available</li></ul>
+                        <dl class="mod-specs"><div><dt>Material</dt><dd>Premium</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Premium feel</li><li>Wide color selection</li></ul></div><div class="mod-cons"><span class="mod-pc-title">Trade-offs</span><ul class="mod-pc-list cons"><li>Pricier than generic buttons</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20Prestige%20Buttons%20DMG&console=Game%20Boy%20DMG&mod=Prestige%20Buttons%20DMG%20(id%3A%20dmg_prestige_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_prestige_membranes">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price, buyLinks">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="RetroSix Prestige silicone membranes for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">RetroSix</div>
+                        <h3 class="mod-name">Prestige Silicone Membranes DMG</h3>
+                        <p class="mod-desc">High-quality conductive silicone membranes to restore button responsiveness.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Optimized conductivity</li><li>Extended lifespan</li><li>Direct replacement</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Conductive silicone</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Restored responsiveness</li><li>Higher quality than generic</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://retrosix.co.uk" target="_blank" rel="noopener nofollow">RetroSix ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20Prestige%20Silicone%20Membranes%20DMG&console=Game%20Boy%20DMG&mod=Prestige%20Silicone%20Membranes%20DMG%20(id%3A%20dmg_prestige_membranes)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_fp_buttons">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying custom buttons for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">Custom Buttons DMG</h3>
+                        <p class="mod-desc">Colorful replacement buttons to customize the look of your DMG.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Wide range of colors</li><li>Quality material</li><li>Easy install</li></ul>
+                        
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Good value for money</li><li>Lots of colors</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/gb-dmg-custom-buttons" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20Custom%20Buttons%20DMG&console=Game%20Boy%20DMG&mod=Custom%20Buttons%20DMG%20(id%3A%20dmg_fp_buttons)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                    <article class="mod-card" id="dmg_fp_pads">
+                        <div class="mod-card-top"><span class="mod-review" title="Pending moderator review : image, price">⚑ under review</span></div>
+                        <div class="mod-img mod-img--placeholder" role="img" aria-label="FunnyPlaying replacement silicone membranes for Game Boy DMG"><span>📷</span></div>
+                        <div class="mod-brand">FunnyPlaying</div>
+                        <h3 class="mod-name">Replacement Silicone Pads DMG</h3>
+                        <p class="mod-desc">Replacement silicone membranes to bring worn buttons back to life.</p>
+                        <div class="mod-meta"><div class="mod-meta-item"><span class="mod-diff" title="Very easy"><span class="diff-dot filled"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="diff-dot"></span><span class="mod-diff-label">Very easy</span></span></div><div class="mod-meta-item mod-price">€</div><div class="mod-meta-item">⏱ 10–15 min</div><div class="mod-meta-item">🔧 No</div></div>
+                        <ul class="mod-features"><li>Compatible with all DMG buttons</li><li>Restored responsiveness</li><li>Easy to install</li></ul>
+                        <dl class="mod-specs"><div><dt>Type</dt><dd>Silicone</dd></div></dl>
+                        
+                        <div class="mod-proscons"><div class="mod-pros"><span class="mod-pc-title">Strengths</span><ul class="mod-pc-list pros"><li>Affordable</li><li>Instant install</li></ul></div></div>
+                        <div class="mod-buy"><a class="mod-buy-link" href="https://funnyplaying.com/products/replacement-silicone-pads-for-gb-dmg" target="_blank" rel="noopener nofollow">FunnyPlaying ↗</a></div>
+                        
+                        <div class="mod-footer-actions"><a class="mod-suggest" href="https://github.com/DoctorL08/openpixellab/issues/new?template=mod-correction.yml&title=%5BCorrection%5D%20Game%20Boy%20DMG%20%E2%80%94%20Replacement%20Silicone%20Pads%20DMG&console=Game%20Boy%20DMG&mod=Replacement%20Silicone%20Pads%20DMG%20(id%3A%20dmg_fp_pads)" target="_blank" rel="noopener nofollow" title="Report an error or suggest an improvement">✏️ Suggest a correction</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <p class="console-sources">General sources : <a href="https://gameboy.github.io/wiki/backlightmods" target="_blank" rel="noopener">Game Boy Modding Wiki — Backlight Mods</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../../Images/Logo OpenPixel Lab clear.png" alt="OpenPixel Lab Logo" class="logo-img-small theme-logo">
+                    <span class="logo-text">OpenPixel Lab</span>
+                </div>
+                <p data-i18n="footer_brand_desc">Le wiki de référence pour le modding retrogaming.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);" data-i18n="footer_brand_credit">Créé avec passion par Doctor L.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 data-i18n="footer_res_title">Ressources</h4>
+                    <a href="../../wiki.html" data-i18n="nav_wiki">Wiki</a>
+                    <a href="../../tools.html" data-i18n="nav_tools">Tools</a>
+                    <a href="../../partenaires.html" data-i18n="nav_partners">Partenaires</a>
+                </div>
+                <div class="link-group">
+                    <h4 data-i18n="footer_proj_title">Projet</h4>
+                    <a href="../../about.html" data-i18n="footer_about">À propos</a>
+                    <a href="https://discord.gg/jgE5CAmXw2" target="_blank" rel="noopener" data-i18n="banner_btn">Discord</a>
+                    <a href="../../contribution.html" data-i18n="footer_donate">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 OpenPixel Lab. Wiki open-source.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
