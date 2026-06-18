@@ -77,8 +77,8 @@
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-kit-1" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }],
           "sources": [{ "label": "FunnyPlaying — GBC Retro Pixel IPS LCD Kit", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-kit-1" }, { "label": "Handheld Legend — GBC Retro Pixel Q5 IPS", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-funnyplaying" }, { "label": "Handheld Legend — IPS LCD Kit docs", "url": "https://docs.handheldlegend.com/s/portal/doc/ips-lcd-kit-tBBmn80iqm" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS RetroPixel FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying RetroPixel IPS kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/gbc_fp_retropixel.webp", "alt": { "fr": "Kit IPS RetroPixel FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying RetroPixel IPS kit for Game Boy Color" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "gbc_fp_q5_laminated",
@@ -113,8 +113,8 @@
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-2-0-replacement-laminated-display" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
           "sources": [{ "label": "FunnyPlaying — GBC Retro Pixel IPS LCD 2.0 Laminated", "url": "https://funnyplaying.com/products/gbc-retro-pixel-ips-lcd-2-0-replacement-laminated-display" }, { "label": "Handheld Legend — GBC Retro Pixel 2.0 Q5 IPS laminé", "url": "https://handheldlegend.com/products/game-boy-color-q5-retro-pixel-ips-lcd-kit-with-laminated-lens-funnyplaying" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS laminé Q5 V2.0 FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying Q5 V2.0 laminated IPS kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "specs"]
+          "image": { "src": "Images/mods/gbc_fp_q5_laminated.webp", "alt": { "fr": "Kit IPS laminé Q5 V2.0 FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying Q5 V2.0 laminated IPS kit for Game Boy Color" }, "credit": "FunnyPlaying" },
+          "needsReview": ["specs"]
         },
         {
           "id": "gbc_hsd_amoled",
@@ -149,8 +149,8 @@
           "scoreImpact": { "image": 5, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" }],
           "sources": [{ "label": "Handheld Legend — GBC AMOLED laminé Hispeedido", "url": "https://handheldlegend.com/products/laminated-amoled-retro-pixel-touch-screen-kit-for-game-boy-color-hispeedido" }],
-          "image": { "src": "", "alt": { "fr": "Kit AMOLED laminé Hispeedido pour Game Boy Color", "en": "Hispeedido laminated AMOLED kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbc_hsd_amoled.webp", "alt": { "fr": "Kit AMOLED laminé Hispeedido pour Game Boy Color", "en": "Hispeedido laminated AMOLED kit for Game Boy Color" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbc_hsd_ips_dropin",
@@ -184,7 +184,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit IPS drop-in 2.45 pouces Hispeedido pour Game Boy Color", "en": "Hispeedido 2.45-inch drop-in IPS kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cgs_tft",
@@ -218,7 +218,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit TFT LCD rétroéclairé Cloud Game Store pour Game Boy Color", "en": "Cloud Game Store backlit TFT LCD kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
         }
       ]
     },
@@ -262,8 +262,8 @@
           "prerequisites": { "fr": ["Coque Prestige RetroSix recommandée"], "en": ["RetroSix Prestige shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" }, { "label": "RetroSix", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }],
           "sources": [{ "label": "Handheld Legend — CleanJuice Air GBC", "url": "https://handheldlegend.com/products/cleanjuice-air-game-boy-color-rechargeable-battery-module-with-usb-c-compatibility" }],
-          "image": { "src": "", "alt": { "fr": "Batterie CleanJuice Air RetroSix USB-C/Qi pour Game Boy Color", "en": "RetroSix CleanJuice Air USB-C/Qi battery for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "specs"]
+          "image": { "src": "Images/mods/gbc_cleanjuice_air.webp", "alt": { "fr": "Batterie CleanJuice Air RetroSix USB-C/Qi pour Game Boy Color", "en": "RetroSix CleanJuice Air USB-C/Qi battery for Game Boy Color" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "specs"]
         },
         {
           "id": "gbc_fp_charging",
@@ -296,8 +296,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-battery-charging-mod" }],
           "sources": [{ "label": "FunnyPlaying — GBC Battery Charging Mod", "url": "https://funnyplaying.com/products/gbc-battery-charging-mod" }],
-          "image": { "src": "", "alt": { "fr": "Module de recharge Li-Po USB-C FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying USB-C Li-Po charging module for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs", "soldering", "installTime"]
+          "image": { "src": "Images/mods/gbc_fp_charging.webp", "alt": { "fr": "Module de recharge Li-Po USB-C FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying USB-C Li-Po charging module for Game Boy Color" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cleanpower",
@@ -331,8 +331,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Color", "en": "RetroSix CleanPower regulator for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "specs"]
+          "image": { "src": "Images/mods/gbc_cleanpower.webp", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Color", "en": "RetroSix CleanPower regulator for Game Boy Color" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks", "specs"]
         },
         {
           "id": "gbc_frogulator",
@@ -366,7 +366,7 @@
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/" }],
           "sources": [{ "label": "FroggoCustoms — boutique", "url": "https://froggocustoms.com/collections/all" }],
           "image": { "src": "", "alt": { "fr": "Régulateur Frogulator FroggoCustoms pour Game Boy Color", "en": "FroggoCustoms Frogulator regulator for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "soldering", "installTime"]
+          "needsReview": ["image", "buyLinks", "difficulty", "soldering", "installTime"]
         },
         {
           "id": "gbc_gbaccelerator",
@@ -401,7 +401,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator pour Game Boy Color", "en": "GBAccelerator overclock module for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs", "soldering", "installTime", "brand"]
         }
       ]
     },
@@ -446,8 +446,8 @@
           "prerequisites": { "fr": ["Boutons transparents recommandés"], "en": ["Transparent buttons recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" }],
           "sources": [{ "label": "Handheld Legend — RetroGlow GBC", "url": "https://handheldlegend.com/products/game-boy-color-rgb-led-button-kit" }, { "label": "HHL Wiki — RetroGlow GBC Install Guide", "url": "https://wiki.handheldlegend.com/retroglow-for-gbc-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow Handheld Legend pour Game Boy Color", "en": "Handheld Legend RetroGlow RGB LED kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbc_retroglow.webp", "alt": { "fr": "Kit LED RGB RetroGlow Handheld Legend pour Game Boy Color", "en": "Handheld Legend RetroGlow RGB LED kit for Game Boy Color" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbc_arc",
@@ -481,8 +481,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/arc-gbc-rgb-leds" }],
           "sources": [{ "label": "NatalieTheNerd — ARC GBC RGB", "url": "https://nataliethenerd.com/products/arc-gbc-rgb-leds" }, { "label": "NatalieTheNerd — ARC GBC Install Guide", "url": "https://nataliethenerd.com/pages/arc-gbc-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Board LED RGB ARC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd ARC RGB LED board for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+          "image": { "src": "Images/mods/gbc_arc.webp", "alt": { "fr": "Board LED RGB ARC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd ARC RGB LED board for Game Boy Color" }, "credit": "NatalieTheNerd" },
+          "needsReview": ["buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gbc_fp_button_led",
@@ -516,8 +516,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbc-button-led-kit" }],
           "sources": [{ "label": "FunnyPlaying — GBC Button LED Kit", "url": "https://funnyplaying.com/products/gbc-button-led-kit" }],
-          "image": { "src": "", "alt": { "fr": "Kit LED boutons FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying button LED kit for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs", "soldering", "installTime"]
+          "image": { "src": "Images/mods/gbc_fp_button_led.webp", "alt": { "fr": "Kit LED boutons FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying button LED kit for Game Boy Color" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs", "soldering", "installTime"]
         },
         {
           "id": "gbc_cleanamp",
@@ -550,8 +550,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/Game-Boy-Color-CleanAmp-Pro-p492501547" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/copy-of-game-boy-color-cleanamp-pro-retrosix" }],
           "sources": [{ "label": "RetroSix Wiki — GBC CleanAmp Install Guide", "url": "https://www.retrosix.wiki/gbc-cleanamp-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Color", "en": "RetroSix CleanAmp Pro audio amplifier for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbc_cleanamp.webp", "alt": { "fr": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Color", "en": "RetroSix CleanAmp Pro audio amplifier for Game Boy Color" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbc_bucket_amp",
@@ -584,8 +584,8 @@
           "prerequisites": { "fr": ["Carte mère compatible (EM2/3/4)"], "en": ["Compatible motherboard (EM2/3/4)"] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/pages/bucket-amp-gbc" }],
           "sources": [{ "label": "NatalieTheNerd — Bucket Amp GBC", "url": "https://nataliethenerd.com/pages/bucket-amp-gbc" }, { "label": "GitHub — BucketAmpGBC", "url": "https://github.com/nataliethenerd/BucketAmpGBC" }],
-          "image": { "src": "", "alt": { "fr": "Board Bucket Amp GBC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd Bucket Amp GBC board for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime"]
+          "image": { "src": "Images/mods/gbc_bucket_amp.webp", "alt": { "fr": "Board Bucket Amp GBC NatalieTheNerd pour Game Boy Color", "en": "NatalieTheNerd Bucket Amp GBC board for Game Boy Color" }, "credit": "NatalieTheNerd" },
+          "needsReview": ["buyLinks", "installTime"]
         },
         {
           "id": "gbc_hhl_wirefree_amp",
@@ -618,8 +618,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" }],
           "sources": [{ "label": "Handheld Legend — GBC Wire Free Audio Amplifier", "url": "https://handheldlegend.com/products/game-boy-color-wire-free-audio-amplifier" }],
-          "image": { "src": "", "alt": { "fr": "Amplificateur audio sans câble Handheld Legend pour Game Boy Color", "en": "Handheld Legend wire-free audio amplifier for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "soldering", "installTime"]
+          "image": { "src": "Images/mods/gbc_hhl_wirefree_amp.webp", "alt": { "fr": "Amplificateur audio sans câble Handheld Legend pour Game Boy Color", "en": "Handheld Legend wire-free audio amplifier for Game Boy Color" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs", "soldering", "installTime"]
         }
       ]
     },
@@ -664,8 +664,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" }],
           "sources": [{ "label": "FroggoCustoms — Tactile Button Mod V2", "url": "https://froggocustoms.com/products/game-boy-color-wire-free-tactile-button-mod-v2" }, { "label": "FroggoCustoms — Tactile Switch Mod (guide)", "url": "https://froggocustoms.com/blogs/installation-guides/game-boy-color-tactile-switch-mod" }],
-          "image": { "src": "", "alt": { "fr": "Mod boutons tactiles V2 FroggoCustoms pour Game Boy Color", "en": "FroggoCustoms V2 tactile button mod for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+          "image": { "src": "Images/mods/gbc_froggo_tactile_v2.webp", "alt": { "fr": "Mod boutons tactiles V2 FroggoCustoms pour Game Boy Color", "en": "FroggoCustoms V2 tactile button mod for Game Boy Color" }, "credit": "FroggoCustoms" },
+          "needsReview": ["buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gbc_fp_buttons",
@@ -692,8 +692,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/cgb-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying custom buttons for Game Boy Color" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/gbc_fp_buttons.webp", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Color", "en": "FunnyPlaying custom buttons for Game Boy Color" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         }
       ]
     }

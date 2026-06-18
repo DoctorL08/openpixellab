@@ -76,8 +76,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/3-0-laminated-ips-kit-for-gba-sp" }, { "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/3-0-inch-ips-gba-sp-backlight-kit-m2" }],
           "sources": [{ "label": "Handheld Legend — GBA SP 3.0 M2 IPS Kit", "url": "https://handheldlegend.com/products/3-0-laminated-ips-kit-for-gba-sp" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS M2 laminé 3.0\" FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying 3.0\" laminated IPS M2 kit for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_fp_m2.webp", "alt": { "fr": "Kit IPS M2 laminé 3.0\" FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying 3.0\" laminated IPS M2 kit for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_hsd_laminated",
@@ -111,8 +111,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" }],
           "sources": [{ "label": "Handheld Legend — GBA SP V5 Laminated IPS Kit", "url": "https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS laminé Hispeedido pour Game Boy Advance SP", "en": "Hispeedido laminated IPS kit for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_hsd_laminated.webp", "alt": { "fr": "Kit IPS laminé Hispeedido pour Game Boy Advance SP", "en": "Hispeedido laminated IPS kit for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_hsd_v5",
@@ -145,8 +145,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" }],
           "sources": [{ "label": "Handheld Legend — GBA SP V5 IPS Kit", "url": "https://handheldlegend.com/products/ips-3-0-inch-laminated-lcd-kit-for-game-boy-advance-sp" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS V5 drop-in Hispeedido pour Game Boy Advance SP", "en": "Hispeedido V5 drop-in IPS kit for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_hsd_v5.webp", "alt": { "fr": "Kit IPS V5 drop-in Hispeedido pour Game Boy Advance SP", "en": "Hispeedido V5 drop-in IPS kit for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_hsd_v2_tvout",
@@ -180,8 +180,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-sp-v2-ips-lcd-hispeedido" }],
           "sources": [{ "label": "Hand Held Legend Docs — GBA SP IPS V2 & V2 TV Out Install", "url": "https://wiki.handheldlegend.com/gba-sp-ips-v2-and-v2-tv-out-hispeedido-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS V2 avec sortie TV Hispeedido pour Game Boy Advance SP", "en": "Hispeedido V2 IPS kit with TV output for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/gbasp_hsd_v2_tvout.webp", "alt": { "fr": "Kit IPS V2 avec sortie TV Hispeedido pour Game Boy Advance SP", "en": "Hispeedido V2 IPS kit with TV output for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty"]
         }
       ]
     },
@@ -226,8 +226,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/maxplay-battery-for-game-boy-advance-sp-funnyplaying" }, { "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gba-sp-rechargeable-950mah-lipo-maxplay-battery-mod" }],
           "sources": [{ "label": "FunnyPlaying — GBA SP 950mAh LiPo MaxPlay Battery Mod", "url": "https://funnyplaying.com/products/gba-sp-rechargeable-950mah-lipo-maxplay-battery-mod" }],
-          "image": { "src": "", "alt": { "fr": "Batterie LiPo MaxPlay 950mAh FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying 950mAh MaxPlay LiPo battery for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_fp_maxplay.webp", "alt": { "fr": "Batterie LiPo MaxPlay 950mAh FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying 950mAh MaxPlay LiPo battery for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_usbc",
@@ -260,8 +260,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/collections/game-boy-advance-gba-sp-power" }],
           "sources": [{ "label": "Hand Held Legend — GBA SP Power Mods", "url": "https://handheldlegend.com/collections/game-boy-advance-gba-sp-power" }],
-          "image": { "src": "", "alt": { "fr": "Mod port de charge USB-C pour Game Boy Advance SP", "en": "USB-C charging port mod for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand", "difficulty"]
+          "image": { "src": "Images/mods/gbasp_usbc.webp", "alt": { "fr": "Mod port de charge USB-C pour Game Boy Advance SP", "en": "USB-C charging port mod for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "brand", "difficulty"]
         }
       ]
     },
@@ -306,8 +306,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/collections/game-boy-advance-sp" }],
           "sources": [{ "label": "YouTube — Hispeedido IPS + RetroGlow RGB LED Flex (GBA SP)", "url": "https://www.youtube.com/watch?v=_6iZiHNouh4" }],
-          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow SP pour Game Boy Advance SP", "en": "RetroGlow SP RGB LED kit for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gbasp_retroglow.webp", "alt": { "fr": "Kit LED RGB RetroGlow SP pour Game Boy Advance SP", "en": "RetroGlow SP RGB LED kit for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gbasp_arc",
@@ -342,7 +342,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Board LED RGB ARC SP NatalieTheNerd pour Game Boy Advance SP", "en": "NatalieTheNerd ARC SP RGB LED board for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gbasp_cleanamp",
@@ -375,8 +375,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-sp-cleanamp-pro-retrosix" }, { "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [{ "label": "RetroSix Wiki — GBA-SP CleanAmp Install Guide", "url": "https://www.retrosix.wiki/gba-sp-cleanamp-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Advance SP", "en": "RetroSix CleanAmp Pro audio amplifier for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_cleanamp.webp", "alt": { "fr": "Amplificateur audio CleanAmp Pro RetroSix pour Game Boy Advance SP", "en": "RetroSix CleanAmp Pro audio amplifier for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_hsd_flexamp",
@@ -410,7 +410,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Amplificateur Flex Amp Hispeedido pour Game Boy Advance SP", "en": "Hispeedido Flex Amp amplifier for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gbasp_fp_usbc_audio",
@@ -443,8 +443,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbasp-usb-c-w-audio-mod" }],
           "sources": [{ "label": "FunnyPlaying — GBASP USB-C w. Audio Mod", "url": "https://funnyplaying.com/products/gbasp-usb-c-w-audio-mod" }],
-          "image": { "src": "", "alt": { "fr": "Mod combiné USB-C avec audio FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying combined USB-C with audio mod for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gbasp_fp_usbc_audio.webp", "alt": { "fr": "Mod combiné USB-C avec audio FunnyPlaying pour Game Boy Advance SP", "en": "FunnyPlaying combined USB-C with audio mod for Game Boy Advance SP" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs"]
         }
       ]
     },
@@ -489,8 +489,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-sp-prestige-buttons" }, { "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [{ "label": "Handheld Legend — GBA SP Prestige Buttons (RetroSix)", "url": "https://handheldlegend.com/products/game-boy-advance-sp-prestige-buttons" }],
-          "image": { "src": "", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy Advance SP", "en": "RetroSix Prestige premium buttons for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_prestige_buttons.webp", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy Advance SP", "en": "RetroSix Prestige premium buttons for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gbasp_silicone_membranes",
@@ -520,8 +520,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-sp-silicone-button-pads" }, { "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [{ "label": "Handheld Legend — GBA SP Silicone Membranes", "url": "https://handheldlegend.com/products/game-boy-advance-sp-silicone-button-pads" }],
-          "image": { "src": "", "alt": { "fr": "Membranes silicone de remplacement RetroSix pour Game Boy Advance SP", "en": "RetroSix replacement silicone membranes for Game Boy Advance SP" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gbasp_silicone_membranes.webp", "alt": { "fr": "Membranes silicone de remplacement RetroSix pour Game Boy Advance SP", "en": "RetroSix replacement silicone membranes for Game Boy Advance SP" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         }
       ]
     }

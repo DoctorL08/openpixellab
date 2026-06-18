@@ -77,8 +77,8 @@
           "scoreImpact": { "image": 5, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "PixelFX", "url": "https://www.pixelfx.co/product-page/gamecube-hdmi" }],
           "sources": [{ "label": "PixelFX — GC HDMI Retro GEM Kit", "url": "https://www.pixelfx.co/product-page/gamecube-hdmi" }],
-          "image": { "src": "", "alt": { "fr": "Kit HDMI interne Retro GEM PixelFX pour Nintendo GameCube", "en": "PixelFX Retro GEM internal HDMI kit for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+          "image": { "src": "Images/mods/gc_retrogem.webp", "alt": { "fr": "Kit HDMI interne Retro GEM PixelFX pour Nintendo GameCube", "en": "PixelFX Retro GEM internal HDMI kit for Nintendo GameCube" }, "credit": "PixelFX" },
+          "needsReview": ["buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gc_gcdual",
@@ -112,7 +112,7 @@
           "buyLinks": [{ "label": "game-tech.us", "url": "https://www.game-tech.us/product/gcdual/" }],
           "sources": [{ "label": "game-tech.us — GCDual", "url": "https://www.game-tech.us/product/gcdual/" }],
           "image": { "src": "", "alt": { "fr": "Kit HDMI interne GCDual pour Nintendo GameCube", "en": "GCDual internal HDMI kit for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime", "brand"]
+          "needsReview": ["image", "buyLinks", "difficulty", "installTime", "brand"]
         },
         {
           "id": "gc_hispeedido_hdmi",
@@ -145,8 +145,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Hispeedido Store", "url": "https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" }],
           "sources": [{ "label": "Hispeedido Store — Internal NGC Digital HDMI MOD Kit", "url": "https://hispeedidostore.com/products/2025-newest-internal-ngc-digital-hdmi-mod-kit-digital-to-digital-hdmi-mod-kit-for-ngc-gamecube-console" }],
-          "image": { "src": "", "alt": { "fr": "Kit HDMI interne digital-to-digital Hispeedido pour Nintendo GameCube", "en": "Hispeedido digital-to-digital internal HDMI kit for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime"]
+          "image": { "src": "Images/mods/gc_hispeedido_hdmi.webp", "alt": { "fr": "Kit HDMI interne digital-to-digital Hispeedido pour Nintendo GameCube", "en": "Hispeedido digital-to-digital internal HDMI kit for Nintendo GameCube" }, "credit": "Hispeedido Store" },
+          "needsReview": ["buyLinks", "difficulty", "installTime"]
         },
         {
           "id": "gc_pluto_iix",
@@ -179,8 +179,8 @@
           "prerequisites": { "fr": ["Modèle DOL-001 (port Digital AV)"], "en": ["DOL-001 model (Digital AV port)"] },
           "buyLinks": [],
           "sources": [{ "label": "Stone Age Gamer — Pluto Digital HD Chip", "url": "https://stoneagegamer.com/pluto-digital-hd-chip-with-installation-service-for-gamecube.html" }],
-          "image": { "src": "", "alt": { "fr": "Mod HDMI interne Pluto-IIx pour Nintendo GameCube DOL-001", "en": "Pluto-IIx internal HDMI mod for Nintendo GameCube DOL-001" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "installTime", "brand"]
+          "image": { "src": "Images/mods/gc_pluto_iix.webp", "alt": { "fr": "Mod HDMI interne Pluto-IIx pour Nintendo GameCube DOL-001", "en": "Pluto-IIx internal HDMI mod for Nintendo GameCube DOL-001" }, "credit": "Stone Age Gamer — Pluto Digital HD Chip" },
+          "needsReview": ["buyLinks", "difficulty", "installTime", "brand"]
         }
       ]
     },
@@ -229,8 +229,8 @@
             { "label": "Crowd Supply — FlippyDrive", "url": "https://www.crowdsupply.com/team-offbroadway/flippydrive" },
             { "label": "Time Extension — New $38 FlippyDrive ODE", "url": "https://www.timeextension.com/news/2024/08/new-usd38-flippydrive-ode-lets-you-keep-your-gamecubes-optical-drive" }
           ],
-          "image": { "src": "", "alt": { "fr": "Émulateur de lecteur optique FlippyDrive sans soudure pour Nintendo GameCube", "en": "FlippyDrive solder-free optical drive emulator for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "image": { "src": "Images/mods/gc_flippydrive.webp", "alt": { "fr": "Émulateur de lecteur optique FlippyDrive sans soudure pour Nintendo GameCube", "en": "FlippyDrive solder-free optical drive emulator for Nintendo GameCube" }, "credit": "Crowd Supply" },
+          "needsReview": ["buyLinks", "brand"]
         },
         {
           "id": "gc_gcloader",
@@ -264,7 +264,7 @@
           "buyLinks": [{ "label": "GC Loader", "url": "https://gc-loader.com/product/gc-loader-pnp-hw2/" }],
           "sources": [{ "label": "GC Loader — PnP HW2", "url": "https://gc-loader.com/product/gc-loader-pnp-hw2/" }],
           "image": { "src": "", "alt": { "fr": "Émulateur de lecteur GC Loader PNP pour Nintendo GameCube", "en": "GC Loader PNP drive emulator for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         }
       ]
     },
@@ -313,8 +313,8 @@
             { "label": "PicoBoot — GitHub (webhdx)", "url": "https://github.com/webhdx/PicoBoot" },
             { "label": "RetroRGB — PicoBoot Is Here", "url": "https://retrorgb.com/picoboot-is-here-the-newest-modchip-for-the-gamecube.html" }
           ],
-          "image": { "src": "", "alt": { "fr": "Modchip PicoBoot Raspberry Pi Pico pour Nintendo GameCube", "en": "PicoBoot Raspberry Pi Pico modchip for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gc_picoboot.webp", "alt": { "fr": "Modchip PicoBoot Raspberry Pi Pico pour Nintendo GameCube", "en": "PicoBoot Raspberry Pi Pico modchip for Nintendo GameCube" }, "credit": "PicoBoot — GitHub" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gc_sd2sp2",
@@ -347,8 +347,8 @@
           "prerequisites": { "fr": ["GameCube équipée du Serial Port 2", "PicoBoot ou disque de boot homebrew"], "en": ["GameCube with Serial Port 2", "PicoBoot or a homebrew boot disc"] },
           "buyLinks": [{ "label": "Stone Age Gamer", "url": "https://stoneagegamer.com/sd2sp2-micro-sd-card-adapter-1-2a-sdloader-for-gamecube-serial-port-2.html" }],
           "sources": [{ "label": "RetroRGB — GameCube Serial Port SD Adapter", "url": "https://retrorgb.com/gamecube-serial-port-sd-adapter-swiss-updates.html" }],
-          "image": { "src": "", "alt": { "fr": "Adaptateur microSD SD2SP2 pour Serial Port 2 de la Nintendo GameCube", "en": "SD2SP2 microSD adapter for the Nintendo GameCube Serial Port 2" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gc_sd2sp2.webp", "alt": { "fr": "Adaptateur microSD SD2SP2 pour Serial Port 2 de la Nintendo GameCube", "en": "SD2SP2 microSD adapter for the Nintendo GameCube Serial Port 2" }, "credit": "Stone Age Gamer" },
+          "needsReview": ["buyLinks"]
         }
       ]
     },
@@ -396,8 +396,8 @@
             { "label": "8BitMods — Internal Bluetooth (BlueRetro) Adapter V3", "url": "https://8bitmods.com/internal-bluetooth-blueretro-adapter-for-gamecube-v3/" },
             { "label": "Nintendo Life — Stealth GameCube Bluetooth Mod", "url": "https://www.nintendolife.com/news/2022/08/this-stealth-gamecube-mod-allows-you-to-play-with-any-bluetooth-controller" }
           ],
-          "image": { "src": "", "alt": { "fr": "Adaptateur Bluetooth interne BlueRetro pour Nintendo GameCube", "en": "BlueRetro internal Bluetooth adapter for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "brand"]
+          "image": { "src": "Images/mods/gc_blueretro.webp", "alt": { "fr": "Adaptateur Bluetooth interne BlueRetro pour Nintendo GameCube", "en": "BlueRetro internal Bluetooth adapter for Nintendo GameCube" }, "credit": "8BitMods" },
+          "needsReview": ["buyLinks", "difficulty", "brand"]
         }
       ]
     },
@@ -441,8 +441,8 @@
           "prerequisites": { "fr": ["Ventilateur Noctua 40mm 12V", "Adaptateur 3D + câble"], "en": ["40mm 12V Noctua fan", "3D adapter + cable"] },
           "buyLinks": [{ "label": "Stone Age Gamer", "url": "https://stoneagegamer.com/40mm-fan-adapter-plate-and-fan-cable-for-gamecube-retro-frog.html" }],
           "sources": [{ "label": "Retro Frog — GameCube 40mm fan adapter", "url": "https://retrofrog.net/products/gamecube-40mm-fan-adapter-plate-cable" }],
-          "image": { "src": "", "alt": { "fr": "Mod ventilateur Noctua 40mm silencieux pour Nintendo GameCube", "en": "Quiet 40mm Noctua fan mod for Nintendo GameCube" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "image": { "src": "Images/mods/gc_noctua_fan.webp", "alt": { "fr": "Mod ventilateur Noctua 40mm silencieux pour Nintendo GameCube", "en": "Quiet 40mm Noctua fan mod for Nintendo GameCube" }, "credit": "Stone Age Gamer" },
+          "needsReview": ["buyLinks", "brand"]
         }
       ]
     }

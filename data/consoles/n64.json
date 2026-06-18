@@ -83,8 +83,8 @@
             { "label": "PixelFX — N64Digital Details", "url": "https://docs.pixelfx.co/N64Digital-Details.html" },
             { "label": "RetroRGB — N64Digital Mod Announced", "url": "https://retrorgb.com/n64digital-mod-announced-by-pixel-fx.html" }
           ],
-          "image": { "src": "", "alt": { "fr": "Kit HDMI numérique N64Digital PixelFX pour Nintendo 64", "en": "PixelFX N64Digital digital HDMI kit for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime"]
+          "image": { "src": "Images/mods/n64_n64digital.webp", "alt": { "fr": "Kit HDMI numérique N64Digital PixelFX pour Nintendo 64", "en": "PixelFX N64Digital digital HDMI kit for Nintendo 64" }, "credit": "PixelFX" },
+          "needsReview": ["buyLinks", "installTime"]
         },
         {
           "id": "n64_ultrahdmi",
@@ -125,7 +125,7 @@
             { "label": "RetroRGB — UltraHDMI", "url": "https://www.retrorgb.com/ultrahdmi.html" }
           ],
           "image": { "src": "", "alt": { "fr": "Kit HDMI UltraHDMI pour Nintendo 64", "en": "UltraHDMI HDMI kit for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime", "brand"]
+          "needsReview": ["image", "buyLinks", "installTime", "brand"]
         },
         {
           "id": "n64_64hd",
@@ -162,7 +162,7 @@
             { "label": "RetroRGB — GameBox 64HD Internal HDMI Mod", "url": "https://retrorgb.com/a-new-internal-hdmi-mod-for-the-nintendo-64-gamebox-64hd.html" }
           ],
           "image": { "src": "", "alt": { "fr": "Kit HDMI interne 64HD GameBox Systems pour Nintendo 64", "en": "GameBox Systems 64HD internal HDMI kit for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime"]
+          "needsReview": ["image", "buyLinks", "installTime"]
         },
         {
           "id": "n64_hispeedido_hdmi",
@@ -198,8 +198,8 @@
           "sources": [
             { "label": "Hispeedido N64 HDMI 720p — oldskoolconsoles", "url": "https://www.oldskoolconsoles.com/product-page/n64-hdmi-hispeedido-720p-mod-kit" }
           ],
-          "image": { "src": "", "alt": { "fr": "Kit HDMI 720p Hispeedido pour Nintendo 64", "en": "Hispeedido 720p HDMI kit for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime"]
+          "image": { "src": "Images/mods/n64_hispeedido_hdmi.webp", "alt": { "fr": "Kit HDMI 720p Hispeedido pour Nintendo 64", "en": "Hispeedido 720p HDMI kit for Nintendo 64" }, "credit": "RetroSix US" },
+          "needsReview": ["buyLinks", "installTime"]
         },
         {
           "id": "n64_rgb_mod",
@@ -239,8 +239,8 @@
             { "label": "etim.net.au — N64RGB", "url": "https://etim.net.au/n64rgb/" },
             { "label": "ConsoleMods Wiki — RGB Compatible Systems", "url": "https://consolemods.org/wiki/N64:RGB-Compatible_Systems" }
           ],
-          "image": { "src": "", "alt": { "fr": "Kit RGB analogique N64RGB Tim Worthington pour Nintendo 64", "en": "Tim Worthington N64RGB analog RGB kit for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "installTime"]
+          "image": { "src": "Images/mods/n64_rgb_mod.webp", "alt": { "fr": "Kit RGB analogique N64RGB Tim Worthington pour Nintendo 64", "en": "Tim Worthington N64RGB analog RGB kit for Nintendo 64" }, "credit": "oldskoolconsoles" },
+          "needsReview": ["buyLinks", "installTime"]
         }
       ]
     },
@@ -289,8 +289,8 @@
             { "label": "RetroRGB — Hall Effect N64 Analog Stick Kit by Retro-Bit", "url": "https://retrorgb.com/hall-effect-n64-analog-stick-kit-by-retro-bit.html" },
             { "label": "GamesRadar — N64 Hall Effect thumbstick mod", "url": "https://www.gamesradar.com/hardware/retro/i-just-upgraded-nintendos-driftiest-controller-with-a-hall-effect-thumb-stick-but-this-n64-mod-wont-be-for-everyone/" }
           ],
-          "image": { "src": "", "alt": { "fr": "Module joystick à effet Hall Retro-Bit pour manette Nintendo 64", "en": "Retro-Bit Hall-effect joystick module for Nintendo 64 controller" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "image": { "src": "Images/mods/n64_hall_stick.webp", "alt": { "fr": "Module joystick à effet Hall Retro-Bit pour manette Nintendo 64", "en": "Retro-Bit Hall-effect joystick module for Nintendo 64 controller" }, "credit": "RetroRGB — Hall Effect N64 Analog Stick Kit by Retro-Bit" },
+          "needsReview": ["buyLinks", "brand"]
         },
         {
           "id": "n64_stick_oem",
@@ -326,8 +326,8 @@
           "sources": [
             { "label": "Kitsch-Bent — N64 Joystick Repair Kit", "url": "https://store.kitsch-bent.com/products/n64-joystick-repair-kit" }
           ],
-          "image": { "src": "", "alt": { "fr": "Kit de réparation joystick d'origine Kitsch-Bent pour manette Nintendo 64", "en": "Kitsch-Bent OEM-style joystick repair kit for Nintendo 64 controller" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/n64_stick_oem.webp", "alt": { "fr": "Kit de réparation joystick d'origine Kitsch-Bent pour manette Nintendo 64", "en": "Kitsch-Bent OEM-style joystick repair kit for Nintendo 64 controller" }, "credit": "Kitsch-Bent" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "n64_expansion_pak",
@@ -368,7 +368,7 @@
             { "label": "ConsoleMods Wiki — N64 Mods Wiki", "url": "https://consolemods.org/wiki/N64:N64_Mods_Wiki" }
           ],
           "image": { "src": "", "alt": { "fr": "Expansion Pak 8 Mo pour Nintendo 64", "en": "8 MB Expansion Pak for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "needsReview": ["image", "buyLinks", "brand"]
         },
         {
           "id": "n64_region_mod",
@@ -405,7 +405,7 @@
             { "label": "Racketboy — How To Mod The N64 To Play Imports", "url": "https://racketboy.com/retro/how-to-mod-the-n64-to-play-imports-region-mod" }
           ],
           "image": { "src": "", "alt": { "fr": "Adaptateur de tray région pour Nintendo 64", "en": "Region tray adapter for Nintendo 64" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "needsReview": ["image", "buyLinks", "brand"]
         }
       ]
     }

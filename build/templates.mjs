@@ -212,13 +212,15 @@ function reviewFlag(mod, lang = "fr") {
   return `<span class="mod-review" title="${ui.reviewTitle} : ${mod.needsReview.map(escapeHtml).join(", ")}">⚑ ${ui.aValider}</span>`;
 }
 
-function modImage(mod, lang = "fr") {
+function modImage(mod, lang = "fr", base = "") {
   const alt = escapeHtml(t(mod.image?.alt, lang) || t(mod.name, lang));
   if (mod.image?.src) {
+    // chemins locaux → relatifs au dossier de la page (base) ; URLs externes inchangées
+    const src = /^https?:\/\//.test(mod.image.src) ? mod.image.src : `${base}${mod.image.src}`;
     const credit = mod.image.credit
       ? `<figcaption class="mod-img-credit">© ${escapeHtml(mod.image.credit)}</figcaption>`
       : "";
-    return `<figure class="mod-img"><img src="${escapeHtml(mod.image.src)}" alt="${alt}" loading="lazy">${credit}</figure>`;
+    return `<figure class="mod-img"><img src="${escapeHtml(src)}" alt="${alt}" loading="lazy">${credit}</figure>`;
   }
   return `<div class="mod-img mod-img--placeholder" role="img" aria-label="${alt}"><span>📷</span></div>`;
 }
@@ -283,7 +285,7 @@ export function modCard(mod, ctx = {}) {
 
   return `                    <article class="mod-card" id="${escapeHtml(mod.id)}">
                         <div class="mod-card-top">${badge}${reviewFlag(mod, lang)}</div>
-                        ${modImage(mod, lang)}
+                        ${modImage(mod, lang, ctx.base)}
                         <div class="mod-brand">${escapeHtml(mod.brand || "")}</div>
                         <h3 class="mod-name">${escapeHtml(name)}</h3>
                         <p class="mod-desc">${escapeHtml(t(mod.summary, lang) || "")}</p>
@@ -421,7 +423,7 @@ ${tools}
 
             <nav class="console-toc" aria-label="${ui.sommaire}">${toc}</nav>
 
-${c.sections.map((s) => section(s, { consoleName: name, slug: c.slug, lang })).join("\n\n")}
+${c.sections.map((s) => section(s, { consoleName: name, slug: c.slug, lang, base })).join("\n\n")}
 
             ${srcLine}
         </div>

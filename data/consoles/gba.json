@@ -76,8 +76,8 @@
           "scoreImpact": { "image": 5, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/agb-ips-max-display-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [{ "label": "FunnyPlaying — AGB IPS MAX Laminated", "url": "https://funnyplaying.com/products/agb-ips-max-display-kit" }, { "label": "Handheld Legend Wiki — Install Guide", "url": "https://wiki.handheldlegend.com/agb-laminated-ips-funnyplaying-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS MAX laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX laminated kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_fp_ips_max_lam.webp", "alt": { "fr": "Kit IPS MAX laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX laminated kit for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_fp_ips_m2",
@@ -110,8 +110,8 @@
           "prerequisites": { "fr": ["Découpe de coque pour la dalle 3.0\""], "en": ["Shell trimming for the 3.0\" panel"] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" }],
           "sources": [{ "label": "FunnyPlaying — 3.0 Inch IPS AGB Laminated Kit", "url": "https://funnyplaying.com/products/3-0-inch-ips-agb-laminated-kit" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS 3.0 pouces M2 FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying 3.0-inch M2 IPS kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
+          "image": { "src": "Images/mods/gba_fp_ips_m2.webp", "alt": { "fr": "Kit IPS 3.0 pouces M2 FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying 3.0-inch M2 IPS kit for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_fp_ita_tft",
@@ -145,8 +145,8 @@
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": 0, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/funnyplaying-ita-new-agb-tft-backlight-kit-for-game-boy-advance" }],
           "sources": [{ "label": "FunnyPlaying — ITA TFT Kit", "url": "https://funnyplaying.com/products/itas-new-agb-tft-backlight-kit" }, { "label": "Handheld Legend Wiki — ITA TFT Install", "url": "https://wiki.handheldlegend.com/agb-ita-tft-display-funnyplaying-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit ITA TFT sans découpe FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying no-trim ITA TFT kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_fp_ita_tft.webp", "alt": { "fr": "Kit ITA TFT sans découpe FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying no-trim ITA TFT kit for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_fp_ita_tft_lam",
@@ -180,8 +180,8 @@
           "prerequisites": { "fr": ["Vérifier carte 32 ou 40 broches"], "en": ["Check for a 32- or 40-pin board"] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" }],
           "sources": [{ "label": "FunnyPlaying — ITA TFT Laminated", "url": "https://funnyplaying.com/products/ita-agb-tft-backlight-laminated-kit" }],
-          "image": { "src": "", "alt": { "fr": "Kit ITA TFT laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying laminated ITA TFT kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_fp_ita_tft_lam.webp", "alt": { "fr": "Kit ITA TFT laminé FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying laminated ITA TFT kit for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_hsd_ips_v2",
@@ -214,8 +214,8 @@
           "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Kit IPS V2 Touch Sensor Hispeedido pour Game Boy Advance", "en": "Hispeedido IPS V2 touch-sensor kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gba_hsd_ips_v2.webp", "alt": { "fr": "Kit IPS V2 Touch Sensor Hispeedido pour Game Boy Advance", "en": "Hispeedido IPS V2 touch-sensor kit for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_ips_v5",
@@ -248,8 +248,8 @@
           "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Kit IPS V5 Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 IPS kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gba_hsd_ips_v5.webp", "alt": { "fr": "Kit IPS V5 Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 IPS kit for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_ips_v5_lam",
@@ -283,8 +283,8 @@
           "prerequisites": { "fr": ["Coque IPS-ready recommandée"], "en": ["IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Kit IPS V5 laminé Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 laminated IPS kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gba_hsd_ips_v5_lam.webp", "alt": { "fr": "Kit IPS V5 laminé Hispeedido pour Game Boy Advance", "en": "Hispeedido V5 laminated IPS kit for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_hsd_hdmi",
@@ -318,8 +318,8 @@
           "prerequisites": { "fr": ["Découpe importante de coque", "Coque IPS-ready recommandée"], "en": ["Major shell trimming", "IPS-ready shell recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" }],
           "sources": [{ "label": "Handheld Legend — TFT HDMI Kit", "url": "https://handheldlegend.com/products/game-boy-advance-tft-hdmi-kit-hd-tv-output-mod" }, { "label": "Handheld Legend Wiki — HDMI Out Install", "url": "https://wiki.handheldlegend.com/agb-hispeedido-hdmi-out-kit-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit TFT HDMI sortie TV Hispeedido pour Game Boy Advance", "en": "Hispeedido TFT HDMI TV-output kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_hsd_hdmi.webp", "alt": { "fr": "Kit TFT HDMI sortie TV Hispeedido pour Game Boy Advance", "en": "Hispeedido TFT HDMI TV-output kit for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_cgs_ips",
@@ -353,7 +353,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit IPS LCD Cloud Game Store pour Game Boy Advance", "en": "Cloud Game Store IPS LCD kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs", "brand"]
+          "needsReview": ["image", "buyLinks", "difficulty", "specs", "brand"]
         }
       ]
     },
@@ -400,7 +400,7 @@
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanJuice-USB-C-Battery-Pack-Game-Boy-Advance-p195931214" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" }],
           "sources": [{ "label": "Handheld Legend — CleanJuice V1.3 GBA", "url": "https://handheldlegend.com/products/cleanjuice-game-boy-advance-li-ion-rechargeable-battery-module" }],
           "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice V1.3 RetroSix pour Game Boy Advance", "en": "RetroSix CleanJuice V1.3 USB-C battery for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         },
         {
           "id": "gba_cleanjuice_aa",
@@ -433,8 +433,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Pack AA USB-C CleanJuice RetroSix pour Game Boy Advance", "en": "RetroSix CleanJuice AA USB-C pack for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gba_cleanjuice_aa.webp", "alt": { "fr": "Pack AA USB-C CleanJuice RetroSix pour Game Boy Advance", "en": "RetroSix CleanJuice AA USB-C pack for Game Boy Advance" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_fp_ips_max_battery",
@@ -467,8 +467,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
           "sources": [{ "label": "FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
-          "image": { "src": "", "alt": { "fr": "Batterie USB-C AGB IPS MAX FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX USB-C battery for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
+          "image": { "src": "Images/mods/gba_fp_ips_max_battery.webp", "alt": { "fr": "Batterie USB-C AGB IPS MAX FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying AGB IPS MAX USB-C battery for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_fp_battery",
@@ -501,8 +501,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
           "sources": [{ "label": "FunnyPlaying — GBA Li-Ion Rechargeable Battery USB-C Module", "url": "https://funnyplaying.com/products/gba-li-ion-rechargeable-battery-typec-module" }],
-          "image": { "src": "", "alt": { "fr": "Module batterie rechargeable FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying rechargeable battery module for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "difficulty", "specs", "installTime"]
+          "image": { "src": "Images/mods/gba_fp_battery.webp", "alt": { "fr": "Module batterie rechargeable FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying rechargeable battery module for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": ["difficulty", "specs", "installTime"]
         },
         {
           "id": "gba_hsd_battery_1800",
@@ -535,8 +535,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Batterie USB-C 1800mAh Hispeedido pour Game Boy Advance", "en": "Hispeedido 1800mAh USB-C battery for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "specs"]
+          "image": { "src": "Images/mods/gba_hsd_battery_1800.webp", "alt": { "fr": "Batterie USB-C 1800mAh Hispeedido pour Game Boy Advance", "en": "Hispeedido 1800mAh USB-C battery for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "specs"]
         },
         {
           "id": "gba_gbaccelerator",
@@ -571,7 +571,7 @@
           "buyLinks": [{ "label": "Division 6", "url": "https://division-6.com/products/gbaccelerator-gba/" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/gbaccerlerator-game-boy-advance-accelerator" }],
           "sources": [{ "label": "Division 6 — GBAccelerator GBA", "url": "https://division-6.com/products/gbaccelerator-gba/" }, { "label": "Handheld Legend — Install Guide", "url": "https://handheldlegend.com/blogs/installation-instructions/gbaccelerator-installation-game-boy-advance-division-6" }],
           "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator Division 6 pour Game Boy Advance", "en": "Division 6 GBAccelerator overclock module for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         }
       ]
     },
@@ -616,8 +616,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" }],
           "sources": [{ "label": "Handheld Legend — RetroGlow GBA", "url": "https://handheldlegend.com/products/retroglow-for-game-boy-advance-rgb-led-flex-board" }, { "label": "Handheld Legend Wiki — Install Guide", "url": "https://wiki.handheldlegend.com/retroglow-for-gba-agb-or-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy Advance", "en": "RetroGlow RGB LED kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_retroglow.webp", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy Advance", "en": "RetroGlow RGB LED kit for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_arc",
@@ -651,8 +651,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/arc-gba-rgb-leds" }],
           "sources": [{ "label": "NatalieTheNerd — ARC GBA", "url": "https://nataliethenerd.com/products/arc-gba-rgb-leds" }, { "label": "NatalieTheNerd — Install Guide", "url": "https://nataliethenerd.com/pages/arc-gba-install-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit LED RGB ARC NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd ARC RGB LED kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/gba_arc.webp", "alt": { "fr": "Kit LED RGB ARC NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd ARC RGB LED kit for Game Boy Advance" }, "credit": "NatalieTheNerd" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "gba_cleanamp_dehiss",
@@ -686,7 +686,7 @@
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" }],
           "sources": [{ "label": "Handheld Legend — CleanAmp Pro GBA", "url": "https://handheldlegend.com/products/game-boy-advance-cleanamp-pro-v1-0-audio-amplifier" }, { "label": "Handheld Legend — Wire-Free Dehum Dehiss", "url": "https://handheldlegend.com/products/game-boy-advance-wire-free-dehum-dehiss-kit" }],
           "image": { "src": "", "alt": { "fr": "Ampli audio CleanAmp et kit De-Hiss RetroSix pour Game Boy Advance", "en": "RetroSix CleanAmp amp and De-Hiss kit for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         },
         {
           "id": "gba_bucket_amp",
@@ -719,8 +719,8 @@
           "prerequisites": { "fr": ["Bonne maîtrise de la soudure fine"], "en": ["Solid fine-soldering skills"] },
           "buyLinks": [{ "label": "NatalieTheNerd", "url": "https://nataliethenerd.com/products/bucket-amp-gba" }],
           "sources": [{ "label": "NatalieTheNerd — Bucket Amp GBA", "url": "https://nataliethenerd.com/products/bucket-amp-gba" }],
-          "image": { "src": "", "alt": { "fr": "Bucket Amp NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd Bucket Amp for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/gba_bucket_amp.webp", "alt": { "fr": "Bucket Amp NatalieTheNerd pour Game Boy Advance", "en": "NatalieTheNerd Bucket Amp for Game Boy Advance" }, "credit": "NatalieTheNerd" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "gba_cgs_speakers",
@@ -754,7 +754,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Haut-parleurs colorés Cloud Game Store pour Game Boy Advance", "en": "Cloud Game Store colored speakers for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "brand"]
+          "needsReview": ["image", "buyLinks", "brand"]
         }
       ]
     },
@@ -799,8 +799,8 @@
           "prerequisites": { "fr": ["Boutons et membranes à prévoir"], "en": ["Buttons and membranes to plan for"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" }],
           "sources": [{ "label": "Handheld Legend — Tactile Conversion PCB", "url": "https://handheldlegend.com/products/gameboy-advance-tactile-conversion-pcb-hhl" }, { "label": "GitHub — Zekfoo/tactileAGB", "url": "https://github.com/Zekfoo/tactileAGB" }],
-          "image": { "src": "", "alt": { "fr": "PCB de conversion tactile Handheld Legend pour Game Boy Advance", "en": "Handheld Legend tactile-conversion PCB for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "soldering"]
+          "image": { "src": "Images/mods/gba_tactile_pcb.webp", "alt": { "fr": "PCB de conversion tactile Handheld Legend pour Game Boy Advance", "en": "Handheld Legend tactile-conversion PCB for Game Boy Advance" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty", "soldering"]
         },
         {
           "id": "gba_fp_buttons",
@@ -827,8 +827,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/agb-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying custom buttons for Game Boy Advance" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/gba_fp_buttons.webp", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Advance", "en": "FunnyPlaying custom buttons for Game Boy Advance" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         }
       ]
     }

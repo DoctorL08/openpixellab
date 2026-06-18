@@ -76,8 +76,8 @@
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" }],
           "sources": [{ "label": "FunnyPlaying — DMG RetroPixel IPS Q5", "url": "https://funnyplaying.com/products/dmg-retro-pixel-ips-lcd-kit" }, { "label": "Handheld Legend — Retro Pixel Q5", "url": "https://handheldlegend.com/products/game-boy-dmg-retro-pixel-ips-lcd-kit-funnyplaying" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS RetroPixel Q5 FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying RetroPixel Q5 IPS kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/dmg_fp_q5.webp", "alt": { "fr": "Kit IPS RetroPixel Q5 FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying RetroPixel Q5 IPS kit for Game Boy DMG" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "dmg_fp_q5_lam",
@@ -111,8 +111,8 @@
           "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" }],
           "sources": [{ "label": "FunnyPlaying — DMG RetroPixel IPS Laminated Q5", "url": "https://funnyplaying.com/products/dmg-retropixel-ips-laminated-q5-lcd-kit" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS laminé FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying laminated IPS kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/dmg_fp_q5_lam.webp", "alt": { "fr": "Kit IPS laminé FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying laminated IPS kit for Game Boy DMG" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "dmg_hsd_v4",
@@ -146,7 +146,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit IPS V4 Q5 Hispeedido pour Game Boy DMG", "en": "Hispeedido V4 Q5 IPS kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "needsReview": ["image", "buyLinks", "difficulty"]
         },
         {
           "id": "dmg_hsd_v5",
@@ -181,7 +181,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit IPS V5 Ultra Hispeedido pour Game Boy DMG", "en": "Hispeedido V5 Ultra IPS kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "needsReview": ["image", "buyLinks", "difficulty"]
         }
       ]
     },
@@ -225,8 +225,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice USB-C battery for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_cleanjuice.webp", "alt": { "fr": "Batterie USB-C CleanJuice RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice USB-C battery for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_cleanjuice_xl",
@@ -259,8 +259,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Batterie USB-C CleanJuice XL RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice XL USB-C battery for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_cleanjuice_xl.webp", "alt": { "fr": "Batterie USB-C CleanJuice XL RetroSix pour Game Boy DMG", "en": "RetroSix CleanJuice XL USB-C battery for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_cleanpower",
@@ -294,8 +294,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Module d'alimentation CleanPower RetroSix pour Game Boy DMG", "en": "RetroSix CleanPower power module for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_cleanpower.webp", "alt": { "fr": "Module d'alimentation CleanPower RetroSix pour Game Boy DMG", "en": "RetroSix CleanPower power module for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_gbaccelerator",
@@ -330,7 +330,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Module d'overclock GBAccelerator pour Game Boy DMG", "en": "GBAccelerator overclock module for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "brand"]
+          "needsReview": ["image", "buyLinks", "difficulty", "brand"]
         }
       ]
     },
@@ -375,8 +375,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy DMG", "en": "RetroGlow RGB LED kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/dmg_retroglow.webp", "alt": { "fr": "Kit LED RGB RetroGlow pour Game Boy DMG", "en": "RetroGlow RGB LED kit for Game Boy DMG" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "dmg_arc",
@@ -411,7 +411,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Kit LED RGB ARC NatalieTheNerd pour Game Boy DMG", "en": "NatalieTheNerd ARC RGB LED kit for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "needsReview": ["image", "buyLinks", "difficulty"]
         },
         {
           "id": "dmg_cleanamp",
@@ -444,8 +444,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp RetroSix pour Game Boy DMG", "en": "RetroSix CleanAmp audio amplifier for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_cleanamp.webp", "alt": { "fr": "Amplificateur audio CleanAmp RetroSix pour Game Boy DMG", "en": "RetroSix CleanAmp audio amplifier for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_clear_speaker",
@@ -478,8 +478,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/clear-dmg-speaker" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Haut-parleur de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement speaker for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/dmg_clear_speaker.webp", "alt": { "fr": "Haut-parleur de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement speaker for Game Boy DMG" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         }
       ]
     },
@@ -524,8 +524,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige premium buttons for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_prestige_buttons.webp", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige premium buttons for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_prestige_membranes",
@@ -555,8 +555,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Membranes silicone Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige silicone membranes for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/dmg_prestige_membranes.webp", "alt": { "fr": "Membranes silicone Prestige RetroSix pour Game Boy DMG", "en": "RetroSix Prestige silicone membranes for Game Boy DMG" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "dmg_fp_buttons",
@@ -583,8 +583,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gb-dmg-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying custom buttons for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/dmg_fp_buttons.webp", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying custom buttons for Game Boy DMG" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "dmg_fp_pads",
@@ -614,8 +614,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/replacement-silicone-pads-for-gb-dmg" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Membranes silicone de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement silicone membranes for Game Boy DMG" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/dmg_fp_pads.webp", "alt": { "fr": "Membranes silicone de remplacement FunnyPlaying pour Game Boy DMG", "en": "FunnyPlaying replacement silicone membranes for Game Boy DMG" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         }
       ]
     }

@@ -79,8 +79,8 @@
           "scoreImpact": { "image": 4, "audio": 0, "autonomie": -1, "ergonomie": 0, "gameplay": 1 },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" }],
           "sources": [{ "label": "FunnyPlaying — GBP/GBL Retro Pixel IPS LCD Kit", "url": "https://funnyplaying.com/products/gbp-retro-pixel-ips-lcd-kit" }, { "label": "Michael Iantorno — Mod Guide GBP FunnyPlaying IPS", "url": "https://michaeliantorno.com/mod-guide-game-boy-pocket-funnyplaying-ips-lcd/" }, { "label": "Retro Modding — GBP IPS Install Guide", "url": "https://www.retromodding.com/blogs/tutorials/game-boy-pocket-ips-lcd-kit-installation-guide" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS laminé MGB FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying MGB laminated IPS kit for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/pocket_fp_ips_lam.webp", "alt": { "fr": "Kit IPS laminé MGB FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying MGB laminated IPS kit for Game Boy Pocket" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "pocket_hsd_q5",
@@ -113,8 +113,8 @@
           "prerequisites": { "fr": ["CleanPower recommandé"], "en": ["CleanPower recommended"] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com" }],
           "sources": [{ "label": "Handheld Legend — GBP Q5 IPS LCD Hispeedido", "url": "https://handheldlegend.com/products/game-boy-pocket-ips-lcd-backlight-hhl" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS Q5 OSD Hispeedido pour Game Boy Pocket", "en": "Hispeedido Q5 OSD IPS kit for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_hsd_q5.webp", "alt": { "fr": "Kit IPS Q5 OSD Hispeedido pour Game Boy Pocket", "en": "Hispeedido Q5 OSD IPS kit for Game Boy Pocket" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "pocket_hsd_lam_28",
@@ -151,8 +151,8 @@
           },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" }],
           "sources": [{ "label": "Handheld Legend — GBP Laminated 2.8\" IPS Hispeedido", "url": "https://handheldlegend.com/products/hispeedido-laminated-2-8-inch-ips-kit" }, { "label": "Retro Game Repair Shop — GBP Laminated Q5 OSD", "url": "https://retrogamerepairshop.com/products/game-boy-pocket-laminated-q5-kit-with-osd-hispeedido" }],
-          "image": { "src": "", "alt": { "fr": "Kit IPS laminé 2,8 pouces Hispeedido pour Game Boy Pocket", "en": "Hispeedido 2.8-inch laminated IPS kit for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_hsd_lam_28.webp", "alt": { "fr": "Kit IPS laminé 2,8 pouces Hispeedido pour Game Boy Pocket", "en": "Hispeedido 2.8-inch laminated IPS kit for Game Boy Pocket" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "pocket_cloud_tft",
@@ -185,8 +185,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [],
           "sources": [{ "label": "Retro Modding — Backlit TFT LCD for Game Boy Pocket", "url": "https://www.retromodding.com/products/game-boy-pocket-backlight" }, { "label": "Handheld Legend — GBC/Pocket TFT LCD", "url": "https://handheldlegend.com/products/tft-lcd-for-game-boy-backlight" }],
-          "image": { "src": "", "alt": { "fr": "Kit TFT drop-in Cloud Game Store pour Game Boy Pocket", "en": "Cloud Game Store drop-in TFT kit for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "brand", "specs"]
+          "image": { "src": "Images/mods/pocket_cloud_tft.webp", "alt": { "fr": "Kit TFT drop-in Cloud Game Store pour Game Boy Pocket", "en": "Cloud Game Store drop-in TFT kit for Game Boy Pocket" }, "credit": "Retro Modding — Backlit TFT LCD for Game Boy Pocket" },
+          "needsReview": ["buyLinks", "difficulty", "brand", "specs"]
         },
         {
           "id": "pocket_backlight_bivert",
@@ -219,8 +219,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-backlight-v3" }],
           "sources": [{ "label": "Handheld Legend — GBP Bivert Installation", "url": "https://handheldlegend.com/blogs/news/115066947-game-boy-pocket-bivert-installation-and-comparison" }, { "label": "Game Boy Modding Wiki — Backlight Mods", "url": "https://gameboy.github.io/wiki/backlightmods" }],
-          "image": { "src": "", "alt": { "fr": "Mod rétroéclairage et bivert pour Game Boy Pocket", "en": "Backlight and bivert mod for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_backlight_bivert.webp", "alt": { "fr": "Mod rétroéclairage et bivert pour Game Boy Pocket", "en": "Backlight and bivert mod for Game Boy Pocket" }, "credit": "Handheld Legend" },
+          "needsReview": ["buyLinks", "difficulty"]
         }
       ]
     },
@@ -265,8 +265,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/game-boy-pocket-cleanpower-regulator" }],
           "sources": [{ "label": "RetroSix — GBP CleanPower Regulator", "url": "https://retrosix.co.uk/Game-Boy-Pocket-CleanPower-Regulator-p369269293" }],
-          "image": { "src": "", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Pocket", "en": "RetroSix CleanPower regulator for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/pocket_cleanpower.webp", "alt": { "fr": "Régulateur CleanPower RetroSix pour Game Boy Pocket", "en": "RetroSix CleanPower regulator for Game Boy Pocket" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "pocket_safer_charge",
@@ -299,8 +299,8 @@
           "prerequisites": { "fr": ["Batterie Li-Po en bon état (jamais gonflée)"], "en": ["Li-Po battery in good condition (never swollen)"] },
           "buyLinks": [{ "label": "Natalie the Nerd", "url": "https://nataliethenerd.com/pages/safer-charge-dc" }],
           "sources": [{ "label": "Natalie the Nerd — Safer Charge DC", "url": "https://nataliethenerd.com/pages/safer-charge-dc" }],
-          "image": { "src": "", "alt": { "fr": "Module de charge Safer Charge NatalieTheNerd pour Game Boy Pocket", "en": "NatalieTheNerd Safer Charge module for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_safer_charge.webp", "alt": { "fr": "Module de charge Safer Charge NatalieTheNerd pour Game Boy Pocket", "en": "NatalieTheNerd Safer Charge module for Game Boy Pocket" }, "credit": "Natalie the Nerd" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "pocket_cleanjuice_air",
@@ -333,8 +333,8 @@
           "prerequisites": { "fr": ["Coque RetroSix ABS (sinon découpe importante)"], "en": ["RetroSix ABS shell (otherwise major trimming)"] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanjuice-air-wireless-battery-pack-for-game-boy-pocket" }],
           "sources": [{ "label": "RetroSix — CleanJuice Air GBP", "url": "https://retrosix.us/products/cleanjuice-air-wireless-battery-pack-game-boy-pocket" }],
-          "image": { "src": "", "alt": { "fr": "Batterie sans fil CleanJuice Air RetroSix pour Game Boy Pocket", "en": "RetroSix CleanJuice Air wireless battery for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/pocket_cleanjuice_air.webp", "alt": { "fr": "Batterie sans fil CleanJuice Air RetroSix pour Game Boy Pocket", "en": "RetroSix CleanJuice Air wireless battery for Game Boy Pocket" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "pocket_frogulator",
@@ -367,8 +367,8 @@
           "prerequisites": { "fr": ["Écran aftermarket rétroéclairé (pas d'écran OEM)"], "en": ["Backlit aftermarket screen (no OEM screen)"] },
           "buyLinks": [{ "label": "FroggoCustoms", "url": "https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" }],
           "sources": [{ "label": "FroggoCustoms — Frogulator GBC/Pocket DC Regulator", "url": "https://froggocustoms.com/products/frogulator-game-boy-color-pocket-dc-regulator" }, { "label": "FroggoCustoms — Install Guide", "url": "https://froggocustoms.com/blogs/installation-guides/game-boy-color-pocket-frogulator" }],
-          "image": { "src": "", "alt": { "fr": "Régulateur DC Frogulator FroggoCustoms pour Game Boy Pocket", "en": "FroggoCustoms Frogulator DC regulator for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_frogulator.webp", "alt": { "fr": "Régulateur DC Frogulator FroggoCustoms pour Game Boy Pocket", "en": "FroggoCustoms Frogulator DC regulator for Game Boy Pocket" }, "credit": "FroggoCustoms" },
+          "needsReview": ["buyLinks", "difficulty"]
         },
         {
           "id": "pocket_usbc_cover",
@@ -401,8 +401,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "Retro Modding", "url": "https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" }],
           "sources": [{ "label": "Retro Modding — USB-C Battery Pack Hispeedido GBP", "url": "https://www.retromodding.com/products/usb-c-battery-pack-for-hispeedido-q5-ips-lcd-shell-for-game-boy-pocket" }],
-          "image": { "src": "", "alt": { "fr": "Couvercle batterie USB-C Hispeedido pour Game Boy Pocket", "en": "Hispeedido USB-C battery cover for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty"]
+          "image": { "src": "Images/mods/pocket_usbc_cover.webp", "alt": { "fr": "Couvercle batterie USB-C Hispeedido pour Game Boy Pocket", "en": "Hispeedido USB-C battery cover for Game Boy Pocket" }, "credit": "Retro Modding" },
+          "needsReview": ["buyLinks", "difficulty"]
         }
       ]
     },
@@ -447,7 +447,7 @@
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk/CleanAmp-Audio-Amplifier-Game-Boy-Universal-p141361141" }, { "label": "Handheld Legend", "url": "https://handheldlegend.com/products/cleanamp-audio-amplifier-with-speaker-for-game-boy" }],
           "sources": [{ "label": "RetroSix — GBP CleanAmp v1.1 Install Guide", "url": "https://retrosix.freshdesk.com/support/solutions/articles/77000419623-game-boy-pocket-cleanamp-v1-1-install-guide" }],
           "image": { "src": "", "alt": { "fr": "Amplificateur audio CleanAmp RetroSix pour Game Boy Pocket", "en": "RetroSix CleanAmp audio amplifier for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         },
         {
           "id": "pocket_cloud_wirefree_amp",
@@ -481,7 +481,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Amplificateur audio sans câble Cloud Game Store pour Game Boy Pocket", "en": "Cloud Game Store wire-free audio amplifier for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks", "difficulty", "brand", "specs"]
+          "needsReview": ["image", "buyLinks", "difficulty", "brand", "specs"]
         }
       ]
     },
@@ -526,8 +526,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "RetroSix", "url": "https://retrosix.co.uk" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy Pocket", "en": "RetroSix Prestige premium buttons for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "image": { "src": "Images/mods/pocket_prestige_buttons.webp", "alt": { "fr": "Boutons premium Prestige RetroSix pour Game Boy Pocket", "en": "RetroSix Prestige premium buttons for Game Boy Pocket" }, "credit": "RetroSix" },
+          "needsReview": ["buyLinks"]
         },
         {
           "id": "pocket_fp_buttons",
@@ -554,8 +554,8 @@
           "prerequisites": { "fr": [], "en": [] },
           "buyLinks": [{ "label": "FunnyPlaying", "url": "https://funnyplaying.com/products/gbp-custom-buttons" }],
           "sources": [],
-          "image": { "src": "", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying custom buttons for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price"]
+          "image": { "src": "Images/mods/pocket_fp_buttons.webp", "alt": { "fr": "Boutons custom FunnyPlaying pour Game Boy Pocket", "en": "FunnyPlaying custom buttons for Game Boy Pocket" }, "credit": "FunnyPlaying" },
+          "needsReview": []
         },
         {
           "id": "pocket_hsd_buttons",
@@ -586,7 +586,7 @@
           "buyLinks": [],
           "sources": [],
           "image": { "src": "", "alt": { "fr": "Boutons de remplacement Hispeedido pour Game Boy Pocket", "en": "Hispeedido replacement buttons for Game Boy Pocket" }, "credit": "" },
-          "needsReview": ["image", "price", "buyLinks"]
+          "needsReview": ["image", "buyLinks"]
         }
       ]
     }
